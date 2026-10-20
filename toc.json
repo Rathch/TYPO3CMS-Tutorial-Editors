@@ -1,0 +1,437 @@
+{
+    "project": {
+        "title": "Tutorial for Editors",
+        "version": "main",
+        "permalink": "https://docs.typo3.org/permalink/t3editors:{anchor}@main"
+    },
+    "pages": [
+        {
+            "path": "Index",
+            "html": "Index.html",
+            "md": "Index.md",
+            "title": "TYPO3 Editors Guide",
+            "anchor": "start",
+            "pages": [
+                {
+                    "path": "Login/Index",
+                    "html": "Login/Index.html",
+                    "md": "Login/Index.md",
+                    "title": "Logging in to TYPO3 backend",
+                    "anchor": "login"
+                },
+                {
+                    "path": "Pages/Index",
+                    "html": "Pages/Index.html",
+                    "md": "Pages/Index.md",
+                    "title": "Pages",
+                    "anchor": "pages",
+                    "pages": [
+                        {
+                            "path": "Pages/CreatingPages/Index",
+                            "html": "Pages/CreatingPages/Index.html",
+                            "md": "Pages/CreatingPages/Index.md",
+                            "title": "Creating pages",
+                            "anchor": "pages-creating"
+                        },
+                        {
+                            "path": "Pages/AddingMultiple/Index",
+                            "html": "Pages/AddingMultiple/Index.html",
+                            "md": "Pages/AddingMultiple/Index.md",
+                            "title": "Creating multiple pages",
+                            "anchor": "pages-multiple"
+                        },
+                        {
+                            "path": "Pages/WorkingWithPages/Index",
+                            "html": "Pages/WorkingWithPages/Index.html",
+                            "md": "Pages/WorkingWithPages/Index.md",
+                            "title": "Working with pages",
+                            "anchor": "pages-drag-drop"
+                        },
+                        {
+                            "path": "Pages/PageTypes/Index",
+                            "html": "Pages/PageTypes/Index.html",
+                            "md": "Pages/PageTypes/Index.md",
+                            "title": "Page types",
+                            "anchor": "pages-types"
+                        },
+                        {
+                            "path": "Pages/PageProperties/Index",
+                            "html": "Pages/PageProperties/Index.html",
+                            "md": "Pages/PageProperties/Index.md",
+                            "title": "Page properties",
+                            "anchor": "pages-properties"
+                        }
+                    ]
+                },
+                {
+                    "path": "ContentElements/Index",
+                    "html": "ContentElements/Index.html",
+                    "md": "ContentElements/Index.md",
+                    "title": "Content elements",
+                    "anchor": "content-elements",
+                    "pages": [
+                        {
+                            "path": "ContentElements/CreatingContent/Index",
+                            "html": "ContentElements/CreatingContent/Index.html",
+                            "md": "ContentElements/CreatingContent/Index.md",
+                            "title": "Creating content",
+                            "anchor": "content-creating"
+                        },
+                        {
+                            "path": "ContentElements/EditingContent/Index",
+                            "html": "ContentElements/EditingContent/Index.html",
+                            "md": "ContentElements/EditingContent/Index.md",
+                            "title": "Editing content",
+                            "anchor": "content-editing"
+                        },
+                        {
+                            "path": "ContentElements/Content/Index",
+                            "html": "ContentElements/Content/Index.html",
+                            "md": "ContentElements/Content/Index.md",
+                            "title": "Managing content",
+                            "anchor": "content-working"
+                        },
+                        {
+                            "path": "ContentElements/RichTextEditor/Index",
+                            "html": "ContentElements/RichTextEditor/Index.html",
+                            "md": "ContentElements/RichTextEditor/Index.md",
+                            "title": "The rich text editor",
+                            "anchor": "rte"
+                        },
+                        {
+                            "path": "ContentElements/Images/Index",
+                            "html": "ContentElements/Images/Index.html",
+                            "md": "ContentElements/Images/Index.md",
+                            "title": "Working with images",
+                            "anchor": "images"
+                        },
+                        {
+                            "path": "ContentElements/Media/Index",
+                            "html": "ContentElements/Media/Index.html",
+                            "md": "ContentElements/Media/Index.md",
+                            "title": "Embedding videos as content into a TYPO3 website",
+                            "anchor": "media"
+                        },
+                        {
+                            "path": "ContentElements/ContactForm/Index",
+                            "html": "ContentElements/ContactForm/Index.html",
+                            "md": "ContentElements/ContactForm/Index.md",
+                            "title": "Creating a contact form",
+                            "anchor": "template-form"
+                        }
+                    ]
+                },
+                {
+                    "path": "RecordModule/Index",
+                    "html": "RecordModule/Index.html",
+                    "md": "RecordModule/Index.md",
+                    "title": "Records",
+                    "anchor": "the-list-module-and-clipboard",
+                    "pages": [
+                        {
+                            "path": "RecordModule/UsingEffectively/Index",
+                            "html": "RecordModule/UsingEffectively/Index.html",
+                            "md": "RecordModule/UsingEffectively/Index.md",
+                            "title": "Using the Records module",
+                            "anchor": "using-the-list-module-effectively"
+                        },
+                        {
+                            "path": "RecordModule/CopyPaste/Index",
+                            "html": "RecordModule/CopyPaste/Index.html",
+                            "md": "RecordModule/CopyPaste/Index.md",
+                            "title": "Copy and paste database record",
+                            "anchor": "list-copy-paste"
+                        },
+                        {
+                            "path": "RecordModule/AdvancedClipboard/Index",
+                            "html": "RecordModule/AdvancedClipboard/Index.html",
+                            "md": "RecordModule/AdvancedClipboard/Index.md",
+                            "title": "Using the clipboard to copy or move multiple records at once",
+                            "anchor": "the-numeric-clipboard-pads-managing-many-elements"
+                        },
+                        {
+                            "path": "RecordModule/MassEditing/Index",
+                            "html": "RecordModule/MassEditing/Index.html",
+                            "md": "RecordModule/MassEditing/Index.md",
+                            "title": "Mass editing",
+                            "anchor": "mass-editing"
+                        }
+                    ]
+                },
+                {
+                    "path": "MediaModule/Index",
+                    "html": "MediaModule/Index.html",
+                    "md": "MediaModule/Index.md",
+                    "title": "Media upload and management in the TYPO3 backend",
+                    "anchor": "media-module"
+                },
+                {
+                    "path": "LinkManagement/Index",
+                    "html": "LinkManagement/Index.html",
+                    "md": "LinkManagement/Index.md",
+                    "title": "Link management",
+                    "anchor": "link-management",
+                    "pages": [
+                        {
+                            "path": "LinkManagement/Redirects/Index",
+                            "html": "LinkManagement/Redirects/Index.html",
+                            "md": "LinkManagement/Redirects/Index.md",
+                            "title": "Redirects",
+                            "anchor": "redirects"
+                        },
+                        {
+                            "path": "LinkManagement/QRCodes/Index",
+                            "html": "LinkManagement/QRCodes/Index.html",
+                            "md": "LinkManagement/QRCodes/Index.md",
+                            "title": "Quick response (QR) codes",
+                            "anchor": "qr-codes"
+                        },
+                        {
+                            "path": "LinkManagement/ShortURLs/Index",
+                            "html": "LinkManagement/ShortURLs/Index.html",
+                            "md": "LinkManagement/ShortURLs/Index.md",
+                            "title": "Short URLs",
+                            "anchor": "short-urls"
+                        }
+                    ]
+                },
+                {
+                    "path": "Languages/Index",
+                    "html": "Languages/Index.html",
+                    "md": "Languages/Index.md",
+                    "title": "Working with languages",
+                    "anchor": "languages"
+                },
+                {
+                    "path": "SearchEngineOptimization/Index",
+                    "html": "SearchEngineOptimization/Index.html",
+                    "md": "SearchEngineOptimization/Index.md",
+                    "title": "Search engine optimization (SEO) for TYPO3 editors",
+                    "anchor": "seo",
+                    "pages": [
+                        {
+                            "path": "SearchEngineOptimization/DashboardWidgets",
+                            "html": "SearchEngineOptimization/DashboardWidgets.html",
+                            "md": "SearchEngineOptimization/DashboardWidgets.md",
+                            "title": "Dashboard widgets for search engine optimization (SEO) in TYPO3",
+                            "anchor": "dashboard-widgets"
+                        }
+                    ]
+                },
+                {
+                    "path": "UserSettings/Index",
+                    "html": "UserSettings/Index.html",
+                    "md": "UserSettings/Index.md",
+                    "title": "User settings",
+                    "anchor": "user-settings",
+                    "pages": [
+                        {
+                            "path": "UserSettings/PersonalData/Index",
+                            "html": "UserSettings/PersonalData/Index.html",
+                            "md": "UserSettings/PersonalData/Index.md",
+                            "title": "Change your name, email address and backend language",
+                            "anchor": "user-settings-personal-data"
+                        },
+                        {
+                            "path": "UserSettings/AccountSecurity/Index",
+                            "html": "UserSettings/AccountSecurity/Index.html",
+                            "md": "UserSettings/AccountSecurity/Index.md",
+                            "title": "Change your password and set up multi-factor authentication",
+                            "anchor": "user-settings-account-security"
+                        },
+                        {
+                            "path": "UserSettings/BackendAppearance/Index",
+                            "html": "UserSettings/BackendAppearance/Index.html",
+                            "md": "UserSettings/BackendAppearance/Index.md",
+                            "title": "Change how the TYPO3 backend looks and behaves",
+                            "anchor": "user-settings-backend-appearance"
+                        },
+                        {
+                            "path": "UserSettings/Personalization/Index",
+                            "html": "UserSettings/Personalization/Index.html",
+                            "md": "UserSettings/Personalization/Index.md",
+                            "title": "Fine-tune editing, uploads and copying in the backend",
+                            "anchor": "user-settings-personalization"
+                        }
+                    ]
+                },
+                {
+                    "path": "AccessControl/Index",
+                    "html": "AccessControl/Index.html",
+                    "md": "AccessControl/Index.md",
+                    "title": "Access control",
+                    "anchor": "access-control",
+                    "pages": [
+                        {
+                            "path": "AccessControl/Visibility/Index",
+                            "html": "AccessControl/Visibility/Index.html",
+                            "md": "AccessControl/Visibility/Index.md",
+                            "title": "Elements visibility",
+                            "anchor": "visibility"
+                        },
+                        {
+                            "path": "AccessControl/Login/Index",
+                            "html": "AccessControl/Login/Index.html",
+                            "md": "AccessControl/Login/Index.md",
+                            "title": "Frontend login",
+                            "anchor": "frontend-login"
+                        }
+                    ]
+                },
+                {
+                    "path": "DeepLinking/Index",
+                    "html": "DeepLinking/Index.html",
+                    "md": "DeepLinking/Index.md",
+                    "title": "Deep linking",
+                    "anchor": "deeplinking"
+                },
+                {
+                    "path": "HelpInside/Index",
+                    "html": "HelpInside/Index.html",
+                    "md": "HelpInside/Index.md",
+                    "title": "Help within TYPO3",
+                    "anchor": "help-inside",
+                    "pages": [
+                        {
+                            "path": "HelpInside/BackendSearch/Index",
+                            "html": "HelpInside/BackendSearch/Index.html",
+                            "md": "HelpInside/BackendSearch/Index.md",
+                            "title": "Backend search",
+                            "anchor": "backend-search"
+                        },
+                        {
+                            "path": "HelpInside/ErrorPage/Index",
+                            "html": "HelpInside/ErrorPage/Index.html",
+                            "md": "HelpInside/ErrorPage/Index.md",
+                            "title": "What to do when an error page shows",
+                            "anchor": "error-page"
+                        },
+                        {
+                            "path": "HelpInside/InternalNotes/Index",
+                            "html": "HelpInside/InternalNotes/Index.html",
+                            "md": "HelpInside/InternalNotes/Index.md",
+                            "title": "Internal notes in the TYPO3 backend",
+                            "anchor": "internal-notes"
+                        },
+                        {
+                            "path": "HelpInside/KeyboardCommands/Index",
+                            "html": "HelpInside/KeyboardCommands/Index.html",
+                            "md": "HelpInside/KeyboardCommands/Index.md",
+                            "title": "Keyboard commands",
+                            "anchor": "keyboard-commands"
+                        },
+                        {
+                            "path": "HelpInside/OnlineDocumentation/Index",
+                            "html": "HelpInside/OnlineDocumentation/Index.html",
+                            "md": "HelpInside/OnlineDocumentation/Index.md",
+                            "title": "TYPO3 online documentation",
+                            "anchor": "typo3-online-documentation"
+                        },
+                        {
+                            "path": "HelpInside/Tooltips/Index",
+                            "html": "HelpInside/Tooltips/Index.html",
+                            "md": "HelpInside/Tooltips/Index.md",
+                            "title": "Tooltips",
+                            "anchor": "tooltips"
+                        }
+                    ]
+                },
+                {
+                    "path": "Accessibility/Index",
+                    "html": "Accessibility/Index.html",
+                    "md": "Accessibility/Index.md",
+                    "title": "Accessibility for editors",
+                    "anchor": "accessibility-overview",
+                    "pages": [
+                        {
+                            "path": "Accessibility/LegalFoundations",
+                            "html": "Accessibility/LegalFoundations.html",
+                            "md": "Accessibility/LegalFoundations.md",
+                            "title": "Legal requirements",
+                            "anchor": "accessibility-legal"
+                        },
+                        {
+                            "path": "Accessibility/WritingAccessibleText",
+                            "html": "Accessibility/WritingAccessibleText.html",
+                            "md": "Accessibility/WritingAccessibleText.md",
+                            "title": "Writing accessible text",
+                            "anchor": "accessibility-writing-accessible-text"
+                        },
+                        {
+                            "path": "Accessibility/TipsAndTricks",
+                            "html": "Accessibility/TipsAndTricks.html",
+                            "md": "Accessibility/TipsAndTricks.md",
+                            "title": "Tips and tricks",
+                            "anchor": "accessibility-tips"
+                        },
+                        {
+                            "path": "Accessibility/Sources",
+                            "html": "Accessibility/Sources.html",
+                            "md": "Accessibility/Sources.md",
+                            "title": "Sources and further reading",
+                            "anchor": "accessibility-sources"
+                        }
+                    ]
+                },
+                {
+                    "path": "Concepts/Index",
+                    "html": "Concepts/Index.html",
+                    "md": "Concepts/Index.md",
+                    "title": "Concepts",
+                    "anchor": "concepts",
+                    "pages": [
+                        {
+                            "path": "Concepts/Cache",
+                            "html": "Concepts/Cache.html",
+                            "md": "Concepts/Cache.md",
+                            "title": "Cache",
+                            "anchor": "cache"
+                        },
+                        {
+                            "path": "Concepts/FileAbstractionLayer",
+                            "html": "Concepts/FileAbstractionLayer.html",
+                            "md": "Concepts/FileAbstractionLayer.md",
+                            "title": "File abstraction layer (FAL)",
+                            "anchor": "fal"
+                        },
+                        {
+                            "path": "Concepts/Accessibility",
+                            "html": "Concepts/Accessibility.html",
+                            "md": "Concepts/Accessibility.md",
+                            "title": "Accessibility",
+                            "anchor": "accessibility"
+                        },
+                        {
+                            "path": "Concepts/Copyright",
+                            "html": "Concepts/Copyright.html",
+                            "md": "Concepts/Copyright.md",
+                            "title": "Copyright and data privacy",
+                            "anchor": "copyright"
+                        }
+                    ]
+                },
+                {
+                    "path": "About",
+                    "html": "About.html",
+                    "md": "About.md",
+                    "title": "About this guide",
+                    "anchor": "about"
+                },
+                {
+                    "path": "NextSteps/Index",
+                    "html": "NextSteps/Index.html",
+                    "md": "NextSteps/Index.md",
+                    "title": "Next steps",
+                    "anchor": "next-steps"
+                },
+                {
+                    "path": "Sitemap",
+                    "html": "Sitemap.html",
+                    "md": "Sitemap.md",
+                    "title": "Sitemap",
+                    "anchor": "sitemap"
+                }
+            ]
+        }
+    ]
+}

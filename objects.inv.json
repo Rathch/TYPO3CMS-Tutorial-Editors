@@ -1,0 +1,3596 @@
+{
+    "std:doc": {
+        "About": [
+            "Tutorial for Editors",
+            "main",
+            "About.html",
+            "About this guide"
+        ],
+        "AccessControl\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "AccessControl\/Index.html",
+            "Access control"
+        ],
+        "AccessControl\/Login\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "AccessControl\/Login\/Index.html",
+            "Frontend login"
+        ],
+        "AccessControl\/Visibility\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "AccessControl\/Visibility\/Index.html",
+            "Elements visibility"
+        ],
+        "Accessibility\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Index.html",
+            "Accessibility for editors"
+        ],
+        "Accessibility\/LegalFoundations": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/LegalFoundations.html",
+            "Legal requirements"
+        ],
+        "Accessibility\/Sources": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Sources.html",
+            "Sources and further reading"
+        ],
+        "Accessibility\/TipsAndTricks": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/TipsAndTricks.html",
+            "Tips and tricks"
+        ],
+        "Accessibility\/WritingAccessibleText": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/WritingAccessibleText.html",
+            "Writing accessible text"
+        ],
+        "Concepts\/Accessibility": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/Accessibility.html",
+            "Accessibility"
+        ],
+        "Concepts\/Cache": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/Cache.html",
+            "Cache"
+        ],
+        "Concepts\/Copyright": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/Copyright.html",
+            "Copyright and data privacy"
+        ],
+        "Concepts\/FileAbstractionLayer": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/FileAbstractionLayer.html",
+            "File abstraction layer (FAL)"
+        ],
+        "Concepts\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/Index.html",
+            "Concepts"
+        ],
+        "ContentElements\/ContactForm\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/ContactForm\/Index.html",
+            "Creating a contact form"
+        ],
+        "ContentElements\/Content\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Content\/Index.html",
+            "Managing content"
+        ],
+        "ContentElements\/CreatingContent\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/CreatingContent\/Index.html",
+            "Creating content"
+        ],
+        "ContentElements\/EditingContent\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/EditingContent\/Index.html",
+            "Editing content"
+        ],
+        "ContentElements\/Images\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Images\/Index.html",
+            "Working with images"
+        ],
+        "ContentElements\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Index.html",
+            "Content elements"
+        ],
+        "ContentElements\/Media\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Media\/Index.html",
+            "Embedding videos as content into a TYPO3 website"
+        ],
+        "ContentElements\/RichTextEditor\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/RichTextEditor\/Index.html",
+            "The rich text editor"
+        ],
+        "DeepLinking\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "DeepLinking\/Index.html",
+            "Deep linking"
+        ],
+        "HelpInside\/BackendSearch\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/BackendSearch\/Index.html",
+            "Backend search"
+        ],
+        "HelpInside\/ErrorPage\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/ErrorPage\/Index.html",
+            "What to do when an error page shows"
+        ],
+        "HelpInside\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/Index.html",
+            "Help within TYPO3"
+        ],
+        "HelpInside\/InternalNotes\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/InternalNotes\/Index.html",
+            "Internal notes in the TYPO3 backend"
+        ],
+        "HelpInside\/KeyboardCommands\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/KeyboardCommands\/Index.html",
+            "Keyboard commands"
+        ],
+        "HelpInside\/OnlineDocumentation\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/OnlineDocumentation\/Index.html",
+            "TYPO3 online documentation"
+        ],
+        "HelpInside\/Tooltips\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/Tooltips\/Index.html",
+            "Tooltips"
+        ],
+        "Index": [
+            "Tutorial for Editors",
+            "main",
+            "Index.html",
+            "TYPO3 Editors Guide"
+        ],
+        "Languages\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "Languages\/Index.html",
+            "Working with languages"
+        ],
+        "LinkManagement\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/Index.html",
+            "Link management"
+        ],
+        "LinkManagement\/QRCodes\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/QRCodes\/Index.html",
+            "Quick response (QR) codes"
+        ],
+        "LinkManagement\/Redirects\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/Redirects\/Index.html",
+            "Redirects"
+        ],
+        "LinkManagement\/ShortURLs\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/ShortURLs\/Index.html",
+            "Short URLs"
+        ],
+        "Login\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "Login\/Index.html",
+            "Logging in to TYPO3 backend"
+        ],
+        "MediaModule\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "MediaModule\/Index.html",
+            "Media upload and management in the TYPO3 backend"
+        ],
+        "NextSteps\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "NextSteps\/Index.html",
+            "Next steps"
+        ],
+        "Pages\/AddingMultiple\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/AddingMultiple\/Index.html",
+            "Creating multiple pages"
+        ],
+        "Pages\/CreatingPages\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/CreatingPages\/Index.html",
+            "Creating pages"
+        ],
+        "Pages\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/Index.html",
+            "Pages"
+        ],
+        "Pages\/PageProperties\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html",
+            "Page properties"
+        ],
+        "Pages\/PageTypes\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageTypes\/Index.html",
+            "Page types"
+        ],
+        "Pages\/WorkingWithPages\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/WorkingWithPages\/Index.html",
+            "Working with pages"
+        ],
+        "RecordModule\/AdvancedClipboard\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/AdvancedClipboard\/Index.html",
+            "Using the clipboard to copy or move multiple records at once"
+        ],
+        "RecordModule\/CopyPaste\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/CopyPaste\/Index.html",
+            "Copy and paste database record"
+        ],
+        "RecordModule\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/Index.html",
+            "Records"
+        ],
+        "RecordModule\/MassEditing\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/MassEditing\/Index.html",
+            "Mass editing"
+        ],
+        "RecordModule\/UsingEffectively\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/UsingEffectively\/Index.html",
+            "Using the Records module"
+        ],
+        "SearchEngineOptimization\/DashboardWidgets": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/DashboardWidgets.html",
+            "Dashboard widgets for search engine optimization (SEO) in TYPO3"
+        ],
+        "SearchEngineOptimization\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html",
+            "Search engine optimization (SEO) for TYPO3 editors"
+        ],
+        "Sitemap": [
+            "Tutorial for Editors",
+            "main",
+            "Sitemap.html",
+            "Sitemap"
+        ],
+        "UserSettings\/AccountSecurity\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "UserSettings\/AccountSecurity\/Index.html",
+            "Change your password and set up multi-factor authentication"
+        ],
+        "UserSettings\/BackendAppearance\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "UserSettings\/BackendAppearance\/Index.html",
+            "Change how the TYPO3 backend looks and behaves"
+        ],
+        "UserSettings\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "UserSettings\/Index.html",
+            "User settings"
+        ],
+        "UserSettings\/PersonalData\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "UserSettings\/PersonalData\/Index.html",
+            "Change your name, email address and backend language"
+        ],
+        "UserSettings\/Personalization\/Index": [
+            "Tutorial for Editors",
+            "main",
+            "UserSettings\/Personalization\/Index.html",
+            "Fine-tune editing, uploads and copying in the backend"
+        ]
+    },
+    "std:label": {
+        "about": [
+            "Tutorial for Editors",
+            "main",
+            "About.html#about",
+            "About this guide"
+        ],
+        "introduction": [
+            "Tutorial for Editors",
+            "main",
+            "About.html#introduction",
+            "About this guide"
+        ],
+        "credits": [
+            "Tutorial for Editors",
+            "main",
+            "About.html#credits",
+            "Credits"
+        ],
+        "feedback": [
+            "Tutorial for Editors",
+            "main",
+            "About.html#feedback",
+            "Feedback"
+        ],
+        "contact-doc-team": [
+            "Tutorial for Editors",
+            "main",
+            "About.html#contact-doc-team",
+            "Contact the Documentation Team"
+        ],
+        "access-control": [
+            "Tutorial for Editors",
+            "main",
+            "AccessControl\/Index.html#access-control",
+            "Access control"
+        ],
+        "frontend-login": [
+            "Tutorial for Editors",
+            "main",
+            "AccessControl\/Login\/Index.html#frontend-login",
+            "Frontend login"
+        ],
+        "frontend-login-users": [
+            "Tutorial for Editors",
+            "main",
+            "AccessControl\/Login\/Index.html#frontend-login-users",
+            "Frontend users"
+        ],
+        "create-a-usergroup": [
+            "Tutorial for Editors",
+            "main",
+            "AccessControl\/Login\/Index.html#create-a-usergroup",
+            "Create a user group and user"
+        ],
+        "frontend-login-rights": [
+            "Tutorial for Editors",
+            "main",
+            "AccessControl\/Login\/Index.html#frontend-login-rights",
+            "Assign access rights"
+        ],
+        "frontend-login-form": [
+            "Tutorial for Editors",
+            "main",
+            "AccessControl\/Login\/Index.html#frontend-login-form",
+            "Add a login form"
+        ],
+        "visibility": [
+            "Tutorial for Editors",
+            "main",
+            "AccessControl\/Visibility\/Index.html#visibility",
+            "Elements visibility"
+        ],
+        "visibility-dates": [
+            "Tutorial for Editors",
+            "main",
+            "AccessControl\/Visibility\/Index.html#visibility-dates",
+            "Publication dates"
+        ],
+        "accessibility-overview": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Index.html#accessibility-overview",
+            "Accessibility for editors"
+        ],
+        "accessibility-statistics": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Index.html#accessibility-statistics",
+            "What the figures say about your part of the work"
+        ],
+        "accessibility-statistics-webaim": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Index.html#accessibility-statistics-webaim",
+            "One million home pages"
+        ],
+        "accessibility-statistics-audioeye": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Index.html#accessibility-statistics-audioeye",
+            "A second scan of page content"
+        ],
+        "accessibility-where-next": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Index.html#accessibility-where-next",
+            "Where to go next"
+        ],
+        "accessibility-legal": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/LegalFoundations.html#accessibility-legal",
+            "Legal requirements"
+        ],
+        "accessibility-legal-wcag": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/LegalFoundations.html#accessibility-legal-wcag",
+            "The guidelines laws point to"
+        ],
+        "accessibility-legal-eu": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/LegalFoundations.html#accessibility-legal-eu",
+            "European Union"
+        ],
+        "accessibility-legal-national": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/LegalFoundations.html#accessibility-legal-national",
+            "Other countries"
+        ],
+        "accessibility-legal-editor": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/LegalFoundations.html#accessibility-legal-editor",
+            "What this asks of an editor"
+        ],
+        "accessibility-sources": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Sources.html#accessibility-sources",
+            "Sources and further reading"
+        ],
+        "accessibility-sources-w3c": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Sources.html#accessibility-sources-w3c",
+            "Guidelines and how to meet them"
+        ],
+        "accessibility-sources-writing": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Sources.html#accessibility-sources-writing",
+            "Writing and structure"
+        ],
+        "accessibility-sources-evaluate": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Sources.html#accessibility-sources-evaluate",
+            "Checking a page"
+        ],
+        "accessibility-sources-law": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Sources.html#accessibility-sources-law",
+            "European legislation"
+        ],
+        "accessibility-sources-studies": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Sources.html#accessibility-sources-studies",
+            "Studies cited for the figures"
+        ],
+        "accessibility-tips": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/TipsAndTricks.html#accessibility-tips",
+            "Tips and tricks"
+        ],
+        "accessibility-tips-before-publish": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/TipsAndTricks.html#accessibility-tips-before-publish",
+            "Before you publish"
+        ],
+        "accessibility-tips-title": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/TipsAndTricks.html#accessibility-tips-title",
+            "Read the title out of context"
+        ],
+        "accessibility-tips-headings": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/TipsAndTricks.html#accessibility-tips-headings",
+            "Walk the headings"
+        ],
+        "accessibility-tips-links": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/TipsAndTricks.html#accessibility-tips-links",
+            "Read the links as a list"
+        ],
+        "accessibility-tips-images": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/TipsAndTricks.html#accessibility-tips-images",
+            "Cover the image"
+        ],
+        "accessibility-tips-media": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/TipsAndTricks.html#accessibility-tips-media",
+            "Play the video with the sound off"
+        ],
+        "accessibility-tips-color": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/TipsAndTricks.html#accessibility-tips-color",
+            "Check color and text saved as an image"
+        ],
+        "accessibility-tips-forms": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/TipsAndTricks.html#accessibility-tips-forms",
+            "Label every field"
+        ],
+        "accessibility-tips-language": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/TipsAndTricks.html#accessibility-tips-language",
+            "Mark a language change"
+        ],
+        "accessibility-tips-tables": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/TipsAndTricks.html#accessibility-tips-tables",
+            "Mark the header cells of a table"
+        ],
+        "accessibility-tips-integrator": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/TipsAndTricks.html#accessibility-tips-integrator",
+            "What to hand to your integrator"
+        ],
+        "accessibility-writing-accessible-text": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/WritingAccessibleText.html#accessibility-writing-accessible-text",
+            "Writing accessible text"
+        ],
+        "accessibility-writing-accessible-text-provide-informative-unique": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/WritingAccessibleText.html#accessibility-writing-accessible-text-provide-informative-unique",
+            "Provide informative, unique page titles"
+        ],
+        "accessibility-writing-accessible-text-headings-convey-meaning": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/WritingAccessibleText.html#accessibility-writing-accessible-text-headings-convey-meaning",
+            "Use headings to convey meaning and structure"
+        ],
+        "accessibility-writing-accessible-text-make-link-text": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/WritingAccessibleText.html#accessibility-writing-accessible-text-make-link-text",
+            "Make link text meaningful"
+        ],
+        "accessibility-writing-accessible-text-write-meaningful-text": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/WritingAccessibleText.html#accessibility-writing-accessible-text-write-meaningful-text",
+            "Write meaningful text alternatives for images"
+        ],
+        "accessibility-writing-captions": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/WritingAccessibleText.html#accessibility-writing-captions",
+            "Provide transcripts and captions"
+        ],
+        "accessibility-writing-instructions": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/WritingAccessibleText.html#accessibility-writing-instructions",
+            "Provide clear instructions"
+        ],
+        "accessibility-writing-clear-language": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/WritingAccessibleText.html#accessibility-writing-clear-language",
+            "Keep content clear and concise"
+        ],
+        "accessibility": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/Accessibility.html#accessibility",
+            "Accessibility"
+        ],
+        "cache": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/Cache.html#cache",
+            "Cache"
+        ],
+        "browser-cache": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/Cache.html#browser-cache",
+            "Browser cache"
+        ],
+        "cache-automatic": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/Cache.html#cache-automatic",
+            "Automatic cache clearing"
+        ],
+        "cache-frontend": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/Cache.html#cache-frontend",
+            "Scenario: Changes are not visible in the frontend"
+        ],
+        "cache-manual": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/Cache.html#cache-manual",
+            "Manual cache clearing"
+        ],
+        "cache-preview": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/Cache.html#cache-preview",
+            "Previewing a page without clearing the cache"
+        ],
+        "copyright": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/Copyright.html#copyright",
+            "Copyright and data privacy"
+        ],
+        "copyright-copyright": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/Copyright.html#copyright-copyright",
+            "Copyright"
+        ],
+        "copyright-data-privacy": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/Copyright.html#copyright-data-privacy",
+            "Data privacy"
+        ],
+        "fal": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/FileAbstractionLayer.html#fal",
+            "File abstraction layer (FAL)"
+        ],
+        "fal-working-multi-media": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/FileAbstractionLayer.html#fal-working-multi-media",
+            "Working with multi media: Digital asset management"
+        ],
+        "concepts": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/Index.html#concepts",
+            "Concepts"
+        ],
+        "template-form": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/ContactForm\/Index.html#template-form",
+            "Creating a contact form"
+        ],
+        "mail-form": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/ContactForm\/Index.html#mail-form",
+            "Creating a contact form"
+        ],
+        "create-form-scratch": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/ContactForm\/Index.html#create-form-scratch",
+            "Create a form from scratch"
+        ],
+        "working-with-forms": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/ContactForm\/Index.html#working-with-forms",
+            "Working with forms"
+        ],
+        "content-working": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Content\/Index.html#content-working",
+            "Managing content"
+        ],
+        "content-working-overview": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Content\/Index.html#content-working-overview",
+            "Overview of the Layout module in TYPO3"
+        ],
+        "content-working-hiding": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Content\/Index.html#content-working-hiding",
+            "Hiding content elements"
+        ],
+        "content-working-moving": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Content\/Index.html#content-working-moving",
+            "Moving content elements"
+        ],
+        "content-working-copy-paste": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Content\/Index.html#content-working-copy-paste",
+            "Copy and paste content elements"
+        ],
+        "content-working-life-search": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Content\/Index.html#content-working-life-search",
+            "Finding content using the live search"
+        ],
+        "content-working-troubleshooting": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Content\/Index.html#content-working-troubleshooting",
+            "Troubleshooting page management"
+        ],
+        "content-working-troubleshooting-unused": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Content\/Index.html#content-working-troubleshooting-unused",
+            "Unused elements detected on this page"
+        ],
+        "content-working-troubleshooting-recycler": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Content\/Index.html#content-working-troubleshooting-recycler",
+            "Restore deleted content elements using the Recycler"
+        ],
+        "content-working-troubleshooting-history": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Content\/Index.html#content-working-troubleshooting-history",
+            "Undo changes using the page history"
+        ],
+        "content-working-began-editing": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Content\/Index.html#content-working-began-editing",
+            "The BE-User 'xxx' began to edit this record x min ago"
+        ],
+        "content-creating": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/CreatingContent\/Index.html#content-creating",
+            "Creating content"
+        ],
+        "content-types": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/CreatingContent\/Index.html#content-types",
+            "Types of content elements"
+        ],
+        "content-types-editor": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/CreatingContent\/Index.html#content-types-editor",
+            "Content elements seen by a typical TYPO3 editor"
+        ],
+        "content-typical": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/CreatingContent\/Index.html#content-typical",
+            "Typical page content"
+        ],
+        "content-list": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/CreatingContent\/Index.html#content-list",
+            "Lists"
+        ],
+        "content-types-advanced": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/CreatingContent\/Index.html#content-types-advanced",
+            "Advanced content elements"
+        ],
+        "content-form": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/CreatingContent\/Index.html#content-form",
+            "Form elements"
+        ],
+        "content-menu": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/CreatingContent\/Index.html#content-menu",
+            "Menu elements"
+        ],
+        "content-plugin": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/CreatingContent\/Index.html#content-plugin",
+            "Plugins"
+        ],
+        "content-special": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/CreatingContent\/Index.html#content-special",
+            "Special elements"
+        ],
+        "content-new-element": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/CreatingContent\/Index.html#content-new-element",
+            "Add new content to a page"
+        ],
+        "content-editing": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/EditingContent\/Index.html#content-editing",
+            "Editing content"
+        ],
+        "content-editing-change-text": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/EditingContent\/Index.html#content-editing-change-text",
+            "Changing text and setting in a content element"
+        ],
+        "content-editing-trouble-shooting": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/EditingContent\/Index.html#content-editing-trouble-shooting",
+            "Troubleshooting content element edits"
+        ],
+        "content-editing-trouble-shooting-button": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/EditingContent\/Index.html#content-editing-trouble-shooting-button",
+            "Content element has no edit button"
+        ],
+        "content-editing-trouble-saving": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/EditingContent\/Index.html#content-editing-trouble-saving",
+            "Content element does not get saved"
+        ],
+        "content-editing-trouble-error": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/EditingContent\/Index.html#content-editing-trouble-error",
+            "Error message after saving a content element"
+        ],
+        "content-editing-trouble-changes-not-visible": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/EditingContent\/Index.html#content-editing-trouble-changes-not-visible",
+            "Changes not visible in the frontend after saving a content element"
+        ],
+        "content-editing-type": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/EditingContent\/Index.html#content-editing-type",
+            "Changing the type of an existing content element"
+        ],
+        "images": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Images\/Index.html#images",
+            "Working with images"
+        ],
+        "images-new": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Images\/Index.html#images-new",
+            "Working with images"
+        ],
+        "add-image-to-page": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Images\/Index.html#add-image-to-page",
+            "Add an image to the content element"
+        ],
+        "configure-the-image": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Images\/Index.html#configure-the-image",
+            "Configure the image"
+        ],
+        "override-image-metadata": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Images\/Index.html#override-image-metadata",
+            "Image metadata"
+        ],
+        "images-appearance": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Images\/Index.html#images-appearance",
+            "Media adjustments"
+        ],
+        "images-gallery": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Images\/Index.html#images-gallery",
+            "Gallery settings"
+        ],
+        "images-behavior": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Images\/Index.html#images-behavior",
+            "Behavior"
+        ],
+        "images-media": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Images\/Index.html#images-media",
+            "Manage your images in the Media module"
+        ],
+        "images-filelist": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Images\/Index.html#images-filelist",
+            "Manage your images in the Media module"
+        ],
+        "content-elements": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Index.html#content-elements",
+            "Content elements"
+        ],
+        "media": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Media\/Index.html#media",
+            "Embedding videos as content into a TYPO3 website"
+        ],
+        "add-video-to-page": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Media\/Index.html#add-video-to-page",
+            "Add a video to a page"
+        ],
+        "configure-the-video": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Media\/Index.html#configure-the-video",
+            "Configure the video"
+        ],
+        "video-data-privacy": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Media\/Index.html#video-data-privacy",
+            "External video sources and data privacy"
+        ],
+        "rte": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/RichTextEditor\/Index.html#rte",
+            "The rich text editor"
+        ],
+        "rte-linking": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/RichTextEditor\/Index.html#rte-linking",
+            "Creating a link"
+        ],
+        "rte-linking-internal": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/RichTextEditor\/Index.html#rte-linking-internal",
+            "Internal links"
+        ],
+        "rte-linking-external": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/RichTextEditor\/Index.html#rte-linking-external",
+            "External links"
+        ],
+        "rte-linking-preview": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/RichTextEditor\/Index.html#rte-linking-preview",
+            "Checking and opening a link"
+        ],
+        "rte-linking-remove": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/RichTextEditor\/Index.html#rte-linking-remove",
+            "Removing a link"
+        ],
+        "rte-whitespace": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/RichTextEditor\/Index.html#rte-whitespace",
+            "Non-breaking spaces and soft hyphens"
+        ],
+        "deeplinking": [
+            "Tutorial for Editors",
+            "main",
+            "DeepLinking\/Index.html#deeplinking",
+            "Deep linking"
+        ],
+        "deeplinking-sharing": [
+            "Tutorial for Editors",
+            "main",
+            "DeepLinking\/Index.html#deeplinking-sharing",
+            "Sharing links"
+        ],
+        "deeplinking-sharing-linking-page": [
+            "Tutorial for Editors",
+            "main",
+            "DeepLinking\/Index.html#deeplinking-sharing-linking-page",
+            "Linking to a page"
+        ],
+        "deeplinking-sharing-linking-content-element": [
+            "Tutorial for Editors",
+            "main",
+            "DeepLinking\/Index.html#deeplinking-sharing-linking-content-element",
+            "Linking to a content element"
+        ],
+        "deeplinking-sharing-linking-backend-modules": [
+            "Tutorial for Editors",
+            "main",
+            "DeepLinking\/Index.html#deeplinking-sharing-linking-backend-modules",
+            "Linking to backend modules"
+        ],
+        "deeplinking-bestpractices": [
+            "Tutorial for Editors",
+            "main",
+            "DeepLinking\/Index.html#deeplinking-bestpractices",
+            "URLs and deep links"
+        ],
+        "deeplinking-qr-code": [
+            "Tutorial for Editors",
+            "main",
+            "DeepLinking\/Index.html#deeplinking-qr-code",
+            "Sharing a preview with a QR code"
+        ],
+        "backend-search": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/BackendSearch\/Index.html#backend-search",
+            "Backend search"
+        ],
+        "error-page": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/ErrorPage\/Index.html#error-page",
+            "What to do when an error page shows"
+        ],
+        "error-page-live": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/ErrorPage\/Index.html#error-page-live",
+            "On the live website"
+        ],
+        "error-page-details": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/ErrorPage\/Index.html#error-page-details",
+            "On a development or test system"
+        ],
+        "help-inside": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/Index.html#help-inside",
+            "Help within TYPO3"
+        ],
+        "internal-notes": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/InternalNotes\/Index.html#internal-notes",
+            "Internal notes in the TYPO3 backend"
+        ],
+        "keyboard-commands": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/KeyboardCommands\/Index.html#keyboard-commands",
+            "Keyboard commands"
+        ],
+        "keyboard-commands-page-tree": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/KeyboardCommands\/Index.html#keyboard-commands-page-tree",
+            "Navigating the page tree using a keyboard"
+        ],
+        "keyboard-commands-forms": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/KeyboardCommands\/Index.html#keyboard-commands-forms",
+            "Actions in backend forms"
+        ],
+        "keyboard-commands-rte": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/KeyboardCommands\/Index.html#keyboard-commands-rte",
+            "Editing text in the rich text editor (RTE)"
+        ],
+        "keyboard-commands-browser": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/KeyboardCommands\/Index.html#keyboard-commands-browser",
+            "Reloading pages and clearing browser cache"
+        ],
+        "keyboard-commands-search": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/KeyboardCommands\/Index.html#keyboard-commands-search",
+            "Opening the backend search modal"
+        ],
+        "keyboard-commands-multiselect": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/KeyboardCommands\/Index.html#keyboard-commands-multiselect",
+            "Multiselect in content elements"
+        ],
+        "typo3-online-documentation": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/OnlineDocumentation\/Index.html#typo3-online-documentation",
+            "TYPO3 online documentation"
+        ],
+        "tooltips": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/Tooltips\/Index.html#tooltips",
+            "Tooltips"
+        ],
+        "start": [
+            "Tutorial for Editors",
+            "main",
+            "Index.html#start",
+            "TYPO3 Editors Guide"
+        ],
+        "languages": [
+            "Tutorial for Editors",
+            "main",
+            "Languages\/Index.html#languages",
+            "Working with languages"
+        ],
+        "languages-new": [
+            "Tutorial for Editors",
+            "main",
+            "Languages\/Index.html#languages-new",
+            "Language configuration"
+        ],
+        "translation-modes": [
+            "Tutorial for Editors",
+            "main",
+            "Languages\/Index.html#translation-modes",
+            "Translation strategies"
+        ],
+        "languages-translation-mode-connected": [
+            "Tutorial for Editors",
+            "main",
+            "Languages\/Index.html#languages-translation-mode-connected",
+            "Translate (connected)"
+        ],
+        "languages-translation-mode-copy": [
+            "Tutorial for Editors",
+            "main",
+            "Languages\/Index.html#languages-translation-mode-copy",
+            "Copy (independent)"
+        ],
+        "languages-translations": [
+            "Tutorial for Editors",
+            "main",
+            "Languages\/Index.html#languages-translations",
+            "Localizing a page"
+        ],
+        "languages-create-page-translation": [
+            "Tutorial for Editors",
+            "main",
+            "Languages\/Index.html#languages-create-page-translation",
+            "Create the page translation"
+        ],
+        "adjusting-the-view": [
+            "Tutorial for Editors",
+            "main",
+            "Languages\/Index.html#adjusting-the-view",
+            "Changing the view"
+        ],
+        "next-steps-l10n": [
+            "Tutorial for Editors",
+            "main",
+            "Languages\/Index.html#next-steps-l10n",
+            "Next steps"
+        ],
+        "link-management": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/Index.html#link-management",
+            "Link management"
+        ],
+        "qr-codes": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/QRCodes\/Index.html#qr-codes",
+            "Quick response (QR) codes"
+        ],
+        "qr-codes-scenario": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/QRCodes\/Index.html#qr-codes-scenario",
+            "Scenario - sharing your QR code"
+        ],
+        "qr-codes-creating": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/QRCodes\/Index.html#qr-codes-creating",
+            "Creating a QR code"
+        ],
+        "qr-codes-general-tab": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/QRCodes\/Index.html#qr-codes-general-tab",
+            "General tab"
+        ],
+        "qr-codes-access-tab": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/QRCodes\/Index.html#qr-codes-access-tab",
+            "Access tab"
+        ],
+        "qr-codes-notes-tab": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/QRCodes\/Index.html#qr-codes-notes-tab",
+            "Notes tab"
+        ],
+        "qr-codes-download": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/QRCodes\/Index.html#qr-codes-download",
+            "Downloading your new QR code"
+        ],
+        "qr-codes-edit": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/QRCodes\/Index.html#qr-codes-edit",
+            "Edit an existing QR code"
+        ],
+        "redirects": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/Redirects\/Index.html#redirects",
+            "Redirects"
+        ],
+        "redirects-scenario-preserving": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/Redirects\/Index.html#redirects-scenario-preserving",
+            "Scenario - preserving old URLs"
+        ],
+        "redirects-scenario-preparing": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/Redirects\/Index.html#redirects-scenario-preparing",
+            "Scenario - preparing a URL for future use"
+        ],
+        "redirects-creating": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/Redirects\/Index.html#redirects-creating",
+            "Creating a redirect"
+        ],
+        "redirects-source-domain": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/Redirects\/Index.html#redirects-source-domain",
+            "Setting a source domain and source path"
+        ],
+        "redirects-target": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/Redirects\/Index.html#redirects-target",
+            "Setting a target"
+        ],
+        "redirects-access-tab": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/Redirects\/Index.html#redirects-access-tab",
+            "Access tab"
+        ],
+        "redirects-notes-tab": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/Redirects\/Index.html#redirects-notes-tab",
+            "Notes tab"
+        ],
+        "redirects-managing": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/Redirects\/Index.html#redirects-managing",
+            "Managing existing redirect rules"
+        ],
+        "short-urls": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/ShortURLs\/Index.html#short-urls",
+            "Short URLs"
+        ],
+        "short-urls-scenario": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/ShortURLs\/Index.html#short-urls-scenario",
+            "Scenario - shortening a long URL"
+        ],
+        "short-urls-creating": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/ShortURLs\/Index.html#short-urls-creating",
+            "Creating a short URL"
+        ],
+        "short-urls-creating-general-tab": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/ShortURLs\/Index.html#short-urls-creating-general-tab",
+            "General tab"
+        ],
+        "short-urls-creating-access-tab": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/ShortURLs\/Index.html#short-urls-creating-access-tab",
+            "Access tab"
+        ],
+        "short-urls-creating-notes-tab": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/ShortURLs\/Index.html#short-urls-creating-notes-tab",
+            "Notes tab"
+        ],
+        "short-urls-editing": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/ShortURLs\/Index.html#short-urls-editing",
+            "Edit an existing short URL"
+        ],
+        "login": [
+            "Tutorial for Editors",
+            "main",
+            "Login\/Index.html#login",
+            "Logging in to TYPO3 backend"
+        ],
+        "login-forgot-password": [
+            "Tutorial for Editors",
+            "main",
+            "Login\/Index.html#login-forgot-password",
+            "Troubleshooting: Forgotten password"
+        ],
+        "login-troubleshooting": [
+            "Tutorial for Editors",
+            "main",
+            "Login\/Index.html#login-troubleshooting",
+            "Troubleshooting: You cannot log in"
+        ],
+        "login-troubleshooting-locked": [
+            "Tutorial for Editors",
+            "main",
+            "Login\/Index.html#login-troubleshooting-locked",
+            "The backend is locked for maintenance"
+        ],
+        "login-troubleshooting-failed-logins": [
+            "Tutorial for Editors",
+            "main",
+            "Login\/Index.html#login-troubleshooting-failed-logins",
+            "Too many failed logins"
+        ],
+        "login-troubleshooting-login-reloads": [
+            "Tutorial for Editors",
+            "main",
+            "Login\/Index.html#login-troubleshooting-login-reloads",
+            "The login box reloads but no error message is displayed"
+        ],
+        "login-troubleshooting-administrators": [
+            "Tutorial for Editors",
+            "main",
+            "Login\/Index.html#login-troubleshooting-administrators",
+            "Troubleshooting: Advice for administrators"
+        ],
+        "ending-your-session": [
+            "Tutorial for Editors",
+            "main",
+            "Login\/Index.html#ending-your-session",
+            "Ending your session"
+        ],
+        "logout-how-to": [
+            "Tutorial for Editors",
+            "main",
+            "Login\/Index.html#logout-how-to",
+            "How to log out"
+        ],
+        "media-module": [
+            "Tutorial for Editors",
+            "main",
+            "MediaModule\/Index.html#media-module",
+            "Media upload and management in the TYPO3 backend"
+        ],
+        "the-file-module-or-image-archives": [
+            "Tutorial for Editors",
+            "main",
+            "MediaModule\/Index.html#the-file-module-or-image-archives",
+            "Media upload and management in the TYPO3 backend"
+        ],
+        "the-file-module": [
+            "Tutorial for Editors",
+            "main",
+            "MediaModule\/Index.html#the-file-module",
+            "Media upload and management in the TYPO3 backend"
+        ],
+        "file-module": [
+            "Tutorial for Editors",
+            "main",
+            "MediaModule\/Index.html#file-module",
+            "Media upload and management in the TYPO3 backend"
+        ],
+        "managing-files-in-typo": [
+            "Tutorial for Editors",
+            "main",
+            "MediaModule\/Index.html#managing-files-in-typo",
+            "Managing media in the TYPO3 CMS"
+        ],
+        "managing-files": [
+            "Tutorial for Editors",
+            "main",
+            "MediaModule\/Index.html#managing-files",
+            "Managing media in the TYPO3 CMS"
+        ],
+        "file-metadata": [
+            "Tutorial for Editors",
+            "main",
+            "MediaModule\/Index.html#file-metadata",
+            "File metadata"
+        ],
+        "media-module-clipboard": [
+            "Tutorial for Editors",
+            "main",
+            "MediaModule\/Index.html#media-module-clipboard",
+            "Clipboard"
+        ],
+        "creating-folders": [
+            "Tutorial for Editors",
+            "main",
+            "MediaModule\/Index.html#creating-folders",
+            "Creating new folders"
+        ],
+        "uploading-files": [
+            "Tutorial for Editors",
+            "main",
+            "MediaModule\/Index.html#uploading-files",
+            "Uploading new files"
+        ],
+        "moving-files-drag-and-drop": [
+            "Tutorial for Editors",
+            "main",
+            "MediaModule\/Index.html#moving-files-drag-and-drop",
+            "Moving files and folders with drag and drop"
+        ],
+        "media-module-next-steps": [
+            "Tutorial for Editors",
+            "main",
+            "MediaModule\/Index.html#media-module-next-steps",
+            "Next steps"
+        ],
+        "next-steps": [
+            "Tutorial for Editors",
+            "main",
+            "NextSteps\/Index.html#next-steps",
+            "Next steps"
+        ],
+        "pages-multiple": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/AddingMultiple\/Index.html#pages-multiple",
+            "Creating multiple pages"
+        ],
+        "pages-creating": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/CreatingPages\/Index.html#pages-creating",
+            "Creating pages"
+        ],
+        "pages-creating-tree": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/CreatingPages\/Index.html#pages-creating-tree",
+            "Method 1: Using drag and drop"
+        ],
+        "pages-creating-context": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/CreatingPages\/Index.html#pages-creating-context",
+            "Method 2: Using the context menu"
+        ],
+        "pages-visibility": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/CreatingPages\/Index.html#pages-visibility",
+            "Making your new page visible in the frontend"
+        ],
+        "pages": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/Index.html#pages",
+            "Pages"
+        ],
+        "pages-properties": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties",
+            "Page properties"
+        ],
+        "pages-properties-general": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-general",
+            "General"
+        ],
+        "pages-properties-url-type": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-url-type",
+            "Page type"
+        ],
+        "pages-properties-titles": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-titles",
+            "Page title \/ alternative navigation title"
+        ],
+        "pages-properties-url-segment": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-url-segment",
+            "URL segment"
+        ],
+        "pages-properties-seo": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-seo",
+            "SEO"
+        ],
+        "pages-properties-social-media": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-social-media",
+            "Social media"
+        ],
+        "pages-properties-metadata": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-metadata",
+            "Metadata"
+        ],
+        "pages-properties-appearance": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-appearance",
+            "Appearance"
+        ],
+        "pages-properties-page-layout": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-page-layout",
+            "Page layout \/ Backend Layout"
+        ],
+        "pages-properties-behaviour": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-behaviour",
+            "Behaviour"
+        ],
+        "pages-properties-resources": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-resources",
+            "Resources"
+        ],
+        "pages-properties-accesss": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-accesss",
+            "Access"
+        ],
+        "pages-properties-categories": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-categories",
+            "Categories"
+        ],
+        "pages-properties-notes": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-notes",
+            "Notes"
+        ],
+        "pages-properties-video": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-video",
+            "YouTube video \"Page Properties\" (TYPO3 11.5)"
+        ],
+        "pages-types": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageTypes\/Index.html#pages-types",
+            "Page types"
+        ],
+        "pages-types-default-page-types": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageTypes\/Index.html#pages-types-default-page-types",
+            "Default page types"
+        ],
+        "pages-types-default-page-types-page": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageTypes\/Index.html#pages-types-default-page-types-page",
+            "Pages"
+        ],
+        "pages-types-default-page-types-link": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageTypes\/Index.html#pages-types-default-page-types-link",
+            "Links & redirects"
+        ],
+        "pages-types-default-page-types-special": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageTypes\/Index.html#pages-types-default-page-types-special",
+            "Special containers"
+        ],
+        "pages-types-custom-page-types": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageTypes\/Index.html#pages-types-custom-page-types",
+            "Other page types"
+        ],
+        "pages-drag-drop": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/WorkingWithPages\/Index.html#pages-drag-drop",
+            "Working with pages"
+        ],
+        "pages-working-with": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/WorkingWithPages\/Index.html#pages-working-with",
+            "Working with pages"
+        ],
+        "move-pages": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/WorkingWithPages\/Index.html#move-pages",
+            "Moving pages"
+        ],
+        "copy-pages": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/WorkingWithPages\/Index.html#copy-pages",
+            "Moving pages"
+        ],
+        "delete-pages": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/WorkingWithPages\/Index.html#delete-pages",
+            "Deleting pages"
+        ],
+        "pages-working-with-context-menu": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/WorkingWithPages\/Index.html#pages-working-with-context-menu",
+            "Context menu actions"
+        ],
+        "filter-the-page-tree": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/WorkingWithPages\/Index.html#filter-the-page-tree",
+            "Filtering the page tree"
+        ],
+        "pages-other-features": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/WorkingWithPages\/Index.html#pages-other-features",
+            "Filtering the page tree"
+        ],
+        "the-numeric-clipboard-pads-managing-many-elements": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/AdvancedClipboard\/Index.html#the-numeric-clipboard-pads-managing-many-elements",
+            "Using the clipboard to copy or move multiple records at once"
+        ],
+        "advanced-clipboard-usage": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/AdvancedClipboard\/Index.html#advanced-clipboard-usage",
+            "Using the clipboard to copy or move multiple records at once"
+        ],
+        "clipboard": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/AdvancedClipboard\/Index.html#clipboard",
+            "Using the clipboard to copy or move multiple records at once"
+        ],
+        "list-copy-paste": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/CopyPaste\/Index.html#list-copy-paste",
+            "Copy and paste database record"
+        ],
+        "list-copy-paste-howto": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/CopyPaste\/Index.html#list-copy-paste-howto",
+            "How to copy and paste in the Records module"
+        ],
+        "list-copy-paste-trouble": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/CopyPaste\/Index.html#list-copy-paste-trouble",
+            "Trouble shooting during copy and paste"
+        ],
+        "list-copy-paste-copy-1": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/CopyPaste\/Index.html#list-copy-paste-copy-1",
+            "Why is the header appended with (copy 1)?"
+        ],
+        "list-copy-paste-record-on-page": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/CopyPaste\/Index.html#list-copy-paste-record-on-page",
+            "Attempt to insert record on a page that can't store record type"
+        ],
+        "list-copy-paste-unique": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/CopyPaste\/Index.html#list-copy-paste-unique",
+            "The value of the field \"username\" has been changed as it is required to be unique"
+        ],
+        "the-list-module-and-clipboard": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/Index.html#the-list-module-and-clipboard",
+            "Records"
+        ],
+        "list-module": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/Index.html#list-module",
+            "Records"
+        ],
+        "mass-editing": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/MassEditing\/Index.html#mass-editing",
+            "Mass editing"
+        ],
+        "selective-editing-fields": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/MassEditing\/Index.html#selective-editing-fields",
+            "Bulk edit all content elements on a page"
+        ],
+        "editing-all-headers": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/MassEditing\/Index.html#editing-all-headers",
+            "Bulk edit all content elements on a page"
+        ],
+        "selective-editing-fields-choose": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/MassEditing\/Index.html#selective-editing-fields-choose",
+            "Bulk edit all content elements on a page"
+        ],
+        "selective-editing": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/MassEditing\/Index.html#selective-editing",
+            "Edit selected content elements"
+        ],
+        "using-the-list-module-effectively": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/UsingEffectively\/Index.html#using-the-list-module-effectively",
+            "Using the Records module"
+        ],
+        "list-module-header": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/UsingEffectively\/Index.html#list-module-header",
+            "The Records module header"
+        ],
+        "list-module-record-type": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/UsingEffectively\/Index.html#list-module-record-type",
+            "Editing a record of a certain type"
+        ],
+        "list-module-record-search": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/UsingEffectively\/Index.html#list-module-record-search",
+            "Finding a record in a long list"
+        ],
+        "list-module-languages": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/UsingEffectively\/Index.html#list-module-languages",
+            "Showing the records of certain languages"
+        ],
+        "dashboard-widgets": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/DashboardWidgets.html#dashboard-widgets",
+            "Dashboard widgets for search engine optimization (SEO) in TYPO3"
+        ],
+        "dashboard-widgets-missing-description": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/DashboardWidgets.html#dashboard-widgets-missing-description",
+            "\"Missing Meta Description\" widget"
+        ],
+        "dashboard-widgets-missing-description-add": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/DashboardWidgets.html#dashboard-widgets-missing-description-add",
+            "Adding the \"Missing Meta Description\" widget to your personal Dashboard"
+        ],
+        "dashboard-widgets-missing-description-use": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/DashboardWidgets.html#dashboard-widgets-missing-description-use",
+            "Using the \"Missing Meta Description\" widget to improve SEO results"
+        ],
+        "seo": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo",
+            "Search engine optimization (SEO) for TYPO3 editors"
+        ],
+        "seo-page-properties-general": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-general",
+            "General tab"
+        ],
+        "seo-page-properties-general-title": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-general-title",
+            "Page title"
+        ],
+        "seo-page-properties-general-url-segment": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-general-url-segment",
+            "URL segment (slug)"
+        ],
+        "seo-page-properties-seo": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-seo",
+            "SEO tab"
+        ],
+        "title-for-search-engines": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#title-for-search-engines",
+            "Title for search engines"
+        ],
+        "seo-page-properties-description": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-description",
+            "Description"
+        ],
+        "seo-page-properties-index-page": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-index-page",
+            "Index this page"
+        ],
+        "seo-page-properties-follow-page": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-follow-page",
+            "Follow this page"
+        ],
+        "seo-page-properties-canonical": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-canonical",
+            "Canonical link"
+        ],
+        "seo-page-properties-frequency": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-frequency",
+            "Change frequency"
+        ],
+        "seo-page-properties-priority": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-priority",
+            "Priority"
+        ],
+        "seo-page-properties-social-media": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-social-media",
+            "Social media"
+        ],
+        "seo-page-properties-social-media-title": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-social-media-title",
+            "Title"
+        ],
+        "seo-page-properties-social-media-description": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-social-media-description",
+            "Description"
+        ],
+        "seo-page-properties-social-media-image": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-social-media-image",
+            "Image"
+        ],
+        "seo-page-properties-metadata": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-metadata",
+            "Metadata tab"
+        ],
+        "sitemap": [
+            "Tutorial for Editors",
+            "main",
+            "Sitemap.html#sitemap",
+            "Sitemap"
+        ],
+        "user-settings-account-security": [
+            "Tutorial for Editors",
+            "main",
+            "UserSettings\/AccountSecurity\/Index.html#user-settings-account-security",
+            "Change your password and set up multi-factor authentication"
+        ],
+        "user-settings-backend-appearance": [
+            "Tutorial for Editors",
+            "main",
+            "UserSettings\/BackendAppearance\/Index.html#user-settings-backend-appearance",
+            "Change how the TYPO3 backend looks and behaves"
+        ],
+        "user-settings-backend-themes": [
+            "Tutorial for Editors",
+            "main",
+            "UserSettings\/BackendAppearance\/Index.html#user-settings-backend-themes",
+            "Backend themes"
+        ],
+        "user-settings": [
+            "Tutorial for Editors",
+            "main",
+            "UserSettings\/Index.html#user-settings",
+            "User settings"
+        ],
+        "user-settings-personal-data": [
+            "Tutorial for Editors",
+            "main",
+            "UserSettings\/PersonalData\/Index.html#user-settings-personal-data",
+            "Change your name, email address and backend language"
+        ],
+        "user-settings-personalization": [
+            "Tutorial for Editors",
+            "main",
+            "UserSettings\/Personalization\/Index.html#user-settings-personalization",
+            "Fine-tune editing, uploads and copying in the backend"
+        ]
+    },
+    "std:title": {
+        "about-this-guide": [
+            "Tutorial for Editors",
+            "main",
+            "About.html#about",
+            "About this guide"
+        ],
+        "credits-1": [
+            "Tutorial for Editors",
+            "main",
+            "About.html#credits",
+            "Credits"
+        ],
+        "feedback-1": [
+            "Tutorial for Editors",
+            "main",
+            "About.html#feedback",
+            "Feedback"
+        ],
+        "contact-the-documentation-team": [
+            "Tutorial for Editors",
+            "main",
+            "About.html#contact-doc-team",
+            "Contact the Documentation Team"
+        ],
+        "access-control-1": [
+            "Tutorial for Editors",
+            "main",
+            "AccessControl\/Index.html#access-control",
+            "Access control"
+        ],
+        "frontend-login-1": [
+            "Tutorial for Editors",
+            "main",
+            "AccessControl\/Login\/Index.html#frontend-login",
+            "Frontend login"
+        ],
+        "frontend-users": [
+            "Tutorial for Editors",
+            "main",
+            "AccessControl\/Login\/Index.html#frontend-login-users",
+            "Frontend users"
+        ],
+        "create-a-user-group-and-user": [
+            "Tutorial for Editors",
+            "main",
+            "AccessControl\/Login\/Index.html#create-a-usergroup",
+            "Create a user group and user"
+        ],
+        "assign-access-rights": [
+            "Tutorial for Editors",
+            "main",
+            "AccessControl\/Login\/Index.html#frontend-login-rights",
+            "Assign access rights"
+        ],
+        "add-a-login-form": [
+            "Tutorial for Editors",
+            "main",
+            "AccessControl\/Login\/Index.html#frontend-login-form",
+            "Add a login form"
+        ],
+        "elements-visibility": [
+            "Tutorial for Editors",
+            "main",
+            "AccessControl\/Visibility\/Index.html#visibility",
+            "Elements visibility"
+        ],
+        "publication-dates": [
+            "Tutorial for Editors",
+            "main",
+            "AccessControl\/Visibility\/Index.html#visibility-dates",
+            "Publication dates"
+        ],
+        "accessibility-for-editors": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Index.html#accessibility-overview",
+            "Accessibility for editors"
+        ],
+        "what-the-figures-say-about-your-part-of-the-work": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Index.html#accessibility-statistics",
+            "What the figures say about your part of the work"
+        ],
+        "one-million-home-pages": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Index.html#accessibility-statistics-webaim",
+            "One million home pages"
+        ],
+        "a-second-scan-of-page-content": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Index.html#accessibility-statistics-audioeye",
+            "A second scan of page content"
+        ],
+        "where-to-go-next": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Index.html#accessibility-where-next",
+            "Where to go next"
+        ],
+        "legal-requirements": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/LegalFoundations.html#accessibility-legal",
+            "Legal requirements"
+        ],
+        "the-guidelines-laws-point-to": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/LegalFoundations.html#accessibility-legal-wcag",
+            "The guidelines laws point to"
+        ],
+        "european-union": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/LegalFoundations.html#accessibility-legal-eu",
+            "European Union"
+        ],
+        "other-countries": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/LegalFoundations.html#accessibility-legal-national",
+            "Other countries"
+        ],
+        "what-this-asks-of-an-editor": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/LegalFoundations.html#accessibility-legal-editor",
+            "What this asks of an editor"
+        ],
+        "sources-and-further-reading": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Sources.html#accessibility-sources",
+            "Sources and further reading"
+        ],
+        "guidelines-and-how-to-meet-them": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Sources.html#accessibility-sources-w3c",
+            "Guidelines and how to meet them"
+        ],
+        "writing-and-structure": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Sources.html#accessibility-sources-writing",
+            "Writing and structure"
+        ],
+        "checking-a-page": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Sources.html#accessibility-sources-evaluate",
+            "Checking a page"
+        ],
+        "european-legislation": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Sources.html#accessibility-sources-law",
+            "European legislation"
+        ],
+        "studies-cited-for-the-figures": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Sources.html#accessibility-sources-studies",
+            "Studies cited for the figures"
+        ],
+        "tips-and-tricks": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/TipsAndTricks.html#accessibility-tips",
+            "Tips and tricks"
+        ],
+        "before-you-publish": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/TipsAndTricks.html#accessibility-tips-before-publish",
+            "Before you publish"
+        ],
+        "read-the-title-out-of-context": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/TipsAndTricks.html#accessibility-tips-title",
+            "Read the title out of context"
+        ],
+        "walk-the-headings": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/TipsAndTricks.html#accessibility-tips-headings",
+            "Walk the headings"
+        ],
+        "read-the-links-as-a-list": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/TipsAndTricks.html#accessibility-tips-links",
+            "Read the links as a list"
+        ],
+        "cover-the-image": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/TipsAndTricks.html#accessibility-tips-images",
+            "Cover the image"
+        ],
+        "play-the-video-with-the-sound-off": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/TipsAndTricks.html#accessibility-tips-media",
+            "Play the video with the sound off"
+        ],
+        "check-color-and-text-saved-as-an-image": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/TipsAndTricks.html#accessibility-tips-color",
+            "Check color and text saved as an image"
+        ],
+        "label-every-field": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/TipsAndTricks.html#accessibility-tips-forms",
+            "Label every field"
+        ],
+        "mark-a-language-change": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/TipsAndTricks.html#accessibility-tips-language",
+            "Mark a language change"
+        ],
+        "mark-the-header-cells-of-a-table": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/TipsAndTricks.html#accessibility-tips-tables",
+            "Mark the header cells of a table"
+        ],
+        "what-to-hand-to-your-integrator": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/TipsAndTricks.html#accessibility-tips-integrator",
+            "What to hand to your integrator"
+        ],
+        "writing-accessible-text": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/WritingAccessibleText.html#accessibility-writing-accessible-text",
+            "Writing accessible text"
+        ],
+        "provide-informative-unique-page-titles": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/WritingAccessibleText.html#accessibility-writing-accessible-text-provide-informative-unique",
+            "Provide informative, unique page titles"
+        ],
+        "use-headings-to-convey-meaning-and-structure": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/WritingAccessibleText.html#accessibility-writing-accessible-text-headings-convey-meaning",
+            "Use headings to convey meaning and structure"
+        ],
+        "make-link-text-meaningful": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/WritingAccessibleText.html#accessibility-writing-accessible-text-make-link-text",
+            "Make link text meaningful"
+        ],
+        "write-meaningful-text-alternatives-for-images": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/WritingAccessibleText.html#accessibility-writing-accessible-text-write-meaningful-text",
+            "Write meaningful text alternatives for images"
+        ],
+        "provide-transcripts-and-captions": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/WritingAccessibleText.html#accessibility-writing-captions",
+            "Provide transcripts and captions"
+        ],
+        "provide-clear-instructions": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/WritingAccessibleText.html#accessibility-writing-instructions",
+            "Provide clear instructions"
+        ],
+        "keep-content-clear-and-concise": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/WritingAccessibleText.html#accessibility-writing-clear-language",
+            "Keep content clear and concise"
+        ],
+        "accessibility-1": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/Accessibility.html#accessibility",
+            "Accessibility"
+        ],
+        "cache-1": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/Cache.html#cache",
+            "Cache"
+        ],
+        "browser-cache-1": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/Cache.html#browser-cache",
+            "Browser cache"
+        ],
+        "automatic-cache-clearing": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/Cache.html#cache-automatic",
+            "Automatic cache clearing"
+        ],
+        "scenario-changes-are-not-visible-in-the-frontend": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/Cache.html#cache-frontend",
+            "Scenario: Changes are not visible in the frontend"
+        ],
+        "manual-cache-clearing": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/Cache.html#cache-manual",
+            "Manual cache clearing"
+        ],
+        "previewing-a-page-without-clearing-the-cache": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/Cache.html#cache-preview",
+            "Previewing a page without clearing the cache"
+        ],
+        "copyright-and-data-privacy": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/Copyright.html#copyright",
+            "Copyright and data privacy"
+        ],
+        "copyright-1": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/Copyright.html#copyright-copyright",
+            "Copyright"
+        ],
+        "data-privacy": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/Copyright.html#copyright-data-privacy",
+            "Data privacy"
+        ],
+        "file-abstraction-layer-fal": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/FileAbstractionLayer.html#fal",
+            "File abstraction layer (FAL)"
+        ],
+        "working-with-multi-media-digital-asset-management": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/FileAbstractionLayer.html#fal-working-multi-media",
+            "Working with multi media: Digital asset management"
+        ],
+        "concepts-1": [
+            "Tutorial for Editors",
+            "main",
+            "Concepts\/Index.html#concepts",
+            "Concepts"
+        ],
+        "creating-a-contact-form": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/ContactForm\/Index.html#template-form",
+            "Creating a contact form"
+        ],
+        "create-a-form-from-scratch": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/ContactForm\/Index.html#create-form-scratch",
+            "Create a form from scratch"
+        ],
+        "working-with-forms-1": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/ContactForm\/Index.html#working-with-forms",
+            "Working with forms"
+        ],
+        "managing-content": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Content\/Index.html#content-working",
+            "Managing content"
+        ],
+        "overview-of-the-layout-module-in-typo3": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Content\/Index.html#content-working-overview",
+            "Overview of the Layout module in TYPO3"
+        ],
+        "hiding-content-elements": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Content\/Index.html#content-working-hiding",
+            "Hiding content elements"
+        ],
+        "moving-content-elements": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Content\/Index.html#content-working-moving",
+            "Moving content elements"
+        ],
+        "copy-and-paste-content-elements": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Content\/Index.html#content-working-copy-paste",
+            "Copy and paste content elements"
+        ],
+        "finding-content-using-the-live-search": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Content\/Index.html#content-working-life-search",
+            "Finding content using the live search"
+        ],
+        "troubleshooting-page-management": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Content\/Index.html#content-working-troubleshooting",
+            "Troubleshooting page management"
+        ],
+        "unused-elements-detected-on-this-page": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Content\/Index.html#content-working-troubleshooting-unused",
+            "Unused elements detected on this page"
+        ],
+        "restore-deleted-content-elements-using-the-recycler": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Content\/Index.html#content-working-troubleshooting-recycler",
+            "Restore deleted content elements using the Recycler"
+        ],
+        "undo-changes-using-the-page-history": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Content\/Index.html#content-working-troubleshooting-history",
+            "Undo changes using the page history"
+        ],
+        "the-be-user-xxx-began-to-edit-this-record-x-min-ago": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Content\/Index.html#content-working-began-editing",
+            "The BE-User 'xxx' began to edit this record x min ago"
+        ],
+        "creating-content": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/CreatingContent\/Index.html#content-creating",
+            "Creating content"
+        ],
+        "types-of-content-elements": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/CreatingContent\/Index.html#content-types",
+            "Types of content elements"
+        ],
+        "content-elements-seen-by-a-typical-typo3-editor": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/CreatingContent\/Index.html#content-types-editor",
+            "Content elements seen by a typical TYPO3 editor"
+        ],
+        "typical-page-content": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/CreatingContent\/Index.html#content-typical",
+            "Typical page content"
+        ],
+        "lists": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/CreatingContent\/Index.html#content-list",
+            "Lists"
+        ],
+        "advanced-content-elements": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/CreatingContent\/Index.html#content-types-advanced",
+            "Advanced content elements"
+        ],
+        "form-elements": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/CreatingContent\/Index.html#content-form",
+            "Form elements"
+        ],
+        "menu-elements": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/CreatingContent\/Index.html#content-menu",
+            "Menu elements"
+        ],
+        "plugins": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/CreatingContent\/Index.html#content-plugin",
+            "Plugins"
+        ],
+        "special-elements": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/CreatingContent\/Index.html#content-special",
+            "Special elements"
+        ],
+        "add-new-content-to-a-page": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/CreatingContent\/Index.html#content-new-element",
+            "Add new content to a page"
+        ],
+        "editing-content": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/EditingContent\/Index.html#content-editing",
+            "Editing content"
+        ],
+        "changing-text-and-setting-in-a-content-element": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/EditingContent\/Index.html#content-editing-change-text",
+            "Changing text and setting in a content element"
+        ],
+        "troubleshooting-content-element-edits": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/EditingContent\/Index.html#content-editing-trouble-shooting",
+            "Troubleshooting content element edits"
+        ],
+        "content-element-has-no-edit-button": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/EditingContent\/Index.html#content-editing-trouble-shooting-button",
+            "Content element has no edit button"
+        ],
+        "content-element-does-not-get-saved": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/EditingContent\/Index.html#content-editing-trouble-saving",
+            "Content element does not get saved"
+        ],
+        "error-message-after-saving-a-content-element": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/EditingContent\/Index.html#content-editing-trouble-error",
+            "Error message after saving a content element"
+        ],
+        "changes-not-visible-in-the-frontend-after-saving-a-content-element": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/EditingContent\/Index.html#content-editing-trouble-changes-not-visible",
+            "Changes not visible in the frontend after saving a content element"
+        ],
+        "changing-the-type-of-an-existing-content-element": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/EditingContent\/Index.html#content-editing-type",
+            "Changing the type of an existing content element"
+        ],
+        "working-with-images": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Images\/Index.html#images",
+            "Working with images"
+        ],
+        "add-an-image-to-the-content-element": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Images\/Index.html#add-image-to-page",
+            "Add an image to the content element"
+        ],
+        "configure-the-image-1": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Images\/Index.html#configure-the-image",
+            "Configure the image"
+        ],
+        "image-metadata": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Images\/Index.html#override-image-metadata",
+            "Image metadata"
+        ],
+        "media-adjustments": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Images\/Index.html#images-appearance",
+            "Media adjustments"
+        ],
+        "gallery-settings": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Images\/Index.html#images-gallery",
+            "Gallery settings"
+        ],
+        "behavior": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Images\/Index.html#images-behavior",
+            "Behavior"
+        ],
+        "manage-your-images-in-the-media-module": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Images\/Index.html#images-media",
+            "Manage your images in the Media module"
+        ],
+        "content-elements-1": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Index.html#content-elements",
+            "Content elements"
+        ],
+        "embedding-videos-as-content-into-a-typo3-website": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Media\/Index.html#media",
+            "Embedding videos as content into a TYPO3 website"
+        ],
+        "add-a-video-to-a-page": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Media\/Index.html#add-video-to-page",
+            "Add a video to a page"
+        ],
+        "configure-the-video-1": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Media\/Index.html#configure-the-video",
+            "Configure the video"
+        ],
+        "external-video-sources-and-data-privacy": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/Media\/Index.html#video-data-privacy",
+            "External video sources and data privacy"
+        ],
+        "the-rich-text-editor": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/RichTextEditor\/Index.html#rte",
+            "The rich text editor"
+        ],
+        "creating-a-link": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/RichTextEditor\/Index.html#rte-linking",
+            "Creating a link"
+        ],
+        "internal-links": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/RichTextEditor\/Index.html#rte-linking-internal",
+            "Internal links"
+        ],
+        "external-links": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/RichTextEditor\/Index.html#rte-linking-external",
+            "External links"
+        ],
+        "checking-and-opening-a-link": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/RichTextEditor\/Index.html#rte-linking-preview",
+            "Checking and opening a link"
+        ],
+        "removing-a-link": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/RichTextEditor\/Index.html#rte-linking-remove",
+            "Removing a link"
+        ],
+        "non-breaking-spaces-and-soft-hyphens": [
+            "Tutorial for Editors",
+            "main",
+            "ContentElements\/RichTextEditor\/Index.html#rte-whitespace",
+            "Non-breaking spaces and soft hyphens"
+        ],
+        "deep-linking": [
+            "Tutorial for Editors",
+            "main",
+            "DeepLinking\/Index.html#deeplinking",
+            "Deep linking"
+        ],
+        "sharing-links": [
+            "Tutorial for Editors",
+            "main",
+            "DeepLinking\/Index.html#deeplinking-sharing",
+            "Sharing links"
+        ],
+        "linking-to-a-page": [
+            "Tutorial for Editors",
+            "main",
+            "DeepLinking\/Index.html#deeplinking-sharing-linking-page",
+            "Linking to a page"
+        ],
+        "linking-to-a-content-element": [
+            "Tutorial for Editors",
+            "main",
+            "DeepLinking\/Index.html#deeplinking-sharing-linking-content-element",
+            "Linking to a content element"
+        ],
+        "linking-to-backend-modules": [
+            "Tutorial for Editors",
+            "main",
+            "DeepLinking\/Index.html#deeplinking-sharing-linking-backend-modules",
+            "Linking to backend modules"
+        ],
+        "urls-and-deep-links": [
+            "Tutorial for Editors",
+            "main",
+            "DeepLinking\/Index.html#deeplinking-bestpractices",
+            "URLs and deep links"
+        ],
+        "sharing-a-preview-with-a-qr-code": [
+            "Tutorial for Editors",
+            "main",
+            "DeepLinking\/Index.html#deeplinking-qr-code",
+            "Sharing a preview with a QR code"
+        ],
+        "backend-search-1": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/BackendSearch\/Index.html#backend-search",
+            "Backend search"
+        ],
+        "what-to-do-when-an-error-page-shows": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/ErrorPage\/Index.html#error-page",
+            "What to do when an error page shows"
+        ],
+        "on-the-live-website": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/ErrorPage\/Index.html#error-page-live",
+            "On the live website"
+        ],
+        "on-a-development-or-test-system": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/ErrorPage\/Index.html#error-page-details",
+            "On a development or test system"
+        ],
+        "help-within-typo3": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/Index.html#help-inside",
+            "Help within TYPO3"
+        ],
+        "internal-notes-in-the-typo3-backend": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/InternalNotes\/Index.html#internal-notes",
+            "Internal notes in the TYPO3 backend"
+        ],
+        "keyboard-commands-1": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/KeyboardCommands\/Index.html#keyboard-commands",
+            "Keyboard commands"
+        ],
+        "navigating-the-page-tree-using-a-keyboard": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/KeyboardCommands\/Index.html#keyboard-commands-page-tree",
+            "Navigating the page tree using a keyboard"
+        ],
+        "actions-in-backend-forms": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/KeyboardCommands\/Index.html#keyboard-commands-forms",
+            "Actions in backend forms"
+        ],
+        "editing-text-in-the-rich-text-editor-rte": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/KeyboardCommands\/Index.html#keyboard-commands-rte",
+            "Editing text in the rich text editor (RTE)"
+        ],
+        "reloading-pages-and-clearing-browser-cache": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/KeyboardCommands\/Index.html#keyboard-commands-browser",
+            "Reloading pages and clearing browser cache"
+        ],
+        "opening-the-backend-search-modal": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/KeyboardCommands\/Index.html#keyboard-commands-search",
+            "Opening the backend search modal"
+        ],
+        "multiselect-in-content-elements": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/KeyboardCommands\/Index.html#keyboard-commands-multiselect",
+            "Multiselect in content elements"
+        ],
+        "typo3-online-documentation-1": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/OnlineDocumentation\/Index.html#typo3-online-documentation",
+            "TYPO3 online documentation"
+        ],
+        "tooltips-1": [
+            "Tutorial for Editors",
+            "main",
+            "HelpInside\/Tooltips\/Index.html#tooltips",
+            "Tooltips"
+        ],
+        "typo3-editors-guide": [
+            "Tutorial for Editors",
+            "main",
+            "Index.html#start",
+            "TYPO3 Editors Guide"
+        ],
+        "working-with-languages": [
+            "Tutorial for Editors",
+            "main",
+            "Languages\/Index.html#languages",
+            "Working with languages"
+        ],
+        "language-configuration": [
+            "Tutorial for Editors",
+            "main",
+            "Languages\/Index.html#languages-new",
+            "Language configuration"
+        ],
+        "translation-strategies": [
+            "Tutorial for Editors",
+            "main",
+            "Languages\/Index.html#translation-modes",
+            "Translation strategies"
+        ],
+        "translate-connected": [
+            "Tutorial for Editors",
+            "main",
+            "Languages\/Index.html#languages-translation-mode-connected",
+            "Translate (connected)"
+        ],
+        "copy-independent": [
+            "Tutorial for Editors",
+            "main",
+            "Languages\/Index.html#languages-translation-mode-copy",
+            "Copy (independent)"
+        ],
+        "localizing-a-page": [
+            "Tutorial for Editors",
+            "main",
+            "Languages\/Index.html#languages-translations",
+            "Localizing a page"
+        ],
+        "create-the-page-translation": [
+            "Tutorial for Editors",
+            "main",
+            "Languages\/Index.html#languages-create-page-translation",
+            "Create the page translation"
+        ],
+        "changing-the-view": [
+            "Tutorial for Editors",
+            "main",
+            "Languages\/Index.html#adjusting-the-view",
+            "Changing the view"
+        ],
+        "next-steps": [
+            "Tutorial for Editors",
+            "main",
+            "MediaModule\/Index.html#media-module-next-steps",
+            "Next steps"
+        ],
+        "link-management-1": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/Index.html#link-management",
+            "Link management"
+        ],
+        "quick-response-qr-codes": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/QRCodes\/Index.html#qr-codes",
+            "Quick response (QR) codes"
+        ],
+        "scenario-sharing-your-qr-code": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/QRCodes\/Index.html#qr-codes-scenario",
+            "Scenario - sharing your QR code"
+        ],
+        "creating-a-qr-code": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/QRCodes\/Index.html#qr-codes-creating",
+            "Creating a QR code"
+        ],
+        "general-tab": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-general",
+            "General tab"
+        ],
+        "access-tab": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/ShortURLs\/Index.html#short-urls-creating-access-tab",
+            "Access tab"
+        ],
+        "notes-tab": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/ShortURLs\/Index.html#short-urls-creating-notes-tab",
+            "Notes tab"
+        ],
+        "downloading-your-new-qr-code": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/QRCodes\/Index.html#qr-codes-download",
+            "Downloading your new QR code"
+        ],
+        "edit-an-existing-qr-code": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/QRCodes\/Index.html#qr-codes-edit",
+            "Edit an existing QR code"
+        ],
+        "redirects-1": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/Redirects\/Index.html#redirects",
+            "Redirects"
+        ],
+        "scenario-preserving-old-urls": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/Redirects\/Index.html#redirects-scenario-preserving",
+            "Scenario - preserving old URLs"
+        ],
+        "scenario-preparing-a-url-for-future-use": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/Redirects\/Index.html#redirects-scenario-preparing",
+            "Scenario - preparing a URL for future use"
+        ],
+        "creating-a-redirect": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/Redirects\/Index.html#redirects-creating",
+            "Creating a redirect"
+        ],
+        "setting-a-source-domain-and-source-path": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/Redirects\/Index.html#redirects-source-domain",
+            "Setting a source domain and source path"
+        ],
+        "setting-a-target": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/Redirects\/Index.html#redirects-target",
+            "Setting a target"
+        ],
+        "managing-existing-redirect-rules": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/Redirects\/Index.html#redirects-managing",
+            "Managing existing redirect rules"
+        ],
+        "short-urls-1": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/ShortURLs\/Index.html#short-urls",
+            "Short URLs"
+        ],
+        "scenario-shortening-a-long-url": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/ShortURLs\/Index.html#short-urls-scenario",
+            "Scenario - shortening a long URL"
+        ],
+        "creating-a-short-url": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/ShortURLs\/Index.html#short-urls-creating",
+            "Creating a short URL"
+        ],
+        "edit-an-existing-short-url": [
+            "Tutorial for Editors",
+            "main",
+            "LinkManagement\/ShortURLs\/Index.html#short-urls-editing",
+            "Edit an existing short URL"
+        ],
+        "logging-in-to-typo3-backend": [
+            "Tutorial for Editors",
+            "main",
+            "Login\/Index.html#login",
+            "Logging in to TYPO3 backend"
+        ],
+        "troubleshooting-forgotten-password": [
+            "Tutorial for Editors",
+            "main",
+            "Login\/Index.html#login-forgot-password",
+            "Troubleshooting: Forgotten password"
+        ],
+        "troubleshooting-you-cannot-log-in": [
+            "Tutorial for Editors",
+            "main",
+            "Login\/Index.html#login-troubleshooting",
+            "Troubleshooting: You cannot log in"
+        ],
+        "the-backend-is-locked-for-maintenance": [
+            "Tutorial for Editors",
+            "main",
+            "Login\/Index.html#login-troubleshooting-locked",
+            "The backend is locked for maintenance"
+        ],
+        "too-many-failed-logins": [
+            "Tutorial for Editors",
+            "main",
+            "Login\/Index.html#login-troubleshooting-failed-logins",
+            "Too many failed logins"
+        ],
+        "the-login-box-reloads-but-no-error-message-is-displayed": [
+            "Tutorial for Editors",
+            "main",
+            "Login\/Index.html#login-troubleshooting-login-reloads",
+            "The login box reloads but no error message is displayed"
+        ],
+        "troubleshooting-advice-for-administrators": [
+            "Tutorial for Editors",
+            "main",
+            "Login\/Index.html#login-troubleshooting-administrators",
+            "Troubleshooting: Advice for administrators"
+        ],
+        "ending-your-session-1": [
+            "Tutorial for Editors",
+            "main",
+            "Login\/Index.html#ending-your-session",
+            "Ending your session"
+        ],
+        "how-to-log-out": [
+            "Tutorial for Editors",
+            "main",
+            "Login\/Index.html#logout-how-to",
+            "How to log out"
+        ],
+        "media-upload-and-management-in-the-typo3-backend": [
+            "Tutorial for Editors",
+            "main",
+            "MediaModule\/Index.html#media-module",
+            "Media upload and management in the TYPO3 backend"
+        ],
+        "managing-media-in-the-typo3-cms": [
+            "Tutorial for Editors",
+            "main",
+            "MediaModule\/Index.html#managing-files-in-typo",
+            "Managing media in the TYPO3 CMS"
+        ],
+        "file-metadata-1": [
+            "Tutorial for Editors",
+            "main",
+            "MediaModule\/Index.html#file-metadata",
+            "File metadata"
+        ],
+        "clipboard": [
+            "Tutorial for Editors",
+            "main",
+            "MediaModule\/Index.html#media-module-clipboard",
+            "Clipboard"
+        ],
+        "creating-new-folders": [
+            "Tutorial for Editors",
+            "main",
+            "MediaModule\/Index.html#creating-folders",
+            "Creating new folders"
+        ],
+        "uploading-new-files": [
+            "Tutorial for Editors",
+            "main",
+            "MediaModule\/Index.html#uploading-files",
+            "Uploading new files"
+        ],
+        "moving-files-and-folders-with-drag-and-drop": [
+            "Tutorial for Editors",
+            "main",
+            "MediaModule\/Index.html#moving-files-drag-and-drop",
+            "Moving files and folders with drag and drop"
+        ],
+        "next-steps-1": [
+            "Tutorial for Editors",
+            "main",
+            "NextSteps\/Index.html#next-steps",
+            "Next steps"
+        ],
+        "creating-multiple-pages": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/AddingMultiple\/Index.html#pages-multiple",
+            "Creating multiple pages"
+        ],
+        "creating-pages": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/CreatingPages\/Index.html#pages-creating",
+            "Creating pages"
+        ],
+        "method-1-using-drag-and-drop": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/CreatingPages\/Index.html#pages-creating-tree",
+            "Method 1: Using drag and drop"
+        ],
+        "method-2-using-the-context-menu": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/CreatingPages\/Index.html#pages-creating-context",
+            "Method 2: Using the context menu"
+        ],
+        "making-your-new-page-visible-in-the-frontend": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/CreatingPages\/Index.html#pages-visibility",
+            "Making your new page visible in the frontend"
+        ],
+        "pages-1": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/Index.html#pages",
+            "Pages"
+        ],
+        "page-properties": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties",
+            "Page properties"
+        ],
+        "general": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-general",
+            "General"
+        ],
+        "page-type": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-url-type",
+            "Page type"
+        ],
+        "page-title-alternative-navigation-title": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-titles",
+            "Page title \/ alternative navigation title"
+        ],
+        "url-segment": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-url-segment",
+            "URL segment"
+        ],
+        "seo": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-seo",
+            "SEO"
+        ],
+        "social-media": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-social-media",
+            "Social media"
+        ],
+        "metadata": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-metadata",
+            "Metadata"
+        ],
+        "appearance": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-appearance",
+            "Appearance"
+        ],
+        "page-layout-backend-layout": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-page-layout",
+            "Page layout \/ Backend Layout"
+        ],
+        "behaviour": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-behaviour",
+            "Behaviour"
+        ],
+        "resources": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-resources",
+            "Resources"
+        ],
+        "access": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-accesss",
+            "Access"
+        ],
+        "categories": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-categories",
+            "Categories"
+        ],
+        "notes": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-notes",
+            "Notes"
+        ],
+        "youtube-video-page-properties-typo3-11-5": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageProperties\/Index.html#pages-properties-video",
+            "YouTube video \"Page Properties\" (TYPO3 11.5)"
+        ],
+        "page-types": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageTypes\/Index.html#pages-types",
+            "Page types"
+        ],
+        "default-page-types": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageTypes\/Index.html#pages-types-default-page-types",
+            "Default page types"
+        ],
+        "pages": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageTypes\/Index.html#pages-types-default-page-types-page",
+            "Pages"
+        ],
+        "links-redirects": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageTypes\/Index.html#pages-types-default-page-types-link",
+            "Links & redirects"
+        ],
+        "special-containers": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageTypes\/Index.html#pages-types-default-page-types-special",
+            "Special containers"
+        ],
+        "other-page-types": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/PageTypes\/Index.html#pages-types-custom-page-types",
+            "Other page types"
+        ],
+        "working-with-pages": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/WorkingWithPages\/Index.html#pages-drag-drop",
+            "Working with pages"
+        ],
+        "moving-pages": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/WorkingWithPages\/Index.html#move-pages",
+            "Moving pages"
+        ],
+        "deleting-pages": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/WorkingWithPages\/Index.html#delete-pages",
+            "Deleting pages"
+        ],
+        "context-menu-actions": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/WorkingWithPages\/Index.html#pages-working-with-context-menu",
+            "Context menu actions"
+        ],
+        "filtering-the-page-tree": [
+            "Tutorial for Editors",
+            "main",
+            "Pages\/WorkingWithPages\/Index.html#filter-the-page-tree",
+            "Filtering the page tree"
+        ],
+        "using-the-clipboard-to-copy-or-move-multiple-records-at-once": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/AdvancedClipboard\/Index.html#the-numeric-clipboard-pads-managing-many-elements",
+            "Using the clipboard to copy or move multiple records at once"
+        ],
+        "copy-and-paste-database-record": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/CopyPaste\/Index.html#list-copy-paste",
+            "Copy and paste database record"
+        ],
+        "how-to-copy-and-paste-in-the-records-module": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/CopyPaste\/Index.html#list-copy-paste-howto",
+            "How to copy and paste in the Records module"
+        ],
+        "trouble-shooting-during-copy-and-paste": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/CopyPaste\/Index.html#list-copy-paste-trouble",
+            "Trouble shooting during copy and paste"
+        ],
+        "why-is-the-header-appended-with-copy-1": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/CopyPaste\/Index.html#list-copy-paste-copy-1",
+            "Why is the header appended with (copy 1)?"
+        ],
+        "attempt-to-insert-record-on-a-page-that-can-t-store-record-type": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/CopyPaste\/Index.html#list-copy-paste-record-on-page",
+            "Attempt to insert record on a page that can't store record type"
+        ],
+        "the-value-of-the-field-username-has-been-changed-as-it-is-required-to-be-unique": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/CopyPaste\/Index.html#list-copy-paste-unique",
+            "The value of the field \"username\" has been changed as it is required to be unique"
+        ],
+        "records": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/Index.html#the-list-module-and-clipboard",
+            "Records"
+        ],
+        "mass-editing-1": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/MassEditing\/Index.html#mass-editing",
+            "Mass editing"
+        ],
+        "bulk-edit-all-content-elements-on-a-page": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/MassEditing\/Index.html#selective-editing-fields",
+            "Bulk edit all content elements on a page"
+        ],
+        "edit-selected-content-elements": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/MassEditing\/Index.html#selective-editing",
+            "Edit selected content elements"
+        ],
+        "using-the-records-module": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/UsingEffectively\/Index.html#using-the-list-module-effectively",
+            "Using the Records module"
+        ],
+        "the-records-module-header": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/UsingEffectively\/Index.html#list-module-header",
+            "The Records module header"
+        ],
+        "editing-a-record-of-a-certain-type": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/UsingEffectively\/Index.html#list-module-record-type",
+            "Editing a record of a certain type"
+        ],
+        "finding-a-record-in-a-long-list": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/UsingEffectively\/Index.html#list-module-record-search",
+            "Finding a record in a long list"
+        ],
+        "showing-the-records-of-certain-languages": [
+            "Tutorial for Editors",
+            "main",
+            "RecordModule\/UsingEffectively\/Index.html#list-module-languages",
+            "Showing the records of certain languages"
+        ],
+        "dashboard-widgets-for-search-engine-optimization-seo-in-typo3": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/DashboardWidgets.html#dashboard-widgets",
+            "Dashboard widgets for search engine optimization (SEO) in TYPO3"
+        ],
+        "missing-meta-description-widget": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/DashboardWidgets.html#dashboard-widgets-missing-description",
+            "\"Missing Meta Description\" widget"
+        ],
+        "adding-the-missing-meta-description-widget-to-your-personal-dashboard": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/DashboardWidgets.html#dashboard-widgets-missing-description-add",
+            "Adding the \"Missing Meta Description\" widget to your personal Dashboard"
+        ],
+        "using-the-missing-meta-description-widget-to-improve-seo-results": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/DashboardWidgets.html#dashboard-widgets-missing-description-use",
+            "Using the \"Missing Meta Description\" widget to improve SEO results"
+        ],
+        "search-engine-optimization-seo-for-typo3-editors": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo",
+            "Search engine optimization (SEO) for TYPO3 editors"
+        ],
+        "page-title": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-general-title",
+            "Page title"
+        ],
+        "url-segment-slug": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-general-url-segment",
+            "URL segment (slug)"
+        ],
+        "seo-tab": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-seo",
+            "SEO tab"
+        ],
+        "title-for-search-engines-1": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#title-for-search-engines",
+            "Title for search engines"
+        ],
+        "description": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-description",
+            "Description"
+        ],
+        "index-this-page": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-index-page",
+            "Index this page"
+        ],
+        "follow-this-page": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-follow-page",
+            "Follow this page"
+        ],
+        "canonical-link": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-canonical",
+            "Canonical link"
+        ],
+        "change-frequency": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-frequency",
+            "Change frequency"
+        ],
+        "priority": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-priority",
+            "Priority"
+        ],
+        "title": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-social-media-title",
+            "Title"
+        ],
+        "description-1": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-social-media-description",
+            "Description"
+        ],
+        "image": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-social-media-image",
+            "Image"
+        ],
+        "metadata-tab": [
+            "Tutorial for Editors",
+            "main",
+            "SearchEngineOptimization\/Index.html#seo-page-properties-metadata",
+            "Metadata tab"
+        ],
+        "sitemap-1": [
+            "Tutorial for Editors",
+            "main",
+            "Sitemap.html#sitemap",
+            "Sitemap"
+        ],
+        "change-your-password-and-set-up-multi-factor-authentication": [
+            "Tutorial for Editors",
+            "main",
+            "UserSettings\/AccountSecurity\/Index.html#user-settings-account-security",
+            "Change your password and set up multi-factor authentication"
+        ],
+        "change-how-the-typo3-backend-looks-and-behaves": [
+            "Tutorial for Editors",
+            "main",
+            "UserSettings\/BackendAppearance\/Index.html#user-settings-backend-appearance",
+            "Change how the TYPO3 backend looks and behaves"
+        ],
+        "backend-themes": [
+            "Tutorial for Editors",
+            "main",
+            "UserSettings\/BackendAppearance\/Index.html#user-settings-backend-themes",
+            "Backend themes"
+        ],
+        "user-settings-1": [
+            "Tutorial for Editors",
+            "main",
+            "UserSettings\/Index.html#user-settings",
+            "User settings"
+        ],
+        "change-your-name-email-address-and-backend-language": [
+            "Tutorial for Editors",
+            "main",
+            "UserSettings\/PersonalData\/Index.html#user-settings-personal-data",
+            "Change your name, email address and backend language"
+        ],
+        "fine-tune-editing-uploads-and-copying-in-the-backend": [
+            "Tutorial for Editors",
+            "main",
+            "UserSettings\/Personalization\/Index.html#user-settings-personalization",
+            "Fine-tune editing, uploads and copying in the backend"
+        ]
+    }
+}

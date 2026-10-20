@@ -1,0 +1,73 @@
+# Tutorial for Editors
+
+> Version main of this manual.
+> Every page is also available as Markdown: the same path with .md instead of .html.
+> The permalink of an anchor is https://docs.typo3.org/permalink/t3editors:{anchor}@main.
+
+## Indexes
+
+- [toc.json](toc.json): Table of contents: every page in order, with its title and permalink anchor
+- [classes.json](classes.json): Every PHP class the manual speaks of, and where
+- [objects.inv.json](objects.inv.json): Every link target, as the interlinks of other manuals use them
+- [sitemap.xml](sitemap.xml): Every page, for search engines
+
+## Pages
+
+- [TYPO3 Editors Guide](Index.md)
+  - [Logging in to TYPO3 backend](Login/Index.md)
+  - [Pages](Pages/Index.md)
+    - [Creating pages](Pages/CreatingPages/Index.md)
+    - [Creating multiple pages](Pages/AddingMultiple/Index.md)
+    - [Working with pages](Pages/WorkingWithPages/Index.md)
+    - [Page types](Pages/PageTypes/Index.md)
+    - [Page properties](Pages/PageProperties/Index.md)
+  - [Content elements](ContentElements/Index.md)
+    - [Creating content](ContentElements/CreatingContent/Index.md)
+    - [Editing content](ContentElements/EditingContent/Index.md)
+    - [Managing content](ContentElements/Content/Index.md)
+    - [The rich text editor](ContentElements/RichTextEditor/Index.md)
+    - [Working with images](ContentElements/Images/Index.md)
+    - [Embedding videos as content into a TYPO3 website](ContentElements/Media/Index.md)
+    - [Creating a contact form](ContentElements/ContactForm/Index.md)
+  - [Records](RecordModule/Index.md)
+    - [Using the Records module](RecordModule/UsingEffectively/Index.md)
+    - [Copy and paste database record](RecordModule/CopyPaste/Index.md)
+    - [Using the clipboard to copy or move multiple records at once](RecordModule/AdvancedClipboard/Index.md)
+    - [Mass editing](RecordModule/MassEditing/Index.md)
+  - [Media upload and management in the TYPO3 backend](MediaModule/Index.md)
+  - [Link management](LinkManagement/Index.md)
+    - [Redirects](LinkManagement/Redirects/Index.md)
+    - [Quick response (QR) codes](LinkManagement/QRCodes/Index.md)
+    - [Short URLs](LinkManagement/ShortURLs/Index.md)
+  - [Working with languages](Languages/Index.md)
+  - [Search engine optimization (SEO) for TYPO3 editors](SearchEngineOptimization/Index.md)
+    - [Dashboard widgets for search engine optimization (SEO) in TYPO3](SearchEngineOptimization/DashboardWidgets.md)
+  - [User settings](UserSettings/Index.md)
+    - [Change your name, email address and backend language](UserSettings/PersonalData/Index.md)
+    - [Change your password and set up multi-factor authentication](UserSettings/AccountSecurity/Index.md)
+    - [Change how the TYPO3 backend looks and behaves](UserSettings/BackendAppearance/Index.md)
+    - [Fine-tune editing, uploads and copying in the backend](UserSettings/Personalization/Index.md)
+  - [Access control](AccessControl/Index.md)
+    - [Elements visibility](AccessControl/Visibility/Index.md)
+    - [Frontend login](AccessControl/Login/Index.md)
+  - [Deep linking](DeepLinking/Index.md)
+  - [Help within TYPO3](HelpInside/Index.md)
+    - [Backend search](HelpInside/BackendSearch/Index.md)
+    - [What to do when an error page shows](HelpInside/ErrorPage/Index.md)
+    - [Internal notes in the TYPO3 backend](HelpInside/InternalNotes/Index.md)
+    - [Keyboard commands](HelpInside/KeyboardCommands/Index.md)
+    - [TYPO3 online documentation](HelpInside/OnlineDocumentation/Index.md)
+    - [Tooltips](HelpInside/Tooltips/Index.md)
+  - [Accessibility for editors](Accessibility/Index.md)
+    - [Legal requirements](Accessibility/LegalFoundations.md)
+    - [Writing accessible text](Accessibility/WritingAccessibleText.md)
+    - [Tips and tricks](Accessibility/TipsAndTricks.md)
+    - [Sources and further reading](Accessibility/Sources.md)
+  - [Concepts](Concepts/Index.md)
+    - [Cache](Concepts/Cache.md)
+    - [File abstraction layer (FAL)](Concepts/FileAbstractionLayer.md)
+    - [Accessibility](Concepts/Accessibility.md)
+    - [Copyright and data privacy](Concepts/Copyright.md)
+  - [About this guide](About.md)
+  - [Next steps](NextSteps/Index.md)
+  - [Sitemap](Sitemap.md)

@@ -1,0 +1,158 @@
+..  include:: /Includes.rst.txt
+..  _rte:
+
+====================
+The rich text editor
+====================
+
+..  youtube:: 7g4HIEU3uPA
+
+------------
+
+..  image:: /Images/GeneratedScreenshots/ContentElements/RegularText.png
+    :alt: Content element Regular Text in the TYPO3 backend
+    :class: img-thumbnail float-end ms-1
+    :width: 250
+    :zoom: gallery
+
+Start by `Creating a content element <https://docs.typo3.org/permalink/t3editors:content-creating>`_
+of type "Text & Images", "Text & Media", or "Regular Text Element". You can find them in the
+tab `Typical page content <https://docs.typo3.org/permalink/t3editors:content-typical>`_.
+
+The TYPO3 text editing interface is not much different from a word processor.
+The options available in the toolbars vary depending on how your TYPO3
+installation is configured.
+
+..  figure:: /Images/GeneratedScreenshots/ContentElements/Text/RichTextEditor.png
+    :alt: Screenshot of a typical rich text editor in the TYPO3 backend
+    :zoom: gallery
+
+    The options you see depend on the configuration of your site
+
+You can format text, set the alignment, insert tables and symbols and add
+internal and external links to text.
+
+..  _rte-linking:
+
+Creating a link
+===============
+
+Select the text you want to link.
+
+Click the :guilabel:`Link` icon in the toolbar or use the shortcut
+:kbd:`Ctrl + K` or :kbd:`Cmd + K`. This shortcut only works when
+your focus is within the editor. Outside the editor the same
+shortcut would open the live search.
+
+..  versionadded:: 15.0
+    :changelog: feature-99678-1790186405
+
+If you insert a link without selecting text first, TYPO3 uses the title of
+the link as link text. If the link has no title, TYPO3 uses the title of the
+link target, for example the title of the page. The new link stays selected,
+so you can change it right away.
+
+..  figure:: /Images/GeneratedScreenshots/ContentElements/Text/Link.png
+    :alt: Linking the highlighted text in the TYPO3 rich text editor
+    :zoom: gallery
+
+The :guilabel:`Link Browser` window displays.
+
+This window lets you link to an internal page, file, folder, external
+URL, email address or phone number.
+
+..  _rte-linking-internal:
+
+Internal links
+--------------
+
+..  figure:: /Images/GeneratedScreenshots/Link/LinkBrowser.png
+    :alt: The TYPO3 CMS link browser
+    :zoom: gallery
+
+You can link to an internal file, folder, page or content element on a page.
+
+On the :guilabel:`Page` tab, select the page in the page tree that you want
+to link to, then click the :guilabel:`Link to ...` button.
+
+You can also link directly to a content element. In that case an anchor
+(link with a hashtag) is used so your readers will automatically jump to the
+desired content element.
+
+You can also link to uploaded files, for example PDF files:
+
+..  figure:: /Images/GeneratedScreenshots/Link/LinkBrowserFile.png
+    :alt: Linking to a file for download in TYPO3
+    :zoom: gallery
+
+..  _rte-linking-external:
+
+External links
+--------------
+
+#.  In the :guilabel:`Link Browser` window, go to the :guilabel:`External URL` tab.
+#.  Type your link in the :guilabel:`URL` field.
+#.  In the Target drop-down list, select :guilabel:`New window` to open the
+    link in a new browser window.
+
+    ..  figure:: /Images/GeneratedScreenshots/Link/LinkBrowserExternal.png
+        :alt: Display the anchors on a page
+        :zoom: gallery
+
+#.  Click the :guilabel:`Set Link` button to close the :guilabel:`Link Browser`
+    window.
+
+..  _rte-linking-preview:
+
+Checking and opening a link
+===========================
+
+..  versionadded:: 15.0
+    :changelog: feature-99678-1790186405
+
+When you put your cursor into a link, a popover shows where the link goes.
+For a page or a file, it shows the icon and the title of the target. Hover
+over the title to see the path of the page or file. For an external link, the
+popover shows the address.
+
+To open the link in a new browser tab, click the
+:guilabel:`Open link in new tab` button in the popover. You can also click
+the link while you hold :kbd:`Ctrl`, or :kbd:`Cmd` on a Mac, or press
+:kbd:`Alt` + :kbd:`Enter` while your cursor is in the link. A link to a page
+opens the page in the frontend, and a link to a file opens the file.
+
+..  _rte-linking-remove:
+
+Removing a link
+===============
+
+To remove a link from text, put your cursor anywhere in the linked text then
+click the :guilabel:`Unlink` button in the popover:
+
+..  figure:: /Images/GeneratedScreenshots/ContentElements/Text/Unlink.png
+    :alt: The popover of a link to the page "FAQs" in the rich text editor,
+        with the buttons to open, edit, and remove the link
+    :zoom: gallery
+
+..  _rte-whitespace:
+
+Non-breaking spaces and soft hyphens
+====================================
+
+Two characters that are normally invisible are highlighted with a colour in the
+rich text editor so that you can see where they have been placed:
+
+*   A **non-breaking space** keeps two words together on the same line, so they
+    are never split across a line break.
+*   A **soft hyphen** marks a point where a word may be hyphenated and wrapped to
+    the next line, but only if the word does not otherwise fit.
+
+The colour highlighting is only shown while you edit. It helps you spot these
+characters in the editor and does not appear on the website itself.
+
+..  figure:: /Images/GeneratedScreenshots/ContentElements/Text/Whitespace.png
+    :alt: A non-breaking space and a soft hyphen highlighted in the rich text editor
+    :zoom: gallery
+
+You can insert both characters with a :ref:`keyboard command
+<keyboard-commands-rte>`.

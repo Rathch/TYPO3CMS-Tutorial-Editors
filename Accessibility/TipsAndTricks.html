@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <title>Tips and tricks — Tutorial for Editors main
+        documentation</title>
+
+    
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="phpdocumentor/guides" name="generator">
+<meta content="Tutorial for Editors" name="docsearch:name">
+<meta content="" name="docsearch:package_type">
+<meta content="main" name="docsearch:release">
+<meta content="main" name="docsearch:version">
+<meta content="2026-10-20T12:34:02+00:00" name="docsearch:modified">
+<meta content="2026-10-20T12:34:02+00:00" name="dc.modified">
+<meta content="2026-10-20T12:34:02+00:00" property="article:modified_time">
+    <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc">
+<link href="../_resources/css/theme.css" rel="stylesheet">
+<link href="https://docs.typo3.org/search/" rel="search" title="Search">
+<link href="https://docs.typo3.org/permalink/t3editors:accessibility-tips@main" rel="canonical">
+<link href="TipsAndTricks.md" rel="alternate" title="Markdown" type="text/markdown">
+<script src="https://cdn.typo3.com/typo3infrastructure/universe/dist/webcomponents-loader.js"></script>
+<script src="https://cdn.typo3.com/typo3infrastructure/universe/dist/typo3-universe.js" type="module"></script>
+                        <link href="WritingAccessibleText.html" rel="prev" title="Writing accessible text"/>
+            <link href="Sources.html" rel="next" title="Sources and further reading"/>
+            <link href="../Index.html" rel="top" title="TYPO3 Editors Guide"/>
+    <style>
+.unofficial-docs-warning{background:#fff3cd;color:#332701;border-bottom:4px solid #ffc107;padding:.85rem 1.25rem;text-align:center;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:1rem;line-height:1.45;position:relative;z-index:1000}
+.unofficial-docs-warning a{color:#0b3a68;font-weight:700}
+</style>
+</head>
+<body>
+<div class="unofficial-docs-warning" role="note">
+<strong>Dies ist nicht die offizielle Dokumentation.</strong>
+This is not the official documentation.
+<a href="https://docs.typo3.org/m/typo3/tutorial-editors/14.3/en-us/Index.html">Offizielle Dokumentation: Tutorial for Editors 14.3</a>
+</div>
+<div class="page">
+    <header>
+    <div class="page-topbar">
+        <div class="page-topbar-inner">
+            <typo3-universe active="documentation">
+                <div style="display: block; height: 44px; background-color: #313131;"></div>
+            </typo3-universe>
+        </div>
+    </div>
+    <div class="page-header">
+        <div class="page-header-inner">
+            <a class="navbar-brand" href="https://docs.typo3.org/" title="TYPO3 Documentation">
+                <span class="navbar-brand-text">
+                    <img src="../_resources/img/typo3-soul.svg" alt="TYPO3" class="navbar-brand-logo" width="29" height="29">
+                    <span class="navbar-brand-name">Documentation</span>
+                </span>
+            </a>
+            <div class="header-nav">
+                
+<div class="toc-header">
+    <div class="toc-title">
+                            <a class="toc-title-project" href="../Index.html">TYPO3 Editors Guide</a>
+            </div>
+    <label for="languageSelect" class="visually-hidden">Select language</label>
+        <select id="languageSelect" class="form-select d-none">
+        </select>
+
+                                  
+        <label for="versionSelect" class="visually-hidden">Select version</label>
+        <select id="versionSelect" class="form-select"
+                data-current-version="main"
+            data-override-url-proxy="../_resources/js/versions-proxy.php?url=" data-override-url-self="https://docs.typo3.org/m/typo3/tutorial-getting-started/12.4/en-us/Concepts/Index.html"
+        >
+            <option disabled selected>Loading versions...</option>
+        </select>
+    </div>            </div>
+            <div class="header-actions">
+                <button id="search-toggle" class="btn btn-light d-lg-none" type="button"
+                        aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                </button>
+                <button id="toc-toggle" class="btn btn-light d-lg-none" type="button"
+                        aria-label="Menu" aria-expanded="false" aria-controls="toc-collapse">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+                <all-documentations-menu data-override-url="../_resources/js/menu-proxy.php"></all-documentations-menu>
+                                <search role="search" aria-label="Site search">
+                                        <select id="searchscope" hidden aria-hidden="true">
+                        <option value="">Search all</option>
+                    </select>
+                    <div id="global-search-root"></div>
+                </search>
+                                                <button id="options-toggle" class="btn btn-light" type="button"
+                        aria-controls="options-panel" aria-expanded="false" popovertarget="options-panel">
+                    <i class="fa-solid fa-gear" aria-hidden="true"></i>
+                    <span class="visually-hidden">Options</span>
+                </button>
+                <div id="options-panel" class="shadow p-3" popover>
+                    <h6 class="dropdown-header text-muted text-uppercase small mb-2">Options</h6>
+                        <a class="dropdown-item d-flex align-items-center gap-2" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues/new/choose?title=Problem+on+https%3A%2F%2Fdocs.typo3.org%2Fm%2Ftypo3%2Ftutorial-editors%2Fmain%2Fen-us%2F%2FAccessibility%2FTipsAndTricks.html" id="btnReportIssue" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-comment-dots"></i>
+        Give feedback
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="../_sources/Accessibility/TipsAndTricks.rst.txt" id="btnViewSource" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-code"></i>
+        View source
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="TipsAndTricks.md" id="btnViewMarkdown" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-file-lines"></i>
+        View as Markdown
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingDocsOfficial/GithubMethod.html" id="btnHowToEdit" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-circle-info"></i>
+        How to edit
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/edit/main/Documentation/Accessibility/TipsAndTricks.rst" id="btnEditOnGitHub" rel="nofollow noopener" target="_blank">
+        <i class="fa-brands fa-github"></i>
+        Edit on GitHub
+    </a>
+                </div>
+                            </div>
+        </div>
+    </div>
+</header>    <main class="page-main">
+        <div class="page-main-inner">
+            <div class="page-main-navigation">
+                <nav>
+
+                    <div id="toc-collapse">
+                                                <div aria-label="main navigation" class="toc"
+                             role="navigation">
+                                <all-documentations-menu-mobile
+        data-override-url="../_resources/js/menu-proxy.php"></all-documentations-menu-mobile>
+    <div aria-label="Main navigation" class="main_menu" role="navigation">
+                <p class="caption">TYPO3 Editors Guide</p>
+            <ul class="menu-level-1" role="menubar">
+    <li class="" role="menuitem">
+    <a href="../Login/Index.html">
+        Backend login
+    </a></li>    <li class="" role="menuitem">
+    <a href="../Pages/Index.html">
+        Pages
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../Pages/CreatingPages/Index.html">
+        Creating pages
+    </a></li><li class="" role="menuitem">
+    <a href="../Pages/AddingMultiple/Index.html">
+        Creating multiple pages
+    </a></li><li class="" role="menuitem">
+    <a href="../Pages/WorkingWithPages/Index.html">
+        Working with pages
+    </a></li><li class="" role="menuitem">
+    <a href="../Pages/PageTypes/Index.html">
+        Page types
+    </a></li><li class="" role="menuitem">
+    <a href="../Pages/PageProperties/Index.html">
+        Page properties
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../ContentElements/Index.html">
+        Content elements
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../ContentElements/CreatingContent/Index.html">
+        Creating content
+    </a></li><li class="" role="menuitem">
+    <a href="../ContentElements/EditingContent/Index.html">
+        Editing content
+    </a></li><li class="" role="menuitem">
+    <a href="../ContentElements/Content/Index.html">
+        Managing content
+    </a></li><li class="" role="menuitem">
+    <a href="../ContentElements/RichTextEditor/Index.html">
+        The rich text editor
+    </a></li><li class="" role="menuitem">
+    <a href="../ContentElements/Images/Index.html">
+        Working with images
+    </a></li><li class="" role="menuitem">
+    <a href="../ContentElements/Media/Index.html">
+        Embedding Videos
+    </a></li><li class="" role="menuitem">
+    <a href="../ContentElements/ContactForm/Index.html">
+        Creating a contact form
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../RecordModule/Index.html">
+        Records
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../RecordModule/UsingEffectively/Index.html">
+        Using the Records module
+    </a></li><li class="" role="menuitem">
+    <a href="../RecordModule/CopyPaste/Index.html">
+        Copy and paste
+    </a></li><li class="" role="menuitem">
+    <a href="../RecordModule/AdvancedClipboard/Index.html">
+        Clipboard
+    </a></li><li class="" role="menuitem">
+    <a href="../RecordModule/MassEditing/Index.html">
+        Mass editing
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../MediaModule/Index.html">
+        Media
+    </a></li>    <li class="" role="menuitem">
+    <a href="../LinkManagement/Index.html">
+        Link management
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../LinkManagement/Redirects/Index.html">
+        Redirects
+    </a></li><li class="" role="menuitem">
+    <a href="../LinkManagement/QRCodes/Index.html">
+        QR Codes
+    </a></li><li class="" role="menuitem">
+    <a href="../LinkManagement/ShortURLs/Index.html">
+        Short URLs
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../Languages/Index.html">
+        Working with languages
+    </a></li>    <li class="" role="menuitem">
+    <a href="../SearchEngineOptimization/Index.html">
+        SEO
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../SearchEngineOptimization/DashboardWidgets.html">
+        Dashboard
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../UserSettings/Index.html">
+        User settings
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../UserSettings/PersonalData/Index.html">
+        Personal data
+    </a></li><li class="" role="menuitem">
+    <a href="../UserSettings/AccountSecurity/Index.html">
+        Account security
+    </a></li><li class="" role="menuitem">
+    <a href="../UserSettings/BackendAppearance/Index.html">
+        Backend appearance
+    </a></li><li class="" role="menuitem">
+    <a href="../UserSettings/Personalization/Index.html">
+        Personalization
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../AccessControl/Index.html">
+        Access control
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../AccessControl/Visibility/Index.html">
+        Elements visibility
+    </a></li><li class="" role="menuitem">
+    <a href="../AccessControl/Login/Index.html">
+        Frontend login
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../DeepLinking/Index.html">
+        Deep linking
+    </a></li>    <li class="" role="menuitem">
+    <a href="../HelpInside/Index.html">
+        Help within TYPO3
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../HelpInside/BackendSearch/Index.html">
+        Backend search
+    </a></li><li class="" role="menuitem">
+    <a href="../HelpInside/ErrorPage/Index.html">
+        Error pages
+    </a></li><li class="" role="menuitem">
+    <a href="../HelpInside/InternalNotes/Index.html">
+        Internal Notes
+    </a></li><li class="" role="menuitem">
+    <a href="../HelpInside/KeyboardCommands/Index.html">
+        Keyboard commands
+    </a></li><li class="" role="menuitem">
+    <a href="../HelpInside/OnlineDocumentation/Index.html">
+        TYPO3 online documentation
+    </a></li><li class="" role="menuitem">
+    <a href="../HelpInside/Tooltips/Index.html">
+        Tooltips
+    </a></li></ul></li>    <li class=" active" role="menuitem">
+    <a href="Index.html">
+        Accessibility
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="LegalFoundations.html">
+        Legal requirements
+    </a></li><li class="" role="menuitem">
+    <a href="WritingAccessibleText.html">
+        Writing accessible text
+    </a></li><li class=" current active" role="menuitem">
+    <a href="#" aria-current="page">
+        Tips and tricks
+    </a></li><li class="" role="menuitem">
+    <a href="Sources.html">
+        Sources and further reading
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../Concepts/Index.html">
+        Concepts
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../Concepts/Cache.html">
+        Cache
+    </a></li><li class="" role="menuitem">
+    <a href="../Concepts/FileAbstractionLayer.html">
+        File abstraction layer <wbr>(FAL)
+    </a></li><li class="" role="menuitem">
+    <a href="../Concepts/Accessibility.html">
+        Accessibility
+    </a></li><li class="" role="menuitem">
+    <a href="../Concepts/Copyright.html">
+        Copyright and data privacy
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../About.html">
+        About this guide
+    </a></li>    <li class="" role="menuitem">
+    <a href="../NextSteps/Index.html">
+        Next steps
+    </a></li>    </ul>    <ul class="menu-level-1" role="menubar">
+    <li class="" role="menuitem">
+    <a href="../Sitemap.html">
+        Sitemap
+    </a></li>    </ul>
+    </div>
+                        </div>
+                                                <div class="toc-options d-lg-none">
+                            <p class="caption">Options</p>
+                                <a class="dropdown-item d-flex align-items-center gap-2" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues/new/choose?title=Problem+on+https%3A%2F%2Fdocs.typo3.org%2Fm%2Ftypo3%2Ftutorial-editors%2Fmain%2Fen-us%2F%2FAccessibility%2FTipsAndTricks.html" id="btnReportIssue" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-comment-dots"></i>
+        Give feedback
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="../_sources/Accessibility/TipsAndTricks.rst.txt" id="btnViewSource" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-code"></i>
+        View source
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="TipsAndTricks.md" id="btnViewMarkdown" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-file-lines"></i>
+        View as Markdown
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingDocsOfficial/GithubMethod.html" id="btnHowToEdit" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-circle-info"></i>
+        How to edit
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/edit/main/Documentation/Accessibility/TipsAndTricks.rst" id="btnEditOnGitHub" rel="nofollow noopener" target="_blank">
+        <i class="fa-brands fa-github"></i>
+        Edit on GitHub
+    </a>
+                        </div>
+                                            </div>
+                </nav>
+            </div>
+            <div class="page-main-content">
+                <div class="rst-content">                        <nav aria-label="breadcrumbs navigation" class="breadcrumb-bar" role="navigation">
+        
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="../Index.html">TYPO3 Editors Guide</a></li>
+        <li class="breadcrumb-item"><a href="Index.html">Accessibility</a></li>
+                    <li aria-current="page"  class="breadcrumb-item  active">Tips and tricks</li>
+        </ol>
+
+        <div class="breadcrumb-additions">                <a class="btn btn-sm btn-light" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues/new/choose?title=Problem+on+https%3A%2F%2Fdocs.typo3.org%2Fm%2Ftypo3%2Ftutorial-editors%2Fmain%2Fen-us%2F%2FAccessibility%2FTipsAndTricks.html" id="btnReportIssue" rel="nofollow noopener" target="_blank">
+                    <span class="btn-icon"><i class="fa-solid fa-comment-dots"></i></span>
+                    <span class="btn-text">Give feedback</span>
+                </a>
+                            <a class="btn btn-sm btn-light" href="TipsAndTricks.md" id="btnDownloadMarkdown" rel="nofollow noopener" download="t3editors-accessibility-tips.md">
+                    <span class="btn-icon"><i class="fa-solid fa-download"></i></span>
+                    <span class="btn-text">Markdown</span>
+                </a>
+                            <a class="btn btn-sm btn-secondary" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/edit/main/Documentation/Accessibility/TipsAndTricks.rst" id="btnEditOnGitHub" rel="nofollow noopener" target="_blank">
+                    <span class="btn-icon"><span class="fa-brands fa-github"></span></span>
+                    <span class="btn-text">Edit on GitHub</span>
+                </a>
+            </div>
+    </nav>
+                    
+<article class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+    <div itemprop="articleBody">
+        <!-- content start -->
+                
+<section class="section" id="accessibility-tips" data-rst-anchor="accessibility-tips"><a id="tips-and-tricks"></a>
+            
+            <h1>Tips and tricks<a class="headerlink" href="#accessibility-tips" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h1>
+            
+    <p>Use this list on a page before you publish it. Each item names the
+requirement it supports. The explanations of those requirements are linked
+from
+<a href="LegalFoundations.html#accessibility-legal">Legal requirements</a>.
+How to fill the fields is in
+<a href="WritingAccessibleText.html#accessibility-writing-accessible-text">Writing accessible text</a>.</p>
+
+            
+    <p>A program can find some of these failures. It cannot decide that the page
+is accessible. The W3C says so in its
+<a href="https://www.w3.org/WAI/test-evaluate/">introduction to evaluating accessibility</a>,
+and it keeps a
+<a href="https://www.w3.org/WAI/test-evaluate/tools/list/">list of evaluation tools</a>
+submitted by the providers. The W3C does not endorse the products on that
+list. For a first pass a person can do without a product, use the W3C
+<a href="https://www.w3.org/WAI/test-evaluate/preliminary/">Easy Checks</a>.</p>
+
+            <section class="section" id="accessibility-tips-before-publish" data-rst-anchor="accessibility-tips-before-publish"><a id="before-you-publish"></a>
+            
+            <h2>Before you publish<a class="headerlink" href="#accessibility-tips-before-publish" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            <section class="section" id="accessibility-tips-title" data-rst-anchor="accessibility-tips-title"><a id="read-the-title-out-of-context"></a>
+            
+            <h3>Read the title out of context<a class="headerlink" href="#accessibility-tips-title" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>Open the page and read only the browser title. It should name this page.
+&quot;Home&quot;, the organization name alone, or &quot;Page&quot; fails that test on an inner
+page. Set the page title, and the title for search engines when you use
+that field, as described under
+<a href="WritingAccessibleText.html#accessibility-writing-accessible-text-provide-informative-unique">Provide informative, unique page titles</a>.</p>
+
+    </section>
+            <section class="section" id="accessibility-tips-headings" data-rst-anchor="accessibility-tips-headings"><a id="walk-the-headings"></a>
+            
+            <h3>Walk the headings<a class="headerlink" href="#accessibility-tips-headings" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>List the headings in order, including the levels. You should get an outline
+of the page. A level jumps from 2 to 4 when a level was chosen because it
+looked smaller. One topic keeps one heading. The page title may already be
+the level-1 heading. Ask your integrator if you are unsure, then start the
+content element headings at level 2.</p>
+
+    </section>
+            <section class="section" id="accessibility-tips-links" data-rst-anchor="accessibility-tips-links"><a id="read-the-links-as-a-list"></a>
+            
+            <h3>Read the links as a list<a class="headerlink" href="#accessibility-tips-links" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>Collect every link on the page and read the texts without the sentences
+around them. Each text should say where that link goes.</p>
+
+            
+    <p>Change these when you find them:</p>
+
+            
+
+<ul>
+    <li>&quot;Click here&quot;, &quot;here&quot;, &quot;more&quot;, &quot;read more&quot;, &quot;continue&quot;.</li>
+    <li>A raw address as the only link text, when the page has a title you can
+use instead.</li>
+    <li>An empty link, including an icon or an image with no alternative text.</li>
+    <li>Two links with the same text that go to different places. &quot;Download&quot;
+twice, for two different files, needs the file name in the link.</li>
+</ul>
+
+            
+    <p>A file link names the type: &quot;Hut rules (PDF)&quot;.</p>
+
+    </section>
+            <section class="section" id="accessibility-tips-images" data-rst-anchor="accessibility-tips-images"><a id="cover-the-image"></a>
+            
+            <h3>Cover the image<a class="headerlink" href="#accessibility-tips-images" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>Cover the image with your hand and read the alternative text. If you still
+learn what the image was there to say, the text is doing its job. If the
+paragraph already says it, the image is decorative and the alternative text
+should be empty.</p>
+
+            
+    <p>Reject &quot;image&quot;, &quot;photo&quot;, &quot;icon&quot;, a file name, and a text identical to the
+caption that is already visible under the image. The
+<span class="guilabel">Description</span> and the alternative text are different fields. The
+description is often shown to everyone. The alternative text stands in for
+the image.</p>
+
+    </section>
+            <section class="section" id="accessibility-tips-media" data-rst-anchor="accessibility-tips-media"><a id="play-the-video-with-the-sound-off"></a>
+            
+            <h3>Play the video with the sound off<a class="headerlink" href="#accessibility-tips-media" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>If you cannot follow a video with the sound off, the captions or the
+transcript are missing. Put a transcript in the text of the content element
+and give it a heading. Ask your integrator how the player on your site
+takes a captions file.</p>
+
+            
+    <p>Leave automatic playback off. If a clip must start by itself and it lasts
+more than three seconds, the visitor needs a way to pause it or to change
+its volume separately from the device.</p>
+
+    </section>
+            <section class="section" id="accessibility-tips-color" data-rst-anchor="accessibility-tips-color"><a id="check-color-and-text-saved-as-an-image"></a>
+            
+            <h3>Check color and text saved as an image<a class="headerlink" href="#accessibility-tips-color" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>&quot;Required fields are shown in red&quot; needs the word &quot;required&quot; as well.
+A heading that is a picture, or a phone number that is a picture, should be
+typed as text. A logo may stay an image. Its alternative text is the words
+in the logo.</p>
+
+            
+    <p>If you colored text in the editor, check the contrast.
+<a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html">Success Criterion 1.4.3</a>
+requires a contrast ratio of at least 4.5:1. Large-scale text, at least 18
+point or 14 point bold, needs at least 3:1. Text that is pure decoration,
+inactive, or part of a logo has no contrast requirement under that
+criterion. The colors of the theme are the integrator&#039;s. Low contrast was
+the most common failure in the February 2026 WebAIM report: 83.9% of home
+pages, with 34 instances on an average home page.</p>
+
+    </section>
+            <section class="section" id="accessibility-tips-forms" data-rst-anchor="accessibility-tips-forms"><a id="label-every-field"></a>
+            
+            <h3>Label every field<a class="headerlink" href="#accessibility-tips-forms" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>Read the form with the placeholders ignored, because placeholders vanish
+while someone types. Every field needs a visible label. Say the format when
+it is easy to get wrong: &quot;Date of arrival (DD.MM.YYYY)&quot;.</p>
+
+            
+    <p>Trigger an error on purpose. The message should name the field and the
+change. &quot;Invalid input&quot; does not. The W3C example of a message that names
+the problem is &quot;The password needs to include at least one number.&quot;</p>
+
+    </section>
+            <section class="section" id="accessibility-tips-language" data-rst-anchor="accessibility-tips-language"><a id="mark-a-language-change"></a>
+            
+            <h3>Mark a language change<a class="headerlink" href="#accessibility-tips-language" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>The language of the page is part of the site setup. An administrator sets
+it. When you edit a translation, you are already in that language. See
+<a href="../Languages/Index.html#languages">Working with languages</a>.</p>
+
+            
+    <p>A quotation or a title in another language, inside a page of one language,
+needs to be marked.
+<a href="https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts.html">Success Criterion 3.1.2</a>
+is the requirement. If your rich text editor has a language option, set it
+on that phrase. If it has none, ask your integrator to enable it. Until
+then, avoid dropping in unmarked passages in a second language.</p>
+
+    </section>
+            <section class="section" id="accessibility-tips-tables" data-rst-anchor="accessibility-tips-tables"><a id="mark-the-header-cells-of-a-table"></a>
+            
+            <h3>Mark the header cells of a table<a class="headerlink" href="#accessibility-tips-tables" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>A table of data needs header cells, not a bold first row. A screen reader
+can then repeat the header as the reader moves across a row. The W3C
+tutorial on <a href="https://www.w3.org/WAI/tutorials/tables/">tables</a> shows the
+patterns, including tables with two headers. A layout that only uses a
+table to place two pieces of text side by side is a question for your
+integrator. Prefer two paragraphs or a list when the content is not a table.</p>
+
+    </section>
+    </section>
+            <section class="section" id="accessibility-tips-integrator" data-rst-anchor="accessibility-tips-integrator"><a id="what-to-hand-to-your-integrator"></a>
+            
+            <h2>What to hand to your integrator<a class="headerlink" href="#accessibility-tips-integrator" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            
+    <p>These failures showed up often in the February 2026 WebAIM report, and you
+cannot fix them in a content element:</p>
+
+            
+
+<ul>
+    <li>Body text, buttons, and form fields in the theme whose contrast is too
+low. 83.9% of home pages had low-contrast text.</li>
+    <li>Buttons and icons in the template that have no accessible name. Empty
+buttons were on 30.6% of home pages.</li>
+    <li>A skip link, keyboard focus, and the order of the keyboard tab. Those
+belong to the template.</li>
+    <li>A captions control, if the media player has nowhere for you to add a
+captions file.</li>
+</ul>
+
+            
+    <p>Send a specific page address and a specific element. &quot;The body text on the
+home page is gray on white&quot; gives your integrator something to change.
+&quot;The site is not accessible&quot; does not.</p>
+
+    </section>
+    </section>
+        <!-- content end -->
+    </div>
+</article>
+                        
+            <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center"><li class="page-item">
+                            <a class="page-link" href="WritingAccessibleText.html"
+                               title="Accesskey Alt(+Shift)+p">
+                                <i class="fa-solid fa-chevron-left"></i> Previous
+                            </a>
+                        </li>
+                    <li class="page-item">
+                            <a class="page-link" href="Sources.html"
+                               title="Accesskey Alt(+Shift)+n">
+                                Next <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+        </nav>
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="linkReferenceModal" tabindex="-1" aria-labelledby="linkReferenceModalLabel"
+    aria-hidden="true" data-current-filename="Accessibility/TipsAndTricks" data-interlink-shortcode="t3editors">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="linkReferenceModalLabel">Reference to the headline</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-success d-none" id="permalink-alert-success" role="alert"></div>
+                <div class="mb-3">
+                    <div class="permalink-short-wrapper">
+                        <label for="permalink-short" class="col-form-label">Permalink (Shortlink)</label>
+                        <div class="input-group">
+                            <input class="form-control code" id="permalink-short" readonly>
+                            <button type="button" class="btn btn-outline-secondary copy-button" data-target="permalink-short"><i class="fa-regular fa-clone"></i></button>
+                        </div>
+                        <p><em>Copy and freely share the link</em></p>
+                    </div>
+                    <label for="permalink-uri" class="col-form-label">URL</label>
+                    <div class="input-group">
+                        <input class="form-control code" id="permalink-uri" readonly>
+                        <button type="button" class="btn btn-outline-secondary copy-button" data-target="permalink-uri"><i class="fa-regular fa-clone"></i></button>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="alert alert-warning alert-permalink-rst" role="alert">This link target has no permanent anchor assigned.                        You can make a <a href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/edit/main/Documentation/Accessibility/TipsAndTricks.rst">pull request on GitHub</a> to suggest an anchor.
+                        The link below can be used, but is prone to change if the page gets moved.
+                    </div>
+                    <label for="permalink-rst" class="col-form-label">Link in reStructuredText (reST)</label>
+                    <div class="input-group">
+                        <textarea class="form-control code" id="permalink-rst" readonly></textarea>
+                        <button type="button" class="btn btn-outline-secondary copy-button" data-target="permalink-rst"><i class="fa-regular fa-clone"></i></button>
+                    </div>
+                    <p><em>Copy this link into your TYPO3 manual.</em></p>
+                </div>
+                <div class="mb-3">
+                    <label for="permalink-md" class="col-form-label">Link in Markdown</label>
+                    <div class="input-group">
+                        <textarea class="form-control code" id="permalink-md" readonly></textarea>
+                        <button type="button" class="btn btn-outline-secondary copy-button" data-target="permalink-md"><i class="fa-regular fa-clone"></i></button>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="permalink-html" class="col-form-label">Link in HTML</label>
+                                        <div class="input-group">
+                        <textarea class="form-control code" id="permalink-html" readonly></textarea>
+                        <button type="button" class="btn btn-outline-secondary copy-button" data-target="permalink-html"><i class="fa-regular fa-clone"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>    <div class="modal fade" id="generalModal" tabindex="-1" aria-labelledby="linkReferenceModalLabel"
+    aria-hidden="true" data-current-filename="Accessibility/TipsAndTricks"
+>
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="generalModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-success d-none" id="general-alert-success" role="alert"></div>
+                <div id="generalModalContent">
+                </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <div id="generalModalCustomButtons"></div>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i>&nbsp;Close</button>
+            </div>
+        </div>
+    </div>
+</div>    
+<footer class="page-footer">
+    <div class="frame frame-ruler-before frame-background-dark">
+        <div class="frame-container">
+            <div class="frame-inner">
+                <ul class="footer-simplemenu">
+                        <li><a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/" title="Home" rel="nofollow noopener"><span>Home</span></a></li>
+                                                <li><a href="https://typo3.slack.com/archives/C028JEPJL" title="Contact" rel="nofollow noopener"><span>Contact</span></a></li>
+                                                <li><a href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues" rel="nofollow noopener" title="Issues"><span>Issues</span></a></li>
+                                                <li><a href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors" rel="nofollow noopener" title="Repository"><span>Repository</span></a></li>
+                                            </ul>                <div class="footer-additional">
+                    <p class="text-center">Last rendered: Oct 20, 2026 12:34</p>
+                </div>
+                <div class="footer-meta">
+                                        <div class="footer-meta-copyright">
+                        &copy; since 2012 by the TYPO3 contributors
+                    </div>
+                    <ul class="footer-meta-navigation">
+                        <li><a href="https://typo3.org/legal-notice" rel="nofollow" target="_blank" title="Legal Notice">Legal Notice</a></li>
+                        <li><a href="https://typo3.org/privacy-policy" rel="nofollow" target="_blank" title="Privacy Policy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer></div>
+
+
+<script src="../_resources/js/bootstrap.min.js"></script>
+<script src="../_resources/js/theme.min.js"></script>
+
+<!--
+ Locally rendered. No tracking embedded.
+-->
+</body>
+</html>

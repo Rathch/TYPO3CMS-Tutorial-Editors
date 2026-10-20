@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <title>Creating a contact form — Tutorial for Editors main
+        documentation</title>
+
+    
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="phpdocumentor/guides" name="generator">
+<meta content="Tutorial for Editors" name="docsearch:name">
+<meta content="" name="docsearch:package_type">
+<meta content="main" name="docsearch:release">
+<meta content="main" name="docsearch:version">
+<meta content="2026-10-20T12:34:02+00:00" name="docsearch:modified">
+<meta content="2026-10-20T12:34:02+00:00" name="dc.modified">
+<meta content="2026-10-20T12:34:02+00:00" property="article:modified_time">
+    <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc">
+<link href="../../_resources/css/theme.css" rel="stylesheet">
+<link href="https://docs.typo3.org/search/" rel="search" title="Search">
+<link href="https://docs.typo3.org/permalink/t3editors:template-form@main" rel="canonical">
+<link href="Index.md" rel="alternate" title="Markdown" type="text/markdown">
+<script src="https://cdn.typo3.com/typo3infrastructure/universe/dist/webcomponents-loader.js"></script>
+<script src="https://cdn.typo3.com/typo3infrastructure/universe/dist/typo3-universe.js" type="module"></script>
+                        <link href="../Media/Index.html" rel="prev" title="Embedding videos as content into a TYPO3 website"/>
+            <link href="../../RecordModule/Index.html" rel="next" title="Records"/>
+            <link href="../../Index.html" rel="top" title="TYPO3 Editors Guide"/>
+    <style>
+.unofficial-docs-warning{background:#fff3cd;color:#332701;border-bottom:4px solid #ffc107;padding:.85rem 1.25rem;text-align:center;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:1rem;line-height:1.45;position:relative;z-index:1000}
+.unofficial-docs-warning a{color:#0b3a68;font-weight:700}
+</style>
+</head>
+<body>
+<div class="unofficial-docs-warning" role="note">
+<strong>Dies ist nicht die offizielle Dokumentation.</strong>
+This is not the official documentation.
+<a href="https://docs.typo3.org/m/typo3/tutorial-editors/14.3/en-us/Index.html">Offizielle Dokumentation: Tutorial for Editors 14.3</a>
+</div>
+<div class="page">
+    <header>
+    <div class="page-topbar">
+        <div class="page-topbar-inner">
+            <typo3-universe active="documentation">
+                <div style="display: block; height: 44px; background-color: #313131;"></div>
+            </typo3-universe>
+        </div>
+    </div>
+    <div class="page-header">
+        <div class="page-header-inner">
+            <a class="navbar-brand" href="https://docs.typo3.org/" title="TYPO3 Documentation">
+                <span class="navbar-brand-text">
+                    <img src="../../_resources/img/typo3-soul.svg" alt="TYPO3" class="navbar-brand-logo" width="29" height="29">
+                    <span class="navbar-brand-name">Documentation</span>
+                </span>
+            </a>
+            <div class="header-nav">
+                
+<div class="toc-header">
+    <div class="toc-title">
+                            <a class="toc-title-project" href="../../Index.html">TYPO3 Editors Guide</a>
+            </div>
+    <label for="languageSelect" class="visually-hidden">Select language</label>
+        <select id="languageSelect" class="form-select d-none">
+        </select>
+
+                                  
+        <label for="versionSelect" class="visually-hidden">Select version</label>
+        <select id="versionSelect" class="form-select"
+                data-current-version="main"
+            data-override-url-proxy="../../_resources/js/versions-proxy.php?url=" data-override-url-self="https://docs.typo3.org/m/typo3/tutorial-getting-started/12.4/en-us/Concepts/Index.html"
+        >
+            <option disabled selected>Loading versions...</option>
+        </select>
+    </div>            </div>
+            <div class="header-actions">
+                <button id="search-toggle" class="btn btn-light d-lg-none" type="button"
+                        aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                </button>
+                <button id="toc-toggle" class="btn btn-light d-lg-none" type="button"
+                        aria-label="Menu" aria-expanded="false" aria-controls="toc-collapse">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+                <all-documentations-menu data-override-url="../../_resources/js/menu-proxy.php"></all-documentations-menu>
+                                <search role="search" aria-label="Site search">
+                                        <select id="searchscope" hidden aria-hidden="true">
+                        <option value="">Search all</option>
+                    </select>
+                    <div id="global-search-root"></div>
+                </search>
+                                                <button id="options-toggle" class="btn btn-light" type="button"
+                        aria-controls="options-panel" aria-expanded="false" popovertarget="options-panel">
+                    <i class="fa-solid fa-gear" aria-hidden="true"></i>
+                    <span class="visually-hidden">Options</span>
+                </button>
+                <div id="options-panel" class="shadow p-3" popover>
+                    <h6 class="dropdown-header text-muted text-uppercase small mb-2">Options</h6>
+                        <a class="dropdown-item d-flex align-items-center gap-2" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues/new/choose?title=Problem+on+https%3A%2F%2Fdocs.typo3.org%2Fm%2Ftypo3%2Ftutorial-editors%2Fmain%2Fen-us%2F%2FContentElements%2FContactForm%2FIndex.html" id="btnReportIssue" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-comment-dots"></i>
+        Give feedback
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="../../_sources/ContentElements/ContactForm/Index.rst.txt" id="btnViewSource" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-code"></i>
+        View source
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="Index.md" id="btnViewMarkdown" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-file-lines"></i>
+        View as Markdown
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingDocsOfficial/GithubMethod.html" id="btnHowToEdit" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-circle-info"></i>
+        How to edit
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/edit/main/Documentation/ContentElements/ContactForm/Index.rst" id="btnEditOnGitHub" rel="nofollow noopener" target="_blank">
+        <i class="fa-brands fa-github"></i>
+        Edit on GitHub
+    </a>
+                </div>
+                            </div>
+        </div>
+    </div>
+</header>    <main class="page-main">
+        <div class="page-main-inner">
+            <div class="page-main-navigation">
+                <nav>
+
+                    <div id="toc-collapse">
+                                                <div aria-label="main navigation" class="toc"
+                             role="navigation">
+                                <all-documentations-menu-mobile
+        data-override-url="../../_resources/js/menu-proxy.php"></all-documentations-menu-mobile>
+    <div aria-label="Main navigation" class="main_menu" role="navigation">
+                <p class="caption">TYPO3 Editors Guide</p>
+            <ul class="menu-level-1" role="menubar">
+    <li class="" role="menuitem">
+    <a href="../../Login/Index.html">
+        Backend login
+    </a></li>    <li class="" role="menuitem">
+    <a href="../../Pages/Index.html">
+        Pages
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../Pages/CreatingPages/Index.html">
+        Creating pages
+    </a></li><li class="" role="menuitem">
+    <a href="../../Pages/AddingMultiple/Index.html">
+        Creating multiple pages
+    </a></li><li class="" role="menuitem">
+    <a href="../../Pages/WorkingWithPages/Index.html">
+        Working with pages
+    </a></li><li class="" role="menuitem">
+    <a href="../../Pages/PageTypes/Index.html">
+        Page types
+    </a></li><li class="" role="menuitem">
+    <a href="../../Pages/PageProperties/Index.html">
+        Page properties
+    </a></li></ul></li>    <li class=" active" role="menuitem">
+    <a href="../Index.html">
+        Content elements
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../CreatingContent/Index.html">
+        Creating content
+    </a></li><li class="" role="menuitem">
+    <a href="../EditingContent/Index.html">
+        Editing content
+    </a></li><li class="" role="menuitem">
+    <a href="../Content/Index.html">
+        Managing content
+    </a></li><li class="" role="menuitem">
+    <a href="../RichTextEditor/Index.html">
+        The rich text editor
+    </a></li><li class="" role="menuitem">
+    <a href="../Images/Index.html">
+        Working with images
+    </a></li><li class="" role="menuitem">
+    <a href="../Media/Index.html">
+        Embedding Videos
+    </a></li><li class=" current active" role="menuitem">
+    <a href="#" aria-current="page">
+        Creating a contact form
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../RecordModule/Index.html">
+        Records
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../RecordModule/UsingEffectively/Index.html">
+        Using the Records module
+    </a></li><li class="" role="menuitem">
+    <a href="../../RecordModule/CopyPaste/Index.html">
+        Copy and paste
+    </a></li><li class="" role="menuitem">
+    <a href="../../RecordModule/AdvancedClipboard/Index.html">
+        Clipboard
+    </a></li><li class="" role="menuitem">
+    <a href="../../RecordModule/MassEditing/Index.html">
+        Mass editing
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../MediaModule/Index.html">
+        Media
+    </a></li>    <li class="" role="menuitem">
+    <a href="../../LinkManagement/Index.html">
+        Link management
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../LinkManagement/Redirects/Index.html">
+        Redirects
+    </a></li><li class="" role="menuitem">
+    <a href="../../LinkManagement/QRCodes/Index.html">
+        QR Codes
+    </a></li><li class="" role="menuitem">
+    <a href="../../LinkManagement/ShortURLs/Index.html">
+        Short URLs
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../Languages/Index.html">
+        Working with languages
+    </a></li>    <li class="" role="menuitem">
+    <a href="../../SearchEngineOptimization/Index.html">
+        SEO
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../SearchEngineOptimization/DashboardWidgets.html">
+        Dashboard
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../UserSettings/Index.html">
+        User settings
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../UserSettings/PersonalData/Index.html">
+        Personal data
+    </a></li><li class="" role="menuitem">
+    <a href="../../UserSettings/AccountSecurity/Index.html">
+        Account security
+    </a></li><li class="" role="menuitem">
+    <a href="../../UserSettings/BackendAppearance/Index.html">
+        Backend appearance
+    </a></li><li class="" role="menuitem">
+    <a href="../../UserSettings/Personalization/Index.html">
+        Personalization
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../AccessControl/Index.html">
+        Access control
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../AccessControl/Visibility/Index.html">
+        Elements visibility
+    </a></li><li class="" role="menuitem">
+    <a href="../../AccessControl/Login/Index.html">
+        Frontend login
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../DeepLinking/Index.html">
+        Deep linking
+    </a></li>    <li class="" role="menuitem">
+    <a href="../../HelpInside/Index.html">
+        Help within TYPO3
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../HelpInside/BackendSearch/Index.html">
+        Backend search
+    </a></li><li class="" role="menuitem">
+    <a href="../../HelpInside/ErrorPage/Index.html">
+        Error pages
+    </a></li><li class="" role="menuitem">
+    <a href="../../HelpInside/InternalNotes/Index.html">
+        Internal Notes
+    </a></li><li class="" role="menuitem">
+    <a href="../../HelpInside/KeyboardCommands/Index.html">
+        Keyboard commands
+    </a></li><li class="" role="menuitem">
+    <a href="../../HelpInside/OnlineDocumentation/Index.html">
+        TYPO3 online documentation
+    </a></li><li class="" role="menuitem">
+    <a href="../../HelpInside/Tooltips/Index.html">
+        Tooltips
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../Accessibility/Index.html">
+        Accessibility
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../Accessibility/LegalFoundations.html">
+        Legal requirements
+    </a></li><li class="" role="menuitem">
+    <a href="../../Accessibility/WritingAccessibleText.html">
+        Writing accessible text
+    </a></li><li class="" role="menuitem">
+    <a href="../../Accessibility/TipsAndTricks.html">
+        Tips and tricks
+    </a></li><li class="" role="menuitem">
+    <a href="../../Accessibility/Sources.html">
+        Sources and further reading
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../Concepts/Index.html">
+        Concepts
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../Concepts/Cache.html">
+        Cache
+    </a></li><li class="" role="menuitem">
+    <a href="../../Concepts/FileAbstractionLayer.html">
+        File abstraction layer <wbr>(FAL)
+    </a></li><li class="" role="menuitem">
+    <a href="../../Concepts/Accessibility.html">
+        Accessibility
+    </a></li><li class="" role="menuitem">
+    <a href="../../Concepts/Copyright.html">
+        Copyright and data privacy
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../About.html">
+        About this guide
+    </a></li>    <li class="" role="menuitem">
+    <a href="../../NextSteps/Index.html">
+        Next steps
+    </a></li>    </ul>    <ul class="menu-level-1" role="menubar">
+    <li class="" role="menuitem">
+    <a href="../../Sitemap.html">
+        Sitemap
+    </a></li>    </ul>
+    </div>
+                        </div>
+                                                <div class="toc-options d-lg-none">
+                            <p class="caption">Options</p>
+                                <a class="dropdown-item d-flex align-items-center gap-2" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues/new/choose?title=Problem+on+https%3A%2F%2Fdocs.typo3.org%2Fm%2Ftypo3%2Ftutorial-editors%2Fmain%2Fen-us%2F%2FContentElements%2FContactForm%2FIndex.html" id="btnReportIssue" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-comment-dots"></i>
+        Give feedback
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="../../_sources/ContentElements/ContactForm/Index.rst.txt" id="btnViewSource" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-code"></i>
+        View source
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="Index.md" id="btnViewMarkdown" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-file-lines"></i>
+        View as Markdown
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingDocsOfficial/GithubMethod.html" id="btnHowToEdit" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-circle-info"></i>
+        How to edit
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/edit/main/Documentation/ContentElements/ContactForm/Index.rst" id="btnEditOnGitHub" rel="nofollow noopener" target="_blank">
+        <i class="fa-brands fa-github"></i>
+        Edit on GitHub
+    </a>
+                        </div>
+                                            </div>
+                </nav>
+            </div>
+            <div class="page-main-content">
+                <div class="rst-content">                        <nav aria-label="breadcrumbs navigation" class="breadcrumb-bar" role="navigation">
+        
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="../../Index.html">TYPO3 Editors Guide</a></li>
+        <li class="breadcrumb-item"><a href="../Index.html">Content elements</a></li>
+                    <li aria-current="page"  class="breadcrumb-item  active">Creating a contact form</li>
+        </ol>
+
+        <div class="breadcrumb-additions">                <a class="btn btn-sm btn-light" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues/new/choose?title=Problem+on+https%3A%2F%2Fdocs.typo3.org%2Fm%2Ftypo3%2Ftutorial-editors%2Fmain%2Fen-us%2F%2FContentElements%2FContactForm%2FIndex.html" id="btnReportIssue" rel="nofollow noopener" target="_blank">
+                    <span class="btn-icon"><i class="fa-solid fa-comment-dots"></i></span>
+                    <span class="btn-text">Give feedback</span>
+                </a>
+                            <a class="btn btn-sm btn-light" href="Index.md" id="btnDownloadMarkdown" rel="nofollow noopener" download="t3editors-template-form.md">
+                    <span class="btn-icon"><i class="fa-solid fa-download"></i></span>
+                    <span class="btn-text">Markdown</span>
+                </a>
+                            <a class="btn btn-sm btn-secondary" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/edit/main/Documentation/ContentElements/ContactForm/Index.rst" id="btnEditOnGitHub" rel="nofollow noopener" target="_blank">
+                    <span class="btn-icon"><span class="fa-brands fa-github"></span></span>
+                    <span class="btn-text">Edit on GitHub</span>
+                </a>
+            </div>
+    </nav>
+                    
+<article class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+    <div itemprop="articleBody">
+        <!-- content start -->
+                
+<section class="section" id="template-form" data-rst-anchor="template-form"><a id="creating-a-contact-form"></a>
+            
+            <a id="mail-form"></a>
+            <h1>Creating a contact form<a class="headerlink" href="#template-form" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h1>
+            <span data-zoom="gallery"><img
+    src="../../Images/GeneratedScreenshots/ContentElements/ContactForm.png"
+    width="250"        alt="Content element Contact Form in the TYPO3 backend"        class="img-thumbnail float-end ms-1"/></span>
+            
+    <p>You can create a form from the <span class="guilabel">Content &gt; Forms</span> module. This is a
+system extension which needs to be activated by your administrator. It is
+written in TypoScript and is fully documented in the <a href="https://docs.typo3.org/c/typo3/cms-form/main/en-us/Index.html">Form Framework</a> system extension manual.</p>
+
+            
+    <p>This module provides a guided interface for editors to create any kind of form
+such as a contact form, newsletter subscription or a survey. TYPO3 comes
+with one pre-defined form already built, which you can use to get started.</p>
+
+            
+    
+<ol>
+    <li>
+    <p>In the <span class="guilabel">Content &gt; Forms</span> module, click the <span class="guilabel">+ Create new
+form</span> button. The <span class="guilabel">Create new form</span> wizard displays.</p>
+<figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/Forms/FormCreateNew.png"
+            alt="The Forms module without forms, with the button &quot;Create new form&quot;"        />
+
+            
+                    <figcaption>
+    <p>Launching the <span class="guilabel">Create new form</span> wizard</p>
+</figcaption>
+            </figure></li>
+    <li>
+    <p>Choose the template <span class="guilabel">Simple contact form</span>.</p>
+<div class="versionchange versionchanged">
+    <p class="versionmodified">
+        <span class="versionicon"><i class="fa-solid fa-arrows-rotate"></i></span>
+        Changed in version 15.0 <span class="versionchange-changelog-line"><a href="https://docs.typo3.org/c/typo3/cms-core/main/en-us/Changelog/15.0/Feature-110331-FormTemplatePickerWithIconAndDescription.html#feature-110331-1785369600" class="versionchange-changelog">Feature: #110331 - Improved form template picker with icon and description</a></span></p>
+    <article>
+        
+    <p>Before, the wizard asked whether to create a blank form or a
+predefined form, and offered the templates in a list in a later
+step.</p>
+
+    </article>
+</div><figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/Forms/FormsSettingsStep1.png"
+            alt="The first step of the wizard with the templates &quot;Blank form&quot; and &quot;Simple contact form&quot;"        />
+
+            
+                    <figcaption>
+    <p>Choose a template</p>
+</figcaption>
+            </figure></li>
+    <li>
+    <p>Enter a name for the form and click <span class="guilabel">Next</span>.</p>
+<figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/Forms/FormsSettingsStep2.png"
+            alt="The step &quot;Settings&quot; of the wizard with the name of the new form"        />
+
+            
+                    <figcaption>
+    <p>Enter a name</p>
+</figcaption>
+            </figure></li>
+    <li>
+    <p>TYPO3 creates the form. Click <span class="guilabel">Finish</span>. Your new form is
+displayed.</p>
+<figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/Forms/FormsSettingsStep3.png"
+            alt="The last step of the wizard with the message &quot;Form created&quot;"        />
+
+            
+                    <figcaption>
+    <p>The form is created</p>
+</figcaption>
+            </figure><figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/Forms/FormsNewForm.png"
+            alt="The new contact form in the form editor"        />
+
+            
+                    <figcaption>
+    <p>New form based on template</p>
+</figcaption>
+            </figure>
+    <p>The predefined &#039;Simple contact form&#039; comes with some settings already
+configured, but you can edit these settings and add more fields. For
+example, you might want to delete the Summary page, and change
+the labels on the buttons.</p>
+</li>
+    <li>Add your form to a page the same way you would add any
+<a href="../CreatingContent/Index.html#content-form">content element</a>. On the  <span class="guilabel">Form elements</span> tab, choose &#039;Form&#039;.</li>
+    <li>
+    <p>In the form content element, go to the <span class="guilabel">Plugin</span> tab and in the
+<span class="guilabel">Form definition</span> list, choose your form.</p>
+<figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/Forms/FormsFormDefinition.png"
+            alt="The tab &quot;Plugin&quot; of a form element with the form definition &quot;Get in touch&quot;"        />
+
+            
+                    <figcaption>
+    <p>Choose your form on the <span class="guilabel">Plugin</span> tab</p>
+</figcaption>
+            </figure></li>
+    <li>
+    <p>On the <span class="guilabel">General</span> tab, type a header for your form, then save and close
+the record.</p>
+
+    <p>Preview the page and it should look something like this:</p>
+<figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/Forms/FormOutput.png"
+            alt="The contact form in the frontend"        />
+
+            
+                    <figcaption>
+    <p>The contact form in the frontend</p>
+</figcaption>
+            </figure></li>
+</ol>
+
+            <section class="section" id="create-form-scratch" data-rst-anchor="create-form-scratch"><a id="create-a-form-from-scratch"></a>
+            
+            <h2>Create a form from scratch<a class="headerlink" href="#create-form-scratch" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            
+    
+<ol type="1">
+    <li>In the <span class="guilabel">Content &gt; Forms</span> module, click the <span class="guilabel">+ Create new
+form</span> button.</li>
+    <li>In the <span class="guilabel">Create new form</span> wizard, choose <span class="guilabel">Blank form</span>.</li>
+    <li>
+    <p>Give your form a name, then click <span class="guilabel">Next</span> and <span class="guilabel">Finish</span>.</p>
+
+    <p>A blank form displays.</p>
+<figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/FormsBlank/FormsBlankForm.png"
+            alt="A blank form in the form editor"        />
+
+            
+                    <figcaption>
+    <p>Create a new form from scratch</p>
+</figcaption>
+            </figure></li>
+    <li>
+    <p>Click the <span class="guilabel">Create new element</span> button. The <span class="guilabel">New element</span>
+window displays.</p>
+<figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/FormsBlank/FormsNewElement.png"
+            alt="The window &quot;New element&quot; with the types of form elements"        />
+
+            
+                    <figcaption>
+    <p>Create new element in form</p>
+</figcaption>
+            </figure>
+    <p>TYPO3 comes with over twenty form fields by default, including:</p>
+
+
+<ul>
+    <li><strong>Basic elements</strong> like text or password fields</li>
+    <li><strong>Special elements</strong> requiring specific format validation, like phone
+numbers or dates</li>
+    <li><strong>Select elements</strong> like checkboxes or multiple choice</li>
+    <li><strong>Advanced elements</strong> that have special rules, like user uploads or
+calendar date pickers</li>
+    <li><strong>Container elements</strong> to visually organize surveys</li>
+</ul>
+
+    <p>Once you’ve selected a form element, you can customize the settings for how the field is displayed.</p>
+</li>
+    <li>
+    <p>Choose the <span class="guilabel">Text</span> element and the field is added to your form. You can
+configure settings for the field (such as placeholder text and field
+validation) on the right-hand side of the screen .</p>
+<figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/FormsBlank/FormsFieldSettings.png"
+            alt="A text field in the form editor, with its settings on the right"        />
+
+            
+                    <figcaption>
+    <p>Configure the settings of the field</p>
+</figcaption>
+            </figure></li>
+    <li>
+    <p>Click the <span class="guilabel">Preview mode</span> icon to see an indication of how your
+form will display on the frontend. Use the <span class="guilabel">Edit mode</span> icon to
+return to editing your form.</p>
+<figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/FormsBlank/FormsPreview.png"
+            alt="The form in the preview mode of the form editor"        />
+
+            
+                    <figcaption>
+    <p>The preview mode of the form editor</p>
+</figcaption>
+            </figure></li>
+</ol>
+
+    </section>
+            <section class="section" id="working-with-forms" data-rst-anchor="working-with-forms"><a id="working-with-forms-1"></a>
+            
+            <h2>Working with forms<a class="headerlink" href="#working-with-forms" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            
+    <p>When you have added multiple fields to your form, you can drag and drop them
+to rearrange their order.</p>
+
+            
+    <p>Add <span class="guilabel">Finishers</span> like a confirmation message or redirection to another page.</p>
+
+            <figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/Forms/FormsFinishers.png"
+            alt="Add finishers to a form"        />
+
+            
+            </figure>
+            
+    <p>You can integrate extensions with existing forms. For example, if you&#039;re
+running a sales operation, you can integrate with Mautic and any changes to a
+TYPO3 form will update Mautic to give you seamless lead tracking.</p>
+
+                
+<div class="admonition tip" role="alert">
+    <p class="admonition-title">Tip</p>
+        
+    <p>There are many more properties that can be defined. They are
+described in the <a href="https://docs.typo3.org/c/typo3/cms-form/main/en-us/Index.html">&quot;Form Framework&quot;</a> system extension
+manual.</p>
+
+</div>
+    </section>
+    </section>
+        <!-- content end -->
+    </div>
+</article>
+                        
+            <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center"><li class="page-item">
+                            <a class="page-link" href="../Media/Index.html"
+                               title="Accesskey Alt(+Shift)+p">
+                                <i class="fa-solid fa-chevron-left"></i> Previous
+                            </a>
+                        </li>
+                    <li class="page-item">
+                            <a class="page-link" href="../../RecordModule/Index.html"
+                               title="Accesskey Alt(+Shift)+n">
+                                Next <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+        </nav>
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="linkReferenceModal" tabindex="-1" aria-labelledby="linkReferenceModalLabel"
+    aria-hidden="true" data-current-filename="ContentElements/ContactForm/Index" data-interlink-shortcode="t3editors">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="linkReferenceModalLabel">Reference to the headline</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-success d-none" id="permalink-alert-success" role="alert"></div>
+                <div class="mb-3">
+                    <div class="permalink-short-wrapper">
+                        <label for="permalink-short" class="col-form-label">Permalink (Shortlink)</label>
+                        <div class="input-group">
+                            <input class="form-control code" id="permalink-short" readonly>
+                            <button type="button" class="btn btn-outline-secondary copy-button" data-target="permalink-short"><i class="fa-regular fa-clone"></i></button>
+                        </div>
+                        <p><em>Copy and freely share the link</em></p>
+                    </div>
+                    <label for="permalink-uri" class="col-form-label">URL</label>
+                    <div class="input-group">
+                        <input class="form-control code" id="permalink-uri" readonly>
+                        <button type="button" class="btn btn-outline-secondary copy-button" data-target="permalink-uri"><i class="fa-regular fa-clone"></i></button>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="alert alert-warning alert-permalink-rst" role="alert">This link target has no permanent anchor assigned.                        You can make a <a href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/edit/main/Documentation/ContentElements/ContactForm/Index.rst">pull request on GitHub</a> to suggest an anchor.
+                        The link below can be used, but is prone to change if the page gets moved.
+                    </div>
+                    <label for="permalink-rst" class="col-form-label">Link in reStructuredText (reST)</label>
+                    <div class="input-group">
+                        <textarea class="form-control code" id="permalink-rst" readonly></textarea>
+                        <button type="button" class="btn btn-outline-secondary copy-button" data-target="permalink-rst"><i class="fa-regular fa-clone"></i></button>
+                    </div>
+                    <p><em>Copy this link into your TYPO3 manual.</em></p>
+                </div>
+                <div class="mb-3">
+                    <label for="permalink-md" class="col-form-label">Link in Markdown</label>
+                    <div class="input-group">
+                        <textarea class="form-control code" id="permalink-md" readonly></textarea>
+                        <button type="button" class="btn btn-outline-secondary copy-button" data-target="permalink-md"><i class="fa-regular fa-clone"></i></button>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="permalink-html" class="col-form-label">Link in HTML</label>
+                                        <div class="input-group">
+                        <textarea class="form-control code" id="permalink-html" readonly></textarea>
+                        <button type="button" class="btn btn-outline-secondary copy-button" data-target="permalink-html"><i class="fa-regular fa-clone"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>    <div class="modal fade" id="generalModal" tabindex="-1" aria-labelledby="linkReferenceModalLabel"
+    aria-hidden="true" data-current-filename="ContentElements/ContactForm/Index"
+>
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="generalModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-success d-none" id="general-alert-success" role="alert"></div>
+                <div id="generalModalContent">
+                </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <div id="generalModalCustomButtons"></div>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i>&nbsp;Close</button>
+            </div>
+        </div>
+    </div>
+</div>    
+<footer class="page-footer">
+    <div class="frame frame-ruler-before frame-background-dark">
+        <div class="frame-container">
+            <div class="frame-inner">
+                <ul class="footer-simplemenu">
+                        <li><a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/" title="Home" rel="nofollow noopener"><span>Home</span></a></li>
+                                                <li><a href="https://typo3.slack.com/archives/C028JEPJL" title="Contact" rel="nofollow noopener"><span>Contact</span></a></li>
+                                                <li><a href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues" rel="nofollow noopener" title="Issues"><span>Issues</span></a></li>
+                                                <li><a href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors" rel="nofollow noopener" title="Repository"><span>Repository</span></a></li>
+                                            </ul>                <div class="footer-additional">
+                    <p class="text-center">Last rendered: Oct 20, 2026 12:34</p>
+                </div>
+                <div class="footer-meta">
+                                        <div class="footer-meta-copyright">
+                        &copy; since 2012 by the TYPO3 contributors
+                    </div>
+                    <ul class="footer-meta-navigation">
+                        <li><a href="https://typo3.org/legal-notice" rel="nofollow" target="_blank" title="Legal Notice">Legal Notice</a></li>
+                        <li><a href="https://typo3.org/privacy-policy" rel="nofollow" target="_blank" title="Privacy Policy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer></div>
+
+
+<script src="../../_resources/js/bootstrap.min.js"></script>
+<script src="../../_resources/js/theme.min.js"></script>
+
+<!--
+ Locally rendered. No tracking embedded.
+-->
+</body>
+</html>
