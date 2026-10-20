@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <title>Creating content — Tutorial for Editors main
+        documentation</title>
+
+    
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="phpdocumentor/guides" name="generator">
+<meta content="Tutorial for Editors" name="docsearch:name">
+<meta content="" name="docsearch:package_type">
+<meta content="main" name="docsearch:release">
+<meta content="main" name="docsearch:version">
+<meta content="2026-10-20T12:34:02+00:00" name="docsearch:modified">
+<meta content="2026-10-20T12:34:02+00:00" name="dc.modified">
+<meta content="2026-10-20T12:34:02+00:00" property="article:modified_time">
+    <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc">
+<link href="../../_resources/css/theme.css" rel="stylesheet">
+<link href="https://docs.typo3.org/search/" rel="search" title="Search">
+<link href="https://docs.typo3.org/permalink/t3editors:content-creating@main" rel="canonical">
+<link href="Index.md" rel="alternate" title="Markdown" type="text/markdown">
+<script src="https://cdn.typo3.com/typo3infrastructure/universe/dist/webcomponents-loader.js"></script>
+<script src="https://cdn.typo3.com/typo3infrastructure/universe/dist/typo3-universe.js" type="module"></script>
+                        <link href="../Index.html" rel="prev" title="Content elements"/>
+            <link href="../EditingContent/Index.html" rel="next" title="Editing content"/>
+            <link href="../../Index.html" rel="top" title="TYPO3 Editors Guide"/>
+    <style>
+.unofficial-docs-warning{background:#fff3cd;color:#332701;border-bottom:4px solid #ffc107;padding:.85rem 1.25rem;text-align:center;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:1rem;line-height:1.45;position:relative;z-index:1000}
+.unofficial-docs-warning a{color:#0b3a68;font-weight:700}
+</style>
+</head>
+<body>
+<div class="unofficial-docs-warning" role="note">
+<strong>Dies ist nicht die offizielle Dokumentation.</strong>
+This is not the official documentation.
+<a href="https://docs.typo3.org/m/typo3/tutorial-editors/14.3/en-us/Index.html">Offizielle Dokumentation: Tutorial for Editors 14.3</a>
+</div>
+<div class="page">
+    <header>
+    <div class="page-topbar">
+        <div class="page-topbar-inner">
+            <typo3-universe active="documentation">
+                <div style="display: block; height: 44px; background-color: #313131;"></div>
+            </typo3-universe>
+        </div>
+    </div>
+    <div class="page-header">
+        <div class="page-header-inner">
+            <a class="navbar-brand" href="https://docs.typo3.org/" title="TYPO3 Documentation">
+                <span class="navbar-brand-text">
+                    <img src="../../_resources/img/typo3-soul.svg" alt="TYPO3" class="navbar-brand-logo" width="29" height="29">
+                    <span class="navbar-brand-name">Documentation</span>
+                </span>
+            </a>
+            <div class="header-nav">
+                
+<div class="toc-header">
+    <div class="toc-title">
+                            <a class="toc-title-project" href="../../Index.html">TYPO3 Editors Guide</a>
+            </div>
+    <label for="languageSelect" class="visually-hidden">Select language</label>
+        <select id="languageSelect" class="form-select d-none">
+        </select>
+
+                                  
+        <label for="versionSelect" class="visually-hidden">Select version</label>
+        <select id="versionSelect" class="form-select"
+                data-current-version="main"
+            data-override-url-proxy="../../_resources/js/versions-proxy.php?url=" data-override-url-self="https://docs.typo3.org/m/typo3/tutorial-getting-started/12.4/en-us/Concepts/Index.html"
+        >
+            <option disabled selected>Loading versions...</option>
+        </select>
+    </div>            </div>
+            <div class="header-actions">
+                <button id="search-toggle" class="btn btn-light d-lg-none" type="button"
+                        aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                </button>
+                <button id="toc-toggle" class="btn btn-light d-lg-none" type="button"
+                        aria-label="Menu" aria-expanded="false" aria-controls="toc-collapse">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+                <all-documentations-menu data-override-url="../../_resources/js/menu-proxy.php"></all-documentations-menu>
+                                <search role="search" aria-label="Site search">
+                                        <select id="searchscope" hidden aria-hidden="true">
+                        <option value="">Search all</option>
+                    </select>
+                    <div id="global-search-root"></div>
+                </search>
+                                                <button id="options-toggle" class="btn btn-light" type="button"
+                        aria-controls="options-panel" aria-expanded="false" popovertarget="options-panel">
+                    <i class="fa-solid fa-gear" aria-hidden="true"></i>
+                    <span class="visually-hidden">Options</span>
+                </button>
+                <div id="options-panel" class="shadow p-3" popover>
+                    <h6 class="dropdown-header text-muted text-uppercase small mb-2">Options</h6>
+                        <a class="dropdown-item d-flex align-items-center gap-2" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues/new/choose?title=Problem+on+https%3A%2F%2Fdocs.typo3.org%2Fm%2Ftypo3%2Ftutorial-editors%2Fmain%2Fen-us%2F%2FContentElements%2FCreatingContent%2FIndex.html" id="btnReportIssue" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-comment-dots"></i>
+        Give feedback
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="../../_sources/ContentElements/CreatingContent/Index.rst.txt" id="btnViewSource" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-code"></i>
+        View source
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="Index.md" id="btnViewMarkdown" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-file-lines"></i>
+        View as Markdown
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingDocsOfficial/GithubMethod.html" id="btnHowToEdit" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-circle-info"></i>
+        How to edit
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/edit/main/Documentation/ContentElements/CreatingContent/Index.rst" id="btnEditOnGitHub" rel="nofollow noopener" target="_blank">
+        <i class="fa-brands fa-github"></i>
+        Edit on GitHub
+    </a>
+                </div>
+                            </div>
+        </div>
+    </div>
+</header>    <main class="page-main">
+        <div class="page-main-inner">
+            <div class="page-main-navigation">
+                <nav>
+
+                    <div id="toc-collapse">
+                                                <div aria-label="main navigation" class="toc"
+                             role="navigation">
+                                <all-documentations-menu-mobile
+        data-override-url="../../_resources/js/menu-proxy.php"></all-documentations-menu-mobile>
+    <div aria-label="Main navigation" class="main_menu" role="navigation">
+                <p class="caption">TYPO3 Editors Guide</p>
+            <ul class="menu-level-1" role="menubar">
+    <li class="" role="menuitem">
+    <a href="../../Login/Index.html">
+        Backend login
+    </a></li>    <li class="" role="menuitem">
+    <a href="../../Pages/Index.html">
+        Pages
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../Pages/CreatingPages/Index.html">
+        Creating pages
+    </a></li><li class="" role="menuitem">
+    <a href="../../Pages/AddingMultiple/Index.html">
+        Creating multiple pages
+    </a></li><li class="" role="menuitem">
+    <a href="../../Pages/WorkingWithPages/Index.html">
+        Working with pages
+    </a></li><li class="" role="menuitem">
+    <a href="../../Pages/PageTypes/Index.html">
+        Page types
+    </a></li><li class="" role="menuitem">
+    <a href="../../Pages/PageProperties/Index.html">
+        Page properties
+    </a></li></ul></li>    <li class=" active" role="menuitem">
+    <a href="../Index.html">
+        Content elements
+    </a>        <ul class="menu-level-1"><li class=" current active" role="menuitem">
+    <a href="#" aria-current="page">
+        Creating content
+    </a></li><li class="" role="menuitem">
+    <a href="../EditingContent/Index.html">
+        Editing content
+    </a></li><li class="" role="menuitem">
+    <a href="../Content/Index.html">
+        Managing content
+    </a></li><li class="" role="menuitem">
+    <a href="../RichTextEditor/Index.html">
+        The rich text editor
+    </a></li><li class="" role="menuitem">
+    <a href="../Images/Index.html">
+        Working with images
+    </a></li><li class="" role="menuitem">
+    <a href="../Media/Index.html">
+        Embedding Videos
+    </a></li><li class="" role="menuitem">
+    <a href="../ContactForm/Index.html">
+        Creating a contact form
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../RecordModule/Index.html">
+        Records
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../RecordModule/UsingEffectively/Index.html">
+        Using the Records module
+    </a></li><li class="" role="menuitem">
+    <a href="../../RecordModule/CopyPaste/Index.html">
+        Copy and paste
+    </a></li><li class="" role="menuitem">
+    <a href="../../RecordModule/AdvancedClipboard/Index.html">
+        Clipboard
+    </a></li><li class="" role="menuitem">
+    <a href="../../RecordModule/MassEditing/Index.html">
+        Mass editing
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../MediaModule/Index.html">
+        Media
+    </a></li>    <li class="" role="menuitem">
+    <a href="../../LinkManagement/Index.html">
+        Link management
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../LinkManagement/Redirects/Index.html">
+        Redirects
+    </a></li><li class="" role="menuitem">
+    <a href="../../LinkManagement/QRCodes/Index.html">
+        QR Codes
+    </a></li><li class="" role="menuitem">
+    <a href="../../LinkManagement/ShortURLs/Index.html">
+        Short URLs
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../Languages/Index.html">
+        Working with languages
+    </a></li>    <li class="" role="menuitem">
+    <a href="../../SearchEngineOptimization/Index.html">
+        SEO
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../SearchEngineOptimization/DashboardWidgets.html">
+        Dashboard
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../UserSettings/Index.html">
+        User settings
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../UserSettings/PersonalData/Index.html">
+        Personal data
+    </a></li><li class="" role="menuitem">
+    <a href="../../UserSettings/AccountSecurity/Index.html">
+        Account security
+    </a></li><li class="" role="menuitem">
+    <a href="../../UserSettings/BackendAppearance/Index.html">
+        Backend appearance
+    </a></li><li class="" role="menuitem">
+    <a href="../../UserSettings/Personalization/Index.html">
+        Personalization
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../AccessControl/Index.html">
+        Access control
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../AccessControl/Visibility/Index.html">
+        Elements visibility
+    </a></li><li class="" role="menuitem">
+    <a href="../../AccessControl/Login/Index.html">
+        Frontend login
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../DeepLinking/Index.html">
+        Deep linking
+    </a></li>    <li class="" role="menuitem">
+    <a href="../../HelpInside/Index.html">
+        Help within TYPO3
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../HelpInside/BackendSearch/Index.html">
+        Backend search
+    </a></li><li class="" role="menuitem">
+    <a href="../../HelpInside/ErrorPage/Index.html">
+        Error pages
+    </a></li><li class="" role="menuitem">
+    <a href="../../HelpInside/InternalNotes/Index.html">
+        Internal Notes
+    </a></li><li class="" role="menuitem">
+    <a href="../../HelpInside/KeyboardCommands/Index.html">
+        Keyboard commands
+    </a></li><li class="" role="menuitem">
+    <a href="../../HelpInside/OnlineDocumentation/Index.html">
+        TYPO3 online documentation
+    </a></li><li class="" role="menuitem">
+    <a href="../../HelpInside/Tooltips/Index.html">
+        Tooltips
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../Accessibility/Index.html">
+        Accessibility
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../Accessibility/LegalFoundations.html">
+        Legal requirements
+    </a></li><li class="" role="menuitem">
+    <a href="../../Accessibility/WritingAccessibleText.html">
+        Writing accessible text
+    </a></li><li class="" role="menuitem">
+    <a href="../../Accessibility/TipsAndTricks.html">
+        Tips and tricks
+    </a></li><li class="" role="menuitem">
+    <a href="../../Accessibility/Sources.html">
+        Sources and further reading
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../Concepts/Index.html">
+        Concepts
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../Concepts/Cache.html">
+        Cache
+    </a></li><li class="" role="menuitem">
+    <a href="../../Concepts/FileAbstractionLayer.html">
+        File abstraction layer <wbr>(FAL)
+    </a></li><li class="" role="menuitem">
+    <a href="../../Concepts/Accessibility.html">
+        Accessibility
+    </a></li><li class="" role="menuitem">
+    <a href="../../Concepts/Copyright.html">
+        Copyright and data privacy
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../About.html">
+        About this guide
+    </a></li>    <li class="" role="menuitem">
+    <a href="../../NextSteps/Index.html">
+        Next steps
+    </a></li>    </ul>    <ul class="menu-level-1" role="menubar">
+    <li class="" role="menuitem">
+    <a href="../../Sitemap.html">
+        Sitemap
+    </a></li>    </ul>
+    </div>
+                        </div>
+                                                <div class="toc-options d-lg-none">
+                            <p class="caption">Options</p>
+                                <a class="dropdown-item d-flex align-items-center gap-2" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues/new/choose?title=Problem+on+https%3A%2F%2Fdocs.typo3.org%2Fm%2Ftypo3%2Ftutorial-editors%2Fmain%2Fen-us%2F%2FContentElements%2FCreatingContent%2FIndex.html" id="btnReportIssue" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-comment-dots"></i>
+        Give feedback
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="../../_sources/ContentElements/CreatingContent/Index.rst.txt" id="btnViewSource" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-code"></i>
+        View source
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="Index.md" id="btnViewMarkdown" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-file-lines"></i>
+        View as Markdown
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingDocsOfficial/GithubMethod.html" id="btnHowToEdit" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-circle-info"></i>
+        How to edit
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/edit/main/Documentation/ContentElements/CreatingContent/Index.rst" id="btnEditOnGitHub" rel="nofollow noopener" target="_blank">
+        <i class="fa-brands fa-github"></i>
+        Edit on GitHub
+    </a>
+                        </div>
+                                            </div>
+                </nav>
+            </div>
+            <div class="page-main-content">
+                <div class="rst-content">                        <nav aria-label="breadcrumbs navigation" class="breadcrumb-bar" role="navigation">
+        
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="../../Index.html">TYPO3 Editors Guide</a></li>
+        <li class="breadcrumb-item"><a href="../Index.html">Content elements</a></li>
+                    <li aria-current="page"  class="breadcrumb-item  active">Creating content</li>
+        </ol>
+
+        <div class="breadcrumb-additions">                <a class="btn btn-sm btn-light" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues/new/choose?title=Problem+on+https%3A%2F%2Fdocs.typo3.org%2Fm%2Ftypo3%2Ftutorial-editors%2Fmain%2Fen-us%2F%2FContentElements%2FCreatingContent%2FIndex.html" id="btnReportIssue" rel="nofollow noopener" target="_blank">
+                    <span class="btn-icon"><i class="fa-solid fa-comment-dots"></i></span>
+                    <span class="btn-text">Give feedback</span>
+                </a>
+                            <a class="btn btn-sm btn-light" href="Index.md" id="btnDownloadMarkdown" rel="nofollow noopener" download="t3editors-content-creating.md">
+                    <span class="btn-icon"><i class="fa-solid fa-download"></i></span>
+                    <span class="btn-text">Markdown</span>
+                </a>
+                            <a class="btn btn-sm btn-secondary" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/edit/main/Documentation/ContentElements/CreatingContent/Index.rst" id="btnEditOnGitHub" rel="nofollow noopener" target="_blank">
+                    <span class="btn-icon"><span class="fa-brands fa-github"></span></span>
+                    <span class="btn-text">Edit on GitHub</span>
+                </a>
+            </div>
+    </nav>
+                    
+<article class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+    <div itemprop="articleBody">
+        <!-- content start -->
+                
+<section class="section" id="content-creating" data-rst-anchor="content-creating"><a id="creating-content"></a>
+            
+            <h1>Creating content<a class="headerlink" href="#content-creating" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h1>
+            <div class="ratio ratio-16x9">
+<iframe src="https://www.youtube-nocookie.com/embed/834giaL7L6M">
+</iframe>
+</div>
+            <hr />
+            <span data-zoom="gallery"><img
+    src="../../Images/GeneratedScreenshots/ContentElements/CreateContentElement.png"
+    width="250"        alt="Creating content elements in the TYPO3 backend"        class="img-thumbnail float-end ms-1"/></span>
+            <div class="versionchange versionchanged">
+    <p class="versionmodified">
+        <span class="versionicon"><i class="fa-solid fa-arrows-rotate"></i></span>
+        Changed in version 14.0 <span class="versionchange-changelog-line"><a href="https://docs.typo3.org/c/typo3/cms-core/main/en-us/Changelog/14.0/Feature-107628-ImprovedBackendModuleNamingAndStructure.html#feature-107628-1729026000" class="versionchange-changelog">Feature: #107628 - Improved backend module naming and structure</a></span></p>
+    <article>
+        
+    <p>The main module <code class="code-inline" translate="no">Web</code> has been renamed to <code class="code-inline" translate="no">Content</code>.</p>
+
+    </article>
+</div>
+            
+    <p>In the <span class="guilabel">Content &gt; Layout</span> module, on any page, click the <span class="guilabel">+
+Create new content</span> button in the place where you want to insert content:</p>
+
+            
+    <p>The <span class="guilabel">New Page Content</span> wizard will then be displayed.</p>
+
+            
+    <p>In the following screenshot you see the location of that button:</p>
+
+            <figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/NewContentElement/CreateNew.png"
+            alt="&quot;Create new content button&quot; in the Content Layout module, column &quot;Content area&quot;"        />
+
+            
+                    <figcaption>
+    <p>Create a new Content Element by clicking the button</p>
+</figcaption>
+            </figure>
+            <div class="contents-wrapper">
+        <p class="topic-title">Table of contents:</p>
+        <ul class="menu-level">
+    <li class="toc-item">
+    <a href="#types-of-content-elements">Types of content elements</a>
+
+
+</li>
+    <li class="toc-item">
+    <a href="#content-elements-seen-by-a-typical-typo3-editor">Content elements seen by a typical TYPO3 editor</a>
+
+        <ul class="section-level-2">
+            <li class="toc-item">
+    <a href="#typical-page-content">Typical page content</a>
+
+
+</li>
+            <li class="toc-item">
+    <a href="#lists">Lists</a>
+
+
+</li>
+                    </ul>
+</li>
+    <li class="toc-item">
+    <a href="#advanced-content-elements">Advanced content elements</a>
+
+        <ul class="section-level-2">
+            <li class="toc-item">
+    <a href="#form-elements">Form elements</a>
+
+
+</li>
+            <li class="toc-item">
+    <a href="#menu-elements">Menu elements</a>
+
+
+</li>
+            <li class="toc-item">
+    <a href="#plugins">Plugins</a>
+
+
+</li>
+            <li class="toc-item">
+    <a href="#special-elements">Special elements</a>
+
+
+</li>
+                    </ul>
+</li>
+    <li class="toc-item">
+    <a href="#add-new-content-to-a-page">Add new content to a page</a>
+
+
+</li>
+    </ul>
+
+    <button class="toggle-all-sections btn btn-sm btn-light">Collapse all Sections</button>
+</div>
+            <section class="section" id="content-types" data-rst-anchor="content-types"><a id="types-of-content-elements"></a>
+            
+            <h2>Types of content elements<a class="headerlink" href="#content-types" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            
+    <p>The content elements you can see here are provided by a standard TYPO3
+installation with a site package as described in the
+<a href="https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/Index.html#start">TYPO3 site package tutorial</a>.</p>
+
+            
+    <p>If you are working with a different setup you might see more, or different
+content elements.</p>
+
+            
+    <p>Which content elements you can see as an editor also depends on your user rights:</p>
+
+            
+    <p>A standard editor can see the following content elements:</p>
+
+            <figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/ContentElements/WizardTypical.png"
+            alt="Screenshot of the &quot;New Page Content&quot; wizard as seen by a common TYPO3 editor, featuring &quot;Typical Page Content&quot;, &quot;Lists&quot; and &quot;Special elements&quot;"        />
+
+            
+                    <figcaption>
+    <p>Screenshot of the &quot;New Page Content&quot; wizard as seen by a common TYPO3 editor</p>
+</figcaption>
+            </figure>
+            
+    <p>An advanced editor or an administrator can see the following content elements:</p>
+
+            <figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/ContentElements/WizardAdvanced.png"
+            alt="Screenshot of the &quot;New Page Content&quot; wizard as seen by an advanced TYPO3 editor, additionally including &quot;Form elements&quot;, &quot;Menus&quot; and additional &quot;Special elements&quot;"        />
+
+            
+                    <figcaption>
+    <p>An advanced editor sees more groups and more content elements types in some of the groups</p>
+</figcaption>
+            </figure>
+    </section>
+            <section class="section" id="content-types-editor" data-rst-anchor="content-types-editor"><a id="content-elements-seen-by-a-typical-typo3-editor"></a>
+            
+            <h2>Content elements seen by a typical TYPO3 editor<a class="headerlink" href="#content-types-editor" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            <section class="section" id="content-typical" data-rst-anchor="content-typical"><a id="typical-page-content"></a>
+            
+            <h3>Typical page content<a class="headerlink" href="#content-typical" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>Insert regular text and image content types to build standard web pages.</p>
+
+            <figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/ContentElements/WizardTypical.png"
+            alt="&#039;Typical page content&#039; tab contains content like Header, Regular Text Element, Text &amp; Media, Images etc"        />
+
+            
+                    <figcaption>
+    <p>The <span class="guilabel">Typical page content</span> tab of the new content element window</p>
+</figcaption>
+            </figure>
+    </section>
+            <section class="section" id="content-list" data-rst-anchor="content-list"><a id="lists"></a>
+            
+            <h3>Lists<a class="headerlink" href="#content-list" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>Lists can be used for structured content. They provide less flexibility then
+standard content elements but are easier to use for their specialized use case.</p>
+
+            <figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/NewContentElement/WizardTabList.png"
+            alt="The &#039;List&#039; tab contains content elements like &quot;Bullet List&quot;, &quot;Table&quot; and &quot;File Links&quot;"        />
+
+            
+                    <figcaption>
+    <p>The <span class="guilabel">List</span> tab of the new content element window</p>
+</figcaption>
+            </figure>
+            
+    <p>Depending on how the <a href="https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/ContentElementRendering/Index.html#content-element-rendering">Rendering is defined in the Site Package</a>
+the way the results are displayed on the page might vary.</p>
+
+    </section>
+    </section>
+            <section class="section" id="content-types-advanced" data-rst-anchor="content-types-advanced"><a id="advanced-content-elements"></a>
+            
+            <h2>Advanced content elements<a class="headerlink" href="#content-types-advanced" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            
+    <p>The following content elements are usually visible to advanced users:</p>
+
+            <section class="section" id="content-form" data-rst-anchor="content-form"><a id="form-elements"></a>
+            
+            <h3>Form elements<a class="headerlink" href="#content-form" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>Create a login form or a simple contact form.</p>
+
+            <figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/NewContentElement/WizardTabForm.png"
+            alt="Tab &quot;Form elements&quot; with &quot;Form&quot; and &quot;Login Form&quot;"        />
+
+            
+                    <figcaption>
+    <p>The <span class="guilabel">Form elements</span> tab of the new content element window</p>
+</figcaption>
+            </figure>
+    </section>
+            <section class="section" id="content-menu" data-rst-anchor="content-menu"><a id="menu-elements"></a>
+            
+            <h3>Menu elements<a class="headerlink" href="#content-menu" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>Present a menu or list of page links in different ways.</p>
+
+            <figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/NewContentElement/WizardTabMenu.png"
+            alt="The &#039;Menu&#039; tab of the new content element window"        />
+
+            
+                    <figcaption>
+    <p>The <span class="guilabel">Menu</span> tab of the new content element window</p>
+</figcaption>
+            </figure>
+    </section>
+            <section class="section" id="content-plugin" data-rst-anchor="content-plugin"><a id="plugins"></a>
+            
+            <h3>Plugins<a class="headerlink" href="#content-plugin" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>The tab &quot;Plugins&quot; is available if the integrator of your site installed an
+extension that provides a plugin in this section and you have the required user
+rights. Refer to the manual of the extension that provides the plugin for more
+information.</p>
+
+    </section>
+            <section class="section" id="content-special" data-rst-anchor="content-special"><a id="special-elements"></a>
+            
+            <h3>Special elements<a class="headerlink" href="#content-special" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>Insert plain HTML, or a horizontal divider on the page. The &quot;Insert records&quot;
+element lets you reference other content elements, i.e. reuse a content
+element from another page without duplicating it.</p>
+
+            <figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/NewContentElement/WizardTabSpecialElements.png"
+            alt="The &#039;Special elements&#039; tab of the new content element window"        />
+
+            
+                    <figcaption>
+    <p>The <span class="guilabel">Plugins</span> tab of the new content element window</p>
+</figcaption>
+            </figure>
+    </section>
+    </section>
+            <section class="section" id="content-new-element" data-rst-anchor="content-new-element"><a id="add-new-content-to-a-page"></a>
+            
+            <h2>Add new content to a page<a class="headerlink" href="#content-new-element" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            
+    
+<ol type="1">
+    <li>On a page, click the <span class="guilabel">+ Create new content</span> button in the area
+where you want to insert content.</li>
+    <li>
+    <p>On the <span class="guilabel">Typical Page Content</span> tab, choose the &quot;Text &amp; Media&quot; element.
+This is the most commonly used content type. The
+<span class="guilabel">Create new Text &amp; Media</span> form appears.</p>
+<figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/NewContentElement/NewContentElement.png"
+            alt="Create new Page Content on page &quot;Pilgrim stories&quot; form screenshot"        />
+
+            
+                    <figcaption>
+    <p>Unsaved changes are highlighted in light blue</p>
+</figcaption>
+            </figure></li>
+    <li>In the <span class="guilabel">Header</span> field, type <em>My new content element</em>.</li>
+    <li>In the <span class="guilabel">Text</span> area, type in some text. This field uses a
+<a href="../RichTextEditor/Index.html#rte">Rich Text Editor</a> (RTE).</li>
+    <li>
+    <p>Save and close the content element.
+You can see the newly added element on the page:</p>
+<figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/NewContentElement/ContentSaved.png"
+            alt="The new content element appears in the Content Layout module"        />
+
+            
+                    <figcaption>
+    <p>The new content element appears in the Content Layout module</p>
+</figcaption>
+            </figure></li>
+</ol>
+
+                
+<div class="admonition tip" role="alert">
+    <p class="admonition-title">Tip</p>
+        
+    <p>If you are more comfortable using shortcuts, there are different kinds of
+<a href="../../HelpInside/KeyboardCommands/Index.html#keyboard-commands">keyboard commands</a> you can use in
+the backend forms.</p>
+
+</div>
+    </section>
+    </section>
+        <!-- content end -->
+    </div>
+</article>
+                        
+            <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center"><li class="page-item">
+                            <a class="page-link" href="../Index.html"
+                               title="Accesskey Alt(+Shift)+p">
+                                <i class="fa-solid fa-chevron-left"></i> Previous
+                            </a>
+                        </li>
+                    <li class="page-item">
+                            <a class="page-link" href="../EditingContent/Index.html"
+                               title="Accesskey Alt(+Shift)+n">
+                                Next <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+        </nav>
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="linkReferenceModal" tabindex="-1" aria-labelledby="linkReferenceModalLabel"
+    aria-hidden="true" data-current-filename="ContentElements/CreatingContent/Index" data-interlink-shortcode="t3editors">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="linkReferenceModalLabel">Reference to the headline</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-success d-none" id="permalink-alert-success" role="alert"></div>
+                <div class="mb-3">
+                    <div class="permalink-short-wrapper">
+                        <label for="permalink-short" class="col-form-label">Permalink (Shortlink)</label>
+                        <div class="input-group">
+                            <input class="form-control code" id="permalink-short" readonly>
+                            <button type="button" class="btn btn-outline-secondary copy-button" data-target="permalink-short"><i class="fa-regular fa-clone"></i></button>
+                        </div>
+                        <p><em>Copy and freely share the link</em></p>
+                    </div>
+                    <label for="permalink-uri" class="col-form-label">URL</label>
+                    <div class="input-group">
+                        <input class="form-control code" id="permalink-uri" readonly>
+                        <button type="button" class="btn btn-outline-secondary copy-button" data-target="permalink-uri"><i class="fa-regular fa-clone"></i></button>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="alert alert-warning alert-permalink-rst" role="alert">This link target has no permanent anchor assigned.                        You can make a <a href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/edit/main/Documentation/ContentElements/CreatingContent/Index.rst">pull request on GitHub</a> to suggest an anchor.
+                        The link below can be used, but is prone to change if the page gets moved.
+                    </div>
+                    <label for="permalink-rst" class="col-form-label">Link in reStructuredText (reST)</label>
+                    <div class="input-group">
+                        <textarea class="form-control code" id="permalink-rst" readonly></textarea>
+                        <button type="button" class="btn btn-outline-secondary copy-button" data-target="permalink-rst"><i class="fa-regular fa-clone"></i></button>
+                    </div>
+                    <p><em>Copy this link into your TYPO3 manual.</em></p>
+                </div>
+                <div class="mb-3">
+                    <label for="permalink-md" class="col-form-label">Link in Markdown</label>
+                    <div class="input-group">
+                        <textarea class="form-control code" id="permalink-md" readonly></textarea>
+                        <button type="button" class="btn btn-outline-secondary copy-button" data-target="permalink-md"><i class="fa-regular fa-clone"></i></button>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="permalink-html" class="col-form-label">Link in HTML</label>
+                                        <div class="input-group">
+                        <textarea class="form-control code" id="permalink-html" readonly></textarea>
+                        <button type="button" class="btn btn-outline-secondary copy-button" data-target="permalink-html"><i class="fa-regular fa-clone"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>    <div class="modal fade" id="generalModal" tabindex="-1" aria-labelledby="linkReferenceModalLabel"
+    aria-hidden="true" data-current-filename="ContentElements/CreatingContent/Index"
+>
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="generalModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-success d-none" id="general-alert-success" role="alert"></div>
+                <div id="generalModalContent">
+                </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <div id="generalModalCustomButtons"></div>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i>&nbsp;Close</button>
+            </div>
+        </div>
+    </div>
+</div>    
+<footer class="page-footer">
+    <div class="frame frame-ruler-before frame-background-dark">
+        <div class="frame-container">
+            <div class="frame-inner">
+                <ul class="footer-simplemenu">
+                        <li><a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/" title="Home" rel="nofollow noopener"><span>Home</span></a></li>
+                                                <li><a href="https://typo3.slack.com/archives/C028JEPJL" title="Contact" rel="nofollow noopener"><span>Contact</span></a></li>
+                                                <li><a href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues" rel="nofollow noopener" title="Issues"><span>Issues</span></a></li>
+                                                <li><a href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors" rel="nofollow noopener" title="Repository"><span>Repository</span></a></li>
+                                            </ul>                <div class="footer-additional">
+                    <p class="text-center">Last rendered: Oct 20, 2026 12:34</p>
+                </div>
+                <div class="footer-meta">
+                                        <div class="footer-meta-copyright">
+                        &copy; since 2012 by the TYPO3 contributors
+                    </div>
+                    <ul class="footer-meta-navigation">
+                        <li><a href="https://typo3.org/legal-notice" rel="nofollow" target="_blank" title="Legal Notice">Legal Notice</a></li>
+                        <li><a href="https://typo3.org/privacy-policy" rel="nofollow" target="_blank" title="Privacy Policy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer></div>
+
+
+<script src="../../_resources/js/bootstrap.min.js"></script>
+<script src="../../_resources/js/theme.min.js"></script>
+
+<!--
+ Locally rendered. No tracking embedded.
+-->
+</body>
+</html>

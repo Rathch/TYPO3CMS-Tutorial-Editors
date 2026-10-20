@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <title>Media upload and management in the TYPO3 backend — Tutorial for Editors main
+        documentation</title>
+
+    
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="phpdocumentor/guides" name="generator">
+<meta content="Tutorial for Editors" name="docsearch:name">
+<meta content="" name="docsearch:package_type">
+<meta content="main" name="docsearch:release">
+<meta content="main" name="docsearch:version">
+<meta content="2026-10-20T12:34:02+00:00" name="docsearch:modified">
+<meta content="2026-10-20T12:34:02+00:00" name="dc.modified">
+<meta content="2026-10-20T12:34:02+00:00" property="article:modified_time">
+    <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc">
+<link href="../_resources/css/theme.css" rel="stylesheet">
+<link href="https://docs.typo3.org/search/" rel="search" title="Search">
+<link href="https://docs.typo3.org/permalink/t3editors:media-module@main" rel="canonical">
+<link href="Index.md" rel="alternate" title="Markdown" type="text/markdown">
+<script src="https://cdn.typo3.com/typo3infrastructure/universe/dist/webcomponents-loader.js"></script>
+<script src="https://cdn.typo3.com/typo3infrastructure/universe/dist/typo3-universe.js" type="module"></script>
+                        <link href="../RecordModule/MassEditing/Index.html" rel="prev" title="Mass editing"/>
+            <link href="../LinkManagement/Index.html" rel="next" title="Link management"/>
+            <link href="../Index.html" rel="top" title="TYPO3 Editors Guide"/>
+    <style>
+.unofficial-docs-warning{background:#fff3cd;color:#332701;border-bottom:4px solid #ffc107;padding:.85rem 1.25rem;text-align:center;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:1rem;line-height:1.45;position:relative;z-index:1000}
+.unofficial-docs-warning a{color:#0b3a68;font-weight:700}
+</style>
+</head>
+<body>
+<div class="unofficial-docs-warning" role="note">
+<strong>Dies ist nicht die offizielle Dokumentation.</strong>
+This is not the official documentation.
+<a href="https://docs.typo3.org/m/typo3/tutorial-editors/14.3/en-us/Index.html">Offizielle Dokumentation: Tutorial for Editors 14.3</a>
+</div>
+<div class="page">
+    <header>
+    <div class="page-topbar">
+        <div class="page-topbar-inner">
+            <typo3-universe active="documentation">
+                <div style="display: block; height: 44px; background-color: #313131;"></div>
+            </typo3-universe>
+        </div>
+    </div>
+    <div class="page-header">
+        <div class="page-header-inner">
+            <a class="navbar-brand" href="https://docs.typo3.org/" title="TYPO3 Documentation">
+                <span class="navbar-brand-text">
+                    <img src="../_resources/img/typo3-soul.svg" alt="TYPO3" class="navbar-brand-logo" width="29" height="29">
+                    <span class="navbar-brand-name">Documentation</span>
+                </span>
+            </a>
+            <div class="header-nav">
+                
+<div class="toc-header">
+    <div class="toc-title">
+                            <a class="toc-title-project" href="../Index.html">TYPO3 Editors Guide</a>
+            </div>
+    <label for="languageSelect" class="visually-hidden">Select language</label>
+        <select id="languageSelect" class="form-select d-none">
+        </select>
+
+                                  
+        <label for="versionSelect" class="visually-hidden">Select version</label>
+        <select id="versionSelect" class="form-select"
+                data-current-version="main"
+            data-override-url-proxy="../_resources/js/versions-proxy.php?url=" data-override-url-self="https://docs.typo3.org/m/typo3/tutorial-getting-started/12.4/en-us/Concepts/Index.html"
+        >
+            <option disabled selected>Loading versions...</option>
+        </select>
+    </div>            </div>
+            <div class="header-actions">
+                <button id="search-toggle" class="btn btn-light d-lg-none" type="button"
+                        aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                </button>
+                <button id="toc-toggle" class="btn btn-light d-lg-none" type="button"
+                        aria-label="Menu" aria-expanded="false" aria-controls="toc-collapse">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+                <all-documentations-menu data-override-url="../_resources/js/menu-proxy.php"></all-documentations-menu>
+                                <search role="search" aria-label="Site search">
+                                        <select id="searchscope" hidden aria-hidden="true">
+                        <option value="">Search all</option>
+                    </select>
+                    <div id="global-search-root"></div>
+                </search>
+                                                <button id="options-toggle" class="btn btn-light" type="button"
+                        aria-controls="options-panel" aria-expanded="false" popovertarget="options-panel">
+                    <i class="fa-solid fa-gear" aria-hidden="true"></i>
+                    <span class="visually-hidden">Options</span>
+                </button>
+                <div id="options-panel" class="shadow p-3" popover>
+                    <h6 class="dropdown-header text-muted text-uppercase small mb-2">Options</h6>
+                        <a class="dropdown-item d-flex align-items-center gap-2" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues/new/choose?title=Problem+on+https%3A%2F%2Fdocs.typo3.org%2Fm%2Ftypo3%2Ftutorial-editors%2Fmain%2Fen-us%2F%2FMediaModule%2FIndex.html" id="btnReportIssue" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-comment-dots"></i>
+        Give feedback
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="../_sources/MediaModule/Index.rst.txt" id="btnViewSource" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-code"></i>
+        View source
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="Index.md" id="btnViewMarkdown" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-file-lines"></i>
+        View as Markdown
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingDocsOfficial/GithubMethod.html" id="btnHowToEdit" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-circle-info"></i>
+        How to edit
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/edit/main/Documentation/MediaModule/Index.rst" id="btnEditOnGitHub" rel="nofollow noopener" target="_blank">
+        <i class="fa-brands fa-github"></i>
+        Edit on GitHub
+    </a>
+                </div>
+                            </div>
+        </div>
+    </div>
+</header>    <main class="page-main">
+        <div class="page-main-inner">
+            <div class="page-main-navigation">
+                <nav>
+
+                    <div id="toc-collapse">
+                                                <div aria-label="main navigation" class="toc"
+                             role="navigation">
+                                <all-documentations-menu-mobile
+        data-override-url="../_resources/js/menu-proxy.php"></all-documentations-menu-mobile>
+    <div aria-label="Main navigation" class="main_menu" role="navigation">
+                <p class="caption">TYPO3 Editors Guide</p>
+            <ul class="menu-level-1" role="menubar">
+    <li class="" role="menuitem">
+    <a href="../Login/Index.html">
+        Backend login
+    </a></li>    <li class="" role="menuitem">
+    <a href="../Pages/Index.html">
+        Pages
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../Pages/CreatingPages/Index.html">
+        Creating pages
+    </a></li><li class="" role="menuitem">
+    <a href="../Pages/AddingMultiple/Index.html">
+        Creating multiple pages
+    </a></li><li class="" role="menuitem">
+    <a href="../Pages/WorkingWithPages/Index.html">
+        Working with pages
+    </a></li><li class="" role="menuitem">
+    <a href="../Pages/PageTypes/Index.html">
+        Page types
+    </a></li><li class="" role="menuitem">
+    <a href="../Pages/PageProperties/Index.html">
+        Page properties
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../ContentElements/Index.html">
+        Content elements
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../ContentElements/CreatingContent/Index.html">
+        Creating content
+    </a></li><li class="" role="menuitem">
+    <a href="../ContentElements/EditingContent/Index.html">
+        Editing content
+    </a></li><li class="" role="menuitem">
+    <a href="../ContentElements/Content/Index.html">
+        Managing content
+    </a></li><li class="" role="menuitem">
+    <a href="../ContentElements/RichTextEditor/Index.html">
+        The rich text editor
+    </a></li><li class="" role="menuitem">
+    <a href="../ContentElements/Images/Index.html">
+        Working with images
+    </a></li><li class="" role="menuitem">
+    <a href="../ContentElements/Media/Index.html">
+        Embedding Videos
+    </a></li><li class="" role="menuitem">
+    <a href="../ContentElements/ContactForm/Index.html">
+        Creating a contact form
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../RecordModule/Index.html">
+        Records
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../RecordModule/UsingEffectively/Index.html">
+        Using the Records module
+    </a></li><li class="" role="menuitem">
+    <a href="../RecordModule/CopyPaste/Index.html">
+        Copy and paste
+    </a></li><li class="" role="menuitem">
+    <a href="../RecordModule/AdvancedClipboard/Index.html">
+        Clipboard
+    </a></li><li class="" role="menuitem">
+    <a href="../RecordModule/MassEditing/Index.html">
+        Mass editing
+    </a></li></ul></li>    <li class=" current active" role="menuitem">
+    <a href="#" aria-current="page">
+        Media
+    </a></li>    <li class="" role="menuitem">
+    <a href="../LinkManagement/Index.html">
+        Link management
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../LinkManagement/Redirects/Index.html">
+        Redirects
+    </a></li><li class="" role="menuitem">
+    <a href="../LinkManagement/QRCodes/Index.html">
+        QR Codes
+    </a></li><li class="" role="menuitem">
+    <a href="../LinkManagement/ShortURLs/Index.html">
+        Short URLs
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../Languages/Index.html">
+        Working with languages
+    </a></li>    <li class="" role="menuitem">
+    <a href="../SearchEngineOptimization/Index.html">
+        SEO
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../SearchEngineOptimization/DashboardWidgets.html">
+        Dashboard
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../UserSettings/Index.html">
+        User settings
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../UserSettings/PersonalData/Index.html">
+        Personal data
+    </a></li><li class="" role="menuitem">
+    <a href="../UserSettings/AccountSecurity/Index.html">
+        Account security
+    </a></li><li class="" role="menuitem">
+    <a href="../UserSettings/BackendAppearance/Index.html">
+        Backend appearance
+    </a></li><li class="" role="menuitem">
+    <a href="../UserSettings/Personalization/Index.html">
+        Personalization
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../AccessControl/Index.html">
+        Access control
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../AccessControl/Visibility/Index.html">
+        Elements visibility
+    </a></li><li class="" role="menuitem">
+    <a href="../AccessControl/Login/Index.html">
+        Frontend login
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../DeepLinking/Index.html">
+        Deep linking
+    </a></li>    <li class="" role="menuitem">
+    <a href="../HelpInside/Index.html">
+        Help within TYPO3
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../HelpInside/BackendSearch/Index.html">
+        Backend search
+    </a></li><li class="" role="menuitem">
+    <a href="../HelpInside/ErrorPage/Index.html">
+        Error pages
+    </a></li><li class="" role="menuitem">
+    <a href="../HelpInside/InternalNotes/Index.html">
+        Internal Notes
+    </a></li><li class="" role="menuitem">
+    <a href="../HelpInside/KeyboardCommands/Index.html">
+        Keyboard commands
+    </a></li><li class="" role="menuitem">
+    <a href="../HelpInside/OnlineDocumentation/Index.html">
+        TYPO3 online documentation
+    </a></li><li class="" role="menuitem">
+    <a href="../HelpInside/Tooltips/Index.html">
+        Tooltips
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../Accessibility/Index.html">
+        Accessibility
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../Accessibility/LegalFoundations.html">
+        Legal requirements
+    </a></li><li class="" role="menuitem">
+    <a href="../Accessibility/WritingAccessibleText.html">
+        Writing accessible text
+    </a></li><li class="" role="menuitem">
+    <a href="../Accessibility/TipsAndTricks.html">
+        Tips and tricks
+    </a></li><li class="" role="menuitem">
+    <a href="../Accessibility/Sources.html">
+        Sources and further reading
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../Concepts/Index.html">
+        Concepts
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../Concepts/Cache.html">
+        Cache
+    </a></li><li class="" role="menuitem">
+    <a href="../Concepts/FileAbstractionLayer.html">
+        File abstraction layer <wbr>(FAL)
+    </a></li><li class="" role="menuitem">
+    <a href="../Concepts/Accessibility.html">
+        Accessibility
+    </a></li><li class="" role="menuitem">
+    <a href="../Concepts/Copyright.html">
+        Copyright and data privacy
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../About.html">
+        About this guide
+    </a></li>    <li class="" role="menuitem">
+    <a href="../NextSteps/Index.html">
+        Next steps
+    </a></li>    </ul>    <ul class="menu-level-1" role="menubar">
+    <li class="" role="menuitem">
+    <a href="../Sitemap.html">
+        Sitemap
+    </a></li>    </ul>
+    </div>
+                        </div>
+                                                <div class="toc-options d-lg-none">
+                            <p class="caption">Options</p>
+                                <a class="dropdown-item d-flex align-items-center gap-2" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues/new/choose?title=Problem+on+https%3A%2F%2Fdocs.typo3.org%2Fm%2Ftypo3%2Ftutorial-editors%2Fmain%2Fen-us%2F%2FMediaModule%2FIndex.html" id="btnReportIssue" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-comment-dots"></i>
+        Give feedback
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="../_sources/MediaModule/Index.rst.txt" id="btnViewSource" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-code"></i>
+        View source
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="Index.md" id="btnViewMarkdown" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-file-lines"></i>
+        View as Markdown
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingDocsOfficial/GithubMethod.html" id="btnHowToEdit" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-circle-info"></i>
+        How to edit
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/edit/main/Documentation/MediaModule/Index.rst" id="btnEditOnGitHub" rel="nofollow noopener" target="_blank">
+        <i class="fa-brands fa-github"></i>
+        Edit on GitHub
+    </a>
+                        </div>
+                                            </div>
+                </nav>
+            </div>
+            <div class="page-main-content">
+                <div class="rst-content">                        <nav aria-label="breadcrumbs navigation" class="breadcrumb-bar" role="navigation">
+        
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="../Index.html">TYPO3 Editors Guide</a></li>
+                    <li aria-current="page"  class="breadcrumb-item  active">Media</li>
+        </ol>
+
+        <div class="breadcrumb-additions">                <a class="btn btn-sm btn-light" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues/new/choose?title=Problem+on+https%3A%2F%2Fdocs.typo3.org%2Fm%2Ftypo3%2Ftutorial-editors%2Fmain%2Fen-us%2F%2FMediaModule%2FIndex.html" id="btnReportIssue" rel="nofollow noopener" target="_blank">
+                    <span class="btn-icon"><i class="fa-solid fa-comment-dots"></i></span>
+                    <span class="btn-text">Give feedback</span>
+                </a>
+                            <a class="btn btn-sm btn-light" href="Index.md" id="btnDownloadMarkdown" rel="nofollow noopener" download="t3editors-media-module.md">
+                    <span class="btn-icon"><i class="fa-solid fa-download"></i></span>
+                    <span class="btn-text">Markdown</span>
+                </a>
+                            <a class="btn btn-sm btn-secondary" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/edit/main/Documentation/MediaModule/Index.rst" id="btnEditOnGitHub" rel="nofollow noopener" target="_blank">
+                    <span class="btn-icon"><span class="fa-brands fa-github"></span></span>
+                    <span class="btn-text">Edit on GitHub</span>
+                </a>
+            </div>
+    </nav>
+                    
+<article class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+    <div itemprop="articleBody">
+        <!-- content start -->
+                
+<section class="section" id="media-module" data-rst-anchor="media-module"><a id="media-upload-and-management-in-the-typo3-backend"></a>
+            
+            <a id="the-file-module-or-image-archives"></a>
+            <a id="the-file-module"></a>
+            <a id="file-module"></a>
+            <h1>Media upload and management in the TYPO3 backend<a class="headerlink" href="#media-module" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h1>
+            <div class="versionchange versionchanged">
+    <p class="versionmodified">
+        <span class="versionicon"><i class="fa-solid fa-arrows-rotate"></i></span>
+        Changed in version 14.0 <span class="versionchange-changelog-line"><a href="https://docs.typo3.org/c/typo3/cms-core/main/en-us/Changelog/14.0/Feature-107628-ImprovedBackendModuleNamingAndStructure.html#feature-107628-1729026000" class="versionchange-changelog">Feature: #107628 - Improved backend module naming and structure</a></span></p>
+    <article>
+        
+    <p>This module has been renamed from <span class="guilabel">Filelist</span> to <span class="guilabel">Media</span>.</p>
+
+    </article>
+</div>
+            
+    <p>The <span class="guilabel">Media</span> module is where you can manage
+all the media associated with your TYPO3 web site.</p>
+
+            <section class="section" id="managing-files-in-typo" data-rst-anchor="managing-files-in-typo"><a id="managing-media-in-the-typo3-cms"></a>
+            
+            <a id="managing-files"></a>
+            <h2>Managing media in the TYPO3 CMS<a class="headerlink" href="#managing-files-in-typo" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            
+    <p>Files including documents and images are managed in the
+<span class="guilabel">Media</span> module. Similar to the <span class="guilabel">Content &gt; Records</span>
+module, it displays a navigation tree, which corresponds to the file
+structure on the server, and a list of all files for the
+selected directory.</p>
+
+            <figure data-zoom="gallery">
+    <img
+    src="../Images/GeneratedScreenshots/MediaModule/TileView.png"
+            alt="View to the Media Module listing image files as tiles"        />
+
+            
+                    <figcaption>
+    <p>View from the The <span class="guilabel">Media</span> module displaying default view option tiles.</p>
+</figcaption>
+            </figure>
+            <figure data-zoom="gallery">
+    <img
+    src="../Images/GeneratedScreenshots/MediaModule/ListView.png"
+            alt="View to the Media Module listing image files as a list, the view selector is open showing the activated list view option"        />
+
+            
+                    <figcaption>
+    <p>List view from the The <span class="guilabel">Media</span> module with View Selector open displaying options.</p>
+</figcaption>
+            </figure>
+            
+    <p>For admin users, the folder displayed by default is called
+&quot;fileadmin/ (auto-generated)&quot; and corresponds to the
+<code class="code-inline file" translate="no" title="File path">fileadmin/</code> folder located under the document root
+folder on your web server.</p>
+
+            
+    <p>Using these files inside content elements to display them
+or link to them in your web site is covered in the
+<a href="../ContentElements/Images/Index.html#images">images chapter</a>.</p>
+
+                
+<div class="admonition note" role="alert">
+    <p class="admonition-title">Note</p>
+        
+    <p>There are extensions which make it possible to connect to remote
+storage pools (like a WebDAV server or an Amazon S3 account) and work
+with the files as if they were on the TYPO3 CMS server.</p>
+
+</div>
+            <section class="section" id="file-metadata" data-rst-anchor="file-metadata"><a id="file-metadata-1"></a>
+            
+            <h3>File metadata<a class="headerlink" href="#file-metadata" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>You can provide metadata for the file by clicking on the button that looka like
+a pencil with the title text <span class="guilabel">Edit Metadata of this file</span>.</p>
+
+            
+    <p>The metadata you provide can include (depending on the setup of the system
+and the format of the file):</p>
+
+            
+
+<ul>
+    <li>Text to be displayed to all users in some contexts (<span class="guilabel">Title</span>,
+<span class="guilabel">Description</span>)</li>
+    <li>Text for <a href="../Accessibility/WritingAccessibleText.html#accessibility-writing-accessible-text-write-meaningful-text">accessibility</a> such as the <span class="guilabel">alternative text</span>
+for an image or a <span class="guilabel">download name</span></li>
+    <li>Data required due to copyright issues</li>
+    <li>Metadata attached to the uploaded file such as information about the
+camera used or the location</li>
+</ul>
+
+    </section>
+            <section class="section" id="media-module-clipboard" data-rst-anchor="media-module-clipboard"><a id="clipboard"></a>
+            
+            <h3>Clipboard<a class="headerlink" href="#media-module-clipboard" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>There is a clipboard just like in the <span class="guilabel">Content &gt; Records</span> module.</p>
+
+            <figure data-zoom="lightbox">
+    <img
+    src="../Images/GeneratedScreenshots/MediaModule/Clipboard.png"
+            alt="The standard TYPO3 Clipboard, activated Clipboard #1 with one of the images selected."        />
+
+            
+                    <figcaption>
+    <p>The <span class="guilabel">Media</span> module&#039;s clipboard</p>
+</figcaption>
+            </figure>
+            
+    <p>The handling is the same as the description used in the <a href="../RecordModule/AdvancedClipboard/Index.html#advanced-clipboard-usage">Advanced clipboard usage</a>.</p>
+
+    </section>
+            <section class="section" id="creating-folders" data-rst-anchor="creating-folders"><a id="creating-new-folders"></a>
+            
+            <h3>Creating new folders<a class="headerlink" href="#creating-folders" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>To create folders within the file storage, the button <span class="guilabel">Create Folder</span> opens a module dialog
+with the familiar separation of tree and working frame. Left hand all available storages and folders
+are displayed in tree structure. The folder selected here will act as the parent for the folders
+to be created.
+Folders are to be created one by one, the modal will remain open after operation to ease multiple
+additions. Each new entry appears immediately in the folder tree and can be used as parent.</p>
+
+            <figure data-zoom="lightbox">
+    <img
+    src="../Images/GeneratedScreenshots/MediaModule/CreateFolder.png"
+            alt="A section of TYPO3 Media Module open and overlayed with the module dialog for creating new folders. The overlay displays the folder tree, one of the folders there is selected as the parent for the new folder. Right frame displays the input form field for the name of the new folder."        />
+
+            
+                    <figcaption>
+    <p>Modal dialog for folder creation</p>
+</figcaption>
+            </figure>
+    </section>
+            <section class="section" id="uploading-files" data-rst-anchor="uploading-files"><a id="uploading-new-files"></a>
+            
+            <h3>Uploading new files<a class="headerlink" href="#uploading-files" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>You can upload files to a given folder by using the context menu
+or to the current directory by using the action icon in the docheader. Also, drag &amp; drop
+will initiate the upload. Drag any file into the main view to upload it to the
+current folder, or select the <code class="code-inline" translate="no">click, browse and choose files</code> option.</p>
+
+            <div class="versionchange versionadded">
+    <p class="versionmodified">
+        <span class="versionicon"><i class="fa-solid fa-rocket"></i></span>
+        New in version 15.0 <span class="versionchange-changelog-line"><a href="https://docs.typo3.org/c/typo3/cms-core/main/en-us/Changelog/15.0/Feature-110873-UploadFilesByPastingFromTheClipboard.html#feature-110873-1790859108" class="versionchange-changelog">Feature: #110873 - Upload files by pasting them from the clipboard</a></span></p>
+    <article>
+        
+    </article>
+</div>
+            
+    <p>You can also paste files to upload them to the current folder. Copy one or more
+files in the file manager of your computer, or copy image data such as a
+screenshot, and press <kbd>Ctrl</kbd> + <kbd>V</kbd> in the Media module. On a Mac,
+press <kbd>Cmd</kbd> + <kbd>V</kbd>. If a file with the same name already exists in the
+folder, TYPO3 asks what to do with it, as it does for uploaded files. Pasting
+into a field of the module, such as the search field, does not upload anything.</p>
+
+            <figure data-zoom="lightbox">
+    <img
+    src="../Images/GeneratedScreenshots/MediaModule/FileUpload.png"
+            alt="The window &quot;New File&quot; of the Media module, with the options to upload files, to add a media asset by its URL, and to create a text file"        />
+
+            
+                    <figcaption>
+    <p>Upload possibilities in the Media module</p>
+</figcaption>
+            </figure>
+    </section>
+            <section class="section" id="moving-files-drag-and-drop" data-rst-anchor="moving-files-drag-and-drop"><a id="moving-files-and-folders-with-drag-and-drop"></a>
+            
+            <h3>Moving files and folders with drag and drop<a class="headerlink" href="#moving-files-drag-and-drop" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>To move one or more files or folders to a different location, select them in
+the working area and drag them onto the target folder in the navigation tree.
+Releasing the mouse button over the target folder moves the selected items
+there.</p>
+
+            
+    <p>This is a quick alternative to using the <a href="../RecordModule/AdvancedClipboard/Index.html#advanced-clipboard-usage">clipboard</a>,
+which remains useful when moving items across several steps or sessions.</p>
+
+            <figure data-zoom="lightbox">
+    <img
+    src="../Images/GeneratedScreenshots/MediaModule/DragDropMove.png"
+            alt="A section of TYPO3 Media Module with one file selected in the working area and being dragged towards a folder in the navigation tree, which is highlighted as the drop target."        />
+
+            
+                    <figcaption>
+    <p>Moving a file by dragging it onto a folder in the navigation tree</p>
+</figcaption>
+            </figure>
+    </section>
+    </section>
+            <section class="section" id="media-module-next-steps" data-rst-anchor="media-module-next-steps"><a id="next-steps"></a>
+            
+            <h2>Next steps<a class="headerlink" href="#media-module-next-steps" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            
+    <p>The next chapters cover configuration and administration tasks that
+require special access privileges as described in <a href="https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/Backend/AccessControl/Index.html#access">Access control in the
+backend (users and groups)</a>.</p>
+
+    </section>
+    </section>
+        <!-- content end -->
+    </div>
+</article>
+                        
+            <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center"><li class="page-item">
+                            <a class="page-link" href="../RecordModule/MassEditing/Index.html"
+                               title="Accesskey Alt(+Shift)+p">
+                                <i class="fa-solid fa-chevron-left"></i> Previous
+                            </a>
+                        </li>
+                    <li class="page-item">
+                            <a class="page-link" href="../LinkManagement/Index.html"
+                               title="Accesskey Alt(+Shift)+n">
+                                Next <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+        </nav>
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="linkReferenceModal" tabindex="-1" aria-labelledby="linkReferenceModalLabel"
+    aria-hidden="true" data-current-filename="MediaModule/Index" data-interlink-shortcode="t3editors">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="linkReferenceModalLabel">Reference to the headline</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-success d-none" id="permalink-alert-success" role="alert"></div>
+                <div class="mb-3">
+                    <div class="permalink-short-wrapper">
+                        <label for="permalink-short" class="col-form-label">Permalink (Shortlink)</label>
+                        <div class="input-group">
+                            <input class="form-control code" id="permalink-short" readonly>
+                            <button type="button" class="btn btn-outline-secondary copy-button" data-target="permalink-short"><i class="fa-regular fa-clone"></i></button>
+                        </div>
+                        <p><em>Copy and freely share the link</em></p>
+                    </div>
+                    <label for="permalink-uri" class="col-form-label">URL</label>
+                    <div class="input-group">
+                        <input class="form-control code" id="permalink-uri" readonly>
+                        <button type="button" class="btn btn-outline-secondary copy-button" data-target="permalink-uri"><i class="fa-regular fa-clone"></i></button>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="alert alert-warning alert-permalink-rst" role="alert">This link target has no permanent anchor assigned.                        You can make a <a href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/edit/main/Documentation/MediaModule/Index.rst">pull request on GitHub</a> to suggest an anchor.
+                        The link below can be used, but is prone to change if the page gets moved.
+                    </div>
+                    <label for="permalink-rst" class="col-form-label">Link in reStructuredText (reST)</label>
+                    <div class="input-group">
+                        <textarea class="form-control code" id="permalink-rst" readonly></textarea>
+                        <button type="button" class="btn btn-outline-secondary copy-button" data-target="permalink-rst"><i class="fa-regular fa-clone"></i></button>
+                    </div>
+                    <p><em>Copy this link into your TYPO3 manual.</em></p>
+                </div>
+                <div class="mb-3">
+                    <label for="permalink-md" class="col-form-label">Link in Markdown</label>
+                    <div class="input-group">
+                        <textarea class="form-control code" id="permalink-md" readonly></textarea>
+                        <button type="button" class="btn btn-outline-secondary copy-button" data-target="permalink-md"><i class="fa-regular fa-clone"></i></button>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="permalink-html" class="col-form-label">Link in HTML</label>
+                                        <div class="input-group">
+                        <textarea class="form-control code" id="permalink-html" readonly></textarea>
+                        <button type="button" class="btn btn-outline-secondary copy-button" data-target="permalink-html"><i class="fa-regular fa-clone"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>    <div class="modal fade" id="generalModal" tabindex="-1" aria-labelledby="linkReferenceModalLabel"
+    aria-hidden="true" data-current-filename="MediaModule/Index"
+>
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="generalModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-success d-none" id="general-alert-success" role="alert"></div>
+                <div id="generalModalContent">
+                </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <div id="generalModalCustomButtons"></div>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i>&nbsp;Close</button>
+            </div>
+        </div>
+    </div>
+</div>    
+<footer class="page-footer">
+    <div class="frame frame-ruler-before frame-background-dark">
+        <div class="frame-container">
+            <div class="frame-inner">
+                <ul class="footer-simplemenu">
+                        <li><a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/" title="Home" rel="nofollow noopener"><span>Home</span></a></li>
+                                                <li><a href="https://typo3.slack.com/archives/C028JEPJL" title="Contact" rel="nofollow noopener"><span>Contact</span></a></li>
+                                                <li><a href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues" rel="nofollow noopener" title="Issues"><span>Issues</span></a></li>
+                                                <li><a href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors" rel="nofollow noopener" title="Repository"><span>Repository</span></a></li>
+                                            </ul>                <div class="footer-additional">
+                    <p class="text-center">Last rendered: Oct 20, 2026 12:34</p>
+                </div>
+                <div class="footer-meta">
+                                        <div class="footer-meta-copyright">
+                        &copy; since 2012 by the TYPO3 contributors
+                    </div>
+                    <ul class="footer-meta-navigation">
+                        <li><a href="https://typo3.org/legal-notice" rel="nofollow" target="_blank" title="Legal Notice">Legal Notice</a></li>
+                        <li><a href="https://typo3.org/privacy-policy" rel="nofollow" target="_blank" title="Privacy Policy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer></div>
+
+
+<script src="../_resources/js/bootstrap.min.js"></script>
+<script src="../_resources/js/theme.min.js"></script>
+
+<!--
+ Locally rendered. No tracking embedded.
+-->
+</body>
+</html>

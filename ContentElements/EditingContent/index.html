@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <title>Editing content — Tutorial for Editors main
+        documentation</title>
+
+    
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="phpdocumentor/guides" name="generator">
+<meta content="Tutorial for Editors" name="docsearch:name">
+<meta content="" name="docsearch:package_type">
+<meta content="main" name="docsearch:release">
+<meta content="main" name="docsearch:version">
+<meta content="2026-10-20T12:34:02+00:00" name="docsearch:modified">
+<meta content="2026-10-20T12:34:02+00:00" name="dc.modified">
+<meta content="2026-10-20T12:34:02+00:00" property="article:modified_time">
+    <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc">
+<link href="../../_resources/css/theme.css" rel="stylesheet">
+<link href="https://docs.typo3.org/search/" rel="search" title="Search">
+<link href="https://docs.typo3.org/permalink/t3editors:content-editing@main" rel="canonical">
+<link href="Index.md" rel="alternate" title="Markdown" type="text/markdown">
+<script src="https://cdn.typo3.com/typo3infrastructure/universe/dist/webcomponents-loader.js"></script>
+<script src="https://cdn.typo3.com/typo3infrastructure/universe/dist/typo3-universe.js" type="module"></script>
+                        <link href="../CreatingContent/Index.html" rel="prev" title="Creating content"/>
+            <link href="../Content/Index.html" rel="next" title="Managing content"/>
+            <link href="../../Index.html" rel="top" title="TYPO3 Editors Guide"/>
+    <style>
+.unofficial-docs-warning{background:#fff3cd;color:#332701;border-bottom:4px solid #ffc107;padding:.85rem 1.25rem;text-align:center;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:1rem;line-height:1.45;position:relative;z-index:1000}
+.unofficial-docs-warning a{color:#0b3a68;font-weight:700}
+</style>
+</head>
+<body>
+<div class="unofficial-docs-warning" role="note">
+<strong>Dies ist nicht die offizielle Dokumentation.</strong>
+This is not the official documentation.
+<a href="https://docs.typo3.org/m/typo3/tutorial-editors/14.3/en-us/Index.html">Offizielle Dokumentation: Tutorial for Editors 14.3</a>
+</div>
+<div class="page">
+    <header>
+    <div class="page-topbar">
+        <div class="page-topbar-inner">
+            <typo3-universe active="documentation">
+                <div style="display: block; height: 44px; background-color: #313131;"></div>
+            </typo3-universe>
+        </div>
+    </div>
+    <div class="page-header">
+        <div class="page-header-inner">
+            <a class="navbar-brand" href="https://docs.typo3.org/" title="TYPO3 Documentation">
+                <span class="navbar-brand-text">
+                    <img src="../../_resources/img/typo3-soul.svg" alt="TYPO3" class="navbar-brand-logo" width="29" height="29">
+                    <span class="navbar-brand-name">Documentation</span>
+                </span>
+            </a>
+            <div class="header-nav">
+                
+<div class="toc-header">
+    <div class="toc-title">
+                            <a class="toc-title-project" href="../../Index.html">TYPO3 Editors Guide</a>
+            </div>
+    <label for="languageSelect" class="visually-hidden">Select language</label>
+        <select id="languageSelect" class="form-select d-none">
+        </select>
+
+                                  
+        <label for="versionSelect" class="visually-hidden">Select version</label>
+        <select id="versionSelect" class="form-select"
+                data-current-version="main"
+            data-override-url-proxy="../../_resources/js/versions-proxy.php?url=" data-override-url-self="https://docs.typo3.org/m/typo3/tutorial-getting-started/12.4/en-us/Concepts/Index.html"
+        >
+            <option disabled selected>Loading versions...</option>
+        </select>
+    </div>            </div>
+            <div class="header-actions">
+                <button id="search-toggle" class="btn btn-light d-lg-none" type="button"
+                        aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                </button>
+                <button id="toc-toggle" class="btn btn-light d-lg-none" type="button"
+                        aria-label="Menu" aria-expanded="false" aria-controls="toc-collapse">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+                <all-documentations-menu data-override-url="../../_resources/js/menu-proxy.php"></all-documentations-menu>
+                                <search role="search" aria-label="Site search">
+                                        <select id="searchscope" hidden aria-hidden="true">
+                        <option value="">Search all</option>
+                    </select>
+                    <div id="global-search-root"></div>
+                </search>
+                                                <button id="options-toggle" class="btn btn-light" type="button"
+                        aria-controls="options-panel" aria-expanded="false" popovertarget="options-panel">
+                    <i class="fa-solid fa-gear" aria-hidden="true"></i>
+                    <span class="visually-hidden">Options</span>
+                </button>
+                <div id="options-panel" class="shadow p-3" popover>
+                    <h6 class="dropdown-header text-muted text-uppercase small mb-2">Options</h6>
+                        <a class="dropdown-item d-flex align-items-center gap-2" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues/new/choose?title=Problem+on+https%3A%2F%2Fdocs.typo3.org%2Fm%2Ftypo3%2Ftutorial-editors%2Fmain%2Fen-us%2F%2FContentElements%2FEditingContent%2FIndex.html" id="btnReportIssue" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-comment-dots"></i>
+        Give feedback
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="../../_sources/ContentElements/EditingContent/Index.rst.txt" id="btnViewSource" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-code"></i>
+        View source
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="Index.md" id="btnViewMarkdown" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-file-lines"></i>
+        View as Markdown
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingDocsOfficial/GithubMethod.html" id="btnHowToEdit" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-circle-info"></i>
+        How to edit
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/edit/main/Documentation/ContentElements/EditingContent/Index.rst" id="btnEditOnGitHub" rel="nofollow noopener" target="_blank">
+        <i class="fa-brands fa-github"></i>
+        Edit on GitHub
+    </a>
+                </div>
+                            </div>
+        </div>
+    </div>
+</header>    <main class="page-main">
+        <div class="page-main-inner">
+            <div class="page-main-navigation">
+                <nav>
+
+                    <div id="toc-collapse">
+                                                <div aria-label="main navigation" class="toc"
+                             role="navigation">
+                                <all-documentations-menu-mobile
+        data-override-url="../../_resources/js/menu-proxy.php"></all-documentations-menu-mobile>
+    <div aria-label="Main navigation" class="main_menu" role="navigation">
+                <p class="caption">TYPO3 Editors Guide</p>
+            <ul class="menu-level-1" role="menubar">
+    <li class="" role="menuitem">
+    <a href="../../Login/Index.html">
+        Backend login
+    </a></li>    <li class="" role="menuitem">
+    <a href="../../Pages/Index.html">
+        Pages
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../Pages/CreatingPages/Index.html">
+        Creating pages
+    </a></li><li class="" role="menuitem">
+    <a href="../../Pages/AddingMultiple/Index.html">
+        Creating multiple pages
+    </a></li><li class="" role="menuitem">
+    <a href="../../Pages/WorkingWithPages/Index.html">
+        Working with pages
+    </a></li><li class="" role="menuitem">
+    <a href="../../Pages/PageTypes/Index.html">
+        Page types
+    </a></li><li class="" role="menuitem">
+    <a href="../../Pages/PageProperties/Index.html">
+        Page properties
+    </a></li></ul></li>    <li class=" active" role="menuitem">
+    <a href="../Index.html">
+        Content elements
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../CreatingContent/Index.html">
+        Creating content
+    </a></li><li class=" current active" role="menuitem">
+    <a href="#" aria-current="page">
+        Editing content
+    </a></li><li class="" role="menuitem">
+    <a href="../Content/Index.html">
+        Managing content
+    </a></li><li class="" role="menuitem">
+    <a href="../RichTextEditor/Index.html">
+        The rich text editor
+    </a></li><li class="" role="menuitem">
+    <a href="../Images/Index.html">
+        Working with images
+    </a></li><li class="" role="menuitem">
+    <a href="../Media/Index.html">
+        Embedding Videos
+    </a></li><li class="" role="menuitem">
+    <a href="../ContactForm/Index.html">
+        Creating a contact form
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../RecordModule/Index.html">
+        Records
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../RecordModule/UsingEffectively/Index.html">
+        Using the Records module
+    </a></li><li class="" role="menuitem">
+    <a href="../../RecordModule/CopyPaste/Index.html">
+        Copy and paste
+    </a></li><li class="" role="menuitem">
+    <a href="../../RecordModule/AdvancedClipboard/Index.html">
+        Clipboard
+    </a></li><li class="" role="menuitem">
+    <a href="../../RecordModule/MassEditing/Index.html">
+        Mass editing
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../MediaModule/Index.html">
+        Media
+    </a></li>    <li class="" role="menuitem">
+    <a href="../../LinkManagement/Index.html">
+        Link management
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../LinkManagement/Redirects/Index.html">
+        Redirects
+    </a></li><li class="" role="menuitem">
+    <a href="../../LinkManagement/QRCodes/Index.html">
+        QR Codes
+    </a></li><li class="" role="menuitem">
+    <a href="../../LinkManagement/ShortURLs/Index.html">
+        Short URLs
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../Languages/Index.html">
+        Working with languages
+    </a></li>    <li class="" role="menuitem">
+    <a href="../../SearchEngineOptimization/Index.html">
+        SEO
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../SearchEngineOptimization/DashboardWidgets.html">
+        Dashboard
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../UserSettings/Index.html">
+        User settings
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../UserSettings/PersonalData/Index.html">
+        Personal data
+    </a></li><li class="" role="menuitem">
+    <a href="../../UserSettings/AccountSecurity/Index.html">
+        Account security
+    </a></li><li class="" role="menuitem">
+    <a href="../../UserSettings/BackendAppearance/Index.html">
+        Backend appearance
+    </a></li><li class="" role="menuitem">
+    <a href="../../UserSettings/Personalization/Index.html">
+        Personalization
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../AccessControl/Index.html">
+        Access control
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../AccessControl/Visibility/Index.html">
+        Elements visibility
+    </a></li><li class="" role="menuitem">
+    <a href="../../AccessControl/Login/Index.html">
+        Frontend login
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../DeepLinking/Index.html">
+        Deep linking
+    </a></li>    <li class="" role="menuitem">
+    <a href="../../HelpInside/Index.html">
+        Help within TYPO3
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../HelpInside/BackendSearch/Index.html">
+        Backend search
+    </a></li><li class="" role="menuitem">
+    <a href="../../HelpInside/ErrorPage/Index.html">
+        Error pages
+    </a></li><li class="" role="menuitem">
+    <a href="../../HelpInside/InternalNotes/Index.html">
+        Internal Notes
+    </a></li><li class="" role="menuitem">
+    <a href="../../HelpInside/KeyboardCommands/Index.html">
+        Keyboard commands
+    </a></li><li class="" role="menuitem">
+    <a href="../../HelpInside/OnlineDocumentation/Index.html">
+        TYPO3 online documentation
+    </a></li><li class="" role="menuitem">
+    <a href="../../HelpInside/Tooltips/Index.html">
+        Tooltips
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../Accessibility/Index.html">
+        Accessibility
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../Accessibility/LegalFoundations.html">
+        Legal requirements
+    </a></li><li class="" role="menuitem">
+    <a href="../../Accessibility/WritingAccessibleText.html">
+        Writing accessible text
+    </a></li><li class="" role="menuitem">
+    <a href="../../Accessibility/TipsAndTricks.html">
+        Tips and tricks
+    </a></li><li class="" role="menuitem">
+    <a href="../../Accessibility/Sources.html">
+        Sources and further reading
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../Concepts/Index.html">
+        Concepts
+    </a>        <ul class="menu-level-1"><li class="" role="menuitem">
+    <a href="../../Concepts/Cache.html">
+        Cache
+    </a></li><li class="" role="menuitem">
+    <a href="../../Concepts/FileAbstractionLayer.html">
+        File abstraction layer <wbr>(FAL)
+    </a></li><li class="" role="menuitem">
+    <a href="../../Concepts/Accessibility.html">
+        Accessibility
+    </a></li><li class="" role="menuitem">
+    <a href="../../Concepts/Copyright.html">
+        Copyright and data privacy
+    </a></li></ul></li>    <li class="" role="menuitem">
+    <a href="../../About.html">
+        About this guide
+    </a></li>    <li class="" role="menuitem">
+    <a href="../../NextSteps/Index.html">
+        Next steps
+    </a></li>    </ul>    <ul class="menu-level-1" role="menubar">
+    <li class="" role="menuitem">
+    <a href="../../Sitemap.html">
+        Sitemap
+    </a></li>    </ul>
+    </div>
+                        </div>
+                                                <div class="toc-options d-lg-none">
+                            <p class="caption">Options</p>
+                                <a class="dropdown-item d-flex align-items-center gap-2" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues/new/choose?title=Problem+on+https%3A%2F%2Fdocs.typo3.org%2Fm%2Ftypo3%2Ftutorial-editors%2Fmain%2Fen-us%2F%2FContentElements%2FEditingContent%2FIndex.html" id="btnReportIssue" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-comment-dots"></i>
+        Give feedback
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="../../_sources/ContentElements/EditingContent/Index.rst.txt" id="btnViewSource" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-code"></i>
+        View source
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="Index.md" id="btnViewMarkdown" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-file-lines"></i>
+        View as Markdown
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/WritingDocsOfficial/GithubMethod.html" id="btnHowToEdit" rel="nofollow noopener" target="_blank">
+        <i class="fa-solid fa-circle-info"></i>
+        How to edit
+    </a>
+    <a class="dropdown-item d-flex align-items-center gap-2" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/edit/main/Documentation/ContentElements/EditingContent/Index.rst" id="btnEditOnGitHub" rel="nofollow noopener" target="_blank">
+        <i class="fa-brands fa-github"></i>
+        Edit on GitHub
+    </a>
+                        </div>
+                                            </div>
+                </nav>
+            </div>
+            <div class="page-main-content">
+                <div class="rst-content">                        <nav aria-label="breadcrumbs navigation" class="breadcrumb-bar" role="navigation">
+        
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="../../Index.html">TYPO3 Editors Guide</a></li>
+        <li class="breadcrumb-item"><a href="../Index.html">Content elements</a></li>
+                    <li aria-current="page"  class="breadcrumb-item  active">Editing content</li>
+        </ol>
+
+        <div class="breadcrumb-additions">                <a class="btn btn-sm btn-light" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues/new/choose?title=Problem+on+https%3A%2F%2Fdocs.typo3.org%2Fm%2Ftypo3%2Ftutorial-editors%2Fmain%2Fen-us%2F%2FContentElements%2FEditingContent%2FIndex.html" id="btnReportIssue" rel="nofollow noopener" target="_blank">
+                    <span class="btn-icon"><i class="fa-solid fa-comment-dots"></i></span>
+                    <span class="btn-text">Give feedback</span>
+                </a>
+                            <a class="btn btn-sm btn-light" href="Index.md" id="btnDownloadMarkdown" rel="nofollow noopener" download="t3editors-content-editing.md">
+                    <span class="btn-icon"><i class="fa-solid fa-download"></i></span>
+                    <span class="btn-text">Markdown</span>
+                </a>
+                            <a class="btn btn-sm btn-secondary" href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/edit/main/Documentation/ContentElements/EditingContent/Index.rst" id="btnEditOnGitHub" rel="nofollow noopener" target="_blank">
+                    <span class="btn-icon"><span class="fa-brands fa-github"></span></span>
+                    <span class="btn-text">Edit on GitHub</span>
+                </a>
+            </div>
+    </nav>
+                    
+<article class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+    <div itemprop="articleBody">
+        <!-- content start -->
+                
+<section class="section" id="content-editing" data-rst-anchor="content-editing"><a id="editing-content"></a>
+            
+            <h1>Editing content<a class="headerlink" href="#content-editing" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h1>
+            <div class="ratio ratio-16x9">
+<iframe src="https://www.youtube-nocookie.com/embed/X1zP1HutQmA">
+</iframe>
+</div>
+            <hr />
+            <span data-zoom="gallery"><img
+    src="../../Images/GeneratedScreenshots/ContentElements/EditContent.png"
+    width="250"        alt="Editing content elements in the TYPO3 backend"        class="img-thumbnail float-end ms-1"/></span>
+            
+    <p>On a page, click the pencil icon for the content element you want to edit,
+then edit the text and make other changes as required.</p>
+
+            <div class="contents-wrapper">
+        <p class="topic-title">Table of contents:</p>
+        <ul class="menu-level">
+    <li class="toc-item">
+    <a href="#changing-text-and-setting-in-a-content-element">Changing text and setting in a content element</a>
+
+
+</li>
+    <li class="toc-item">
+    <a href="#troubleshooting-content-element-edits">Troubleshooting content element edits</a>
+
+        <ul class="section-level-2">
+            <li class="toc-item">
+    <a href="#content-element-has-no-edit-button">Content element has no edit button</a>
+
+
+</li>
+            <li class="toc-item">
+    <a href="#content-element-does-not-get-saved">Content element does not get saved</a>
+
+
+</li>
+            <li class="toc-item">
+    <a href="#error-message-after-saving-a-content-element">Error message after saving a content element</a>
+
+
+</li>
+            <li class="toc-item">
+    <a href="#changes-not-visible-in-the-frontend-after-saving-a-content-element">Changes not visible in the frontend after saving a content element</a>
+
+
+</li>
+                    </ul>
+</li>
+    <li class="toc-item">
+    <a href="#changing-the-type-of-an-existing-content-element">Changing the type of an existing content element</a>
+
+
+</li>
+    </ul>
+
+    <button class="toggle-all-sections btn btn-sm btn-light">Collapse all Sections</button>
+</div>
+            <section class="section" id="content-editing-change-text" data-rst-anchor="content-editing-change-text"><a id="changing-text-and-setting-in-a-content-element"></a>
+            
+            <h2>Changing text and setting in a content element<a class="headerlink" href="#content-editing-change-text" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            
+    <p>Once you clicked on the edit button you can change text, images and all settings
+that you have permissions for. There might be additional settings that only an
+advanced editor or an administrator can see and edit. Those might be hidden to
+you.</p>
+
+            <figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/ContentElements/ChangeText.png"
+            alt="Content element edit form screenshot, demonstrating changed content which is highlighted"        />
+
+            
+                    <figcaption>
+    <p>Changed content is highlighted. The save button is found on the top</p>
+</figcaption>
+            </figure>
+            
+    <p>Content in the Content element forms is not auto-saved. If you try to leave
+a form that has changes you will be prompted to save:</p>
+
+            <figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/ContentElements/SavingPrompt.png"
+            alt="Prompt: Do you want to close without saving? You currently have unsaved changes. Are you sure you want to discard these changes?"        />
+
+            
+                    <figcaption>
+    <p>You are prompted when you try to leave a form with unsaved changes</p>
+</figcaption>
+            </figure>
+                
+<div class="admonition warning" role="alert">
+    <p class="admonition-title">Warning</p>
+        
+    <p>You are not prompted about unsaved changes if you close the browser window
+or use the browsers back button!</p>
+
+</div>
+    </section>
+            <section class="section" id="content-editing-trouble-shooting" data-rst-anchor="content-editing-trouble-shooting"><a id="troubleshooting-content-element-edits"></a>
+            
+            <h2>Troubleshooting content element edits<a class="headerlink" href="#content-editing-trouble-shooting" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            <section class="section" id="content-editing-trouble-shooting-button" data-rst-anchor="content-editing-trouble-shooting-button"><a id="content-element-has-no-edit-button"></a>
+            
+            <h3>Content element has no edit button<a class="headerlink" href="#content-editing-trouble-shooting-button" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>If you have no permissions to change a content element, you will see that
+element in the overview but no edit, hide or delete button appears.</p>
+
+            <figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/ContentElements/NoEdit.png"
+            alt="A content element without an edit button"        />
+
+            
+                    <figcaption>
+    <p>A content element that cannot be edited due to lacking permissions</p>
+</figcaption>
+            </figure>
+            
+    <p>Possible reasons:</p>
+
+            
+
+<ul>
+    <li>The content element may only be edited by a user or group that created it.</li>
+    <li>Only admins may edit this content element.</li>
+    <li>The content element is of a type that your group may not edit.</li>
+</ul>
+
+            
+    <p>An administrator can support you in finding out why you cannot edit this content
+element.</p>
+
+    </section>
+            <section class="section" id="content-editing-trouble-saving" data-rst-anchor="content-editing-trouble-saving"><a id="content-element-does-not-get-saved"></a>
+            
+            <h3>Content element does not get saved<a class="headerlink" href="#content-editing-trouble-saving" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>If one of the fields you edited contains an illegal value now or if you did
+not fill out a required field, you cannot save your changes.</p>
+
+            <figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/ContentElements/RequiredField.png"
+            alt="Screenshot of a required field"        />
+
+            
+                    <figcaption>
+    <p>A required field that has no value prevents saving of a content element</p>
+</figcaption>
+            </figure>
+            <figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/ContentElements/InputError.png"
+            alt="Input error caused by a letter entered in a number field"        />
+
+            
+                    <figcaption>
+    <p>Input error caused by a letter entered in a number field</p>
+</figcaption>
+            </figure>
+            
+    <p>If the field you changed is on a different then the currently changed tab,
+you might not notice it right away.</p>
+
+    </section>
+            <section class="section" id="content-editing-trouble-error" data-rst-anchor="content-editing-trouble-error"><a id="error-message-after-saving-a-content-element"></a>
+            
+            <h3>Error message after saving a content element<a class="headerlink" href="#content-editing-trouble-error" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>Such error messages can happen if you are editing content during or right after
+an update. Note the time and exact error message and copy the URL from your
+browser where you saw the error. Send these to your integrator or programmer.</p>
+
+            <figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/ContentElements/ErrorMessage.png"
+            alt="Screenshot of an error message in the TYPO3 backend"        />
+
+            
+                    <figcaption>
+    <p>Such an error can happen during or after updates or when a programmer is
+working on your installation.</p>
+</figcaption>
+            </figure>
+    </section>
+            <section class="section" id="content-editing-trouble-changes-not-visible" data-rst-anchor="content-editing-trouble-changes-not-visible"><a id="changes-not-visible-in-the-frontend-after-saving-a-content-element"></a>
+            
+            <h3>Changes not visible in the frontend after saving a content element<a class="headerlink" href="#content-editing-trouble-changes-not-visible" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>There can be various reasons:</p>
+
+            
+
+<ul>
+    <li>Your browser cached the old content: Delete your
+<a href="../../Concepts/Cache.html#browser-cache">Browser cache</a>.</li>
+    <li>Try <a href="../../Concepts/Cache.html#cache-preview">Previewing the page without clearing the cache</a>.</li>
+    <li>Your changes did not get saved due to an error (see possible errors above).</li>
+    <li>Your site is using <a href="https://docs.typo3.org/c/typo3/cms-workspaces/main/en-us/UsersGuide/Index.html#users-guide">Workspaces</a>.</li>
+    <li>Try <a href="../../Concepts/Cache.html#cache-manual">Manual cache clearing</a>
+if you have the permissions to do so.</li>
+    <li>If problems persist, contact your administrator.</li>
+</ul>
+
+    </section>
+    </section>
+            <section class="section" id="content-editing-type" data-rst-anchor="content-editing-type"><a id="changing-the-type-of-an-existing-content-element"></a>
+            
+            <h2>Changing the type of an existing content element<a class="headerlink" href="#content-editing-type" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            
+    <p>You can also change the content element type by selecting another element from
+the <span class="guilabel">Type</span> list.</p>
+
+            <figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/ContentElements/ChangeType.png"
+            alt="Edit form of a content element in the TYPO3 backend, demonstrating the location of the &quot;Type&quot; selector in tab General"        />
+
+            
+                    <figcaption>
+    <p>You can find the &quot;Type&quot; selector in tab General</p>
+</figcaption>
+            </figure>
+            
+    <p>When you change a content element&#039;s type, the TYPO3 backend wants to reload
+the screen to display different input fields, you are prompted first:</p>
+
+            <figure data-zoom="gallery">
+    <img
+    src="../../Images/GeneratedScreenshots/ContentElements/RefreshRequired.png"
+            alt="Edit form of a content element in the TYPO3 backend, demonstrating the location of the &quot;Type&quot; selector in tab General"        />
+
+            
+                    <figcaption>
+    <p>You can find the &quot;Type&quot; selector in tab General</p>
+</figcaption>
+            </figure>
+            
+    <p>This action does not delete content. It is saved in the background and will be
+restored if you select the applicable content element type again.</p>
+
+                
+<div class="admonition tip" role="alert">
+    <p class="admonition-title">Tip</p>
+        
+    <p>If you are more comfortable using shortcuts, there are different kinds of
+<a href="../../HelpInside/KeyboardCommands/Index.html#keyboard-commands">keyboard commands</a> you can use in
+the backend forms.</p>
+
+</div>
+    </section>
+    </section>
+        <!-- content end -->
+    </div>
+</article>
+                        
+            <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center"><li class="page-item">
+                            <a class="page-link" href="../CreatingContent/Index.html"
+                               title="Accesskey Alt(+Shift)+p">
+                                <i class="fa-solid fa-chevron-left"></i> Previous
+                            </a>
+                        </li>
+                    <li class="page-item">
+                            <a class="page-link" href="../Content/Index.html"
+                               title="Accesskey Alt(+Shift)+n">
+                                Next <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+        </nav>
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="linkReferenceModal" tabindex="-1" aria-labelledby="linkReferenceModalLabel"
+    aria-hidden="true" data-current-filename="ContentElements/EditingContent/Index" data-interlink-shortcode="t3editors">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="linkReferenceModalLabel">Reference to the headline</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-success d-none" id="permalink-alert-success" role="alert"></div>
+                <div class="mb-3">
+                    <div class="permalink-short-wrapper">
+                        <label for="permalink-short" class="col-form-label">Permalink (Shortlink)</label>
+                        <div class="input-group">
+                            <input class="form-control code" id="permalink-short" readonly>
+                            <button type="button" class="btn btn-outline-secondary copy-button" data-target="permalink-short"><i class="fa-regular fa-clone"></i></button>
+                        </div>
+                        <p><em>Copy and freely share the link</em></p>
+                    </div>
+                    <label for="permalink-uri" class="col-form-label">URL</label>
+                    <div class="input-group">
+                        <input class="form-control code" id="permalink-uri" readonly>
+                        <button type="button" class="btn btn-outline-secondary copy-button" data-target="permalink-uri"><i class="fa-regular fa-clone"></i></button>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="alert alert-warning alert-permalink-rst" role="alert">This link target has no permanent anchor assigned.                        You can make a <a href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/edit/main/Documentation/ContentElements/EditingContent/Index.rst">pull request on GitHub</a> to suggest an anchor.
+                        The link below can be used, but is prone to change if the page gets moved.
+                    </div>
+                    <label for="permalink-rst" class="col-form-label">Link in reStructuredText (reST)</label>
+                    <div class="input-group">
+                        <textarea class="form-control code" id="permalink-rst" readonly></textarea>
+                        <button type="button" class="btn btn-outline-secondary copy-button" data-target="permalink-rst"><i class="fa-regular fa-clone"></i></button>
+                    </div>
+                    <p><em>Copy this link into your TYPO3 manual.</em></p>
+                </div>
+                <div class="mb-3">
+                    <label for="permalink-md" class="col-form-label">Link in Markdown</label>
+                    <div class="input-group">
+                        <textarea class="form-control code" id="permalink-md" readonly></textarea>
+                        <button type="button" class="btn btn-outline-secondary copy-button" data-target="permalink-md"><i class="fa-regular fa-clone"></i></button>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="permalink-html" class="col-form-label">Link in HTML</label>
+                                        <div class="input-group">
+                        <textarea class="form-control code" id="permalink-html" readonly></textarea>
+                        <button type="button" class="btn btn-outline-secondary copy-button" data-target="permalink-html"><i class="fa-regular fa-clone"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>    <div class="modal fade" id="generalModal" tabindex="-1" aria-labelledby="linkReferenceModalLabel"
+    aria-hidden="true" data-current-filename="ContentElements/EditingContent/Index"
+>
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="generalModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-success d-none" id="general-alert-success" role="alert"></div>
+                <div id="generalModalContent">
+                </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <div id="generalModalCustomButtons"></div>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i class="fa-regular fa-circle-xmark"></i>&nbsp;Close</button>
+            </div>
+        </div>
+    </div>
+</div>    
+<footer class="page-footer">
+    <div class="frame frame-ruler-before frame-background-dark">
+        <div class="frame-container">
+            <div class="frame-inner">
+                <ul class="footer-simplemenu">
+                        <li><a href="https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/" title="Home" rel="nofollow noopener"><span>Home</span></a></li>
+                                                <li><a href="https://typo3.slack.com/archives/C028JEPJL" title="Contact" rel="nofollow noopener"><span>Contact</span></a></li>
+                                                <li><a href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues" rel="nofollow noopener" title="Issues"><span>Issues</span></a></li>
+                                                <li><a href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors" rel="nofollow noopener" title="Repository"><span>Repository</span></a></li>
+                                            </ul>                <div class="footer-additional">
+                    <p class="text-center">Last rendered: Oct 20, 2026 12:34</p>
+                </div>
+                <div class="footer-meta">
+                                        <div class="footer-meta-copyright">
+                        &copy; since 2012 by the TYPO3 contributors
+                    </div>
+                    <ul class="footer-meta-navigation">
+                        <li><a href="https://typo3.org/legal-notice" rel="nofollow" target="_blank" title="Legal Notice">Legal Notice</a></li>
+                        <li><a href="https://typo3.org/privacy-policy" rel="nofollow" target="_blank" title="Privacy Policy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer></div>
+
+
+<script src="../../_resources/js/bootstrap.min.js"></script>
+<script src="../../_resources/js/theme.min.js"></script>
+
+<!--
+ Locally rendered. No tracking embedded.
+-->
+</body>
+</html>
