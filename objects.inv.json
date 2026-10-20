@@ -578,23 +578,11 @@
             "Accessibility\/TipsAndTricks.html#accessibility-tips-forms",
             "Label every field"
         ],
-        "accessibility-tips-language": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/TipsAndTricks.html#accessibility-tips-language",
-            "Mark a language change"
-        ],
         "accessibility-tips-tables": [
             "Tutorial for Editors",
             "main",
             "Accessibility\/TipsAndTricks.html#accessibility-tips-tables",
             "Mark the header cells of a table"
-        ],
-        "accessibility-tips-integrator": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/TipsAndTricks.html#accessibility-tips-integrator",
-            "What to hand to your integrator"
         ],
         "accessibility-writing-accessible-text": [
             "Tutorial for Editors",
@@ -2266,23 +2254,11 @@
             "Accessibility\/TipsAndTricks.html#accessibility-tips-forms",
             "Label every field"
         ],
-        "mark-a-language-change": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/TipsAndTricks.html#accessibility-tips-language",
-            "Mark a language change"
-        ],
         "mark-the-header-cells-of-a-table": [
             "Tutorial for Editors",
             "main",
             "Accessibility\/TipsAndTricks.html#accessibility-tips-tables",
             "Mark the header cells of a table"
-        ],
-        "what-to-hand-to-your-integrator": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/TipsAndTricks.html#accessibility-tips-integrator",
-            "What to hand to your integrator"
         ],
         "writing-accessible-text": [
             "Tutorial for Editors",

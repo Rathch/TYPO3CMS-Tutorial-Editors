@@ -4,7 +4,7 @@ manual: "Tutorial for Editors"
 version: "main"
 permalink: "https://docs.typo3.org/permalink/t3editors:accessibility-overview@main"
 source: "Accessibility/Index.rst"
-rendered: "2026-10-20T12:34:02+00:00"
+rendered: "2026-10-20T12:56:18+00:00"
 ---
 
 # Accessibility for editors {#accessibility-overview}
@@ -108,8 +108,7 @@ plain language, with a TYPO3 field for each one.
 
 **[Tips and tricks](https://docs.typo3.org/permalink/t3editors:accessibility-tips@main)**
 
-A check you can run on a page before you publish it, and what to
-hand back to your integrator.
+A check you can run on a page before you publish it.
 
 **[Sources and further reading](https://docs.typo3.org/permalink/t3editors:accessibility-sources@main)**
 

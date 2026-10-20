@@ -140,8 +140,7 @@ Where to go next
 
     ..  card:: :ref:`Tips and tricks <accessibility-tips>`
 
-        A check you can run on a page before you publish it, and what to
-        hand back to your integrator.
+        A check you can run on a page before you publish it.
 
     ..  card:: :ref:`Sources and further reading <accessibility-sources>`
 

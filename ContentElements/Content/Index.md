@@ -4,7 +4,7 @@ manual: "Tutorial for Editors"
 version: "main"
 permalink: "https://docs.typo3.org/permalink/t3editors:content-working@main"
 source: "ContentElements/Content/Index.rst"
-rendered: "2026-10-20T12:34:02+00:00"
+rendered: "2026-10-20T12:56:18+00:00"
 ---
 
 # Managing content {#content-working}

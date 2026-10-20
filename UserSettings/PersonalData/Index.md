@@ -4,7 +4,7 @@ manual: "Tutorial for Editors"
 version: "main"
 permalink: "https://docs.typo3.org/permalink/t3editors:user-settings-personal-data@main"
 source: "UserSettings/PersonalData/Index.rst"
-rendered: "2026-10-20T12:34:02+00:00"
+rendered: "2026-10-20T12:56:18+00:00"
 ---
 
 # Change your name, email address and backend language {#user-settings-personal-data}

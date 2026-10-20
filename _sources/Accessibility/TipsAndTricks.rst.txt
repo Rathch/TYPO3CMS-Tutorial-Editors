@@ -130,22 +130,6 @@ Trigger an error on purpose. The message should name the field and the
 change. "Invalid input" does not. The W3C example of a message that names
 the problem is "The password needs to include at least one number."
 
-..  _accessibility-tips-language:
-
-Mark a language change
-----------------------
-
-The language of the page is part of the site setup. An administrator sets
-it. When you edit a translation, you are already in that language. See
-`Working with languages <https://docs.typo3.org/permalink/t3editors:languages>`_.
-
-A quotation or a title in another language, inside a page of one language,
-needs to be marked.
-`Success Criterion 3.1.2 <https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts.html>`__
-is the requirement. If your rich text editor has a language option, set it
-on that phrase. If it has none, ask your integrator to enable it. Until
-then, avoid dropping in unmarked passages in a second language.
-
 ..  _accessibility-tips-tables:
 
 Mark the header cells of a table
@@ -157,24 +141,3 @@ tutorial on `tables <https://www.w3.org/WAI/tutorials/tables/>`__ shows the
 patterns, including tables with two headers. A layout that only uses a
 table to place two pieces of text side by side is a question for your
 integrator. Prefer two paragraphs or a list when the content is not a table.
-
-..  _accessibility-tips-integrator:
-
-What to hand to your integrator
-===============================
-
-These failures showed up often in the February 2026 WebAIM report, and you
-cannot fix them in a content element:
-
-*   Body text, buttons, and form fields in the theme whose contrast is too
-    low. 83.9% of home pages had low-contrast text.
-*   Buttons and icons in the template that have no accessible name. Empty
-    buttons were on 30.6% of home pages.
-*   A skip link, keyboard focus, and the order of the keyboard tab. Those
-    belong to the template.
-*   A captions control, if the media player has nowhere for you to add a
-    captions file.
-
-Send a specific page address and a specific element. "The body text on the
-home page is gray on white" gives your integrator something to change.
-"The site is not accessible" does not.
