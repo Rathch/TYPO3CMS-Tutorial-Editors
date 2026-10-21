@@ -82,7 +82,7 @@ the `Official Introduction Package <https://extensions.typo3.org/extension/intro
 
     ..  card:: :ref:`Concepts <concepts>`
 
-        *   :ref:`Creating accessible content <accessibility>`
+        *   :ref:`Creating accessible content <accessibility-overview>`
 
         *   :ref:`Caching <cache>`
 
@@ -107,6 +107,7 @@ the `Official Introduction Package <https://extensions.typo3.org/extension/intro
     AccessControl/Index
     DeepLinking/Index
     HelpInside/Index
+    Accessibility/Index
     Concepts/Index
     About
     NextSteps/Index

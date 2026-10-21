@@ -28,7 +28,8 @@ The following concepts are of interest:
 
     ..  card:: :ref:`Accessibility<accessibility>`
 
-        An introduction to writing accessible content with links to third party resources.
+        Opens the chapter on accessible content: the figures, the legal
+        requirements, and how to write the text.
 
 
     ..  card:: :ref:`Copyright<copyright>`

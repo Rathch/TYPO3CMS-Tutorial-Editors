@@ -77,7 +77,7 @@ and the format of the file):
 
 *   Text to be displayed to all users in some contexts (:guilabel:`Title`,
     :guilabel:`Description`)
-*   Text for :ref:`accessibility <accessibility>` such as the :guilabel:`alternative text`
+*   Text for `accessibility <https://docs.typo3.org/permalink/t3editors:accessibility-writing-accessible-text-write-meaningful-text>`_ such as the :guilabel:`alternative text`
     for an image or a :guilabel:`download name`
 *   Data required due to copyright issues
 *   Metadata attached to the uploaded file such as information about the
