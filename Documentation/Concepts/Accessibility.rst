@@ -12,10 +12,10 @@ Guidance for editors now lives in the chapter
 The chapter has four pages:
 
 *   `Legal requirements <https://docs.typo3.org/permalink/t3editors:accessibility-legal>`_
-    — WCAG, the European directives, and what they ask of an editor.
-*   `Writing accessible text <https://docs.typo3.org/permalink/t3editors:accessibility-writing-accessible-text>`_
-    — page titles, headings, links, alternative text, captions, and plain language.
-*   `Tips and tricks <https://docs.typo3.org/permalink/t3editors:accessibility-tips>`_
-    — a check before you publish a page.
+    — how standards, legal obligations and project requirements relate.
+*   `Creating accessible content <https://docs.typo3.org/permalink/t3editors:accessibility-creating-accessible-content>`_
+    — everyday editorial decisions, with examples.
+*   `Check before publishing <https://docs.typo3.org/permalink/t3editors:accessibility-check-before-publishing>`_
+    — a practical first review, and selected tools.
 *   `Sources and further reading <https://docs.typo3.org/permalink/t3editors:accessibility-sources>`_
-    — the guidelines, the tool list, and the studies behind the figures.
+    — the tutorials, the guidelines, and further reading.

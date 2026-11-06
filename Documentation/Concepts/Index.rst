@@ -28,8 +28,8 @@ The following concepts are of interest:
 
     ..  card:: :ref:`Accessibility<accessibility>`
 
-        Opens the chapter on accessible content: the figures, the legal
-        requirements, and how to write the text.
+        Opens the chapter on accessible content: what you can change, the
+        legal requirements, and a check before you publish.
 
 
     ..  card:: :ref:`Copyright<copyright>`
