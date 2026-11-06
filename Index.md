@@ -5,7 +5,7 @@ version: "main"
 permalink: "https://docs.typo3.org/permalink/t3editors:start@main"
 source: "Index.rst"
 start: true
-rendered: "2026-10-20T12:56:18+00:00"
+rendered: "2026-11-06T10:57:15+00:00"
 ---
 
 # TYPO3 Editors Guide {#start}
@@ -65,7 +65,7 @@ the [Official Introduction Package](https://extensions.typo3.org/extension/intro
 
 **[Concepts](https://docs.typo3.org/permalink/t3editors:concepts@main)**
 
--   [Creating accessible content](https://docs.typo3.org/permalink/t3editors:accessibility-overview@main)
+-   [Accessibility for editors](https://docs.typo3.org/permalink/t3editors:accessibility-overview@main)
 -   [Caching](https://docs.typo3.org/permalink/t3editors:cache@main)
 -   [Copyright and data privacy](https://docs.typo3.org/permalink/t3editors:copyright@main)
 -   [File abstraction layer (FAL)](https://docs.typo3.org/permalink/t3editors:fal@main)

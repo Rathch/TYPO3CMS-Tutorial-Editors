@@ -12,18 +12,18 @@
 <meta content="" name="docsearch:package_type">
 <meta content="main" name="docsearch:release">
 <meta content="main" name="docsearch:version">
-<meta content="2026-10-20T12:56:18+00:00" name="docsearch:modified">
-<meta content="2026-10-20T12:56:18+00:00" name="dc.modified">
-<meta content="2026-10-20T12:56:18+00:00" property="article:modified_time">
+<meta content="2026-11-06T10:57:15+00:00" name="docsearch:modified">
+<meta content="2026-11-06T10:57:15+00:00" name="dc.modified">
+<meta content="2026-11-06T10:57:15+00:00" property="article:modified_time">
     <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc">
 <link href="../_resources/css/theme.css" rel="stylesheet">
 <link href="https://docs.typo3.org/search/" rel="search" title="Search">
-<link href="https://docs.typo3.org/permalink/t3editors:accessibility-overview@main" rel="canonical">
+<link href="https://docs.typo3.org/permalink/t3editors:accessibility-statistics-audioeye@main" rel="canonical">
 <link href="Index.md" rel="alternate" title="Markdown" type="text/markdown">
 <script src="https://cdn.typo3.com/typo3infrastructure/universe/dist/webcomponents-loader.js"></script>
 <script src="https://cdn.typo3.com/typo3infrastructure/universe/dist/typo3-universe.js" type="module"></script>
                         <link href="../HelpInside/Tooltips/Index.html" rel="prev" title="Tooltips"/>
-            <link href="LegalFoundations.html" rel="next" title="Legal requirements"/>
+            <link href="LegalRequirements.html" rel="next" title="Legal requirements"/>
             <link href="../Index.html" rel="top" title="TYPO3 Editors Guide"/>
     <style>
 .unofficial-docs-warning{background:#fff3cd;color:#332701;border-bottom:4px solid #ffc107;padding:.85rem 1.25rem;text-align:center;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:1rem;line-height:1.45;position:relative;z-index:1000}
@@ -74,7 +74,7 @@ This is not the official documentation.
     </div>            </div>
             <div class="header-actions">
                 <button id="search-toggle" class="btn btn-light d-lg-none" type="button"
-                        aria-label="Search">
+                        aria-label="Search" aria-keyshortcuts="Control+K Meta+K">
                     <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
                 </button>
                 <button id="toc-toggle" class="btn btn-light d-lg-none" type="button"
@@ -268,14 +268,14 @@ This is not the official documentation.
     <a href="#" aria-current="page">
         Accessibility
     </a>        <ul class="menu-level-1"><li class="" role="menuitem">
-    <a href="LegalFoundations.html">
+    <a href="LegalRequirements.html">
         Legal requirements
     </a></li><li class="" role="menuitem">
-    <a href="WritingAccessibleText.html">
-        Writing accessible text
+    <a href="CreatingAccessibleContent.html">
+        Creating accessible content
     </a></li><li class="" role="menuitem">
-    <a href="TipsAndTricks.html">
-        Tips and tricks
+    <a href="CheckBeforePublishing.html">
+        Check before publishing
     </a></li><li class="" role="menuitem">
     <a href="Sources.html">
         Sources and further reading
@@ -345,7 +345,7 @@ This is not the official documentation.
                     <span class="btn-icon"><i class="fa-solid fa-comment-dots"></i></span>
                     <span class="btn-text">Give feedback</span>
                 </a>
-                            <a class="btn btn-sm btn-light" href="Index.md" id="btnDownloadMarkdown" rel="nofollow noopener" download="t3editors-accessibility-overview.md">
+                            <a class="btn btn-sm btn-light" href="Index.md" id="btnDownloadMarkdown" rel="nofollow noopener" download="t3editors-accessibility-statistics-audioeye.md">
                     <span class="btn-icon"><i class="fa-solid fa-download"></i></span>
                     <span class="btn-text">Markdown</span>
                 </a>
@@ -359,181 +359,73 @@ This is not the official documentation.
 <article class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
     <div itemprop="articleBody">
         <!-- content start -->
-                <section class="section" id="accessibility-overview" data-rst-anchor="accessibility-overview"><a id="accessibility-for-editors"></a>
+                <section class="section" id="accessibility-statistics-audioeye" data-rst-anchor="accessibility-statistics-audioeye"><a id="accessibility-for-editors"></a>
             
-            <h1>Accessibility for editors<a class="headerlink" href="#accessibility-overview" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h1>
+            <a id="accessibility-statistics-webaim"></a>
+            <a id="accessibility-statistics"></a>
+            <a id="accessibility-overview"></a>
+            <h1>Accessibility for editors<a class="headerlink" href="#accessibility-statistics-audioeye" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h1>
             
-    <p>People with disabilities can use a page when they can perceive the content,
-operate it, and understand it. The
-<a href="https://www.w3.org/WAI/">W3C Web Accessibility Initiative</a>
-publishes the guidelines that describe those requirements. You publish the
-words, images, media, and forms. Several of the failures that show up most
-often on the web sit in exactly that content.</p>
+    <p>People use websites in different ways. Some enlarge the page, navigate with
+a keyboard, read with a screen reader or Braille display, or use captions
+instead of listening to audio. Others need clearer explanations or more time
+to understand information.</p>
 
-            <section class="section" id="accessibility-statistics" data-rst-anchor="accessibility-statistics"><a id="what-the-figures-say-about-your-part-of-the-work"></a>
             
-            <h2>What the figures say about your part of the work<a class="headerlink" href="#accessibility-statistics" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
-            
-    <p>Two public scans measure how often pages fail checks that a program can
-run. A program cannot see every barrier. The W3C states that
-<a href="https://www.w3.org/WAI/test-evaluate/">no tool alone can decide whether a site meets the guidelines</a>.
-The figures below are the failures the scans could count. They are a floor,
-and they already show where an editor changes the result.</p>
+    <p>Your editorial decisions affect whether people can find, understand and use
+that information. A page can have an accessible template and still contain
+an unclear link, an image without a useful alternative, or a video whose
+essential information is only available through sound.</p>
 
-            <section class="section" id="accessibility-statistics-webaim" data-rst-anchor="accessibility-statistics-webaim"><a id="one-million-home-pages"></a>
+            <section class="section" id="accessibility-what-you-can-influence" data-rst-anchor="accessibility-what-you-can-influence"><a id="what-you-can-influence"></a>
             
-            <h3>One million home pages<a class="headerlink" href="#accessibility-statistics-webaim" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            <h2>What you can influence<a class="headerlink" href="#accessibility-what-you-can-influence" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
             
-    <p>In February 2026, WebAIM checked the home pages of the top 1,000,000 sites
-and published the results in
-<a href="https://webaim.org/projects/million/">The WebAIM Million</a>.
-95.9% of those home pages had at least one automatically detected failure
-of the Web Content Accessibility Guidelines (WCAG) 2. The average home page
-had 56.1 such errors. 96% of all detected errors fell into six types. The
-same six types have led the list for seven years. WebAIM writes that
-addressing these few types would significantly improve accessibility across
-the web. Five of them show up in the content and the theme:</p>
+    <p>As an editor, you shape the content: its wording, structure, link names,
+image alternatives, documents and media.</p>
 
-            <div class="table-responsive">
-    <table class="table table-bordered align-default colwidths-grid">
-                    <colgroup>
-                                    <col style="width: 34%">
-                        </colgroup>
-            <thead>
-            <tr>
-                            <th>Failure</th>
-                            <th>Home pages</th>
-                            <th>Where you can change it in TYPO3</th>
-                    </tr>
-        </thead>
-        <tbody>
-    <tr>
-            <td>Low contrast text</td>            <td>83.9%</td>            <td>The colors usually come from the theme. If body text is hard to read, ask your integrator. If you set a text color yourself, that color is yours to correct.</td>    </tr>    <tr>
-            <td>Missing alternative text for images</td>            <td>53.1%</td>            <td>You write it, on the file and again for the place where the image is used.</td>    </tr>    <tr>
-            <td>Missing form input labels</td>            <td>51%</td>            <td>You write the label when you build the form.</td>    </tr>    <tr>
-            <td>Empty links</td>            <td>46.3%</td>            <td>You write the link text. A linked image with no alternative text is an empty link too.</td>    </tr>    <tr>
-            <td>Empty buttons</td>            <td>30.6%</td>            <td>Buttons in the theme are the integrator&#039;s. A control you add needs a name a reader can follow.</td>    </tr></tbody>    </table>
-</div>
             
-    <p>The report gives a closer count for the items you type in:</p>
+    <p>For example, meaningful headings help people find the section they need. An
+appropriate image alternative communicates information to someone who cannot
+see the picture. Clear instructions help people complete a form without
+guessing.</p>
 
+            
+    <p>Your technical team provides the templates and components that turn these
+choices into an accessible page. Both contributions matter. You decide what
+an image communicates; the website must output its alternative text
+correctly.</p>
+
+            
+    <p>The options available in TYPO3 depend on your permissions and the
+configuration of your installation. If a required function is missing or the
+result does not work as expected, report the affected page and element to
+your technical team.</p>
+
+    </section>
+            <section class="section" id="accessibility-where-next" data-rst-anchor="accessibility-where-next"><a id="using-this-chapter"></a>
+            
+            <a id="accessibility-using-this-chapter"></a>
+            <h2>Using this chapter<a class="headerlink" href="#accessibility-where-next" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
             
 
 <ul>
-    <li>16.2% of all images had no alternative text. 10.8% of the images that
-did have alternative text used a file name, a filler such as &quot;image&quot;,
-or the same text as the image beside them. More than one in four images
-had one of these problems. 45% of the images with no alternative text
-were links, so the link had no usable name. One in four linked images
-had no alternative text.</li>
-    <li>15.2% of home pages had ambiguous link text such as &quot;click here&quot;,
-&quot;more&quot;, or &quot;continue&quot;. Those pages had 5.3 such links on average.</li>
-    <li>Skipped heading levels, such as a heading of level 2 followed by a
-heading of level 4, appeared on 41.8% of home pages. 18.1% had more
-than one heading of level 1.</li>
+    <li><a href="LegalRequirements.html#accessibility-legal">Legal requirements</a>
+explains how standards, legal obligations and project requirements relate.</li>
+    <li><a href="CreatingAccessibleContent.html#accessibility-creating-accessible-content">Creating accessible content</a>
+explains everyday editorial decisions with examples.</li>
+    <li><a href="CheckBeforePublishing.html#accessibility-check-before-publishing">Check before publishing</a>
+provides a practical first review and selected tools.</li>
+    <li><a href="Sources.html#accessibility-sources">Sources and further reading</a>
+offers guidance for questions that need more detail.</li>
 </ul>
 
             
-    <p>Home pages that the same study classified as TYPO3 CMS had 38.5 detected
-errors on average, compared with 56.1 for all home pages. WebAIM notes that
-a higher or lower count next to a technology cannot always be attributed to
-that technology. A lower average does not make the content accessible. The
-alternative text, the headings, and the link text are still written per page.</p>
+    <p>Consider accessibility when planning content, commissioning documents or
+media, and updating existing pages. Including the necessary structure and
+alternatives from the beginning avoids having to reconstruct them shortly
+before publication.</p>
 
-    </section>
-            <section class="section" id="accessibility-statistics-audioeye" data-rst-anchor="accessibility-statistics-audioeye"><a id="a-second-scan-of-page-content"></a>
-            
-            <h3>A second scan of page content<a class="headerlink" href="#accessibility-statistics-audioeye" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
-            
-    <p><a href="https://www.audioeye.com/post/accessibility-statistics/">AudioEye&#039;s accessibility statistics</a>
-report a separate scan of about 400,000 pages across about 15,000 sites.
-In that scan the average page had 297 accessibility issues, and 2% of the
-sites passed 70% of the WCAG criteria the scan could test. AudioEye is a
-vendor. Treat the article as that company&#039;s reading of its own scan, and
-use the WebAIM report when you want a method you can read in full.</p>
-
-            
-    <p>On images and links, the AudioEye article reports:</p>
-
-            
-
-<ul>
-    <li>38% of images had missing alternative text, and 60% of images had no
-alternative text. 93% of domains had at least one page with an
-inaccessible image.</li>
-    <li>64% of pages had links that were not clear to people with disabilities,
-about five such links on a page. 80% of sites had at least one page
-with an inaccessible link.</li>
-    <li>In AudioEye&#039;s 2023 index, cited in the same article, 1 in 4 forms were
-missing descriptive labels.</li>
-</ul>
-
-            
-    <p>The article lists both image figures. It does not define how &quot;missing
-alternative text&quot; differs from &quot;no alternative text&quot;, so this manual keeps
-them as two reported figures.</p>
-
-            
-    <p>Read together, the two scans point at the same editorial work. Alternative
-text, link text, headings, and form labels are fields you fill in. Contrast
-of the theme and empty buttons in the template are set elsewhere. Ask your
-integrator about those.</p>
-
-    </section>
-    </section>
-            <section class="section" id="accessibility-where-next" data-rst-anchor="accessibility-where-next"><a id="where-to-go-next"></a>
-            
-            <h2>Where to go next<a class="headerlink" href="#accessibility-where-next" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
-            <div class="row card-group pb-4 row-cols-1 row-cols-md-2 g-4">
-    <div class="col">
-            <div class="card h-100">
-            <div class="card-body">
-        <h3><a href="LegalFoundations.html#accessibility-legal">Legal requirements</a></h3>
-        <div class="card-text">
-            
-    <p>Which rules name WCAG, what the European directives cover, and
-which questions to take to your organization. This chapter is not
-legal advice.</p>
-
-        </div>
-    </div>
-        </div>
-        </div><div class="col">
-            <div class="card h-100">
-            <div class="card-body">
-        <h3><a href="WritingAccessibleText.html#accessibility-writing-accessible-text">Writing accessible text</a></h3>
-        <div class="card-text">
-            
-    <p>Page titles, headings, link text, alternative text, captions, and
-plain language, with a TYPO3 field for each one.</p>
-
-        </div>
-    </div>
-        </div>
-        </div><div class="col">
-            <div class="card h-100">
-            <div class="card-body">
-        <h3><a href="TipsAndTricks.html#accessibility-tips">Tips and tricks</a></h3>
-        <div class="card-text">
-            
-    <p>A check you can run on a page before you publish it.</p>
-
-        </div>
-    </div>
-        </div>
-        </div><div class="col">
-            <div class="card h-100">
-            <div class="card-body">
-        <h3><a href="Sources.html#accessibility-sources">Sources and further reading</a></h3>
-        <div class="card-text">
-            
-    <p>The guidelines, the writing guide, the tool list, and the studies
-cited in this chapter.</p>
-
-        </div>
-    </div>
-        </div>
-        </div></div>
             
     </section>
     </section>
@@ -549,7 +441,7 @@ cited in this chapter.</p>
                             </a>
                         </li>
                     <li class="page-item">
-                            <a class="page-link" href="LegalFoundations.html"
+                            <a class="page-link" href="LegalRequirements.html"
                                title="Accesskey Alt(+Shift)+n">
                                 Next <i class="fa-solid fa-chevron-right"></i>
                             </a>
@@ -648,7 +540,7 @@ cited in this chapter.</p>
                                                 <li><a href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues" rel="nofollow noopener" title="Issues"><span>Issues</span></a></li>
                                                 <li><a href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors" rel="nofollow noopener" title="Repository"><span>Repository</span></a></li>
                                             </ul>                <div class="footer-additional">
-                    <p class="text-center">Last rendered: Oct 20, 2026 12:56</p>
+                    <p class="text-center">Last rendered: Nov 06, 2026 10:57</p>
                 </div>
                 <div class="footer-meta">
                                         <div class="footer-meta-copyright">

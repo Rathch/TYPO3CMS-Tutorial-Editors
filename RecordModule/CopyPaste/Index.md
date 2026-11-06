@@ -4,7 +4,7 @@ manual: "Tutorial for Editors"
 version: "main"
 permalink: "https://docs.typo3.org/permalink/t3editors:list-copy-paste@main"
 source: "RecordModule/CopyPaste/Index.rst"
-rendered: "2026-10-20T12:56:18+00:00"
+rendered: "2026-11-06T10:57:15+00:00"
 ---
 
 # Copy and paste database record {#list-copy-paste}

@@ -24,16 +24,28 @@
             "AccessControl\/Visibility\/Index.html",
             "Elements visibility"
         ],
+        "Accessibility\/CheckBeforePublishing": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CheckBeforePublishing.html",
+            "Check before publishing"
+        ],
+        "Accessibility\/CreatingAccessibleContent": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html",
+            "Creating accessible content"
+        ],
         "Accessibility\/Index": [
             "Tutorial for Editors",
             "main",
             "Accessibility\/Index.html",
             "Accessibility for editors"
         ],
-        "Accessibility\/LegalFoundations": [
+        "Accessibility\/LegalRequirements": [
             "Tutorial for Editors",
             "main",
-            "Accessibility\/LegalFoundations.html",
+            "Accessibility\/LegalRequirements.html",
             "Legal requirements"
         ],
         "Accessibility\/Sources": [
@@ -41,18 +53,6 @@
             "main",
             "Accessibility\/Sources.html",
             "Sources and further reading"
-        ],
-        "Accessibility\/TipsAndTricks": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/TipsAndTricks.html",
-            "Tips and tricks"
-        ],
-        "Accessibility\/WritingAccessibleText": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/WritingAccessibleText.html",
-            "Writing accessible text"
         ],
         "Concepts\/Accessibility": [
             "Tutorial for Editors",
@@ -428,65 +428,341 @@
             "AccessControl\/Visibility\/Index.html#visibility-dates",
             "Publication dates"
         ],
-        "accessibility-overview": [
+        "accessibility-tips": [
             "Tutorial for Editors",
             "main",
-            "Accessibility\/Index.html#accessibility-overview",
+            "Accessibility\/CheckBeforePublishing.html#accessibility-tips",
+            "Check before publishing"
+        ],
+        "accessibility-check-before-publishing": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CheckBeforePublishing.html#accessibility-check-before-publishing",
+            "Check before publishing"
+        ],
+        "accessibility-tips-tables": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CheckBeforePublishing.html#accessibility-tips-tables",
+            "Review your content"
+        ],
+        "accessibility-tips-forms": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CheckBeforePublishing.html#accessibility-tips-forms",
+            "Review your content"
+        ],
+        "accessibility-tips-color": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CheckBeforePublishing.html#accessibility-tips-color",
+            "Review your content"
+        ],
+        "accessibility-tips-media": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CheckBeforePublishing.html#accessibility-tips-media",
+            "Review your content"
+        ],
+        "accessibility-tips-images": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CheckBeforePublishing.html#accessibility-tips-images",
+            "Review your content"
+        ],
+        "accessibility-tips-links": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CheckBeforePublishing.html#accessibility-tips-links",
+            "Review your content"
+        ],
+        "accessibility-tips-headings": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CheckBeforePublishing.html#accessibility-tips-headings",
+            "Review your content"
+        ],
+        "accessibility-tips-title": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CheckBeforePublishing.html#accessibility-tips-title",
+            "Review your content"
+        ],
+        "accessibility-tips-before-publish": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CheckBeforePublishing.html#accessibility-tips-before-publish",
+            "Review your content"
+        ],
+        "accessibility-check-review": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CheckBeforePublishing.html#accessibility-check-review",
+            "Review your content"
+        ],
+        "accessibility-check-tools": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CheckBeforePublishing.html#accessibility-check-tools",
+            "Use tools for specific questions"
+        ],
+        "accessibility-check-wave": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CheckBeforePublishing.html#accessibility-check-wave",
+            "Inspect information that is not normally visible"
+        ],
+        "accessibility-check-contrast": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CheckBeforePublishing.html#accessibility-check-contrast",
+            "Check colors you select"
+        ],
+        "accessibility-check-easy-checks": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CheckBeforePublishing.html#accessibility-check-easy-checks",
+            "Learn further initial checks"
+        ],
+        "accessibility-check-report": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CheckBeforePublishing.html#accessibility-check-report",
+            "Report problems you cannot resolve"
+        ],
+        "accessibility-writing-accessible-text": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-writing-accessible-text",
+            "Creating accessible content"
+        ],
+        "accessibility-creating-accessible-content": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-creating-accessible-content",
+            "Creating accessible content"
+        ],
+        "accessibility-writing-clear-language": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-writing-clear-language",
+            "Write clear text and instructions"
+        ],
+        "accessibility-content-clear-text": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-content-clear-text",
+            "Write clear text and instructions"
+        ],
+        "accessibility-content-titles-and-headings": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-content-titles-and-headings",
+            "Give pages meaningful titles and headings"
+        ],
+        "accessibility-writing-accessible-text-provide-informative-unique": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-writing-accessible-text-provide-informative-unique",
+            "Identify the page"
+        ],
+        "accessibility-content-page-title": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-content-page-title",
+            "Identify the page"
+        ],
+        "accessibility-writing-accessible-text-headings-convey-meaning": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-writing-accessible-text-headings-convey-meaning",
+            "Express the content hierarchy"
+        ],
+        "accessibility-content-headings": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-content-headings",
+            "Express the content hierarchy"
+        ],
+        "accessibility-writing-accessible-text-make-link-text": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-writing-accessible-text-make-link-text",
+            "Make links understandable"
+        ],
+        "accessibility-content-links": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-content-links",
+            "Make links understandable"
+        ],
+        "accessibility-writing-accessible-text-write-meaningful-text": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-writing-accessible-text-write-meaningful-text",
+            "Describe images according to their purpose"
+        ],
+        "accessibility-content-images": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-content-images",
+            "Describe images according to their purpose"
+        ],
+        "accessibility-content-images-informative": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-content-images-informative",
+            "Informative images"
+        ],
+        "accessibility-content-images-decorative": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-content-images-decorative",
+            "Decorative images"
+        ],
+        "accessibility-content-images-links": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-content-images-links",
+            "Images used as links"
+        ],
+        "accessibility-content-images-reuse": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-content-images-reuse",
+            "Reusing images in TYPO3"
+        ],
+        "accessibility-content-images-text": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-content-images-text",
+            "Keep important text available as text"
+        ],
+        "accessibility-content-tables": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-content-tables",
+            "Keep tables simple and structured"
+        ],
+        "accessibility-content-documents": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-content-documents",
+            "Provide accessible documents"
+        ],
+        "accessibility-writing-captions": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-writing-captions",
+            "Plan accessible audio and video"
+        ],
+        "accessibility-content-media": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-content-media",
+            "Plan accessible audio and video"
+        ],
+        "accessibility-writing-instructions": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-writing-instructions",
+            "Write clear form labels and feedback"
+        ],
+        "accessibility-content-forms": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-content-forms",
+            "Write clear form labels and feedback"
+        ],
+        "accessibility-content-language-and-formatting": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-content-language-and-formatting",
+            "Use language, color and formatting purposefully"
+        ],
+        "accessibility-statistics-audioeye": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Index.html#accessibility-statistics-audioeye",
+            "Accessibility for editors"
+        ],
+        "accessibility-statistics-webaim": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Index.html#accessibility-statistics-webaim",
             "Accessibility for editors"
         ],
         "accessibility-statistics": [
             "Tutorial for Editors",
             "main",
             "Accessibility\/Index.html#accessibility-statistics",
-            "What the figures say about your part of the work"
+            "Accessibility for editors"
         ],
-        "accessibility-statistics-webaim": [
+        "accessibility-overview": [
             "Tutorial for Editors",
             "main",
-            "Accessibility\/Index.html#accessibility-statistics-webaim",
-            "One million home pages"
+            "Accessibility\/Index.html#accessibility-overview",
+            "Accessibility for editors"
         ],
-        "accessibility-statistics-audioeye": [
+        "accessibility-what-you-can-influence": [
             "Tutorial for Editors",
             "main",
-            "Accessibility\/Index.html#accessibility-statistics-audioeye",
-            "A second scan of page content"
+            "Accessibility\/Index.html#accessibility-what-you-can-influence",
+            "What you can influence"
         ],
         "accessibility-where-next": [
             "Tutorial for Editors",
             "main",
             "Accessibility\/Index.html#accessibility-where-next",
-            "Where to go next"
+            "Using this chapter"
+        ],
+        "accessibility-using-this-chapter": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Index.html#accessibility-using-this-chapter",
+            "Using this chapter"
         ],
         "accessibility-legal": [
             "Tutorial for Editors",
             "main",
-            "Accessibility\/LegalFoundations.html#accessibility-legal",
+            "Accessibility\/LegalRequirements.html#accessibility-legal",
             "Legal requirements"
         ],
         "accessibility-legal-wcag": [
             "Tutorial for Editors",
             "main",
-            "Accessibility\/LegalFoundations.html#accessibility-legal-wcag",
-            "The guidelines laws point to"
-        ],
-        "accessibility-legal-eu": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/LegalFoundations.html#accessibility-legal-eu",
-            "European Union"
+            "Accessibility\/LegalRequirements.html#accessibility-legal-wcag",
+            "WCAG and project requirements"
         ],
         "accessibility-legal-national": [
             "Tutorial for Editors",
             "main",
-            "Accessibility\/LegalFoundations.html#accessibility-legal-national",
-            "Other countries"
+            "Accessibility\/LegalRequirements.html#accessibility-legal-national",
+            "European context"
+        ],
+        "accessibility-legal-eu": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/LegalRequirements.html#accessibility-legal-eu",
+            "European context"
         ],
         "accessibility-legal-editor": [
             "Tutorial for Editors",
             "main",
-            "Accessibility\/LegalFoundations.html#accessibility-legal-editor",
-            "What this asks of an editor"
+            "Accessibility\/LegalRequirements.html#accessibility-legal-editor",
+            "Requirements and recommendations"
+        ],
+        "accessibility-legal-requirements-and-recommendations": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/LegalRequirements.html#accessibility-legal-requirements-and-recommendations",
+            "Requirements and recommendations"
+        ],
+        "accessibility-sources-studies": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Sources.html#accessibility-sources-studies",
+            "Sources and further reading"
         ],
         "accessibility-sources": [
             "Tutorial for Editors",
@@ -494,143 +770,53 @@
             "Accessibility\/Sources.html#accessibility-sources",
             "Sources and further reading"
         ],
-        "accessibility-sources-w3c": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/Sources.html#accessibility-sources-w3c",
-            "Guidelines and how to meet them"
-        ],
         "accessibility-sources-writing": [
             "Tutorial for Editors",
             "main",
             "Accessibility\/Sources.html#accessibility-sources-writing",
-            "Writing and structure"
+            "Editorial decisions"
+        ],
+        "accessibility-sources-editorial": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Sources.html#accessibility-sources-editorial",
+            "Editorial decisions"
         ],
         "accessibility-sources-evaluate": [
             "Tutorial for Editors",
             "main",
             "Accessibility\/Sources.html#accessibility-sources-evaluate",
-            "Checking a page"
+            "Reviewing a page"
+        ],
+        "accessibility-sources-review": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/Sources.html#accessibility-sources-review",
+            "Reviewing a page"
         ],
         "accessibility-sources-law": [
             "Tutorial for Editors",
             "main",
             "Accessibility\/Sources.html#accessibility-sources-law",
-            "European legislation"
+            "Standards and legal orientation"
         ],
-        "accessibility-sources-studies": [
+        "accessibility-sources-w3c": [
             "Tutorial for Editors",
             "main",
-            "Accessibility\/Sources.html#accessibility-sources-studies",
-            "Studies cited for the figures"
+            "Accessibility\/Sources.html#accessibility-sources-w3c",
+            "Standards and legal orientation"
         ],
-        "accessibility-tips": [
+        "accessibility-sources-standards": [
             "Tutorial for Editors",
             "main",
-            "Accessibility\/TipsAndTricks.html#accessibility-tips",
-            "Tips and tricks"
+            "Accessibility\/Sources.html#accessibility-sources-standards",
+            "Standards and legal orientation"
         ],
-        "accessibility-tips-before-publish": [
+        "accessibility-sources-practical": [
             "Tutorial for Editors",
             "main",
-            "Accessibility\/TipsAndTricks.html#accessibility-tips-before-publish",
-            "Before you publish"
-        ],
-        "accessibility-tips-title": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/TipsAndTricks.html#accessibility-tips-title",
-            "Read the title out of context"
-        ],
-        "accessibility-tips-headings": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/TipsAndTricks.html#accessibility-tips-headings",
-            "Walk the headings"
-        ],
-        "accessibility-tips-links": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/TipsAndTricks.html#accessibility-tips-links",
-            "Read the links as a list"
-        ],
-        "accessibility-tips-images": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/TipsAndTricks.html#accessibility-tips-images",
-            "Cover the image"
-        ],
-        "accessibility-tips-media": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/TipsAndTricks.html#accessibility-tips-media",
-            "Play the video with the sound off"
-        ],
-        "accessibility-tips-color": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/TipsAndTricks.html#accessibility-tips-color",
-            "Check color and text saved as an image"
-        ],
-        "accessibility-tips-forms": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/TipsAndTricks.html#accessibility-tips-forms",
-            "Label every field"
-        ],
-        "accessibility-tips-tables": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/TipsAndTricks.html#accessibility-tips-tables",
-            "Mark the header cells of a table"
-        ],
-        "accessibility-writing-accessible-text": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/WritingAccessibleText.html#accessibility-writing-accessible-text",
-            "Writing accessible text"
-        ],
-        "accessibility-writing-accessible-text-provide-informative-unique": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/WritingAccessibleText.html#accessibility-writing-accessible-text-provide-informative-unique",
-            "Provide informative, unique page titles"
-        ],
-        "accessibility-writing-accessible-text-headings-convey-meaning": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/WritingAccessibleText.html#accessibility-writing-accessible-text-headings-convey-meaning",
-            "Use headings to convey meaning and structure"
-        ],
-        "accessibility-writing-accessible-text-make-link-text": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/WritingAccessibleText.html#accessibility-writing-accessible-text-make-link-text",
-            "Make link text meaningful"
-        ],
-        "accessibility-writing-accessible-text-write-meaningful-text": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/WritingAccessibleText.html#accessibility-writing-accessible-text-write-meaningful-text",
-            "Write meaningful text alternatives for images"
-        ],
-        "accessibility-writing-captions": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/WritingAccessibleText.html#accessibility-writing-captions",
-            "Provide transcripts and captions"
-        ],
-        "accessibility-writing-instructions": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/WritingAccessibleText.html#accessibility-writing-instructions",
-            "Provide clear instructions"
-        ],
-        "accessibility-writing-clear-language": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/WritingAccessibleText.html#accessibility-writing-clear-language",
-            "Keep content clear and concise"
+            "Accessibility\/Sources.html#accessibility-sources-practical",
+            "Additional practical guidance"
         ],
         "accessibility": [
             "Tutorial for Editors",
@@ -2104,209 +2290,221 @@
             "AccessControl\/Visibility\/Index.html#visibility-dates",
             "Publication dates"
         ],
+        "check-before-publishing": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CheckBeforePublishing.html#accessibility-tips",
+            "Check before publishing"
+        ],
+        "review-your-content": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CheckBeforePublishing.html#accessibility-tips-tables",
+            "Review your content"
+        ],
+        "use-tools-for-specific-questions": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CheckBeforePublishing.html#accessibility-check-tools",
+            "Use tools for specific questions"
+        ],
+        "inspect-information-that-is-not-normally-visible": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CheckBeforePublishing.html#accessibility-check-wave",
+            "Inspect information that is not normally visible"
+        ],
+        "check-colors-you-select": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CheckBeforePublishing.html#accessibility-check-contrast",
+            "Check colors you select"
+        ],
+        "learn-further-initial-checks": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CheckBeforePublishing.html#accessibility-check-easy-checks",
+            "Learn further initial checks"
+        ],
+        "report-problems-you-cannot-resolve": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CheckBeforePublishing.html#accessibility-check-report",
+            "Report problems you cannot resolve"
+        ],
+        "creating-accessible-content": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-writing-accessible-text",
+            "Creating accessible content"
+        ],
+        "write-clear-text-and-instructions": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-writing-clear-language",
+            "Write clear text and instructions"
+        ],
+        "give-pages-meaningful-titles-and-headings": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-content-titles-and-headings",
+            "Give pages meaningful titles and headings"
+        ],
+        "identify-the-page": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-writing-accessible-text-provide-informative-unique",
+            "Identify the page"
+        ],
+        "express-the-content-hierarchy": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-writing-accessible-text-headings-convey-meaning",
+            "Express the content hierarchy"
+        ],
+        "make-links-understandable": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-writing-accessible-text-make-link-text",
+            "Make links understandable"
+        ],
+        "describe-images-according-to-their-purpose": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-writing-accessible-text-write-meaningful-text",
+            "Describe images according to their purpose"
+        ],
+        "informative-images": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-content-images-informative",
+            "Informative images"
+        ],
+        "decorative-images": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-content-images-decorative",
+            "Decorative images"
+        ],
+        "images-used-as-links": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-content-images-links",
+            "Images used as links"
+        ],
+        "reusing-images-in-typo3": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-content-images-reuse",
+            "Reusing images in TYPO3"
+        ],
+        "keep-important-text-available-as-text": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-content-images-text",
+            "Keep important text available as text"
+        ],
+        "keep-tables-simple-and-structured": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-content-tables",
+            "Keep tables simple and structured"
+        ],
+        "provide-accessible-documents": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-content-documents",
+            "Provide accessible documents"
+        ],
+        "plan-accessible-audio-and-video": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-writing-captions",
+            "Plan accessible audio and video"
+        ],
+        "write-clear-form-labels-and-feedback": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-writing-instructions",
+            "Write clear form labels and feedback"
+        ],
+        "use-language-color-and-formatting-purposefully": [
+            "Tutorial for Editors",
+            "main",
+            "Accessibility\/CreatingAccessibleContent.html#accessibility-content-language-and-formatting",
+            "Use language, color and formatting purposefully"
+        ],
         "accessibility-for-editors": [
             "Tutorial for Editors",
             "main",
-            "Accessibility\/Index.html#accessibility-overview",
+            "Accessibility\/Index.html#accessibility-statistics-audioeye",
             "Accessibility for editors"
         ],
-        "what-the-figures-say-about-your-part-of-the-work": [
+        "what-you-can-influence": [
             "Tutorial for Editors",
             "main",
-            "Accessibility\/Index.html#accessibility-statistics",
-            "What the figures say about your part of the work"
+            "Accessibility\/Index.html#accessibility-what-you-can-influence",
+            "What you can influence"
         ],
-        "one-million-home-pages": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/Index.html#accessibility-statistics-webaim",
-            "One million home pages"
-        ],
-        "a-second-scan-of-page-content": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/Index.html#accessibility-statistics-audioeye",
-            "A second scan of page content"
-        ],
-        "where-to-go-next": [
+        "using-this-chapter": [
             "Tutorial for Editors",
             "main",
             "Accessibility\/Index.html#accessibility-where-next",
-            "Where to go next"
+            "Using this chapter"
         ],
         "legal-requirements": [
             "Tutorial for Editors",
             "main",
-            "Accessibility\/LegalFoundations.html#accessibility-legal",
+            "Accessibility\/LegalRequirements.html#accessibility-legal",
             "Legal requirements"
         ],
-        "the-guidelines-laws-point-to": [
+        "wcag-and-project-requirements": [
             "Tutorial for Editors",
             "main",
-            "Accessibility\/LegalFoundations.html#accessibility-legal-wcag",
-            "The guidelines laws point to"
+            "Accessibility\/LegalRequirements.html#accessibility-legal-wcag",
+            "WCAG and project requirements"
         ],
-        "european-union": [
+        "european-context": [
             "Tutorial for Editors",
             "main",
-            "Accessibility\/LegalFoundations.html#accessibility-legal-eu",
-            "European Union"
+            "Accessibility\/LegalRequirements.html#accessibility-legal-national",
+            "European context"
         ],
-        "other-countries": [
+        "requirements-and-recommendations": [
             "Tutorial for Editors",
             "main",
-            "Accessibility\/LegalFoundations.html#accessibility-legal-national",
-            "Other countries"
-        ],
-        "what-this-asks-of-an-editor": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/LegalFoundations.html#accessibility-legal-editor",
-            "What this asks of an editor"
+            "Accessibility\/LegalRequirements.html#accessibility-legal-editor",
+            "Requirements and recommendations"
         ],
         "sources-and-further-reading": [
             "Tutorial for Editors",
             "main",
-            "Accessibility\/Sources.html#accessibility-sources",
+            "Accessibility\/Sources.html#accessibility-sources-studies",
             "Sources and further reading"
         ],
-        "guidelines-and-how-to-meet-them": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/Sources.html#accessibility-sources-w3c",
-            "Guidelines and how to meet them"
-        ],
-        "writing-and-structure": [
+        "editorial-decisions": [
             "Tutorial for Editors",
             "main",
             "Accessibility\/Sources.html#accessibility-sources-writing",
-            "Writing and structure"
+            "Editorial decisions"
         ],
-        "checking-a-page": [
+        "reviewing-a-page": [
             "Tutorial for Editors",
             "main",
             "Accessibility\/Sources.html#accessibility-sources-evaluate",
-            "Checking a page"
+            "Reviewing a page"
         ],
-        "european-legislation": [
+        "standards-and-legal-orientation": [
             "Tutorial for Editors",
             "main",
             "Accessibility\/Sources.html#accessibility-sources-law",
-            "European legislation"
+            "Standards and legal orientation"
         ],
-        "studies-cited-for-the-figures": [
+        "additional-practical-guidance": [
             "Tutorial for Editors",
             "main",
-            "Accessibility\/Sources.html#accessibility-sources-studies",
-            "Studies cited for the figures"
-        ],
-        "tips-and-tricks": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/TipsAndTricks.html#accessibility-tips",
-            "Tips and tricks"
-        ],
-        "before-you-publish": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/TipsAndTricks.html#accessibility-tips-before-publish",
-            "Before you publish"
-        ],
-        "read-the-title-out-of-context": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/TipsAndTricks.html#accessibility-tips-title",
-            "Read the title out of context"
-        ],
-        "walk-the-headings": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/TipsAndTricks.html#accessibility-tips-headings",
-            "Walk the headings"
-        ],
-        "read-the-links-as-a-list": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/TipsAndTricks.html#accessibility-tips-links",
-            "Read the links as a list"
-        ],
-        "cover-the-image": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/TipsAndTricks.html#accessibility-tips-images",
-            "Cover the image"
-        ],
-        "play-the-video-with-the-sound-off": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/TipsAndTricks.html#accessibility-tips-media",
-            "Play the video with the sound off"
-        ],
-        "check-color-and-text-saved-as-an-image": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/TipsAndTricks.html#accessibility-tips-color",
-            "Check color and text saved as an image"
-        ],
-        "label-every-field": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/TipsAndTricks.html#accessibility-tips-forms",
-            "Label every field"
-        ],
-        "mark-the-header-cells-of-a-table": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/TipsAndTricks.html#accessibility-tips-tables",
-            "Mark the header cells of a table"
-        ],
-        "writing-accessible-text": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/WritingAccessibleText.html#accessibility-writing-accessible-text",
-            "Writing accessible text"
-        ],
-        "provide-informative-unique-page-titles": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/WritingAccessibleText.html#accessibility-writing-accessible-text-provide-informative-unique",
-            "Provide informative, unique page titles"
-        ],
-        "use-headings-to-convey-meaning-and-structure": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/WritingAccessibleText.html#accessibility-writing-accessible-text-headings-convey-meaning",
-            "Use headings to convey meaning and structure"
-        ],
-        "make-link-text-meaningful": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/WritingAccessibleText.html#accessibility-writing-accessible-text-make-link-text",
-            "Make link text meaningful"
-        ],
-        "write-meaningful-text-alternatives-for-images": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/WritingAccessibleText.html#accessibility-writing-accessible-text-write-meaningful-text",
-            "Write meaningful text alternatives for images"
-        ],
-        "provide-transcripts-and-captions": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/WritingAccessibleText.html#accessibility-writing-captions",
-            "Provide transcripts and captions"
-        ],
-        "provide-clear-instructions": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/WritingAccessibleText.html#accessibility-writing-instructions",
-            "Provide clear instructions"
-        ],
-        "keep-content-clear-and-concise": [
-            "Tutorial for Editors",
-            "main",
-            "Accessibility\/WritingAccessibleText.html#accessibility-writing-clear-language",
-            "Keep content clear and concise"
+            "Accessibility\/Sources.html#accessibility-sources-practical",
+            "Additional practical guidance"
         ],
         "accessibility-1": [
             "Tutorial for Editors",

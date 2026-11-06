@@ -82,7 +82,7 @@ the `Official Introduction Package <https://extensions.typo3.org/extension/intro
 
     ..  card:: :ref:`Concepts <concepts>`
 
-        *   :ref:`Creating accessible content <accessibility-overview>`
+        *   :ref:`Accessibility for editors <accessibility-overview>`
 
         *   :ref:`Caching <cache>`
 

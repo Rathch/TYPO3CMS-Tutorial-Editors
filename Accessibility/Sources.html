@@ -12,17 +12,17 @@
 <meta content="" name="docsearch:package_type">
 <meta content="main" name="docsearch:release">
 <meta content="main" name="docsearch:version">
-<meta content="2026-10-20T12:56:18+00:00" name="docsearch:modified">
-<meta content="2026-10-20T12:56:18+00:00" name="dc.modified">
-<meta content="2026-10-20T12:56:18+00:00" property="article:modified_time">
+<meta content="2026-11-06T10:57:15+00:00" name="docsearch:modified">
+<meta content="2026-11-06T10:57:15+00:00" name="dc.modified">
+<meta content="2026-11-06T10:57:15+00:00" property="article:modified_time">
     <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc">
 <link href="../_resources/css/theme.css" rel="stylesheet">
 <link href="https://docs.typo3.org/search/" rel="search" title="Search">
-<link href="https://docs.typo3.org/permalink/t3editors:accessibility-sources@main" rel="canonical">
+<link href="https://docs.typo3.org/permalink/t3editors:accessibility-sources-studies@main" rel="canonical">
 <link href="Sources.md" rel="alternate" title="Markdown" type="text/markdown">
 <script src="https://cdn.typo3.com/typo3infrastructure/universe/dist/webcomponents-loader.js"></script>
 <script src="https://cdn.typo3.com/typo3infrastructure/universe/dist/typo3-universe.js" type="module"></script>
-                        <link href="TipsAndTricks.html" rel="prev" title="Tips and tricks"/>
+                        <link href="CheckBeforePublishing.html" rel="prev" title="Check before publishing"/>
             <link href="../Concepts/Index.html" rel="next" title="Concepts"/>
             <link href="../Index.html" rel="top" title="TYPO3 Editors Guide"/>
     <style>
@@ -74,7 +74,7 @@ This is not the official documentation.
     </div>            </div>
             <div class="header-actions">
                 <button id="search-toggle" class="btn btn-light d-lg-none" type="button"
-                        aria-label="Search">
+                        aria-label="Search" aria-keyshortcuts="Control+K Meta+K">
                     <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
                 </button>
                 <button id="toc-toggle" class="btn btn-light d-lg-none" type="button"
@@ -268,14 +268,14 @@ This is not the official documentation.
     <a href="Index.html">
         Accessibility
     </a>        <ul class="menu-level-1"><li class="" role="menuitem">
-    <a href="LegalFoundations.html">
+    <a href="LegalRequirements.html">
         Legal requirements
     </a></li><li class="" role="menuitem">
-    <a href="WritingAccessibleText.html">
-        Writing accessible text
+    <a href="CreatingAccessibleContent.html">
+        Creating accessible content
     </a></li><li class="" role="menuitem">
-    <a href="TipsAndTricks.html">
-        Tips and tricks
+    <a href="CheckBeforePublishing.html">
+        Check before publishing
     </a></li><li class=" current active" role="menuitem">
     <a href="#" aria-current="page">
         Sources and further reading
@@ -346,7 +346,7 @@ This is not the official documentation.
                     <span class="btn-icon"><i class="fa-solid fa-comment-dots"></i></span>
                     <span class="btn-text">Give feedback</span>
                 </a>
-                            <a class="btn btn-sm btn-light" href="Sources.md" id="btnDownloadMarkdown" rel="nofollow noopener" download="t3editors-accessibility-sources.md">
+                            <a class="btn btn-sm btn-light" href="Sources.md" id="btnDownloadMarkdown" rel="nofollow noopener" download="t3editors-accessibility-sources-studies.md">
                     <span class="btn-icon"><i class="fa-solid fa-download"></i></span>
                     <span class="btn-text">Markdown</span>
                 </a>
@@ -361,114 +361,97 @@ This is not the official documentation.
     <div itemprop="articleBody">
         <!-- content start -->
                 
-<section class="section" id="accessibility-sources" data-rst-anchor="accessibility-sources"><a id="sources-and-further-reading"></a>
+<section class="section" id="accessibility-sources-studies" data-rst-anchor="accessibility-sources-studies"><a id="sources-and-further-reading"></a>
             
-            <h1>Sources and further reading<a class="headerlink" href="#accessibility-sources" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h1>
+            <a id="accessibility-sources"></a>
+            <h1>Sources and further reading<a class="headerlink" href="#accessibility-sources-studies" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h1>
             
-    <p>The links below are the documents this chapter relies on. Read the primary
-document when a decision depends on the exact wording. A vendor article is
-labeled as one.</p>
+    <p>Start with the resource that matches your task. WAI tutorials explain
+practical approaches; WCAG contains the normative success criteria. Legal
+applicability must be established for the project.</p>
 
-            <section class="section" id="accessibility-sources-w3c" data-rst-anchor="accessibility-sources-w3c"><a id="guidelines-and-how-to-meet-them"></a>
+            <section class="section" id="accessibility-sources-writing" data-rst-anchor="accessibility-sources-writing"><a id="editorial-decisions"></a>
             
-            <h2>Guidelines and how to meet them<a class="headerlink" href="#accessibility-sources-w3c" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
-            
-
-<ul>
-    <li><a href="https://www.w3.org/WAI/">Web Accessibility Initiative (WAI)</a> — the
-W3C home for the standards, the teaching material, and the evaluation
-guidance.</li>
-    <li><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/">Introduction to Web Accessibility</a>
-— what web accessibility covers, and who benefits besides people with
-disabilities.</li>
-    <li><a href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines (WCAG) 2.1</a>
-— the W3C Recommendation. Content that meets WCAG 2.1 also meets
-WCAG 2.0.</li>
-    <li><a href="https://www.w3.org/TR/WCAG22/">Web Content Accessibility Guidelines (WCAG) 2.2</a>
-— the later Recommendation. The W3C encourages the current version when
-a policy is written or updated.</li>
-    <li><a href="https://www.w3.org/WAI/WCAG21/quickref/">How to Meet WCAG 2.1 (Quick Reference)</a>
-— filterable list of the requirements, with links to techniques.</li>
-    <li><a href="https://www.w3.org/WAI/policies/">Web accessibility laws and policies</a>
-— the W3C list by country. The W3C states that the list is not complete
-and is not legal advice.</li>
-</ul>
-
-    </section>
-            <section class="section" id="accessibility-sources-writing" data-rst-anchor="accessibility-sources-writing"><a id="writing-and-structure"></a>
-            
-            <h2>Writing and structure<a class="headerlink" href="#accessibility-sources-writing" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            <a id="accessibility-sources-editorial"></a>
+            <h2>Editorial decisions<a class="headerlink" href="#accessibility-sources-writing" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
             
 
 <ul>
     <li><a href="https://www.w3.org/WAI/tips/writing/">Writing for Web Accessibility</a>
-— the W3C starting page for page titles, headings, link text,
-alternative text, captions, instructions, and plain language.</li>
+introduces accessible wording, titles, headings, links and instructions.</li>
     <li><a href="https://www.w3.org/WAI/tutorials/page-structure/headings/">Headings</a>
-— how heading levels form an outline.</li>
-    <li><a href="https://www.w3.org/WAI/tutorials/images/">Images</a> — informative,
-decorative, and functional images.</li>
-    <li><a href="https://www.w3.org/WAI/tutorials/images/decision-tree/">An alt Decision Tree</a>
-— a short sequence of questions for choosing the alternative text.</li>
-    <li><a href="https://www.w3.org/WAI/tutorials/tables/">Tables</a> — header cells.</li>
-    <li><a href="https://axesslab.com/alt-texts/">Alt-texts: The Ultimate Guide</a> —
-a practical guide from Axess Lab, with examples of weak and useful
-alternative text.</li>
+explains how heading levels communicate structure.</li>
+    <li><a href="https://www.w3.org/WAI/tutorials/images/">Images Tutorial</a>
+covers informative, decorative, functional and complex images.</li>
+    <li><a href="https://www.w3.org/WAI/tutorials/images/decision-tree/">Alternative text decision tree</a>
+helps determine what an image needs in its context.</li>
+    <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/images-of-text.html">Images of Text</a>
+explains why important text should remain adaptable.</li>
+    <li><a href="https://www.w3.org/WAI/tutorials/tables/">Tables Tutorial</a>
+explains header cells and their relationships to data.</li>
+    <li><a href="https://www.w3.org/WAI/media/av/planning/">Planning Audio and Video Media</a>
+distinguishes media alternatives by content type and WCAG level.</li>
+    <li><a href="https://www.w3.org/WAI/tutorials/forms/">Forms Tutorial</a>
+covers labels, instructions, validation and feedback.</li>
+    <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html">Language of Parts</a>
+explains language marking and its exceptions.</li>
 </ul>
 
     </section>
-            <section class="section" id="accessibility-sources-evaluate" data-rst-anchor="accessibility-sources-evaluate"><a id="checking-a-page"></a>
+            <section class="section" id="accessibility-sources-evaluate" data-rst-anchor="accessibility-sources-evaluate"><a id="reviewing-a-page"></a>
             
-            <h2>Checking a page<a class="headerlink" href="#accessibility-sources-evaluate" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            <a id="accessibility-sources-review"></a>
+            <h2>Reviewing a page<a class="headerlink" href="#accessibility-sources-evaluate" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
             
 
 <ul>
-    <li><a href="https://www.w3.org/WAI/test-evaluate/">Evaluating Web Accessibility: Overview</a>
-— the W3C states that tools help and that a person still has to judge
-the page.</li>
-    <li><a href="https://www.w3.org/WAI/test-evaluate/preliminary/">Easy Checks – A First Review of Web Accessibility</a>
-— checks you can do in a browser.</li>
-    <li><a href="https://www.w3.org/WAI/test-evaluate/tools/list/">Web Accessibility Evaluation Tools List</a>
-— tools submitted by their providers. The W3C does not endorse them.
-Filters cover WCAG version, free and paid tools, and browser plugins.</li>
-    <li><a href="https://www.w3.org/WAI/test-evaluate/tools/selecting/">Selecting Web Accessibility Evaluation Tools</a>
-— how to decide what kind of tool you need.</li>
+    <li><a href="https://www.w3.org/WAI/test-evaluate/preliminary/">WAI Easy Checks</a>
+provides an initial review, with explanations of its limits.</li>
+    <li><a href="https://wave.webaim.org/help">WAVE Help</a>
+explains how to interpret WAVE&#039;s findings.</li>
+    <li><a href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a>
+checks selected foreground and background colors.</li>
 </ul>
 
     </section>
-            <section class="section" id="accessibility-sources-law" data-rst-anchor="accessibility-sources-law"><a id="european-legislation"></a>
+            <section class="section" id="accessibility-sources-law" data-rst-anchor="accessibility-sources-law"><a id="standards-and-legal-orientation"></a>
             
-            <h2>European legislation<a class="headerlink" href="#accessibility-sources-law" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            <a id="accessibility-sources-w3c"></a>
+            <a id="accessibility-sources-standards"></a>
+            <h2>Standards and legal orientation<a class="headerlink" href="#accessibility-sources-law" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
             
 
 <ul>
-    <li><a href="https://eur-lex.europa.eu/eli/dir/2016/2102/oj">Directive (EU) 2016/2102</a>
-— accessibility of the websites and mobile applications of public
-sector bodies.</li>
-    <li><a href="https://eur-lex.europa.eu/eli/dir/2019/882/oj">Directive (EU) 2019/882</a>
-— the European Accessibility Act. National measures apply from
-28 June 2025.</li>
-    <li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=legissum:4403933">Accessibility of products and services</a>
-— the EUR-Lex summary of what the Act covers and what it excludes.</li>
+    <li><a href="https://www.w3.org/TR/WCAG22/">WCAG 2.2</a>
+contains the normative requirements;
+<a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1</a>
+remains relevant where referenced by applicable requirements.</li>
+    <li><a href="https://www.w3.org/WAI/WCAG22/quickref/">How to Meet WCAG</a>
+provides a filterable reference with supporting techniques.</li>
+    <li><a href="https://www.w3.org/WAI/policies/">WAI Laws and Policies</a>
+offers an introductory directory by jurisdiction.</li>
+    <li><a href="https://digital-strategy.ec.europa.eu/en/policies/web-accessibility-directive-standards-and-harmonisation">European Commission: Web Accessibility Directive standards</a>
+explains the relationship with EN 301 549.</li>
+    <li><a href="https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en">European Commission: European Accessibility Act</a>
+introduces its scope and implementation.</li>
 </ul>
 
     </section>
-            <section class="section" id="accessibility-sources-studies" data-rst-anchor="accessibility-sources-studies"><a id="studies-cited-for-the-figures"></a>
+            <section class="section" id="accessibility-sources-practical" data-rst-anchor="accessibility-sources-practical"><a id="additional-practical-guidance"></a>
             
-            <h2>Studies cited for the figures<a class="headerlink" href="#accessibility-sources-studies" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            <h2>Additional practical guidance<a class="headerlink" href="#accessibility-sources-practical" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
             
 
 <ul>
-    <li><a href="https://webaim.org/projects/million/">The WebAIM Million</a> — the
-February 2026 evaluation of one million home pages. The figures in
-<a href="Index.html#accessibility-overview">Accessibility for editors</a>
-that name a percentage of home pages come from this report, unless
-another source is named.</li>
-    <li><a href="https://www.audioeye.com/post/accessibility-statistics/">Web Accessibility Statistics</a>
-— AudioEye&#039;s article. The scan of about 400,000 pages, the image
-figures, and the link figures are theirs. AudioEye sells accessibility
-services. The article is included because it collects those content
-figures in one place, and it should be read as a vendor publication.</li>
+    <li><a href="https://axesslab.com/alt-texts/">Axess Lab: Alt-texts — The Ultimate Guide</a>
+offers examples and a screen reader user&#039;s perspective on useful image
+descriptions. It is practical guidance, not a normative specification.</li>
+    <li><a href="https://www.bfit-bund.de/DE/Downloads/Praxistipps-und-Leitfaeden/praxistipps_artikel">BFIT-Bund&#039;s practical tips and guides</a>
+provide German-language guidance on topics including alternative text,
+text structure, language, contrast and captions.</li>
+    <li><a href="https://www.bfit-bund.de/DE/Publikation/handreichung-barrierefreie-dokumente">BFIT-Bund: Accessible documents in learning contexts</a>
+introduces document accessibility. Many of its recommendations also
+apply outside education.</li>
 </ul>
 
     </section>
@@ -479,7 +462,7 @@ figures in one place, and it should be read as a vendor publication.</li>
                         
             <nav aria-label="Page navigation">
             <ul class="pagination justify-content-center"><li class="page-item">
-                            <a class="page-link" href="TipsAndTricks.html"
+                            <a class="page-link" href="CheckBeforePublishing.html"
                                title="Accesskey Alt(+Shift)+p">
                                 <i class="fa-solid fa-chevron-left"></i> Previous
                             </a>
@@ -584,7 +567,7 @@ figures in one place, and it should be read as a vendor publication.</li>
                                                 <li><a href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues" rel="nofollow noopener" title="Issues"><span>Issues</span></a></li>
                                                 <li><a href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors" rel="nofollow noopener" title="Repository"><span>Repository</span></a></li>
                                             </ul>                <div class="footer-additional">
-                    <p class="text-center">Last rendered: Oct 20, 2026 12:56</p>
+                    <p class="text-center">Last rendered: Nov 06, 2026 10:57</p>
                 </div>
                 <div class="footer-meta">
                                         <div class="footer-meta-copyright">

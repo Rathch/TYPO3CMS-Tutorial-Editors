@@ -12,9 +12,9 @@
 <meta content="" name="docsearch:package_type">
 <meta content="main" name="docsearch:release">
 <meta content="main" name="docsearch:version">
-<meta content="2026-10-20T12:25:36+00:00" name="docsearch:modified">
-<meta content="2026-10-20T12:25:36+00:00" name="dc.modified">
-<meta content="2026-10-20T12:25:36+00:00" property="article:modified_time">
+<meta content="2026-11-06T10:55:23+00:00" name="docsearch:modified">
+<meta content="2026-11-06T10:55:23+00:00" name="dc.modified">
+<meta content="2026-11-06T10:55:23+00:00" property="article:modified_time">
     <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc">
 <link href="../_resources/css/theme.css" rel="stylesheet">
 <link href="https://docs.typo3.org/search/" rel="search" title="Search">
@@ -69,7 +69,7 @@ This is not the official documentation.
     </div>            </div>
             <div class="header-actions">
                 <button id="search-toggle" class="btn btn-light d-lg-none" type="button"
-                        aria-label="Search">
+                        aria-label="Search" aria-keyshortcuts="Control+K Meta+K">
                     <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
                 </button>
                 <button id="toc-toggle" class="btn btn-light d-lg-none" type="button"
@@ -220,7 +220,7 @@ the <a href="https://extensions.typo3.org/extension/introduction/">Official Intr
             
 
 <ul>
-    <li><a href="#accessibility-overview">Creating accessible content</a></li>
+    <li><a href="#accessibility-overview">Accessibility for editors</a></li>
     <li><a href="#cache">Caching</a></li>
     <li><a href="#copyright">Copyright and data privacy</a></li>
     <li><a href="#fal">File abstraction layer (FAL)</a></li>
@@ -6428,182 +6428,73 @@ of the function.</p>
 
         </article>
 <article>
-            <section class="section" id="accessibility-overview" data-rst-anchor="accessibility-overview"><a id="accessibility-for-editors"></a>
+            <section class="section" id="accessibility-statistics-audioeye" data-rst-anchor="accessibility-statistics-audioeye"><a id="accessibility-for-editors"></a>
             
-            <h1>Accessibility for editors<a class="headerlink" href="#accessibility-overview" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h1>
+            <a id="accessibility-statistics-webaim"></a>
+            <a id="accessibility-statistics"></a>
+            <a id="accessibility-overview"></a>
+            <h1>Accessibility for editors<a class="headerlink" href="#accessibility-statistics-audioeye" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h1>
             
-    <p>People with disabilities can use a page when they can perceive the content,
-operate it, and understand it. The
-<a href="https://www.w3.org/WAI/">W3C Web Accessibility Initiative</a>
-publishes the guidelines that describe those requirements. You publish the
-words, images, media, and forms. Several of the failures that show up most
-often on the web sit in exactly that content.</p>
+    <p>People use websites in different ways. Some enlarge the page, navigate with
+a keyboard, read with a screen reader or Braille display, or use captions
+instead of listening to audio. Others need clearer explanations or more time
+to understand information.</p>
 
-            <section class="section" id="accessibility-statistics" data-rst-anchor="accessibility-statistics"><a id="what-the-figures-say-about-your-part-of-the-work"></a>
             
-            <h2>What the figures say about your part of the work<a class="headerlink" href="#accessibility-statistics" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
-            
-    <p>Two public scans measure how often pages fail checks that a program can
-run. A program cannot see every barrier. The W3C states that
-<a href="https://www.w3.org/WAI/test-evaluate/">no tool alone can decide whether a site meets the guidelines</a>.
-The figures below are the failures the scans could count. They are a floor,
-and they already show where an editor changes the result.</p>
+    <p>Your editorial decisions affect whether people can find, understand and use
+that information. A page can have an accessible template and still contain
+an unclear link, an image without a useful alternative, or a video whose
+essential information is only available through sound.</p>
 
-            <section class="section" id="accessibility-statistics-webaim" data-rst-anchor="accessibility-statistics-webaim"><a id="one-million-home-pages"></a>
+            <section class="section" id="accessibility-what-you-can-influence" data-rst-anchor="accessibility-what-you-can-influence"><a id="what-you-can-influence"></a>
             
-            <h3>One million home pages<a class="headerlink" href="#accessibility-statistics-webaim" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            <h2>What you can influence<a class="headerlink" href="#accessibility-what-you-can-influence" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
             
-    <p>In February 2026, WebAIM checked the home pages of the top 1,000,000 sites
-and published the results in
-<a href="https://webaim.org/projects/million/">The WebAIM Million</a>.
-95.9% of those home pages had at least one automatically detected failure
-of the Web Content Accessibility Guidelines (WCAG) 2. The average home page
-had 56.1 such errors. 96% of all detected errors fell into six types. The
-same six types have led the list for seven years. WebAIM writes that
-addressing these few types would significantly improve accessibility across
-the web.</p>
+    <p>As an editor, you shape the content: its wording, structure, link names,
+image alternatives, documents and media.</p>
 
-            <div class="table-responsive">
-    <table class="table table-bordered align-default colwidths-grid">
-                    <colgroup>
-                                    <col style="width: 34%">
-                        </colgroup>
-            <thead>
-            <tr>
-                            <th>Failure</th>
-                            <th>Home pages</th>
-                            <th>Where you can change it in TYPO3</th>
-                    </tr>
-        </thead>
-        <tbody>
-    <tr>
-            <td>Low contrast text</td>            <td>83.9%</td>            <td>The colors usually come from the theme. If body text is hard to read, ask your integrator. If you set a text color yourself, that color is yours to correct.</td>    </tr>    <tr>
-            <td>Missing alternative text for images</td>            <td>53.1%</td>            <td>You write it, on the file and again for the place where the image is used.</td>    </tr>    <tr>
-            <td>Missing form input labels</td>            <td>51%</td>            <td>You write the label when you build the form.</td>    </tr>    <tr>
-            <td>Empty links</td>            <td>46.3%</td>            <td>You write the link text. A linked image with no alternative text is an empty link too.</td>    </tr>    <tr>
-            <td>Empty buttons</td>            <td>30.6%</td>            <td>Buttons in the theme are the integrator&#039;s. A control you add needs a name a reader can follow.</td>    </tr>    <tr>
-            <td>Missing document language</td>            <td>13.5%</td>            <td>An administrator sets the language of the site. You still mark a phrase that is in another language, when the editor offers that option.</td>    </tr></tbody>    </table>
-</div>
             
-    <p>The report gives a closer count for the items you type in:</p>
+    <p>For example, meaningful headings help people find the section they need. An
+appropriate image alternative communicates information to someone who cannot
+see the picture. Clear instructions help people complete a form without
+guessing.</p>
 
+            
+    <p>Your technical team provides the templates and components that turn these
+choices into an accessible page. Both contributions matter. You decide what
+an image communicates; the website must output its alternative text
+correctly.</p>
+
+            
+    <p>The options available in TYPO3 depend on your permissions and the
+configuration of your installation. If a required function is missing or the
+result does not work as expected, report the affected page and element to
+your technical team.</p>
+
+    </section>
+            <section class="section" id="accessibility-where-next" data-rst-anchor="accessibility-where-next"><a id="using-this-chapter"></a>
+            
+            <a id="accessibility-using-this-chapter"></a>
+            <h2>Using this chapter<a class="headerlink" href="#accessibility-where-next" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
             
 
 <ul>
-    <li>16.2% of all images had no alternative text. 10.8% of the images that
-did have alternative text used a file name, a filler such as &quot;image&quot;,
-or the same text as the image beside them. More than one in four images
-had one of these problems. 45% of the images with no alternative text
-were links, so the link had no usable name. One in four linked images
-had no alternative text.</li>
-    <li>15.2% of home pages had ambiguous link text such as &quot;click here&quot;,
-&quot;more&quot;, or &quot;continue&quot;. Those pages had 5.3 such links on average.</li>
-    <li>Skipped heading levels, such as a heading of level 2 followed by a
-heading of level 4, appeared on 41.8% of home pages. 18.1% had more
-than one heading of level 1.</li>
+    <li><a href="#accessibility-legal">Legal requirements</a>
+explains how standards, legal obligations and project requirements relate.</li>
+    <li><a href="#accessibility-creating-accessible-content">Creating accessible content</a>
+explains everyday editorial decisions with examples.</li>
+    <li><a href="#accessibility-check-before-publishing">Check before publishing</a>
+provides a practical first review and selected tools.</li>
+    <li><a href="#accessibility-sources">Sources and further reading</a>
+offers guidance for questions that need more detail.</li>
 </ul>
 
             
-    <p>Home pages that the same study classified as TYPO3 CMS had 38.5 detected
-errors on average, compared with 56.1 for all home pages. WebAIM notes that
-a higher or lower count next to a technology cannot always be attributed to
-that technology. A lower average does not make the content accessible. The
-alternative text, the headings, and the link text are still written per page.</p>
+    <p>Consider accessibility when planning content, commissioning documents or
+media, and updating existing pages. Including the necessary structure and
+alternatives from the beginning avoids having to reconstruct them shortly
+before publication.</p>
 
-    </section>
-            <section class="section" id="accessibility-statistics-audioeye" data-rst-anchor="accessibility-statistics-audioeye"><a id="a-second-scan-of-page-content"></a>
-            
-            <h3>A second scan of page content<a class="headerlink" href="#accessibility-statistics-audioeye" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
-            
-    <p><a href="https://www.audioeye.com/post/accessibility-statistics/">AudioEye&#039;s accessibility statistics</a>
-report a separate scan of about 400,000 pages across about 15,000 sites.
-In that scan the average page had 297 accessibility issues, and 2% of the
-sites passed 70% of the WCAG criteria the scan could test. AudioEye is a
-vendor. Treat the article as that company&#039;s reading of its own scan, and
-use the WebAIM report when you want a method you can read in full.</p>
-
-            
-    <p>On images and links, the AudioEye article reports:</p>
-
-            
-
-<ul>
-    <li>38% of images had missing alternative text, and 60% of images had no
-alternative text. 93% of domains had at least one page with an
-inaccessible image.</li>
-    <li>64% of pages had links that were not clear to people with disabilities,
-about five such links on a page. 80% of sites had at least one page
-with an inaccessible link.</li>
-    <li>In AudioEye&#039;s 2023 index, cited in the same article, 1 in 4 forms were
-missing descriptive labels.</li>
-</ul>
-
-            
-    <p>The article lists both image figures. It does not define how &quot;missing
-alternative text&quot; differs from &quot;no alternative text&quot;, so this manual keeps
-them as two reported figures.</p>
-
-            
-    <p>Read together, the two scans point at the same editorial work. Alternative
-text, link text, headings, and form labels are fields you fill in. Contrast
-of the theme, empty buttons in the template, and the language of the whole
-page are set elsewhere. Ask your integrator about those.</p>
-
-    </section>
-    </section>
-            <section class="section" id="accessibility-where-next" data-rst-anchor="accessibility-where-next"><a id="where-to-go-next"></a>
-            
-            <h2>Where to go next<a class="headerlink" href="#accessibility-where-next" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
-            <div class="row card-group pb-4 row-cols-1 row-cols-md-2 g-4">
-    <div class="col">
-            <div class="card h-100">
-            <div class="card-body">
-        <h3><a href="#accessibility-legal">Legal requirements</a></h3>
-        <div class="card-text">
-            
-    <p>Which rules name WCAG, what the European directives cover, and
-which questions to take to your organization. This chapter is not
-legal advice.</p>
-
-        </div>
-    </div>
-        </div>
-        </div><div class="col">
-            <div class="card h-100">
-            <div class="card-body">
-        <h3><a href="#accessibility-writing-accessible-text">Writing accessible text</a></h3>
-        <div class="card-text">
-            
-    <p>Page titles, headings, link text, alternative text, captions, and
-plain language, with a TYPO3 field for each one.</p>
-
-        </div>
-    </div>
-        </div>
-        </div><div class="col">
-            <div class="card h-100">
-            <div class="card-body">
-        <h3><a href="#accessibility-tips">Tips and tricks</a></h3>
-        <div class="card-text">
-            
-    <p>A check you can run on a page before you publish it.</p>
-
-        </div>
-    </div>
-        </div>
-        </div><div class="col">
-            <div class="card h-100">
-            <div class="card-body">
-        <h3><a href="#accessibility-sources">Sources and further reading</a></h3>
-        <div class="card-text">
-            
-    <p>The guidelines, the writing guide, the tool list, and the studies
-cited in this chapter.</p>
-
-        </div>
-    </div>
-        </div>
-        </div></div>
             
     </section>
     </section>
@@ -6615,156 +6506,88 @@ cited in this chapter.</p>
             
             <h1>Legal requirements<a class="headerlink" href="#accessibility-legal" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h1>
             
-    <p>This page is not legal advice. The law that applies depends on the country,
-on whether the organization is a public body, and on what the site sells or
-provides. Ask the person responsible for the site which standard you must
-meet. The W3C states the same limit on its own list of laws: it does not
-make regulations, the list is not complete, and the entries are not legal
-advice.</p>
-
-            <section class="section" id="accessibility-legal-wcag" data-rst-anchor="accessibility-legal-wcag"><a id="the-guidelines-laws-point-to"></a>
-            
-            <h2>The guidelines laws point to<a class="headerlink" href="#accessibility-legal-wcag" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
-            
-    <p>The technical requirements usually point at the
-<a href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines (WCAG) 2.1</a>,
-or at a later edition. WCAG 2.1 is a W3C Recommendation. It is written as
-testable statements, independent of a particular technology. Content that
-conforms to WCAG 2.1 also conforms to WCAG 2.0. The W3C encourages the use
-of the most current version when a policy is written or updated.
-<a href="https://www.w3.org/TR/WCAG22/">WCAG 2.2</a>
-is that later Recommendation.</p>
+    <p>Accessibility requirements depend on the country, the organization, the
+services provided and any contractual obligations. Your organization should
+establish which requirements apply and translate them into an editorial
+workflow.</p>
 
             
-    <p>WCAG groups the requirements into four principles. The wording below is a
-short reading of those principles for an editor. The normative text is the
-Recommendation.</p>
+    <p>This page provides orientation, not legal advice.</p>
+
+            <section class="section" id="accessibility-legal-wcag" data-rst-anchor="accessibility-legal-wcag"><a id="wcag-and-project-requirements"></a>
+            
+            <h2>WCAG and project requirements<a class="headerlink" href="#accessibility-legal-wcag" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            
+    <p>The Web Content Accessibility Guidelines, or WCAG, describe testable
+accessibility requirements. They organize these requirements under four
+principles: content must be perceivable, operable, understandable and
+robust.</p>
 
             
-
-<ul>
-    <li><strong>Perceivable.</strong> People can take in the information. Text alternatives,
-captions, and contrast belong here.</li>
-    <li><strong>Operable.</strong> People can use the page. Headings, page titles, and link
-text belong here, as does keyboard access, which is mostly the template.</li>
-    <li><strong>Understandable.</strong> People can follow the page. The language, the
-labels, and the error messages belong here.</li>
-    <li><strong>Robust.</strong> Assistive technologies can read the page. That is mostly
-the template and the code.</li>
-</ul>
+    <p>WCAG success criteria have levels A, AA and AAA. Conformance at level AA
+includes the requirements at both A and AA.</p>
 
             
-    <p>Each requirement has a level: A, AA, or AAA. Your organization names the
-level that applies to the site. The
-<a href="https://www.w3.org/WAI/policies/">W3C list of web accessibility laws and policies</a>
-shows which WCAG edition each listed policy refers to.</p>
+    <p>W3C recommends WCAG 2.2 for current accessibility work. However, a newer
+WCAG version does not automatically become the version required by a
+particular law or contract. Follow the requirements established for your
+project. See the
+<a href="https://www.w3.org/TR/WCAG22/">WCAG 2.2 Recommendation</a>.</p>
 
     </section>
-            <section class="section" id="accessibility-legal-eu" data-rst-anchor="accessibility-legal-eu"><a id="european-union"></a>
+            <section class="section" id="accessibility-legal-national" data-rst-anchor="accessibility-legal-national"><a id="european-context"></a>
             
-            <h2>European Union<a class="headerlink" href="#accessibility-legal-eu" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            <a id="accessibility-legal-eu"></a>
+            <h2>European context<a class="headerlink" href="#accessibility-legal-national" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
             
-    <p>Two European directives cover a large part of what an editor publishes.
-Each member state writes them into national law, so the national text is
-the one that binds the organization.</p>
+    <p>In the European Union, the Web Accessibility Directive concerns websites and
+mobile applications of public sector bodies. The European standard EN 301 549
+provides technical requirements supporting this framework and includes
+requirements beyond WCAG.</p>
 
             
-    <p><a href="https://eur-lex.europa.eu/eli/dir/2016/2102/oj">Directive (EU) 2016/2102</a>
-is the directive on the accessibility of the websites and mobile
-applications of public sector bodies. The
-<a href="https://www.w3.org/WAI/policies/">W3C policy list</a>
-records it as an accessibility law for the public sector, based on
-WCAG 2.1.</p>
+    <p>The European Commission explains the relationship between legislation and
+technical standards in its
+<a href="https://digital-strategy.ec.europa.eu/en/policies/web-accessibility-directive-standards-and-harmonisation">guidance on standards and harmonisation</a>.</p>
 
             
-    <p><a href="https://eur-lex.europa.eu/eli/dir/2019/882/oj">Directive (EU) 2019/882</a>,
-the European Accessibility Act, sets accessibility requirements for
-specified products and services. Member states had to adopt the national
-measures by 28 June 2022 and apply them from 28 June 2025. The
-<a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=legissum:4403933">EUR-Lex summary of the Act</a>
-lists what is covered. For an editor, the relevant services include
-e-commerce, consumer banking, e-books, and parts of passenger transport
-such as websites, mobile services, and electronic tickets. The Act also
-covers products such as computers, smartphones, e-readers, and certain
-self-service terminals.</p>
+    <p>The European Accessibility Act covers specified products and services,
+including e-commerce and e-books. It does not make every website subject to
+the same obligations. Its application must be assessed under the relevant
+national legislation. See the
+<a href="https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en">European Commission&#039;s overview</a>.</p>
 
             
-    <p>The Act does not cover every website. The summary names these exclusions,
-among others:</p>
-
-            
-
-<ul>
-    <li>Microenterprises that provide services.</li>
-    <li>Pre-recorded video and office files published before 28 June 2025.</li>
-    <li>Content of a website or app that is an archive, meaning it is not
-updated or edited after 28 June 2025.</li>
-    <li>Third-party content that the organization does not fund, develop, or
-control.</li>
-</ul>
-
-            
-    <p>The Act itself is a list of accessibility requirements for those products
-and services. It is not a sentence that says &quot;use this WCAG version&quot;. The
-version and the level come from the national law and from the standard
-that law names. Ask which ones apply to your site.</p>
+    <p>For other jurisdictions, the
+<a href="https://www.w3.org/WAI/policies/">WAI laws and policies directory</a>
+is a starting point. It is not a complete or definitive legal reference.</p>
 
     </section>
-            <section class="section" id="accessibility-legal-national" data-rst-anchor="accessibility-legal-national"><a id="other-countries"></a>
+            <section class="section" id="accessibility-legal-editor" data-rst-anchor="accessibility-legal-editor"><a id="requirements-and-recommendations"></a>
             
-            <h2>Other countries<a class="headerlink" href="#accessibility-legal-national" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            <a id="accessibility-legal-requirements-and-recommendations"></a>
+            <h2>Requirements and recommendations<a class="headerlink" href="#accessibility-legal-editor" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
             
-    <p>Outside that European frame, and for the national text inside it, use the
-<a href="https://www.w3.org/WAI/policies/">W3C list of web accessibility laws and policies</a>.
-The list has a last-updated date on each country. It includes, among many
-others, non-discrimination laws and public-sector rules in the United
-States, the United Kingdom, Canada, Australia, and Switzerland. If your
-country is missing, or the entry looks old, the national authority is the
-source to follow. The W3C asks to be told about additions and corrections.</p>
+    <p>This chapter combines accessibility requirements with practical
+recommendations.</p>
 
-    </section>
-            <section class="section" id="accessibility-legal-editor" data-rst-anchor="accessibility-legal-editor"><a id="what-this-asks-of-an-editor"></a>
             
-            <h2>What this asks of an editor<a class="headerlink" href="#accessibility-legal-editor" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
-            
-    <p>A template can be accessible and the published page can still fail, because
-the failure is in a field you control. These requirements from WCAG 2.1 are
-the ones that match that work. The links go to the W3C explanation of each
-requirement.</p>
+    <p>For example, WCAG requires appropriate text alternatives for non-text
+content and identifiable link purposes. Recommendations such as putting the
+main message first or displaying a download&#039;s file size support usability,
+but are not each a separate WCAG requirement.</p>
 
-            <div class="table-responsive">
-    <table class="table table-bordered align-default colwidths-grid">
-                    <colgroup>
-                                    <col style="width: 28%">
-                        </colgroup>
-            <thead>
-            <tr>
-                            <th>Requirement</th>
-                            <th>Level</th>
-                            <th>What you provide</th>
-                    </tr>
-        </thead>
-        <tbody>
-    <tr>
-            <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html">Non-text content (1.1.1)</a></td>            <td>A</td>            <td>Alternative text that carries the information of the image, or an empty alternative text when the image is decorative.</td>    </tr>    <tr>
-            <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html">Audio-only and video-only (1.2.1)</a></td>            <td>A</td>            <td>A transcript for prerecorded audio, and a text alternative or audio alternative for prerecorded video that has no sound.</td>    </tr>    <tr>
-            <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html">Captions (prerecorded) (1.2.2)</a></td>            <td>A</td>            <td>Captions for prerecorded video that has speech or meaningful sound.</td>    </tr>    <tr>
-            <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html">Info and relationships (1.3.1)</a></td>            <td>A</td>            <td>Headings, lists, and table headers marked as such, so the structure is in the content.</td>    </tr>    <tr>
-            <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html">Use of color (1.4.1)</a></td>            <td>A</td>            <td>Instructions that still work when the reader cannot see the color.</td>    </tr>    <tr>
-            <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html">Contrast (minimum) (1.4.3)</a></td>            <td>AA</td>            <td>Text you color yourself meets the contrast ratio. Theme colors belong to the integrator.</td>    </tr>    <tr>
-            <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html">Images of text (1.4.5)</a></td>            <td>AA</td>            <td>Real text for a sentence, a heading, or a price. A logo may stay an image.</td>    </tr>    <tr>
-            <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html">Page titled (2.4.2)</a></td>            <td>A</td>            <td>A title that describes the topic of that page.</td>    </tr>    <tr>
-            <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html">Link purpose in context (2.4.4)</a></td>            <td>A</td>            <td>Link text that says where the link goes.</td>    </tr>    <tr>
-            <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html">Headings and labels (2.4.6)</a></td>            <td>AA</td>            <td>Headings and form labels that describe the topic or the field.</td>    </tr>    <tr>
-            <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html">Language of page (3.1.1)</a></td>            <td>A</td>            <td>The language of the page. An administrator sets this for the site. You choose the right translation when you edit one.</td>    </tr>    <tr>
-            <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts.html">Language of parts (3.1.2)</a></td>            <td>AA</td>            <td>A phrase in another language is marked, when the editor allows it.</td>    </tr>    <tr>
-            <td><a href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html">Labels or instructions (3.3.2)</a></td>            <td>A</td>            <td>A label on every field, and instructions where the format is not obvious.</td>    </tr></tbody>    </table>
-</div>
             
-    <p>How to write those fields is covered in
-<a href="#accessibility-writing-accessible-text">Writing accessible text</a>.
-A pass you can do on a finished page is in
-<a href="#accessibility-tips">Tips and tricks</a>.</p>
+    <p>You do not need to interpret legislation for every editorial decision. Your
+organization should provide clear requirements and identify who can help
+with questions. The following guidance supports your work; completing its
+checks does not establish legal compliance.</p>
+
+            
+    <p>How to apply that guidance in the content is covered in
+<a href="#accessibility-creating-accessible-content">Creating accessible content</a>.
+A first review of a finished page is in
+<a href="#accessibility-check-before-publishing">Check before publishing</a>.</p>
 
     </section>
     </section>
@@ -6772,40 +6595,140 @@ A pass you can do on a finished page is in
         </article>
 <article>
             
-<section class="section" id="accessibility-writing-accessible-text" data-rst-anchor="accessibility-writing-accessible-text"><a id="writing-accessible-text"></a>
+<section class="section" id="accessibility-writing-accessible-text" data-rst-anchor="accessibility-writing-accessible-text"><a id="creating-accessible-content"></a>
             
-            <h1>Writing accessible text<a class="headerlink" href="#accessibility-writing-accessible-text" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h1>
+            <a id="accessibility-creating-accessible-content"></a>
+            <h1>Creating accessible content<a class="headerlink" href="#accessibility-writing-accessible-text" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h1>
+            <section class="section" id="accessibility-writing-clear-language" data-rst-anchor="accessibility-writing-clear-language"><a id="write-clear-text-and-instructions"></a>
             
-    <p>The W3C collects the writing practices on
-<a href="https://www.w3.org/WAI/tips/writing/">Writing for Web Accessibility</a>.
-The sections below follow that page and name the TYPO3 field for each
-practice. The examples are illustrations of the wording. They are not
-records from a particular site.</p>
-
-            <section class="section" id="accessibility-writing-accessible-text-provide-informative-unique" data-rst-anchor="accessibility-writing-accessible-text-provide-informative-unique"><a id="provide-informative-unique-page-titles"></a>
+            <a id="accessibility-content-clear-text"></a>
+            <h2>Write clear text and instructions<a class="headerlink" href="#accessibility-writing-clear-language" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
             
-            <h2>Provide informative, unique page titles<a class="headerlink" href="#accessibility-writing-accessible-text-provide-informative-unique" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
-            
-    <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html">Success Criterion 2.4.2</a>
-requires a title that describes the topic or purpose of the page. A person
-using a screen reader hears the title first. The same title is the label of
-the browser tab, so a row of tabs stays usable when several pages of the
-site are open.</p>
+    <p>Clear wording helps readers understand what a page offers and what to do
+next. This particularly benefits people with cognitive or learning
+disabilities and people unfamiliar with the subject.</p>
 
             
-    <p>Set the <span class="guilabel">Page title</span> in the
-<a href="#pages-properties-titles">page properties</a>.
-If the page has a
-<a href="#title-for-search-engines">Title for search engines</a>,
-that value is the document title. When it is empty, TYPO3 uses the page
-title. By default the site name is added as a suffix, separated by a dash.
-An integrator can change that pattern. Ask when you need the title to follow
-a fixed order.</p>
+    <p>Start with the main message. Use familiar words, explain necessary
+specialist terms and expand unfamiliar abbreviations. Keep paragraphs
+focused on one idea.</p>
 
             
-    <p>Put the part that distinguishes this page first. The W3C&#039;s own examples use
-a page name, then the organization, and they include the step when a page
-is one step of a process.</p>
+    <p><strong>Instead of:</strong></p>
+
+            <blockquote>
+    <p>Submission of the requested documentation is a prerequisite for further
+processing.</p>
+</blockquote>
+            
+    <p><strong>Write:</strong></p>
+
+            <blockquote>
+    <p>Send us the listed documents so we can process your application.</p>
+</blockquote>
+            
+    <p>Use the editor&#039;s list functions for related items and ordered steps. Avoid
+arranging text with repeated spaces or empty paragraphs.</p>
+
+            
+    <p>Refer to controls by their labels:</p>
+
+            <blockquote>
+    <p>Choose &quot;Submit application&quot;.</p>
+</blockquote>
+            
+    <p>This is more reliable than &quot;Click the green button on the right&quot;, which
+depends on seeing its color and position.</p>
+
+            
+    <p>Further examples are available in
+<a href="https://www.w3.org/WAI/tips/writing/">WAI&#039;s Writing for Web Accessibility</a>.</p>
+
+    </section>
+            <section class="section" id="accessibility-content-titles-and-headings" data-rst-anchor="accessibility-content-titles-and-headings"><a id="give-pages-meaningful-titles-and-headings"></a>
+            
+            <h2>Give pages meaningful titles and headings<a class="headerlink" href="#accessibility-content-titles-and-headings" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            <section class="section" id="accessibility-writing-accessible-text-provide-informative-unique" data-rst-anchor="accessibility-writing-accessible-text-provide-informative-unique"><a id="identify-the-page"></a>
+            
+            <a id="accessibility-content-page-title"></a>
+            <h3>Identify the page<a class="headerlink" href="#accessibility-writing-accessible-text-provide-informative-unique" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>The browser title helps people distinguish open tabs and recognize a page
+when using assistive technology. It should identify the page&#039;s topic or
+purpose.</p>
+
+            
+    <p>&quot;Accessible travel to the conference&quot; is more informative than
+&quot;Information&quot;.</p>
+
+            
+    <p>TYPO3&#039;s page and SEO settings influence the browser title. Your site may
+also add the organization&#039;s name. The
+<a href="#seo">TYPO3 SEO documentation</a>
+explains the title fields.</p>
+
+    </section>
+            <section class="section" id="accessibility-writing-accessible-text-headings-convey-meaning" data-rst-anchor="accessibility-writing-accessible-text-headings-convey-meaning"><a id="express-the-content-hierarchy"></a>
+            
+            <a id="accessibility-content-headings"></a>
+            <h3>Express the content hierarchy<a class="headerlink" href="#accessibility-writing-accessible-text-headings-convey-meaning" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>People scan headings to find relevant sections. Screen reader users can also
+navigate directly between headings.</p>
+
+            
+    <p>Use actual heading formats. Making a paragraph large or bold does not
+provide the same structure.</p>
+
+            
+    <p>Choose levels according to how sections relate:</p>
+
+            <div class="table-responsive">
+    <table class="table table-bordered align-default colwidths-grid">
+                    <colgroup>
+                                    <col style="width: 20%">
+                        </colgroup>
+            <thead>
+            <tr>
+                            <th>Level</th>
+                            <th>Heading</th>
+                    </tr>
+        </thead>
+        <tbody>
+    <tr>
+            <td>H1</td>            <td>Visit the conference</td>    </tr>    <tr>
+            <td>H2</td>            <td>Travel</td>    </tr>    <tr>
+            <td>H3</td>            <td>Public transport</td>    </tr>    <tr>
+            <td>H3</td>            <td>Parking</td>    </tr>    <tr>
+            <td>H2</td>            <td>Accessibility at the venue</td>    </tr></tbody>    </table>
+</div>
+            
+    <p>When opening a subsection, normally move down one level. Returning from H3
+to H2 starts a new section and is expected.</p>
+
+            
+    <p>Consider headings from the template, content elements and rich text editor
+together. Check whether the template already supplies the main heading, and
+avoid repeating the same heading in a content element and its text.</p>
+
+            
+    <p>Do not choose a different level merely to obtain a preferred font size. See
+the
+<a href="https://www.w3.org/WAI/tutorials/page-structure/headings/">WAI headings tutorial</a>
+for examples.</p>
+
+    </section>
+    </section>
+            <section class="section" id="accessibility-writing-accessible-text-make-link-text" data-rst-anchor="accessibility-writing-accessible-text-make-link-text"><a id="make-links-understandable"></a>
+            
+            <a id="accessibility-content-links"></a>
+            <h2>Make links understandable<a class="headerlink" href="#accessibility-writing-accessible-text-make-link-text" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            
+    <p>People need to understand what a link offers before following it. Some move
+between links using the keyboard or use a screen reader&#039;s list of links.</p>
+
+            
+    <p>Prefer descriptive wording:</p>
 
             <div class="table-responsive">
     <table class="table table-bordered align-default colwidths-grid">
@@ -6814,324 +6737,309 @@ is one step of a process.</p>
                         </colgroup>
             <thead>
             <tr>
-                            <th>Situation</th>
-                            <th>Title</th>
+                            <th>Less helpful</th>
+                            <th>More helpful</th>
                     </tr>
         </thead>
         <tbody>
     <tr>
-            <td>A page whose title is only the organization</td>            <td>Camino</td>    </tr>    <tr>
-            <td>The page name first, then the organization</td>            <td>Pilgrim stories - Camino</td>    </tr>    <tr>
-            <td>One step of a process</td>            <td>Book a bed (step 1 of 3) - Camino</td>    </tr></tbody>    </table>
+            <td>Click here</td>            <td>Travel directions</td>    </tr>    <tr>
+            <td>Download</td>            <td>Conference program</td>    </tr>    <tr>
+            <td>More</td>            <td>Accessibility at the venue</td>    </tr></tbody>    </table>
 </div>
             
-    <p>&quot;Camino&quot; on its own fits the home page. It does not tell anyone which inner
-page is open. &quot;Page 3&quot; and &quot;News&quot; have the same problem when the site has
-many news pages: add the topic, for example &quot;Route closed in March - News&quot;.</p>
+    <p>Descriptive wording also helps when a link is encountered without the
+surrounding paragraph. WCAG allows some link purposes to be understood from
+associated context, so &quot;Read more&quot; is not automatically a failure.
+Nevertheless, naming the destination is usually clearer. See
+<a href="https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html">WAI&#039;s explanation of link purpose</a>.</p>
+
+            
+    <p>For downloads, name the document. File format and size are useful additional
+information:</p>
+
+            <blockquote>
+    <p>Conference program (PDF, 1 MB)</p>
+</blockquote>
+            
+    <p>See
+<a href="#rte-linking">Creating a link in TYPO3</a>
+for the editing steps.</p>
 
     </section>
-            <section class="section" id="accessibility-writing-accessible-text-headings-convey-meaning" data-rst-anchor="accessibility-writing-accessible-text-headings-convey-meaning"><a id="use-headings-to-convey-meaning-and-structure"></a>
+            <section class="section" id="accessibility-writing-accessible-text-write-meaningful-text" data-rst-anchor="accessibility-writing-accessible-text-write-meaningful-text"><a id="describe-images-according-to-their-purpose"></a>
             
-            <h2>Use headings to convey meaning and structure<a class="headerlink" href="#accessibility-writing-accessible-text-headings-convey-meaning" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            <a id="accessibility-content-images"></a>
+            <h2>Describe images according to their purpose<a class="headerlink" href="#accessibility-writing-accessible-text-write-meaningful-text" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
             
-    <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html">Success Criterion 2.4.6</a>
-asks for headings that describe the topic. Screen reader users jump from
-heading to heading. A heading that exists only because it looks larger is
-missing from that list, and a heading that was styled to look small is
-still announced as a heading. The W3C tutorial on
-<a href="https://www.w3.org/WAI/tutorials/page-structure/headings/">headings</a>
-shows a heading outline.</p>
+    <p>Alternative text makes relevant image information available as text, speech
+or Braille. Decide what the image contributes at its particular location.</p>
+
+            <section class="section" id="accessibility-content-images-informative" data-rst-anchor="accessibility-content-images-informative"><a id="informative-images"></a>
+            
+            <h3>Informative images<a class="headerlink" href="#accessibility-content-images-informative" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>Describe the information that would otherwise be lost.</p>
 
             
-    <p>Almost every content element can have a heading. When your permissions
-allow it, set the level under <span class="guilabel">Headlines &gt; Type</span>. Pick the level
-from the outline of the page. A subsection sits one level under the section
-it belongs to.</p>
+    <p>On a page explaining access to a venue, &quot;Building exterior&quot; is too general.
+A useful alternative might be:</p>
+
+            <blockquote>
+    <p>Step-free entrance via the ramp beside the main stairs.</p>
+</blockquote>
+            
+    <p>On another page, the same photograph may serve a different purpose and need
+different wording.</p>
+
+            
+    <p>Keep the description focused. Avoid file names, keyword lists and
+unsupported interpretations. Usually, there is no need to begin with
+&quot;Image of&quot;.</p>
+
+            
+    <p>There is no universal character limit that makes an alternative text
+appropriate. Use enough detail to communicate the relevant information. For
+a complex chart, provide a short alternative and explain the findings and
+necessary values in accessible text or a data table.</p>
 
             
     <p>The
-<a href="#rte">rich text editor</a>
-can insert headings too. Use those for the structure inside the text. Use
-the content element heading for the title of the element. Two headings with
-the same wording, one on the element and one inside the text, give the
-reader the same entry twice.</p>
-
-            
-    <p>In the WebAIM Million report of February 2026, skipped heading levels were
-present on 41.8% of home pages, and 18.1% had more than one level-1 heading.
-How your site turns the page title into a heading depends on the site
-package. Ask your integrator whether the page title is already the level-1
-heading. If it is, the first content element heading is level 2.</p>
-
-            
-    <p>Example. A page &quot;Pilgrim stories&quot; contains one story and a practical note:</p>
-
-            
-
-<ul>
-    <li>Level 1: Pilgrim stories. This may already be the page title.</li>
-    <li>Level 2: The night at the mountain hut.</li>
-    <li>Level 3: How to get there.</li>
-    <li>Level 2: What to pack.</li>
-</ul>
-
-            
-    <p>A level-4 heading directly under the page title leaves a gap. The size of
-the type is a design decision. If a level-2 heading looks too large, ask
-your integrator to adjust the stylesheet. Changing the stored level to
-level 4 would break the outline.</p>
+<a href="https://www.w3.org/WAI/tutorials/images/">WAI Images Tutorial</a>
+explains the different image purposes.</p>
 
     </section>
-            <section class="section" id="accessibility-writing-accessible-text-make-link-text" data-rst-anchor="accessibility-writing-accessible-text-make-link-text"><a id="make-link-text-meaningful"></a>
+            <section class="section" id="accessibility-content-images-decorative" data-rst-anchor="accessibility-content-images-decorative"><a id="decorative-images"></a>
             
-            <h2>Make link text meaningful<a class="headerlink" href="#accessibility-writing-accessible-text-make-link-text" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            <h3>Decorative images<a class="headerlink" href="#accessibility-content-images-decorative" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
             
-    <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html">Success Criterion 2.4.4</a>
-requires that the purpose of a link can be determined from the link text,
-together with its context. People who list all the links on a page hear the
-link text alone. &quot;Click here&quot; and &quot;Read more&quot; then become a list of links
-that all sound the same. In the February 2026 WebAIM report, 15.2% of home
-pages had link text of that kind.</p>
+    <p>An image may add visual interest without contributing information, or repeat
+information already fully available nearby.</p>
 
             
-    <p>When you
-<a href="#rte-linking">create a link in the rich text editor</a>,
-write the words that say where the link goes, select those words, and then
-open the link dialog. If you insert a link without selecting text, TYPO3
-uses the title of the link, or the title of the target. Read that inserted
-text. A page title can be a good link name. A file name such as
-<code class="code-inline" translate="no">scan-<wbr>final-<wbr>v3.<wbr>pdf</code> is a poor one.</p>
+    <p>These images should be marked as decorative so assistive technologies can
+skip them.</p>
 
             
-    <p>The W3C contrasts a link that says &quot;click here&quot; with a sentence that names
-the destination. The same pattern:</p>
+    <p>In TYPO3, leaving an alternative text field blank may cause an existing
+value to be inherited. Use your project&#039;s agreed method for decorative
+images. If you are unsure, ask your technical team how to ensure that no
+alternative text is output for that use.</p>
 
             
-
-<ul>
-    <li>Weak: For the route, click here.</li>
-    <li>Clear: Read the route over the pass.</li>
-</ul>
-
-            
-    <p>When the target is a file, include the type and, if you know it, the size.
-The W3C example is &quot;Proposal Documents (RTF, 20MB)&quot;. A TYPO3 equivalent is
-&quot;Route description (PDF, 1 MB)&quot;.</p>
-
-            
-    <p>A heading of a content element can itself be the link. The heading text is
-then the link text, so the heading has to name the destination.</p>
-
-            
-    <p>A linked image uses the alternative text as its accessible name when the
-image has no other text. In the WebAIM report, 45% of images with no
-alternative text were links. Write the alternative text as the name of the
-destination: &quot;Route description (PDF)&quot;, for a linked cover image.</p>
+    <p>For the technical distinction between an empty alternative and a missing
+one, see
+<a href="https://www.w3.org/WAI/tutorials/images/decorative/">WAI&#039;s guidance on decorative images</a>.</p>
 
     </section>
-            <section class="section" id="accessibility-writing-accessible-text-write-meaningful-text" data-rst-anchor="accessibility-writing-accessible-text-write-meaningful-text"><a id="write-meaningful-text-alternatives-for-images"></a>
+            <section class="section" id="accessibility-content-images-links" data-rst-anchor="accessibility-content-images-links"><a id="images-used-as-links"></a>
             
-            <h2>Write meaningful text alternatives for images<a class="headerlink" href="#accessibility-writing-accessible-text-write-meaningful-text" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            <h3>Images used as links<a class="headerlink" href="#accessibility-content-images-links" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
             
-    <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html">Success Criterion 1.1.1</a>
-requires a text alternative for non-text content. The W3C&#039;s writing guide
-puts it this way: the alternative text provides the information or the
-function of the image. A decorative image needs no alternative text. The
-W3C tutorial on
-<a href="https://www.w3.org/WAI/tutorials/images/">images</a>
-separates informative, decorative, and functional images. A short practical
-guide is <a href="https://axesslab.com/alt-texts/">Alt-texts: The Ultimate Guide</a>,
-from Axess Lab.</p>
+    <p>When an image is the only content of a link, its alternative should identify
+the destination or action. A linked program cover might need &quot;Conference
+program&quot;, rather than a description of its colors.</p>
 
             
-    <p>In the <span class="guilabel">Media</span> module, edit the
-<a href="#file-metadata">file metadata</a>
-and fill in the alternative text there. That text is the default wherever
-the file is used. When you place the image in a content element, you can
-<a href="#override-image-metadata">override the alternative text</a>
-for that one use. A portrait in the media library might have the alternative
-text &quot;Portrait of the hut warden&quot;. On a page about winter opening hours, the
-same file might need &quot;Hut warden at the counter where winter hours are posted&quot;.</p>
-
-            
-    <p>The W3C shows the difference with a photo of someone charging a phone. The
-weak alternative text is &quot;Charging phone&quot;. The useful one describes the step
-the photo is there to teach: &quot;Plug cable into the bottom edge of the phone.&quot;
-The same test, applied to a route page:</p>
-
-            
-
-<ul>
-    <li>Weak: hut.jpg</li>
-    <li>Weak: image</li>
-    <li>Useful, when the photo carries the information: Wooden signpost for the
-mountain hut, 2 hours.</li>
-    <li>Empty, when the photo only decorates a paragraph that already says all
-of this.</li>
-</ul>
-
-            
-    <p>Describe the information. Skip &quot;image of&quot; and &quot;photo of&quot;. The screen reader
-already announces that it is an image.</p>
-
-            
-    <p>An alternative text is usually not visible on the page. The
-<span class="guilabel">Description</span> is a different field. Themes often show the
-description under the image, where everyone can read it. The alternative
-text replaces the image for someone who cannot see it. The description adds
-something for everyone. They should not be copies of each other when the
-description is visible, or the reader hears the same sentence twice.</p>
-
-            
-    <p>For a decorative image, leave the alternative text empty so assistive
-technologies can skip it. If your installation will not store an empty
-value, ask your integrator how decorative images are marked.</p>
-
-            
-    <p>Text that matters belongs in the text field.
-<a href="https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html">Success Criterion 1.4.5</a>
-requires real text when the same visual result can be achieved with text.
-A heading saved as a picture, or a price saved as a picture, cannot be
-resized as text and has no alternative unless you write one. A logo is an
-allowed exception. Its alternative text is the name in the logo.</p>
+    <p>If descriptive text and an image form the same link, and the image adds no
+information, an empty image alternative avoids repetition. See
+<a href="https://www.w3.org/WAI/tutorials/images/functional/">WAI&#039;s functional image examples</a>.</p>
 
     </section>
-            <section class="section" id="accessibility-writing-captions" data-rst-anchor="accessibility-writing-captions"><a id="provide-transcripts-and-captions"></a>
+            <section class="section" id="accessibility-content-images-reuse" data-rst-anchor="accessibility-content-images-reuse"><a id="reusing-images-in-typo3"></a>
             
-            <h2>Provide transcripts and captions<a class="headerlink" href="#accessibility-writing-captions" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            <h3>Reusing images in TYPO3<a class="headerlink" href="#accessibility-content-images-reuse" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
             
-    <p>The W3C writing guide asks for a transcript of audio-only content, such as
-a podcast, and captions for video that has a soundtrack. The transcript and
-the captions include the spoken words and the sounds that carry meaning.
-The W3C examples of those sounds are &quot;door creaks&quot; and, in a video
-transcript, a description of an action such as someone leaving the room.
-The requirements are
-<a href="https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded.html">Audio-only and video-only (1.2.1)</a>
-and
-<a href="https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html">Captions, prerecorded (1.2.2)</a>.</p>
+    <p>TYPO3 can inherit alternative text from file metadata and allows it to be
+overridden for an individual use. Review inherited text whenever you reuse
+an image.</p>
 
             
-    <p>You can place the transcript in the text of a
-<a href="#media">Text &amp; Media</a>
-element, next to the video. Give it a heading, for example &quot;Transcript&quot;, so
-it can be found from the heading list.</p>
+    <p>A caption supplies visible context; a credit identifies the source. Neither
+automatically replaces an appropriate alternative, and unnecessary
+repetition should be avoided.</p>
 
             
-    <p>Example, a short clip in which a warden speaks and a door closes:</p>
+    <p>The
+<a href="#images">TYPO3 image documentation</a>
+explains the metadata settings.</p>
 
-            <div class="code-block-wrapper" translate="no">
+    </section>
+            <section class="section" id="accessibility-content-images-text" data-rst-anchor="accessibility-content-images-text"><a id="keep-important-text-available-as-text"></a>
             
-    <pre class="code-block"><code>Warden: The pass is closed until Friday.
-[The hut door closes.]
-Warden: Use the valley path.
-</code></pre>
-    <div class="code-block-actions">        <button class="code-block-copy" title="Copy to clipboard">
-            <i class="icon fa-regular fa-copy code-block-copy-icon"></i>
-            <i class="fa-solid fa-check code-block-check-icon code-block-hide"></i>
-        </button>
-        <span class="code-block-check-tooltip code-block-hide" aria-live="polite">Copied!</span>
-    </div>
+            <h3>Keep important text available as text<a class="headerlink" href="#accessibility-content-images-text" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>Do not publish dates, prices, instructions or other essential information
+only inside a picture.</p>
+
+            
+    <p>For example, if you upload a conference poster, also provide its relevant
+information as normal page content. This allows readers to enlarge and adapt
+the text. A long alternative text is not a substitute for a usable event
+description.</p>
+
+            
+    <p>Some images of text, such as logos, have legitimate exceptions. See
+<a href="https://www.w3.org/WAI/WCAG22/Understanding/images-of-text.html">WAI&#039;s explanation of images of text</a>.</p>
+
+    </section>
+    </section>
+            <section class="section" id="accessibility-content-tables" data-rst-anchor="accessibility-content-tables"><a id="keep-tables-simple-and-structured"></a>
+            
+            <h2>Keep tables simple and structured<a class="headerlink" href="#accessibility-content-tables" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            
+    <p>Tables communicate relationships between data. Someone reading individual
+cells with a screen reader needs to know which row and column headings
+apply.</p>
+
+            
+    <p>Use the available table functions to identify header cells. Making the first
+row bold only changes its appearance.</p>
+
+            
+    <p>Keep the structure as simple as the information permits. Avoid merged cells
+or multiple layers of headings where a simpler presentation would work.
+Consider whether smaller tables or an explanatory paragraph would be
+clearer.</p>
+
+            
+    <p>Use layout components, rather than tables, to position unrelated content
+side by side. If the editor cannot represent the required structure, ask for
+support.</p>
+
+            
+    <p>The
+<a href="https://www.w3.org/WAI/tutorials/tables/">WAI tables tutorial</a>
+explains these relationships with examples.</p>
+
+    </section>
+            <section class="section" id="accessibility-content-documents" data-rst-anchor="accessibility-content-documents"><a id="provide-accessible-documents"></a>
+            
+            <h2>Provide accessible documents<a class="headerlink" href="#accessibility-content-documents" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            
+    <p>A clear download link does not make the linked file accessible. Uploading a
+document to TYPO3 does not repair its headings, reading order or image
+alternatives.</p>
+
+            
+    <p>Before publishing, confirm that the document has been prepared and checked
+for accessibility. If another team supplies it, make accessibility part of
+the request rather than discovering the problem after publication.</p>
+
+            
+    <p>Where practical, publish information directly as web content. A downloadable
+version may still be useful.</p>
+
+            
+    <p>Use your project&#039;s guidance for the document format and involve the
+responsible team when specialist checking or repair is needed. The German
+<a href="https://www.bfit-bund.de/DE/Publikation/handreichung-barrierefreie-dokumente">BFIT-Bund guidance on accessible documents</a>
+provides an additional starting point.</p>
+
+    </section>
+            <section class="section" id="accessibility-writing-captions" data-rst-anchor="accessibility-writing-captions"><a id="plan-accessible-audio-and-video"></a>
+            
+            <a id="accessibility-content-media"></a>
+            <h2>Plan accessible audio and video<a class="headerlink" href="#accessibility-writing-captions" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            
+    <p>Plan media alternatives when creating or commissioning a recording. What you
+need depends on the information conveyed and whether the content is recorded
+or live.</p>
+
+            <div class="table-responsive">
+    <table class="table table-bordered align-default colwidths-grid">
+                    <colgroup>
+                                    <col style="width: 45%">
+                        </colgroup>
+            <thead>
+            <tr>
+                            <th>Content</th>
+                            <th>What to plan</th>
+                    </tr>
+        </thead>
+        <tbody>
+    <tr>
+            <td>Prerecorded audio, such as a podcast</td>            <td>A transcript containing speech and meaningful sounds.</td>    </tr>    <tr>
+            <td>Prerecorded video with meaningful audio</td>            <td>Captions containing speech, relevant sounds and speaker changes where necessary.</td>    </tr>    <tr>
+            <td>Prerecorded video without audio</td>            <td>An equivalent text description or an audio track explaining the visual information.</td>    </tr>    <tr>
+            <td>Prerecorded video with sound and important visual information</td>            <td>A description of visual information that is not already communicated through the audio. At WCAG level AA, required audio description cannot be replaced by a transcript alone.</td>    </tr>    <tr>
+            <td>Live video with meaningful audio</td>            <td>Live captions where required by the project&#039;s accessibility target. Plan this before the event.</td>    </tr></tbody>    </table>
 </div>
             
-    <p>How captions are attached depends on the player your site uses. The core
-manual for editors does not document a captions field on the media element.
-Ask your integrator which file to upload, or which field the player reads.
-A transcript in the text still helps when the captions file is missing, and
-it helps people who cannot play the video.</p>
+    <p>Some criteria include exceptions for recordings explicitly provided and
+labeled as alternatives to existing text. Check the specific requirements
+before relying on an exception.</p>
 
             
-    <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/audio-control.html">Success Criterion 1.4.2</a>
-requires a way to pause or stop audio that plays automatically for more
-than three seconds, or a volume control independent of the system volume.
-Leave <span class="guilabel">Autoplay</span> off unless you have that control. The setting is
-described in
-<a href="#configure-the-video">Configure the video</a>.</p>
+    <p>Include essential visual information in the original narration where
+possible:</p>
 
-    </section>
-            <section class="section" id="accessibility-writing-instructions" data-rst-anchor="accessibility-writing-instructions"><a id="provide-clear-instructions"></a>
+            <blockquote>
+    <p>&quot;Use the step-free entrance on the north side of the building&quot; gives
+more information than &quot;Use this entrance&quot;.</p>
+</blockquote>
             
-            <h2>Provide clear instructions<a class="headerlink" href="#accessibility-writing-instructions" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
-            
-    <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html">Success Criterion 3.3.2</a>
-requires labels or instructions when the content asks the user for input.
-The W3C example of an instruction that states the rule is: &quot;Password should
-be at least six characters with at least one number (0-9).&quot; An error should
-say what is wrong. The W3C examples are &quot;The username &#039;superbear&#039; is already
-in use.&quot; and &quot;The password needs to include at least one number.&quot;</p>
+    <p>Check automatically generated captions, especially names and specialist
+terms. Also check that the actual player makes captions, descriptions and
+transcripts available.</p>
 
             
-    <p>When you build a form in the
-<a href="#mail-form">Forms module</a>,
-the label is the accessible name of the field. &quot;Name&quot; is weaker than
-&quot;Your name&quot; only in tone. &quot;Field 1&quot; is a failure. Placeholder text inside
-the field disappears while the person types, so it does not replace the
-label.</p>
-
-            
-    <p>State the format next to the field when a reader cannot guess it:</p>
-
-            
-
-<ul>
-    <li>Date of arrival (DD.MM.YYYY)</li>
-    <li>Phone number, including the country code</li>
-</ul>
-
-            
-    <p>If the form shows an error, write the message so it names the field and the
-change. &quot;Check your input&quot; leaves the reader to try every field.
-&quot;Date of arrival uses the form DD.MM.YYYY&quot; names the fix.</p>
+    <p>The
+<a href="https://www.w3.org/WAI/media/av/planning/">WAI media planning guide</a>
+distinguishes requirements by media type and WCAG level.</p>
 
     </section>
-            <section class="section" id="accessibility-writing-clear-language" data-rst-anchor="accessibility-writing-clear-language"><a id="keep-content-clear-and-concise"></a>
+            <section class="section" id="accessibility-writing-instructions" data-rst-anchor="accessibility-writing-instructions"><a id="write-clear-form-labels-and-feedback"></a>
             
-            <h2>Keep content clear and concise<a class="headerlink" href="#accessibility-writing-clear-language" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            <a id="accessibility-content-forms"></a>
+            <h2>Write clear form labels and feedback<a class="headerlink" href="#accessibility-writing-instructions" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
             
-    <p>The W3C recommends short sentences, familiar words, abbreviations expanded
-on first use, and lists where a list is the structure of the information.
-The criteria behind that advice include
-<a href="https://www.w3.org/WAI/WCAG21/Understanding/unusual-words.html">Unusual words (3.1.3)</a>,
-<a href="https://www.w3.org/WAI/WCAG21/Understanding/abbreviations.html">Abbreviations (3.1.4)</a>,
-and
-<a href="https://www.w3.org/WAI/WCAG21/Understanding/reading-level.html">Reading level (3.1.5)</a>.
-Reading level is level AAA. Clear sentences still help at every level. The
-W3C page links onward to guidance for people with cognitive and learning
-disabilities, under the heading &quot;Use clear and understandable content&quot;.</p>
+    <p>If you create forms, give fields labels that explain what information is
+needed. Identify required fields consistently and explain formats that users
+cannot reasonably infer.</p>
 
             
-    <p>Expand an abbreviation the first time you use it: &quot;Web Content
-Accessibility Guidelines (WCAG)&quot;. A second mention can be &quot;WCAG&quot; alone.</p>
+    <p>Placeholder text should not replace a proper label: it disappears during
+entry and may not provide a reliable field name.</p>
 
             
-    <p>Example. A sentence written to sound official:</p>
+    <p>Write errors that help people recover:</p>
+
+            <blockquote>
+    <p>Enter your arrival date in the format DD.MM.YYYY.</p>
+</blockquote>
+            
+    <p>This is more useful than &quot;Invalid input&quot;. Give buttons labels that describe
+the action, such as &quot;Send inquiry&quot; or &quot;Save changes&quot;.</p>
 
             
-    <p>&quot;Utilization of the contact form is mandatory for the submission of all
-inquiries pertaining to group visits.&quot;</p>
+    <p>The component must also associate labels, instructions and errors correctly
+with the controls. See
+<a href="https://www.w3.org/WAI/tutorials/forms/instructions/">WAI&#039;s form instructions</a>.</p>
+
+    </section>
+            <section class="section" id="accessibility-content-language-and-formatting" data-rst-anchor="accessibility-content-language-and-formatting"><a id="use-language-color-and-formatting-purposefully"></a>
+            
+            <h2>Use language, color and formatting purposefully<a class="headerlink" href="#accessibility-content-language-and-formatting" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            
+    <p>Use the project&#039;s agreed styles. Avoid introducing local formatting simply
+to make a page look different.</p>
 
             
-    <p>The same instruction:</p>
+    <p>Do not rely on color alone. Label cancelled dates &quot;Cancelled&quot; rather than
+only coloring them red. If you choose text colors or place text over
+images, check their contrast.</p>
 
             
-    <p>&quot;To ask about a group visit, use the contact form.&quot;</p>
+    <p>Correct language information helps screen readers pronounce content. Use the
+appropriate language version of the page and mark passages in another
+language using the editor&#039;s language function.</p>
 
             
-    <p>A list is easier to scan than a sentence of options. &quot;You can get there by
-bus, by the valley path, or by booking the hut taxi&quot; can be three items
-when each option needs its own detail.</p>
-
-            
-    <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/use-of-color.html">Success Criterion 1.4.1</a>
-says that color is not the only means of conveying the information. &quot;Fields
-in red are required&quot; excludes a reader who cannot see the red. Add the word
-&quot;required&quot; to the label.</p>
-
-            
-    <p><a href="https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html">Success Criterion 1.3.1</a>
-requires the structure to be in the markup. In the rich text editor, use
-the list buttons for a list, and mark the header row when you insert a
-table. A bold first row that is not a header is only bold. The W3C tutorial
-on <a href="https://www.w3.org/WAI/tutorials/tables/">tables</a> shows header cells.</p>
+    <p>Proper names, technical terms and words already adopted into the surrounding
+language do not generally need separate language marking. If a required
+language setting is unavailable, ask your technical team for a solution. See
+<a href="https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html">WAI&#039;s guidance on language changes</a>.</p>
 
     </section>
     </section>
@@ -7139,269 +7047,220 @@ on <a href="https://www.w3.org/WAI/tutorials/tables/">tables</a> shows header ce
         </article>
 <article>
             
-<section class="section" id="accessibility-tips" data-rst-anchor="accessibility-tips"><a id="tips-and-tricks"></a>
+<section class="section" id="accessibility-tips" data-rst-anchor="accessibility-tips"><a id="check-before-publishing"></a>
             
-            <h1>Tips and tricks<a class="headerlink" href="#accessibility-tips" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h1>
+            <a id="accessibility-check-before-publishing"></a>
+            <h1>Check before publishing<a class="headerlink" href="#accessibility-tips" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h1>
             
-    <p>Use this list on a page before you publish it. Each item names the
-requirement it supports. The explanations of those requirements are linked
-from
-<a href="#accessibility-legal">Legal requirements</a>.
-How to fill the fields is in
-<a href="#accessibility-writing-accessible-text">Writing accessible text</a>.</p>
+    <p>Review the actual page in preview, then check the published result. Backend
+fields alone do not show whether the website outputs everything correctly.</p>
 
             
-    <p>A program can find some of these failures. It cannot decide that the page
-is accessible. The W3C says so in its
-<a href="https://www.w3.org/WAI/test-evaluate/">introduction to evaluating accessibility</a>,
-and it keeps a
-<a href="https://www.w3.org/WAI/test-evaluate/tools/list/">list of evaluation tools</a>
-submitted by the providers. The W3C does not endorse the products on that
-list. For a first pass a person can do without a product, use the W3C
-<a href="https://www.w3.org/WAI/test-evaluate/preliminary/">Easy Checks</a>.</p>
+    <p>These checks are an editorial first review. They do not replace a full
+accessibility evaluation.</p>
 
-            <section class="section" id="accessibility-tips-before-publish" data-rst-anchor="accessibility-tips-before-publish"><a id="before-you-publish"></a>
+            <section class="section" id="accessibility-tips-tables" data-rst-anchor="accessibility-tips-tables"><a id="review-your-content"></a>
             
-            <h2>Before you publish<a class="headerlink" href="#accessibility-tips-before-publish" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
-            <section class="section" id="accessibility-tips-title" data-rst-anchor="accessibility-tips-title"><a id="read-the-title-out-of-context"></a>
+            <a id="accessibility-tips-forms"></a>
+            <a id="accessibility-tips-color"></a>
+            <a id="accessibility-tips-media"></a>
+            <a id="accessibility-tips-images"></a>
+            <a id="accessibility-tips-links"></a>
+            <a id="accessibility-tips-headings"></a>
+            <a id="accessibility-tips-title"></a>
+            <a id="accessibility-tips-before-publish"></a>
+            <a id="accessibility-check-review"></a>
+            <h2>Review your content<a class="headerlink" href="#accessibility-tips-tables" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            <div class="table-responsive">
+    <table class="table table-bordered align-default colwidths-grid">
+                    <colgroup>
+                                    <col style="width: 28%">
+                        </colgroup>
+            <thead>
+            <tr>
+                            <th>Check</th>
+                            <th>What to do</th>
+                    </tr>
+        </thead>
+        <tbody>
+    <tr>
+            <td><strong>Title and wording</strong></td>            <td>Read the browser title. Does it identify this page? Check whether the main message and instructions are clear.</td>    </tr>    <tr>
+            <td><strong>Headings</strong></td>            <td>Review the headings and levels together, including those supplied by content elements. Do they express the intended sections and subsections?</td>    </tr>    <tr>
+            <td><strong>Links</strong></td>            <td>Follow the links. Check whether their wording matches the destination and whether the correct document version opens.</td>    </tr>    <tr>
+            <td><strong>Images</strong></td>            <td>Compare each alternative text with the image&#039;s purpose. Check how decorative images are handled; visual appearance alone cannot reveal this.</td>    </tr>    <tr>
+            <td><strong>Text in images</strong></td>            <td>Check whether essential poster text, dates or instructions are also available as normal page content.</td>    </tr>    <tr>
+            <td><strong>Documents and media</strong></td>            <td>Confirm that accessible documents and necessary media alternatives are available. Play the recording and check the alternatives in the actual player.</td>    </tr>    <tr>
+            <td><strong>Forms</strong></td>            <td>Review labels without relying on placeholders. In preview or a test environment, trigger validation errors and check whether the messages help with correction.</td>    </tr>    <tr>
+            <td><strong>Presentation</strong></td>            <td>Enlarge the page and view it at a narrow width. Look for clipped or obscured content and information conveyed only by color.</td>    </tr></tbody>    </table>
+</div>
             
-            <h3>Read the title out of context<a class="headerlink" href="#accessibility-tips-title" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
-            
-    <p>Open the page and read only the browser title. It should name this page.
-&quot;Home&quot;, the organization name alone, or &quot;Page&quot; fails that test on an inner
-page. Set the page title, and the title for search engines when you use
-that field, as described under
-<a href="#accessibility-writing-accessible-text-provide-informative-unique">Provide informative, unique page titles</a>.</p>
+    <p>For explanations and examples, refer to
+<a href="#accessibility-creating-accessible-content">Creating accessible content</a>.</p>
 
     </section>
-            <section class="section" id="accessibility-tips-headings" data-rst-anchor="accessibility-tips-headings"><a id="walk-the-headings"></a>
+            <section class="section" id="accessibility-check-tools" data-rst-anchor="accessibility-check-tools"><a id="use-tools-for-specific-questions"></a>
             
-            <h3>Walk the headings<a class="headerlink" href="#accessibility-tips-headings" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            <h2>Use tools for specific questions<a class="headerlink" href="#accessibility-check-tools" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            <section class="section" id="accessibility-check-wave" data-rst-anchor="accessibility-check-wave"><a id="inspect-information-that-is-not-normally-visible"></a>
             
-    <p>List the headings in order, including the levels. You should get an outline
-of the page. A level jumps from 2 to 4 when a level was chosen because it
-looked smaller. One topic keeps one heading. The page title may already be
-the level-1 heading. Ask your integrator if you are unsure, then start the
-content element headings at level 2.</p>
+            <h3>Inspect information that is not normally visible<a class="headerlink" href="#accessibility-check-wave" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p><a href="https://wave.webaim.org/">WAVE</a>
+can reveal accessibility information and flag potential problems. For
+example, use it to inspect the alternative text output for an image, then
+decide whether that text conveys the intended information.</p>
+
+            
+    <p>WAVE cannot make that editorial judgment. Its indicators need
+interpretation, and an absence of reported errors is not proof of
+accessibility. The
+<a href="https://wave.webaim.org/help">WAVE help</a>
+explains the results.</p>
 
     </section>
-            <section class="section" id="accessibility-tips-links" data-rst-anchor="accessibility-tips-links"><a id="read-the-links-as-a-list"></a>
+            <section class="section" id="accessibility-check-contrast" data-rst-anchor="accessibility-check-contrast"><a id="check-colors-you-select"></a>
             
-            <h3>Read the links as a list<a class="headerlink" href="#accessibility-tips-links" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            <h3>Check colors you select<a class="headerlink" href="#accessibility-check-contrast" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
             
-    <p>Collect every link on the page and read the texts without the sentences
-around them. Each text should say where that link goes.</p>
+    <p>The
+<a href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a>
+compares foreground and background colors and reports contrast results for
+different text categories.</p>
 
             
-    <p>Change these when you find them:</p>
+    <p>Use it when you control those colors. Text over photographs or changing
+backgrounds needs additional care; checking one color pair may not represent
+the whole image.</p>
+
+    </section>
+            <section class="section" id="accessibility-check-easy-checks" data-rst-anchor="accessibility-check-easy-checks"><a id="learn-further-initial-checks"></a>
+            
+            <h3>Learn further initial checks<a class="headerlink" href="#accessibility-check-easy-checks" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
+            
+    <p>The
+<a href="https://www.w3.org/WAI/test-evaluate/preliminary/">WAI Easy Checks</a>
+explain first checks for titles, headings, images, keyboard access and other
+aspects. Some require tools or additional knowledge. They cover only part of
+a complete evaluation.</p>
+
+    </section>
+    </section>
+            <section class="section" id="accessibility-check-report" data-rst-anchor="accessibility-check-report"><a id="report-problems-you-cannot-resolve"></a>
+            
+            <h2>Report problems you cannot resolve<a class="headerlink" href="#accessibility-check-report" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            
+    <p>Include:</p>
 
             
 
 <ul>
-    <li>&quot;Click here&quot;, &quot;here&quot;, &quot;more&quot;, &quot;read more&quot;, &quot;continue&quot;.</li>
-    <li>A raw address as the only link text, when the page has a title you can
-use instead.</li>
-    <li>An empty link, including an icon or an image with no alternative text.</li>
-    <li>Two links with the same text that go to different places. &quot;Download&quot;
-twice, for two different files, needs the file name in the link.</li>
+    <li>The page URL or TYPO3 page identifier.</li>
+    <li>The affected content element or component.</li>
+    <li>What you observed and what you expected.</li>
+    <li>The steps needed to reproduce the problem.</li>
 </ul>
 
             
-    <p>A file link names the type: &quot;Hut rules (PDF)&quot;.</p>
+    <p>Report recurring problems so they can be addressed centrally. When updating
+content, also revisit its links, descriptions and media alternatives.</p>
 
-    </section>
-            <section class="section" id="accessibility-tips-images" data-rst-anchor="accessibility-tips-images"><a id="cover-the-image"></a>
-            
-            <h3>Cover the image<a class="headerlink" href="#accessibility-tips-images" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
-            
-    <p>Cover the image with your hand and read the alternative text. If you still
-learn what the image was there to say, the text is doing its job. If the
-paragraph already says it, the image is decorative and the alternative text
-should be empty.</p>
-
-            
-    <p>Reject &quot;image&quot;, &quot;photo&quot;, &quot;icon&quot;, a file name, and a text identical to the
-caption that is already visible under the image. The
-<span class="guilabel">Description</span> and the alternative text are different fields. The
-description is often shown to everyone. The alternative text stands in for
-the image.</p>
-
-    </section>
-            <section class="section" id="accessibility-tips-media" data-rst-anchor="accessibility-tips-media"><a id="play-the-video-with-the-sound-off"></a>
-            
-            <h3>Play the video with the sound off<a class="headerlink" href="#accessibility-tips-media" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
-            
-    <p>If you cannot follow a video with the sound off, the captions or the
-transcript are missing. Put a transcript in the text of the content element
-and give it a heading. Ask your integrator how the player on your site
-takes a captions file.</p>
-
-            
-    <p>Leave automatic playback off. If a clip must start by itself and it lasts
-more than three seconds, the visitor needs a way to pause it or to change
-its volume separately from the device.</p>
-
-    </section>
-            <section class="section" id="accessibility-tips-color" data-rst-anchor="accessibility-tips-color"><a id="check-color-and-text-saved-as-an-image"></a>
-            
-            <h3>Check color and text saved as an image<a class="headerlink" href="#accessibility-tips-color" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
-            
-    <p>&quot;Required fields are shown in red&quot; needs the word &quot;required&quot; as well.
-A heading that is a picture, or a phone number that is a picture, should be
-typed as text. A logo may stay an image. Its alternative text is the words
-in the logo.</p>
-
-            
-    <p>If you colored text in the editor, check the contrast.
-<a href="https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html">Success Criterion 1.4.3</a>
-requires a contrast ratio of at least 4.5:1. Large-scale text, at least 18
-point or 14 point bold, needs at least 3:1. Text that is pure decoration,
-inactive, or part of a logo has no contrast requirement under that
-criterion. The colors of the theme are the integrator&#039;s. Low contrast was
-the most common failure in the February 2026 WebAIM report: 83.9% of home
-pages, with 34 instances on an average home page.</p>
-
-    </section>
-            <section class="section" id="accessibility-tips-forms" data-rst-anchor="accessibility-tips-forms"><a id="label-every-field"></a>
-            
-            <h3>Label every field<a class="headerlink" href="#accessibility-tips-forms" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
-            
-    <p>Read the form with the placeholders ignored, because placeholders vanish
-while someone types. Every field needs a visible label. Say the format when
-it is easy to get wrong: &quot;Date of arrival (DD.MM.YYYY)&quot;.</p>
-
-            
-    <p>Trigger an error on purpose. The message should name the field and the
-change. &quot;Invalid input&quot; does not. The W3C example of a message that names
-the problem is &quot;The password needs to include at least one number.&quot;</p>
-
-    </section>
-            <section class="section" id="accessibility-tips-tables" data-rst-anchor="accessibility-tips-tables"><a id="mark-the-header-cells-of-a-table"></a>
-            
-            <h3>Mark the header cells of a table<a class="headerlink" href="#accessibility-tips-tables" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h3>
-            
-    <p>A table of data needs header cells, not a bold first row. A screen reader
-can then repeat the header as the reader moves across a row. The W3C
-tutorial on <a href="https://www.w3.org/WAI/tutorials/tables/">tables</a> shows the
-patterns, including tables with two headers. A layout that only uses a
-table to place two pieces of text side by side is a question for your
-integrator. Prefer two paragraphs or a list when the content is not a table.</p>
-
-    </section>
     </section>
     </section>
 
         </article>
 <article>
             
-<section class="section" id="accessibility-sources" data-rst-anchor="accessibility-sources"><a id="sources-and-further-reading"></a>
+<section class="section" id="accessibility-sources-studies" data-rst-anchor="accessibility-sources-studies"><a id="sources-and-further-reading"></a>
             
-            <h1>Sources and further reading<a class="headerlink" href="#accessibility-sources" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h1>
+            <a id="accessibility-sources"></a>
+            <h1>Sources and further reading<a class="headerlink" href="#accessibility-sources-studies" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h1>
             
-    <p>The links below are the documents this chapter relies on. Read the primary
-document when a decision depends on the exact wording. A vendor article is
-labeled as one.</p>
+    <p>Start with the resource that matches your task. WAI tutorials explain
+practical approaches; WCAG contains the normative success criteria. Legal
+applicability must be established for the project.</p>
 
-            <section class="section" id="accessibility-sources-w3c" data-rst-anchor="accessibility-sources-w3c"><a id="guidelines-and-how-to-meet-them"></a>
+            <section class="section" id="accessibility-sources-writing" data-rst-anchor="accessibility-sources-writing"><a id="editorial-decisions"></a>
             
-            <h2>Guidelines and how to meet them<a class="headerlink" href="#accessibility-sources-w3c" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
-            
-
-<ul>
-    <li><a href="https://www.w3.org/WAI/">Web Accessibility Initiative (WAI)</a> — the
-W3C home for the standards, the teaching material, and the evaluation
-guidance.</li>
-    <li><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/">Introduction to Web Accessibility</a>
-— what web accessibility covers, and who benefits besides people with
-disabilities.</li>
-    <li><a href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines (WCAG) 2.1</a>
-— the W3C Recommendation. Content that meets WCAG 2.1 also meets
-WCAG 2.0.</li>
-    <li><a href="https://www.w3.org/TR/WCAG22/">Web Content Accessibility Guidelines (WCAG) 2.2</a>
-— the later Recommendation. The W3C encourages the current version when
-a policy is written or updated.</li>
-    <li><a href="https://www.w3.org/WAI/WCAG21/quickref/">How to Meet WCAG 2.1 (Quick Reference)</a>
-— filterable list of the requirements, with links to techniques.</li>
-    <li><a href="https://www.w3.org/WAI/policies/">Web accessibility laws and policies</a>
-— the W3C list by country. The W3C states that the list is not complete
-and is not legal advice.</li>
-</ul>
-
-    </section>
-            <section class="section" id="accessibility-sources-writing" data-rst-anchor="accessibility-sources-writing"><a id="writing-and-structure"></a>
-            
-            <h2>Writing and structure<a class="headerlink" href="#accessibility-sources-writing" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            <a id="accessibility-sources-editorial"></a>
+            <h2>Editorial decisions<a class="headerlink" href="#accessibility-sources-writing" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
             
 
 <ul>
     <li><a href="https://www.w3.org/WAI/tips/writing/">Writing for Web Accessibility</a>
-— the W3C starting page for page titles, headings, link text,
-alternative text, captions, instructions, and plain language.</li>
+introduces accessible wording, titles, headings, links and instructions.</li>
     <li><a href="https://www.w3.org/WAI/tutorials/page-structure/headings/">Headings</a>
-— how heading levels form an outline.</li>
-    <li><a href="https://www.w3.org/WAI/tutorials/images/">Images</a> — informative,
-decorative, and functional images.</li>
-    <li><a href="https://www.w3.org/WAI/tutorials/images/decision-tree/">An alt Decision Tree</a>
-— a short sequence of questions for choosing the alternative text.</li>
-    <li><a href="https://www.w3.org/WAI/tutorials/tables/">Tables</a> — header cells.</li>
-    <li><a href="https://axesslab.com/alt-texts/">Alt-texts: The Ultimate Guide</a> —
-a practical guide from Axess Lab, with examples of weak and useful
-alternative text.</li>
+explains how heading levels communicate structure.</li>
+    <li><a href="https://www.w3.org/WAI/tutorials/images/">Images Tutorial</a>
+covers informative, decorative, functional and complex images.</li>
+    <li><a href="https://www.w3.org/WAI/tutorials/images/decision-tree/">Alternative text decision tree</a>
+helps determine what an image needs in its context.</li>
+    <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/images-of-text.html">Images of Text</a>
+explains why important text should remain adaptable.</li>
+    <li><a href="https://www.w3.org/WAI/tutorials/tables/">Tables Tutorial</a>
+explains header cells and their relationships to data.</li>
+    <li><a href="https://www.w3.org/WAI/media/av/planning/">Planning Audio and Video Media</a>
+distinguishes media alternatives by content type and WCAG level.</li>
+    <li><a href="https://www.w3.org/WAI/tutorials/forms/">Forms Tutorial</a>
+covers labels, instructions, validation and feedback.</li>
+    <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html">Language of Parts</a>
+explains language marking and its exceptions.</li>
 </ul>
 
     </section>
-            <section class="section" id="accessibility-sources-evaluate" data-rst-anchor="accessibility-sources-evaluate"><a id="checking-a-page"></a>
+            <section class="section" id="accessibility-sources-evaluate" data-rst-anchor="accessibility-sources-evaluate"><a id="reviewing-a-page"></a>
             
-            <h2>Checking a page<a class="headerlink" href="#accessibility-sources-evaluate" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            <a id="accessibility-sources-review"></a>
+            <h2>Reviewing a page<a class="headerlink" href="#accessibility-sources-evaluate" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
             
 
 <ul>
-    <li><a href="https://www.w3.org/WAI/test-evaluate/">Evaluating Web Accessibility: Overview</a>
-— the W3C states that tools help and that a person still has to judge
-the page.</li>
-    <li><a href="https://www.w3.org/WAI/test-evaluate/preliminary/">Easy Checks – A First Review of Web Accessibility</a>
-— checks you can do in a browser.</li>
-    <li><a href="https://www.w3.org/WAI/test-evaluate/tools/list/">Web Accessibility Evaluation Tools List</a>
-— tools submitted by their providers. The W3C does not endorse them.
-Filters cover WCAG version, free and paid tools, and browser plugins.</li>
-    <li><a href="https://www.w3.org/WAI/test-evaluate/tools/selecting/">Selecting Web Accessibility Evaluation Tools</a>
-— how to decide what kind of tool you need.</li>
+    <li><a href="https://www.w3.org/WAI/test-evaluate/preliminary/">WAI Easy Checks</a>
+provides an initial review, with explanations of its limits.</li>
+    <li><a href="https://wave.webaim.org/help">WAVE Help</a>
+explains how to interpret WAVE&#039;s findings.</li>
+    <li><a href="https://webaim.org/resources/contrastchecker/">WebAIM Contrast Checker</a>
+checks selected foreground and background colors.</li>
 </ul>
 
     </section>
-            <section class="section" id="accessibility-sources-law" data-rst-anchor="accessibility-sources-law"><a id="european-legislation"></a>
+            <section class="section" id="accessibility-sources-law" data-rst-anchor="accessibility-sources-law"><a id="standards-and-legal-orientation"></a>
             
-            <h2>European legislation<a class="headerlink" href="#accessibility-sources-law" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            <a id="accessibility-sources-w3c"></a>
+            <a id="accessibility-sources-standards"></a>
+            <h2>Standards and legal orientation<a class="headerlink" href="#accessibility-sources-law" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
             
 
 <ul>
-    <li><a href="https://eur-lex.europa.eu/eli/dir/2016/2102/oj">Directive (EU) 2016/2102</a>
-— accessibility of the websites and mobile applications of public
-sector bodies.</li>
-    <li><a href="https://eur-lex.europa.eu/eli/dir/2019/882/oj">Directive (EU) 2019/882</a>
-— the European Accessibility Act. National measures apply from
-28 June 2025.</li>
-    <li><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=legissum:4403933">Accessibility of products and services</a>
-— the EUR-Lex summary of what the Act covers and what it excludes.</li>
+    <li><a href="https://www.w3.org/TR/WCAG22/">WCAG 2.2</a>
+contains the normative requirements;
+<a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1</a>
+remains relevant where referenced by applicable requirements.</li>
+    <li><a href="https://www.w3.org/WAI/WCAG22/quickref/">How to Meet WCAG</a>
+provides a filterable reference with supporting techniques.</li>
+    <li><a href="https://www.w3.org/WAI/policies/">WAI Laws and Policies</a>
+offers an introductory directory by jurisdiction.</li>
+    <li><a href="https://digital-strategy.ec.europa.eu/en/policies/web-accessibility-directive-standards-and-harmonisation">European Commission: Web Accessibility Directive standards</a>
+explains the relationship with EN 301 549.</li>
+    <li><a href="https://commission.europa.eu/strategy-and-policy/policies/justice-and-fundamental-rights/disability/european-accessibility-act-eaa_en">European Commission: European Accessibility Act</a>
+introduces its scope and implementation.</li>
 </ul>
 
     </section>
-            <section class="section" id="accessibility-sources-studies" data-rst-anchor="accessibility-sources-studies"><a id="studies-cited-for-the-figures"></a>
+            <section class="section" id="accessibility-sources-practical" data-rst-anchor="accessibility-sources-practical"><a id="additional-practical-guidance"></a>
             
-            <h2>Studies cited for the figures<a class="headerlink" href="#accessibility-sources-studies" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
+            <h2>Additional practical guidance<a class="headerlink" href="#accessibility-sources-practical" data-bs-toggle="modal" data-bs-target="#linkReferenceModal"  title="Reference this headline">&nbsp;<i class="fa-solid fa-link"></i></a></h2>
             
 
 <ul>
-    <li><a href="https://webaim.org/projects/million/">The WebAIM Million</a> — the
-February 2026 evaluation of one million home pages. The figures in
-<a href="#accessibility-overview">Accessibility for editors</a>
-that name a percentage of home pages come from this report, unless
-another source is named.</li>
-    <li><a href="https://www.audioeye.com/post/accessibility-statistics/">Web Accessibility Statistics</a>
-— AudioEye&#039;s article. The scan of about 400,000 pages, the image
-figures, and the link figures are theirs. AudioEye sells accessibility
-services. The article is included because it collects those content
-figures in one place, and it should be read as a vendor publication.</li>
+    <li><a href="https://axesslab.com/alt-texts/">Axess Lab: Alt-texts — The Ultimate Guide</a>
+offers examples and a screen reader user&#039;s perspective on useful image
+descriptions. It is practical guidance, not a normative specification.</li>
+    <li><a href="https://www.bfit-bund.de/DE/Downloads/Praxistipps-und-Leitfaeden/praxistipps_artikel">BFIT-Bund&#039;s practical tips and guides</a>
+provide German-language guidance on topics including alternative text,
+text structure, language, contrast and captions.</li>
+    <li><a href="https://www.bfit-bund.de/DE/Publikation/handreichung-barrierefreie-dokumente">BFIT-Bund: Accessible documents in learning contexts</a>
+introduces document accessibility. Many of its recommendations also
+apply outside education.</li>
 </ul>
 
     </section>
@@ -7445,8 +7304,8 @@ figures in one place, and it should be read as a vendor publication.</li>
         <h3><a href="#accessibility">Accessibility</a></h3>
         <div class="card-text">
             
-    <p>Opens the chapter on accessible content: the figures, the legal
-requirements, and how to write the text.</p>
+    <p>Opens the chapter on accessible content: what you can change, the
+legal requirements, and a check before you publish.</p>
 
         </div>
     </div>
@@ -7672,13 +7531,13 @@ third-party sources such as Youtube or Vimeo.</p>
 
 <ul>
     <li><a href="#accessibility-legal">Legal requirements</a>
-— WCAG, the European directives, and what they ask of an editor.</li>
-    <li><a href="#accessibility-writing-accessible-text">Writing accessible text</a>
-— page titles, headings, links, alternative text, captions, and plain language.</li>
-    <li><a href="#accessibility-tips">Tips and tricks</a>
-— a check before you publish a page.</li>
+— how standards, legal obligations and project requirements relate.</li>
+    <li><a href="#accessibility-creating-accessible-content">Creating accessible content</a>
+— everyday editorial decisions, with examples.</li>
+    <li><a href="#accessibility-check-before-publishing">Check before publishing</a>
+— a practical first review, and selected tools.</li>
     <li><a href="#accessibility-sources">Sources and further reading</a>
-— the guidelines, the tool list, and the studies behind the figures.</li>
+— the tutorials, the guidelines, and further reading.</li>
 </ul>
 
     </section>
@@ -7893,7 +7752,7 @@ generators you can use.</p>
                                                 <li><a href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors/issues" rel="nofollow noopener" title="Issues"><span>Issues</span></a></li>
                                                 <li><a href="https://github.com/TYPO3-Documentation/TYPO3CMS-Tutorial-Editors" rel="nofollow noopener" title="Repository"><span>Repository</span></a></li>
                                             </ul>                <div class="footer-additional">
-                    <p class="text-center">Last rendered: Oct 20, 2026 12:25</p>
+                    <p class="text-center">Last rendered: Nov 06, 2026 10:55</p>
                 </div>
                 <div class="footer-meta">
                                         <div class="footer-meta-copyright">

@@ -4,7 +4,7 @@ manual: "Tutorial for Editors"
 version: "main"
 permalink: "https://docs.typo3.org/permalink/t3editors:concepts@main"
 source: "Concepts/Index.rst"
-rendered: "2026-10-20T12:56:18+00:00"
+rendered: "2026-11-06T10:57:15+00:00"
 ---
 
 # Concepts {#concepts}
@@ -21,8 +21,8 @@ Information about TYPO3's File Abstraction Layer (FAL) and how editors can modif
 
 **[Accessibility](https://docs.typo3.org/permalink/t3editors:accessibility@main)**
 
-Opens the chapter on accessible content: the figures, the legal
-requirements, and how to write the text.
+Opens the chapter on accessible content: what you can change, the
+legal requirements, and a check before you publish.
 
 **[Copyright](https://docs.typo3.org/permalink/t3editors:copyright@main)**
 

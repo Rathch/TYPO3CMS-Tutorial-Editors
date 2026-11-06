@@ -4,7 +4,7 @@ manual: "Tutorial for Editors"
 version: "main"
 permalink: "https://docs.typo3.org/permalink/t3editors:accessibility@main"
 source: "Concepts/Accessibility.rst"
-rendered: "2026-10-20T12:56:18+00:00"
+rendered: "2026-11-06T10:57:15+00:00"
 ---
 
 # Accessibility {#accessibility}
@@ -15,10 +15,10 @@ Guidance for editors now lives in the chapter
 The chapter has four pages:
 
 -   [Legal requirements](https://docs.typo3.org/permalink/t3editors:accessibility-legal@main)
-    — WCAG, the European directives, and what they ask of an editor.
--   [Writing accessible text](https://docs.typo3.org/permalink/t3editors:accessibility-writing-accessible-text@main)
-    — page titles, headings, links, alternative text, captions, and plain language.
--   [Tips and tricks](https://docs.typo3.org/permalink/t3editors:accessibility-tips@main)
-    — a check before you publish a page.
+    — how standards, legal obligations and project requirements relate.
+-   [Creating accessible content](https://docs.typo3.org/permalink/t3editors:accessibility-creating-accessible-content@main)
+    — everyday editorial decisions, with examples.
+-   [Check before publishing](https://docs.typo3.org/permalink/t3editors:accessibility-check-before-publishing@main)
+    — a practical first review, and selected tools.
 -   [Sources and further reading](https://docs.typo3.org/permalink/t3editors:accessibility-sources@main)
-    — the guidelines, the tool list, and the studies behind the figures.
+    — the tutorials, the guidelines, and further reading.

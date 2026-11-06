@@ -4,7 +4,7 @@ manual: "Tutorial for Editors"
 version: "main"
 permalink: "https://docs.typo3.org/permalink/t3editors:languages@main"
 source: "Languages/Index.rst"
-rendered: "2026-10-20T12:56:18+00:00"
+rendered: "2026-11-06T10:57:15+00:00"
 ---
 
 # Working with languages {#languages}

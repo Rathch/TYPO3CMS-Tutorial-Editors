@@ -341,27 +341,27 @@
                     "html": "Accessibility/Index.html",
                     "md": "Accessibility/Index.md",
                     "title": "Accessibility for editors",
-                    "anchor": "accessibility-overview",
+                    "anchor": "accessibility-statistics-audioeye",
                     "pages": [
                         {
-                            "path": "Accessibility/LegalFoundations",
-                            "html": "Accessibility/LegalFoundations.html",
-                            "md": "Accessibility/LegalFoundations.md",
+                            "path": "Accessibility/LegalRequirements",
+                            "html": "Accessibility/LegalRequirements.html",
+                            "md": "Accessibility/LegalRequirements.md",
                             "title": "Legal requirements",
                             "anchor": "accessibility-legal"
                         },
                         {
-                            "path": "Accessibility/WritingAccessibleText",
-                            "html": "Accessibility/WritingAccessibleText.html",
-                            "md": "Accessibility/WritingAccessibleText.md",
-                            "title": "Writing accessible text",
+                            "path": "Accessibility/CreatingAccessibleContent",
+                            "html": "Accessibility/CreatingAccessibleContent.html",
+                            "md": "Accessibility/CreatingAccessibleContent.md",
+                            "title": "Creating accessible content",
                             "anchor": "accessibility-writing-accessible-text"
                         },
                         {
-                            "path": "Accessibility/TipsAndTricks",
-                            "html": "Accessibility/TipsAndTricks.html",
-                            "md": "Accessibility/TipsAndTricks.md",
-                            "title": "Tips and tricks",
+                            "path": "Accessibility/CheckBeforePublishing",
+                            "html": "Accessibility/CheckBeforePublishing.html",
+                            "md": "Accessibility/CheckBeforePublishing.md",
+                            "title": "Check before publishing",
                             "anchor": "accessibility-tips"
                         },
                         {
@@ -369,7 +369,7 @@
                             "html": "Accessibility/Sources.html",
                             "md": "Accessibility/Sources.md",
                             "title": "Sources and further reading",
-                            "anchor": "accessibility-sources"
+                            "anchor": "accessibility-sources-studies"
                         }
                     ]
                 },
